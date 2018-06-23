@@ -1,7 +1,7 @@
 <?php
  /**
  *
- * @package   [SITE NAME] Functionality
+ * @package   Walking Bus Functionality
  * @author    Your Name <your_email@email.com>
  * @license   GPL-2.0+
  * @copyright 2015 Your Name or Company

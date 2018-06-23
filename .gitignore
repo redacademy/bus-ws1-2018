@@ -30,6 +30,8 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/walking-plugin/
+!plugins/wp-migrate-db-pro
+!plugins/wp-migrate-db-pro-media-files
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
