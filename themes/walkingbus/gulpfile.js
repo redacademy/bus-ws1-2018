@@ -61,7 +61,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'http://localhost:8888/walkingbus/'
+    proxy: 'localhost:8888/walkingbus'
   });
 
   gulp.watch(files).on('change', browserSync.reload);
@@ -72,4 +72,4 @@ gulp.task('watch', function() {
   gulp.watch('sass/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default', gulp.parallel('watch'));
+gulp.task('default', gulp.parallel('browser-sync', 'watch'));
