@@ -44,5 +44,5 @@ themes/walkingbus/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/walkingbus/gulpfile.js
+!themes/walkingbus/gulpfile.js
 themes/walkingbus/build/*
