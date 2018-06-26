@@ -30,8 +30,8 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/walking-plugin/
-!plugins/wp-migrate-db-pro/
-!plugins/wp-migrate-db-pro-media-files/
+# !plugins/wp-migrate-db-pro/ #
+# !plugins/wp-migrate-db-pro-media-files/ #
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
@@ -44,5 +44,5 @@ themes/walkingbus/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/walkingbus/gulpfile.js
+!themes/walkingbus/gulpfile.js
 themes/walkingbus/build/*
