@@ -14,7 +14,7 @@
 				<section class="main-container-footer">
 					<div class="footer-links">
 						<div class="featuredon-links"><p>featured-on</p>
-						<img src="./assets/images/featured-logo.svg">
+						<img src="assets/images/featured-logo.svg" alt="featured-logo">
 						</div>
 						<div class="followuson-links"><p>follow us on</p>
 						<ul>

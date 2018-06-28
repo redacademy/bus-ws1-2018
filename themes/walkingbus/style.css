@@ -979,7 +979,8 @@ object {
     text-transform: none; }
 
 .subscription-container {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .subscription-container form, .subscription-container input {
   width: 90%; }
@@ -1060,7 +1061,7 @@ object {
               justify-content: center; }
     .footer-links li {
       display: inline;
-      margin-right: 5px; }
+      margin-right: 10px; }
     .footer-links .fab {
       border-style: solid;
       border-radius: 60px;
@@ -1073,9 +1074,28 @@ object {
       text-align: center; }
   .subscription-container form, .subscription-container input {
     width: 50%; }
+  .subscription-container {
+    margin-top: 30px; }
+    .subscription-container button {
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 175px;
+      height: 100px;
+      margin-top: 15px;
+      margin-bottom: 0;
+      border-radius: 50px;
+      background-color: #f6e24f;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #474747;
+      border-color: #474747;
+      font-weight: 700;
+      text-shadow: none;
+      font-size: 14px; }
   #contactus {
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-transform: none; }
   .contact-info {
     height: 100px;
     width: 100%;
@@ -1091,7 +1111,7 @@ object {
             justify-content: flex-start; }
   .contact, .registration {
     width: 100%;
-    height: 50px;
+    height: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1099,16 +1119,17 @@ object {
         -ms-flex-pack: center;
             justify-content: center; }
   .contact {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial; }
     .contact p {
       margin-right: 60px; }
   .registration {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 0px; }
+    margin-top: 0px;
+    margin-bottom: 0px; }
     .registration p {
       margin-right: 80px;
       font-size: 12px; } }
