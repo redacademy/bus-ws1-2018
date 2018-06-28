@@ -1,6 +1,24 @@
-header {
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
 
-    .main-navigation ul {
-        display: flex;
+    .header-logo {
+        background-image: url('../../assets/images/twsb_logo-large.png');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
     }
+
+    .site-title {
+        overflow: visible;
+        height: 200px;
+        width: 200px;
+    }
+
 }

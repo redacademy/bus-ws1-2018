@@ -913,7 +913,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-header .main-navigation ul {
+.site-header {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0; }
+  .site-header .header-logo {
+    background-image: url("../../assets/images/twsb_logo-large.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px; }
+  .site-header .site-title {
+    overflow: visible;
+    height: 200px;
+    width: 200px; }
