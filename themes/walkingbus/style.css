@@ -663,9 +663,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -1033,6 +1033,8 @@ object {
     width: 50%; }
   .followuson-links {
     display: block; }
+    .followuson-links p {
+      text-transform: capitalize; }
   .followuson-links-mob {
     display: none; }
   .footer-links {
@@ -1069,6 +1071,11 @@ object {
       border-width: 1px; }
     .footer-links p {
       text-align: center; }
+  .subscription-container form, .subscription-container input {
+    width: 50%; }
+  #contactus {
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .contact-info {
     height: 100px;
     width: 100%;
@@ -1092,15 +1099,40 @@ object {
         -ms-flex-pack: center;
             justify-content: center; }
   .contact {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .contact p {
-      margin-right: 50px; }
-  .registration {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
+    .contact p {
+      margin-right: 60px; }
+  .registration {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0px; }
     .registration p {
-      margin-right: 100px;
+      margin-right: 80px;
       font-size: 12px; } }
+
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0; }
+  .site-header .header-logo {
+    background-image: url("../../assets/images/twsb_logo-large.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px; }
+  .site-header .site-title {
+    overflow: visible;
+    height: 200px;
+    width: 200px; }

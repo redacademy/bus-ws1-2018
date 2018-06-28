@@ -138,6 +138,10 @@
 
     .followuson-links {
         display: block;
+
+        p{
+          text-transform: capitalize;  
+        }
     }
 
     .followuson-links-mob {
@@ -179,6 +183,15 @@
         }
     }
 
+    .subscription-container form, .subscription-container input {
+        width: 50%;
+    }
+
+    #contactus {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     .contact-info {
         height: 100px;
         width: 100%;
@@ -195,17 +208,18 @@
     }
 
     .contact {
-        align-items: flex-start;
+        align-items: flex-end;
         p{
-            margin-right: 50px;    
+            margin-right: 60px;    
         }
     }
 
     .registration { 
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-top: 0px;
 
         p{
-            margin-right: 100px;
+            margin-right: 80px;
             font-size: 12px;    
         }
     }
