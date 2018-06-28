@@ -1007,6 +1007,11 @@ object {
     padding-top: 7px;
     border-width: 0.5px; }
 
+#contactus {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: none; }
+
 .contact-info p {
   margin: 0px; }
 
@@ -1065,10 +1070,10 @@ object {
     .footer-links .fab {
       border-style: solid;
       border-radius: 60px;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       font-size: 24px;
-      padding-top: 20px;
+      padding-top: 15px;
       border-width: 1px; }
     .footer-links p {
       text-align: center; }
