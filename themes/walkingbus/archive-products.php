@@ -52,26 +52,25 @@ Template Name: products
             <?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 
+      
 
         <div class = "single-product">
 
             <div class = "product-image"> 
-            <?php  $images = CFS()->get('products');
-				   foreach ($images as $image) {
-    echo '<img src="'.$image["image"].'"/>';
-  }?>
 
-                <!-- <a href="<?php// the_permalink(); ?>"   -->
-                <?php// get_template_part( 'template-parts/content', 'products' ); ?>
+                <?php  $images = CFS()->get('products');
+				   foreach ($images as $image) {
+                    echo '<img src="'.$image["image"].'"/>';
+                }?>
 
             </div> <!-- .product-image -->
 
-
             <div class = "product-info">
 
-         
+                <p> <?php the_title();?> </p>
+                <p> <?php echo CFS()->get( 'price' ); ?>  </p>
 
-            </div> <!-- .product-info --> 
+            </div> <!-- .product-info-->
 
 
         </div> <!-- .single-product -->
