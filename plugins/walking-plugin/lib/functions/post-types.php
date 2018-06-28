@@ -77,7 +77,7 @@ function Products() {
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
 		'all_items'             => __( 'All Products', 'text_domain' ),
 		'add_new_item'          => __( 'Add New Products', 'text_domain' ),
-		'add_new'               => __( 'Add Expedition', 'text_domain' ),
+		'add_new'               => __( 'Add Product', 'text_domain' ),
 		'new_item'              => __( 'New Products', 'text_domain' ),
 		'edit_item'             => __( 'Edit Products', 'text_domain' ),
 		'update_item'           => __( 'Update Products', 'text_domain' ),
