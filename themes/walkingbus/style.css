@@ -798,7 +798,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #474747;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
@@ -841,7 +841,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: white; }
 
 input[type="text"],
 input[type="email"],
@@ -863,7 +863,7 @@ a {
   a:visited {
     color: white; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: lightgrey; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1125,6 +1125,14 @@ object {
   border-bottom: 1px solid #474747;
   -webkit-box-shadow: 0 1px grey;
           box-shadow: 0 1px grey; }
+  .site-header .site-branding {
+    display: none; }
+  @media (min-width: 1080px) {
+    .site-header {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; } }
   .site-header .header-logo {
     background-image: url("../../assets/images/twsb_logo-large.png");
     background-size: contain;
@@ -1135,6 +1143,9 @@ object {
         flex-basis: 14%;
     -ms-flex-item-align: center;
         align-self: center; }
+    @media (min-width: 1080px) {
+      .site-header .header-logo {
+        margin-left: 5%; } }
   .site-header .site-name {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -1160,43 +1171,52 @@ object {
       @media (min-width: 768px) {
         .site-header .main-navigation .menu-toggle {
           display: inherit; } }
+      @media (min-width: 1080px) {
+        .site-header .main-navigation .menu-toggle {
+          display: none; } }
     .site-header .main-navigation .search-form {
       position: absolute;
-      left: 50%;
       top: 110%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      left: 70%; }
       .site-header .main-navigation .search-form fieldset {
+        position: relative;
         border: none;
         padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        width: 60%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-      .site-header .main-navigation .search-form .search-field {
-        font-size: 1rem;
-        border: none;
-        padding: 0; }
-        .site-header .main-navigation .search-form .search-field input {
+        .site-header .main-navigation .search-form fieldset label {
           color: white; }
-      .site-header .main-navigation .search-form .search-submit {
-        border: none;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        z-index: 2;
-        margin-top: -1px; }
-        .site-header .main-navigation .search-form .search-submit i {
-          color: #c7c7c7; }
+          .site-header .main-navigation .search-form fieldset label .search-field {
+            border: none;
+            background: #e0e0e0;
+            width: 100%;
+            border-radius: 15px; }
+        .site-header .main-navigation .search-form fieldset .search-submit {
+          border: none;
+          background: none;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          right: 0;
+          position: absolute;
+          width: 20%;
+          z-index: 2;
+          top: 0; }
+          .site-header .main-navigation .search-form fieldset .search-submit i {
+            color: #c7c7c7; }
+    .site-header .main-navigation .search-active {
+      left: 2.5%;
+      width: 90vw;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+    .site-header .main-navigation .menu-menu-1-container {
+      width: 100%; }
     .site-header .main-navigation .menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1206,12 +1226,27 @@ object {
       margin-left: 2.5%;
       margin-right: 2.5%;
       width: 95%;
-      top: 150%;
+      top: 160%;
       background: #03B8E2;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      @media (min-width: 1080px) {
+        .site-header .main-navigation .menu {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          background: none;
+          width: 80%;
+          left: 8%;
+          top: 30%;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
       .site-header .main-navigation .menu li {
         border-top: 1px solid white;
         padding: 8px; }
@@ -1227,7 +1262,8 @@ object {
             color: black; } }
 
 .site-info {
-  color: white; }
+  color: white;
+  font-family: "Roboto Slab"; }
 
 .main-container-footer {
   height: auto;
@@ -1246,7 +1282,8 @@ object {
   display: none; }
 
 .featuredon-links p {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-weight: 700; }
 
 .subscription-container {
   display: -webkit-box;
@@ -1256,7 +1293,8 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: -webkit-center; }
+  text-align: -webkit-center;
+  font-weight: 700; }
   .subscription-container form, .subscription-container input {
     background-color: #474747;
     width: 400px;
@@ -1287,7 +1325,8 @@ object {
   .subscription-container p {
     margin-top: 20px;
     margin-bottom: 12px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-weight: 700; }
   .subscription-container span {
     text-transform: none; }
 
@@ -1296,7 +1335,8 @@ object {
   height: auto; }
 
 .subscription-container form, .subscription-container input {
-  width: 90%; }
+  width: 85%;
+  font-family: "Roboto Slab"; }
 
 .followuson-links-mob {
   display: block;
@@ -1307,7 +1347,8 @@ object {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-weight: 300; }
   .followuson-links-mob li {
     display: inline;
     margin-right: 5px; }
@@ -1326,13 +1367,43 @@ object {
   text-transform: none; }
 
 .contact-info p {
-  margin: 0px; }
+  margin: 0px;
+  font-weight: 300;
+  font-size: 14px; }
 
 .registration {
-  margin: 15px; }
+  margin: 15px;
+  font-weight: 300; }
+
+.bkg-featuredon {
+  background-image: url(../../assets/images/featured-logo.svg);
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 300px;
+  background-position: unset;
+  background-size: cover; }
+
+.featuredon-links span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: initial; }
+
+.featuredon-links p {
+  margin-bottom: 5px; }
 
 /***********************MEDIA QUERY MIN 600PX*********************************/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1351,9 +1422,21 @@ object {
   .featuredon-links, .followuson-links {
     width: 50%; }
   .followuson-links {
-    display: block; }
+    width: 50%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .followuson-links p {
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      margin-bottom: 33px; }
   .followuson-links-mob {
     display: none; }
   .footer-links {
@@ -1383,15 +1466,18 @@ object {
     .footer-links .fab {
       border-style: solid;
       border-radius: 60px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       font-size: 24px;
-      padding-top: 15px;
+      padding-top: 10px;
       border-width: 1px; }
     .footer-links p {
       text-align: center; }
   .subscription-container form, .subscription-container input {
-    width: 70%; }
+    width: 70%;
+    color: white;
+    font-weight: 300;
+    padding-left: 25px; }
   .subscription-container {
     margin-top: 30px; }
     .subscription-container button {
@@ -1410,6 +1496,8 @@ object {
       font-weight: 700;
       text-shadow: none;
       font-size: 14px; }
+    .subscription-container input {
+      font-size: 20px; }
   #contactus {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1441,7 +1529,7 @@ object {
         -ms-flex-align: initial;
             align-items: initial; }
     .contact p {
-      margin-right: 60px; }
+      margin-right: 50px; }
   .registration {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1449,8 +1537,11 @@ object {
     margin-top: 0px;
     margin-bottom: 0px; }
     .registration p {
-      margin-right: 80px;
-      font-size: 12px; } }
+      margin-right: 70px;
+      font-size: 12px; }
+  .bkg-featuredon {
+    height: 100px;
+    width: 450px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
