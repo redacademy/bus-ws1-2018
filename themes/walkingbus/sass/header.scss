@@ -11,6 +11,7 @@
     padding-bottom: 2%;
     border-bottom: 1px solid $grey;
     box-shadow: 0 1px grey;
+    z-index: 10;
 
     .site-branding {
         display: none;
@@ -37,7 +38,7 @@
     }
 
     .site-name {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         flex-basis: 60%;
         text-align: center;

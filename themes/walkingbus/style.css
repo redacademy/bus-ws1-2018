@@ -1410,7 +1410,8 @@ object {
   padding-bottom: 2%;
   border-bottom: 1px solid #474747;
   -webkit-box-shadow: 0 1px grey;
-          box-shadow: 0 1px grey; }
+          box-shadow: 0 1px grey;
+  z-index: 10; }
   .site-header .site-branding {
     display: none; }
   @media (min-width: 1080px) {
@@ -1433,7 +1434,7 @@ object {
       .site-header .header-logo {
         margin-left: 5%; } }
   .site-header .site-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
@@ -1546,3 +1547,154 @@ object {
         @media (min-width: 1080px) {
           .site-header .main-navigation .menu a {
             color: black; } }
+
+.page-template-page-whatwedo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-page-whatwedo .site-name {
+    font-size: 1rem; }
+  .page-template-page-whatwedo h1 {
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center; }
+  .page-template-page-whatwedo .access h1 {
+    margin-top: 5%; }
+  .page-template-page-whatwedo .access p {
+    color: gray;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .page-template-page-whatwedo .access p:nth-of-type(2) {
+      margin-bottom: -20px; }
+  .page-template-page-whatwedo .access-how {
+    width: 100%;
+    background: #04809E; }
+    .page-template-page-whatwedo .access-how h1 {
+      color: white; }
+    .page-template-page-whatwedo .access-how ul {
+      width: 80%;
+      margin: 0; }
+      .page-template-page-whatwedo .access-how ul li {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 5%;
+        color: white; }
+  .page-template-page-whatwedo .access-bttn {
+    margin-top: 5%; }
+    .page-template-page-whatwedo .access-bttn .access-btn {
+      color: black;
+      background: #F6E24F;
+      border-radius: 20px;
+      padding: 8px 25px;
+      font-family: "Oswald";
+      text-decoration: none;
+      margin-top: 50%;
+      -webkit-box-shadow: 0px 2px silver;
+              box-shadow: 0px 2px silver;
+      font-weight: bold;
+      text-transform: capitalize; }
+  .page-template-page-whatwedo .nutrition h1 {
+    margin-top: 10%; }
+  .page-template-page-whatwedo .nutrition .p {
+    color: gray;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    text-align: center; }
+    .page-template-page-whatwedo .nutrition .p:first-of-type {
+      text-transform: initial; }
+    .page-template-page-whatwedo .nutrition .p:nth-of-type(2), .page-template-page-whatwedo .nutrition .p:nth-of-type(3) {
+      margin-bottom: -20px; }
+  .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+    width: 95%;
+    margin-top: -3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    -webkit-box-shadow: 0px 2px #cdcdcd;
+            box-shadow: 0px 2px #cdcdcd; }
+    .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+      font-size: 1rem;
+      text-align: left;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      color: gray; }
+    .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+      margin-bottom: 5%; }
+  .page-template-page-whatwedo .nutrition .nutrition-pillar {
+    position: relative;
+    height: 11vh;
+    width: 95%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: 50% 50%; }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+      color: white;
+      position: absolute;
+      bottom: 3%;
+      z-index: 1;
+      right: 3%;
+      font-size: 1.1rem; }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+      margin-top: 0;
+      padding: 0;
+      position: absolute;
+      bottom: -21%;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.5); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:first-of-type {
+      background-image: url("../../assets/images/Nutrition1.jpg"); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
+      background-image: url("../../assets/images/Nutrition2.jpg"); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
+      background-image: url("../../assets/images/Nutrition3.jpg"); }
+  .page-template-page-whatwedo .curriculum p {
+    text-align: center;
+    color: gray;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-template-page-whatwedo .curriculum p span {
+      font-weight: bold; }
+  .page-template-page-whatwedo .curriculum .curriculum-pillar:first-of-type {
+    background: red; }
+  .page-template-page-whatwedo .curriculum-how {
+    width: 100%;
+    background: #04809E; }
+    .page-template-page-whatwedo .curriculum-how h1 {
+      color: white; }
+    .page-template-page-whatwedo .curriculum-how ul {
+      width: 80%;
+      margin: 0; }
+      .page-template-page-whatwedo .curriculum-how ul li {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 5%;
+        color: white; }

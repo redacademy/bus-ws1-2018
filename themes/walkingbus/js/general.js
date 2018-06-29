@@ -4,6 +4,7 @@ var $j = jQuery.noConflict();
 
 $j('.menu').hide();
 $j('.search-form').hide();
+$j('.nutrition-desc-container').hide();
 
 $j('.search-form').click(function(){
     $j('.search-form').toggleClass('search-active');
@@ -11,10 +12,20 @@ $j('.search-form').click(function(){
 
 $j('.menu-toggle').click(function(){
     $j('.menu').toggle('slow');
-    $j('.search-form').toggle('slow');
+    $j('.search-form').slideToggle('slow');
 });
 
+$j('.angle1').click(function() {
+    $j('.container1').slideToggle('slow');
+});
 
+$j('.angle2').click(function() {
+    $j('.container2').slideToggle('slow');
+});
+
+$j('.angle3').click(function() {
+    $j('.container3').slideToggle('slow');
+});
 
 
 // DESKTOP FUNCTIONS
