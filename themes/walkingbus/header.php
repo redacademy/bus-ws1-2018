@@ -28,6 +28,7 @@
 				<div class="header-logo"></div>
 				<h1 class="site-name"><?php bloginfo( 'name' ); ?></h1>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php include 'searchform.php'; ?>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                 </nav><!-- #site-navigation -->

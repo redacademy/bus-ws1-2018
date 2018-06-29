@@ -5,16 +5,18 @@
     background: white;
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 10%;
     padding-top: 2%;
     top: 0;
     padding-bottom: 2%;
     border-bottom: 1px solid $grey;
     box-shadow: 0 1px grey;
 
+
     .header-logo {
         background-image: url('../../assets/images/twsb_logo-large.png');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 40px;
         height: 40px;
         flex-basis: 14%;
@@ -22,27 +24,102 @@
     }
 
     .site-name {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         flex-basis: 60%;
         text-align: center;
         align-self: center;
+        font-family: $Oswald;
+        letter-spacing: 1.5px;
+
+        @include desktop {
+            display: none;
+        }
     }
 
     .main-navigation {
-        
        flex-basis: 14%;
-
-        .menu-menu-1-container {
-            display: none;
-        }
-        
 
         .menu-toggle {
             background: none;
             border: none;
             box-shadow: none;
             font-size: 1.2rem;
+
+            @include tablet {
+                display: inherit;
+            }
+        }
+
+        .search-form {
+            position: absolute;
+            left: 50%;
+            top: 110%;
+            display: flex;
+            align-items: center;
+
+
+            fieldset {
+                border: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .search-field {
+                font-size: 1rem;
+                border: none;
+                padding: 0;
+                input {
+                    color: white;
+                }
+            }
+
+            .search-submit {
+                border: none;
+                background: none;
+                box-shadow: none;
+                z-index: 2;
+                margin-top: -1px;
+
+                i {
+                    color: lighten($grey, 50%);
+                }
+            }
+        }
+
+
+        .menu {
+            display: flex;
+            position: absolute;
+            left: 0;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            width: 95%;
+            top: 150%;
+            background: $blue;
+            flex-direction: column;
+
+            li {
+                border-top: 1px solid white;
+                padding: 8px;
+
+                &:first-of-type {
+                    border-top: none;
+                }
+            }
+
+            a {
+                color: white;
+                font-family: $Oswald;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+
+                @include desktop {
+                    color: black;
+                }
+            }
         }
     }
 }
