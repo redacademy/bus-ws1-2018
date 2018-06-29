@@ -1178,6 +1178,9 @@ object {
   .subscription-container span {
     text-transform: none; }
 
+#subscription-form {
+  display: contents; }
+
 .subscription-container {
   width: 100%;
   height: auto; }
@@ -1185,6 +1188,9 @@ object {
 .subscription-container form, .subscription-container input {
   width: 85%;
   font-family: "Roboto Slab"; }
+
+#email-input {
+  background-color: #474747; }
 
 .followuson-links-mob {
   display: block;
@@ -1251,7 +1257,7 @@ object {
   margin-bottom: 5px; }
 
 /***********************MEDIA QUERY MIN 600PX*********************************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1377,7 +1383,8 @@ object {
         -ms-flex-align: initial;
             align-items: initial; }
     .contact p {
-      margin-right: 50px; }
+      margin-right: 50px;
+      font-size: 16px; }
   .registration {
     -webkit-box-align: start;
         -ms-flex-align: start;

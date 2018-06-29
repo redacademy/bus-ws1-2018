@@ -27,11 +27,12 @@
 						</ul>
 						</div>
 					</div>
-					<section class="subscription-container">
+					<div class="subscription-container">
 						<p>subscribe <span>to our </span>newsletter</p>
-						<form action="submit.php" method="post" class="subscription-form">
-						<input type="email" id="email-input" name="username" size="12" font-family="Raleway" maxlength="36" placeholder="Email Adress"></input></form>
+						<form action="submit.php" method="post" class="subscription-form" id="subscription-form">
+						<input id="email-input" name="username" maxlength="36" placeholder="Email Adress"></input>
 						<button type="submit">Sign Up</button>
+						</form>
 						<div class="followuson-links-mob">
 						<ul>
 							<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -43,7 +44,7 @@
 						</ul>
 						</div>
 						<p id="contactus">contact us</p>
-					</section>
+					</div>
 						<div class="contact-info">
 						<div class="contact"><p>700 West 16th Avenue, Vancouver, BC, V5Z 1S7</p>
 						<p>E: info@thewalkingschoolbus.com</p>
