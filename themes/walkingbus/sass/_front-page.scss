@@ -1,0 +1,64 @@
+.home {
+    .page-content {
+        
+        @include center-block();
+
+        text-align: center;
+        font-size: 1rem;
+        
+        h2, h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        & > section {
+            padding: 2em 2em;
+        }
+
+        .home-description {
+            
+            h2 {
+                color: gray;
+                font-size: 1em;
+            }
+        }
+
+        .home-about {
+            // padding: 1em 1.5em;
+            background-color: rgba(246,226,79,1);
+
+            h2 {
+
+                text-transform: uppercase;
+            }
+
+            h3 {
+                text-transform: lowercase;
+                color: whitesmoke;
+            }
+
+            footer {
+                margin: 1em;
+            }
+        }
+
+        .home-video {
+            padding: 0;
+        }
+
+        .learn-more-button {
+            cursor:pointer;
+            display:inline-block;
+
+            padding: 5px 25px;
+            color: rgba(0,183,226,1);
+
+            text-decoration:none;
+            font-weight: bold;
+
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+            background-color:rgba(255,255,255,1);
+            border-radius:20px;
+        }
+    }
+}
