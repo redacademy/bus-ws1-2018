@@ -1274,7 +1274,7 @@ object {
     .footer-links p {
       text-align: center; }
   .subscription-container form, .subscription-container input {
-    width: 50%; }
+    width: 70%; }
   .subscription-container {
     margin-top: 30px; }
     .subscription-container button {
@@ -1311,7 +1311,7 @@ object {
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .contact, .registration {
-    width: 100%;
+    width: 900px;
     height: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1355,6 +1355,14 @@ object {
   border-bottom: 1px solid #474747;
   -webkit-box-shadow: 0 1px grey;
           box-shadow: 0 1px grey; }
+  .site-header .site-branding {
+    display: none; }
+  @media (min-width: 1080px) {
+    .site-header {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; } }
   .site-header .header-logo {
     background-image: url("../../assets/images/twsb_logo-large.png");
     background-size: contain;
@@ -1365,6 +1373,9 @@ object {
         flex-basis: 14%;
     -ms-flex-item-align: center;
         align-self: center; }
+    @media (min-width: 1080px) {
+      .site-header .header-logo {
+        margin-left: 5%; } }
   .site-header .site-name {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -1390,43 +1401,52 @@ object {
       @media (min-width: 768px) {
         .site-header .main-navigation .menu-toggle {
           display: inherit; } }
+      @media (min-width: 1080px) {
+        .site-header .main-navigation .menu-toggle {
+          display: none; } }
     .site-header .main-navigation .search-form {
       position: absolute;
-      left: 50%;
       top: 110%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      left: 70%; }
       .site-header .main-navigation .search-form fieldset {
+        position: relative;
         border: none;
         padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        width: 60%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-      .site-header .main-navigation .search-form .search-field {
-        font-size: 1rem;
-        border: none;
-        padding: 0; }
-        .site-header .main-navigation .search-form .search-field input {
+        .site-header .main-navigation .search-form fieldset label {
           color: white; }
-      .site-header .main-navigation .search-form .search-submit {
-        border: none;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        z-index: 2;
-        margin-top: -1px; }
-        .site-header .main-navigation .search-form .search-submit i {
-          color: #c7c7c7; }
+          .site-header .main-navigation .search-form fieldset label .search-field {
+            border: none;
+            background: #e0e0e0;
+            width: 100%;
+            border-radius: 15px; }
+        .site-header .main-navigation .search-form fieldset .search-submit {
+          border: none;
+          background: none;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          right: 0;
+          position: absolute;
+          width: 20%;
+          z-index: 2;
+          top: 0; }
+          .site-header .main-navigation .search-form fieldset .search-submit i {
+            color: #c7c7c7; }
+    .site-header .main-navigation .search-active {
+      left: 2.5%;
+      width: 90vw;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+    .site-header .main-navigation .menu-menu-1-container {
+      width: 100%; }
     .site-header .main-navigation .menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1436,12 +1456,27 @@ object {
       margin-left: 2.5%;
       margin-right: 2.5%;
       width: 95%;
-      top: 150%;
+      top: 160%;
       background: #03B8E2;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      @media (min-width: 1080px) {
+        .site-header .main-navigation .menu {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          background: none;
+          width: 80%;
+          left: 8%;
+          top: 30%;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
       .site-header .main-navigation .menu li {
         border-top: 1px solid white;
         padding: 8px; }

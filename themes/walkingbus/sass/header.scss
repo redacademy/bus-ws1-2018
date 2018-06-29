@@ -12,6 +12,15 @@
     border-bottom: 1px solid $grey;
     box-shadow: 0 1px grey;
 
+    .site-branding {
+        display: none;
+    }
+
+    @include desktop {
+        justify-content: space-between;
+        width: 100%;
+    }
+
 
     .header-logo {
         background-image: url('../../assets/images/twsb_logo-large.png');
@@ -21,6 +30,10 @@
         height: 40px;
         flex-basis: 14%;
         align-self: center;
+
+        @include desktop {
+            margin-left: 5%;
+        }
     }
 
     .site-name {
@@ -49,47 +62,64 @@
             @include tablet {
                 display: inherit;
             }
+
+            @include desktop {
+                display: none;
+            }
         }
 
         .search-form {
             position: absolute;
-            left: 50%;
             top: 110%;
-            display: flex;
-            align-items: center;
+            left: 70%;
 
 
             fieldset {
+                position: relative;
                 border: none;
                 padding: 0;
                 display: flex;
-                justify-content: space-between;
+                width: 60%;
+                justify-content: space-around;
                 align-items: center;
-            }
 
-            .search-field {
-                font-size: 1rem;
-                border: none;
-                padding: 0;
-                input {
+                label {
                     color: white;
+                    .search-field {
+                        border: none;
+                        background: lighten($grey, 60%);
+                        width: 100%;
+                        border-radius: 15px;
+                        
+                    }
                 }
-            }
-
-            .search-submit {
-                border: none;
-                background: none;
-                box-shadow: none;
-                z-index: 2;
-                margin-top: -1px;
-
-                i {
-                    color: lighten($grey, 50%);
+    
+                .search-submit {
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    right: 0;
+                    position: absolute;
+                    width: 20%;
+                    z-index: 2;
+                    top: 0;
+    
+                    i {
+                        color: lighten($grey, 50%);
+                    }
                 }
-            }
+            } 
         }
 
+        .search-active {
+            left: 2.5%;
+            width: 90vw;
+            transition-duration: 1s;
+        }
 
+        .menu-menu-1-container {
+            width: 100%;
+        }
         .menu {
             display: flex;
             position: absolute;
@@ -97,9 +127,19 @@
             margin-left: 2.5%;
             margin-right: 2.5%;
             width: 95%;
-            top: 150%;
+            top: 160%;
             background: $blue;
             flex-direction: column;
+
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                background: none;
+                width: 80%;
+                left: 8%;
+                top: 30%;
+                justify-content: space-around;
+            }
 
             li {
                 border-top: 1px solid white;

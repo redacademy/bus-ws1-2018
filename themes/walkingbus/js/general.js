@@ -1,12 +1,24 @@
 var $j = jQuery.noConflict();
 
+// NEW VARIABLE FOR JQUERY
+
 $j('.menu').hide();
 $j('.search-form').hide();
 
-$j('.menu-toggle').click(function(){
+$j('.search-form').click(function(){
+    $j('.search-form').toggleClass('search-active');
+});
 
+$j('.menu-toggle').click(function(){
     $j('.menu').toggle('slow');
     $j('.search-form').toggle('slow');
 });
 
-console.log("jquery working");
+
+
+
+// DESKTOP FUNCTIONS
+
+if($j('.site-name').css('display') === 'none') {
+    $j('.menu').show();
+}
