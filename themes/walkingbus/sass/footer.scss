@@ -1,5 +1,8 @@
+@import 'variables';
+
 .site-info{
-    color: white;   
+    color: white;
+    font-family: $Roboto;   
 }
 
 .main-container-footer{
@@ -17,12 +20,14 @@
 
 .featuredon-links p {
     text-transform: capitalize;
+    font-weight: 700;
 }
 
 .subscription-container {
     display: flex;
     flex-direction: column;
     text-align: -webkit-center;
+    font-weight: 700;
 
     form, input {
         background-color: #474747;
@@ -60,6 +65,7 @@
         margin-top: 20px;
         margin-bottom: 12px;
         text-transform: capitalize;
+        font-weight: 700;
     }
 
     span {
@@ -73,7 +79,8 @@
 }
 
 .subscription-container form, .subscription-container input {
-    width: 90%;
+    width: 85%;
+    font-family: $Roboto;
 }
 
 .followuson-links-mob {
@@ -87,6 +94,7 @@
         margin: 0px;
         padding: 0px;
         margin-top: 20px;
+        font-weight: 300;
     }
     
     li{
@@ -113,18 +121,44 @@
 
 .contact-info p {
     margin: 0px;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .registration {
     margin: 15px;
+    font-weight: 300;
+}
+
+
+.bkg-featuredon {
+    background-image: url(../../assets/images/featured-logo.svg);
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 300px;
+    background-position: unset;
+    background-size: cover;
+}
+
+.featuredon-links {
+    
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-items: initial;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
 }
 
 /***********************MEDIA QUERY MIN 600PX*********************************/
 
 
-
-
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
     .site-info{
         display: flex;
@@ -144,10 +178,15 @@
     }
 
     .followuson-links {
-        display: block;
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         p{
-          text-transform: capitalize;  
+          text-transform: capitalize;
+          margin-bottom: 33px;
         }
     }
 
@@ -178,10 +217,10 @@
         .fab {
             border-style: solid;
             border-radius: 60px;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             font-size: 24px;
-            padding-top: 15px;
+            padding-top: 10px;
             border-width: 1px;
         }
 
@@ -192,6 +231,9 @@
 
     .subscription-container form, .subscription-container input {
         width: 70%;
+        color: white;
+        font-weight: 300;
+        padding-left: 25px;
     }
 
     .subscription-container {
@@ -212,6 +254,10 @@
             font-weight: 700;
             text-shadow: none;
             font-size: 14px;
+        }
+
+        input {
+         font-size:20px;  
         }
     }
 
@@ -239,7 +285,7 @@
     .contact {
         align-items: initial;
         p{
-            margin-right: 60px;    
+            margin-right: 50px;    
         }
     }
 
@@ -249,8 +295,14 @@
         margin-bottom: 0px;
 
         p{
-            margin-right: 80px;
+            margin-right: 70px;
             font-size: 12px;    
         }
     }
+
+    .bkg-featuredon {
+        height: 100px;
+        width: 450px;
+    }
+    
 }
