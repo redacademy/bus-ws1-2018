@@ -62,7 +62,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 @import "content";
 @import "media";
-@import "page-templates";
-@import	"footer";
+
+
+// Theme SCSS
 @import "header";
 @import 'what-we-do';
+@import	"footer";
+@import "page-templates";
+@import "front-page";
+@import "shop";
+@import "donate";

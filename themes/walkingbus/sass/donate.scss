@@ -1,0 +1,46 @@
+.site-main-donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.image-page-donate{
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    background-position-x: center;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.donation-image {
+    background-image: url(../../assets/images/whatwedo.jpg);
+    background-size: 415px 290px;
+    background-position-y: -48PX;
+}
+
+.sponsor-image {
+    background-image: url(../../assets/images/sponsor.jpg);
+    background-size: 500px 330px;
+    background-position-y: -90px;
+}
+
+button {
+    width: 75%;
+    border-radius: 50px;
+    height: 55px;
+    background-color: yellow;
+    position: relative;
+    bottom: -25px;
+    text-transform: uppercase;
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #474747;
+    box-shadow: 1px 2px #888888;
+}
