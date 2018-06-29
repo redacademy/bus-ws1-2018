@@ -29,8 +29,9 @@
 					</div>
 					<section class="subscription-container">
 						<p>subscribe <span>to our </span>newsletter</p>
-						<form><input placeholder="Email Adress"></input></form>
-						<button>Sign Up</button>
+						<form action="submit.php" method="post" class="subscription-form">
+						<input type="email" id="email-input" name="username" size="12" font-family="Raleway" maxlength="36" placeholder="Email Adress"></input></form>
+						<button type="submit">Sign Up</button>
 						<div class="followuson-links-mob">
 						<ul>
 							<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>

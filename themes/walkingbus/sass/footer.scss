@@ -20,12 +20,14 @@
 
 .featuredon-links p {
     text-transform: capitalize;
+    font-weight: 700;
 }
 
 .subscription-container {
     display: flex;
     flex-direction: column;
     text-align: -webkit-center;
+    font-weight: 700;
 
     form, input {
         background-color: #474747;
@@ -63,6 +65,7 @@
         margin-top: 20px;
         margin-bottom: 12px;
         text-transform: capitalize;
+        font-weight: 700;
     }
 
     span {
@@ -76,7 +79,8 @@
 }
 
 .subscription-container form, .subscription-container input {
-    width: 90%;
+    width: 85%;
+    font-family: $Roboto;
 }
 
 .followuson-links-mob {
@@ -90,6 +94,7 @@
         margin: 0px;
         padding: 0px;
         margin-top: 20px;
+        font-weight: 300;
     }
     
     li{
@@ -116,10 +121,13 @@
 
 .contact-info p {
     margin: 0px;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .registration {
     margin: 15px;
+    font-weight: 300;
 }
 
 
@@ -150,7 +158,7 @@
 /***********************MEDIA QUERY MIN 600PX*********************************/
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
     .site-info{
         display: flex;
@@ -223,6 +231,9 @@
 
     .subscription-container form, .subscription-container input {
         width: 70%;
+        color: white;
+        font-weight: 300;
+        padding-left: 25px;
     }
 
     .subscription-container {
@@ -243,6 +254,10 @@
             font-weight: 700;
             text-shadow: none;
             font-size: 14px;
+        }
+
+        input {
+         font-size:20px;  
         }
     }
 
@@ -270,7 +285,7 @@
     .contact {
         align-items: initial;
         p{
-            margin-right: 60px;    
+            margin-right: 50px;    
         }
     }
 
@@ -280,7 +295,7 @@
         margin-bottom: 0px;
 
         p{
-            margin-right: 80px;
+            margin-right: 70px;
             font-size: 12px;    
         }
     }
@@ -289,4 +304,5 @@
         height: 100px;
         width: 450px;
     }
+    
 }
