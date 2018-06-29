@@ -1018,6 +1018,33 @@ object {
 .registration {
   margin: 15px; }
 
+.bkg-featuredon {
+  background-image: url(../../assets/images/featured-logo.svg);
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 300px;
+  background-position: unset;
+  background-size: cover; }
+
+.featuredon-links span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: initial; }
+
+.featuredon-links p {
+  margin-bottom: 5px; }
+
 /***********************MEDIA QUERY MIN 600PX*********************************/
 @media screen and (min-width: 600px) {
   .site-info {
@@ -1038,9 +1065,21 @@ object {
   .featuredon-links, .followuson-links {
     width: 50%; }
   .followuson-links {
-    display: block; }
+    width: 50%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .followuson-links p {
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      margin-bottom: 33px; }
   .followuson-links-mob {
     display: none; }
   .footer-links {
@@ -1070,15 +1109,15 @@ object {
     .footer-links .fab {
       border-style: solid;
       border-radius: 60px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       font-size: 24px;
-      padding-top: 15px;
+      padding-top: 10px;
       border-width: 1px; }
     .footer-links p {
       text-align: center; }
   .subscription-container form, .subscription-container input {
-    width: 50%; }
+    width: 70%; }
   .subscription-container {
     margin-top: 30px; }
     .subscription-container button {
@@ -1115,7 +1154,7 @@ object {
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .contact, .registration {
-    width: 100%;
+    width: 900px;
     height: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1137,7 +1176,10 @@ object {
     margin-bottom: 0px; }
     .registration p {
       margin-right: 80px;
-      font-size: 12px; } }
+      font-size: 12px; }
+  .bkg-featuredon {
+    height: 100px;
+    width: 450px; } }
 
 .site-header {
   display: -webkit-box;
