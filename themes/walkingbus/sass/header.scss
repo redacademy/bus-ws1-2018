@@ -1,24 +1,165 @@
 .site-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: white;
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 10%;
+    padding-top: 2%;
     top: 0;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $grey;
+    box-shadow: 0 1px grey;
+
+    .site-branding {
+        display: none;
+    }
+
+    @include desktop {
+        justify-content: space-between;
+        width: 100%;
+    }
+
 
     .header-logo {
         background-image: url('../../assets/images/twsb_logo-large.png');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 40px;
         height: 40px;
+        flex-basis: 14%;
+        align-self: center;
+
+        @include desktop {
+            margin-left: 5%;
+        }
     }
 
-    .site-title {
-        overflow: visible;
-        height: 200px;
-        width: 200px;
+    .site-name {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        flex-basis: 60%;
+        text-align: center;
+        align-self: center;
+        font-family: $Oswald;
+        letter-spacing: 1.5px;
+
+        @include desktop {
+            display: none;
+        }
     }
 
+    .main-navigation {
+       flex-basis: 14%;
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            box-shadow: none;
+            font-size: 1.2rem;
+
+            @include tablet {
+                display: inherit;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        .search-form {
+            position: absolute;
+            top: 110%;
+            left: 70%;
+
+
+            fieldset {
+                position: relative;
+                border: none;
+                padding: 0;
+                display: flex;
+                width: 60%;
+                justify-content: space-around;
+                align-items: center;
+
+                label {
+                    color: white;
+                    .search-field {
+                        border: none;
+                        background: lighten($grey, 60%);
+                        width: 100%;
+                        border-radius: 15px;
+                        
+                    }
+                }
+    
+                .search-submit {
+                    border: none;
+                    background: none;
+                    box-shadow: none;
+                    right: 0;
+                    position: absolute;
+                    width: 20%;
+                    z-index: 2;
+                    top: 0;
+    
+                    i {
+                        color: lighten($grey, 50%);
+                    }
+                }
+            } 
+        }
+
+        .search-active {
+            left: 2.5%;
+            width: 90vw;
+            transition-duration: 1s;
+        }
+
+        .menu-menu-1-container {
+            width: 100%;
+        }
+        .menu {
+            display: flex;
+            position: absolute;
+            left: 0;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            width: 95%;
+            top: 160%;
+            background: $blue;
+            flex-direction: column;
+
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                background: none;
+                width: 80%;
+                left: 8%;
+                top: 30%;
+                justify-content: space-around;
+            }
+
+            li {
+                border-top: 1px solid white;
+                padding: 8px;
+
+                &:first-of-type {
+                    border-top: none;
+                }
+            }
+
+            a {
+                color: white;
+                font-family: $Oswald;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+
+                @include desktop {
+                    color: black;
+                }
+            }
+        }
+    }
 }
