@@ -105,6 +105,12 @@
     }
 }
 
+#contactus {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
 .contact-info p {
     margin: 0px;
 }
@@ -172,10 +178,10 @@
         .fab {
             border-style: solid;
             border-radius: 60px;
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             font-size: 24px;
-            padding-top: 20px;
+            padding-top: 15px;
             border-width: 1px;
         }
 
@@ -185,7 +191,7 @@
     }
 
     .subscription-container form, .subscription-container input {
-        width: 50%;
+        width: 70%;
     }
 
     .subscription-container {
@@ -224,7 +230,7 @@
     }
 
     .contact, .registration {
-        width: 100%;
+        width: 900px;
         height: 30px;
         display: flex;
         justify-content: center;
