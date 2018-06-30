@@ -1938,7 +1938,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 120px; }
 
 .image-page-donate {
@@ -1960,23 +1960,23 @@ object {
 
 .donation-image {
   background-image: url(../../assets/images/whatwedo.jpg);
-  background-size: 415px 290px;
-  background-position-y: -48PX; }
+  background-size: cover;
+  background-position: center; }
 
 .sponsor-image {
   background-image: url(../../assets/images/sponsor.jpg);
-  background-size: 500px 330px;
-  background-position-y: -90px; }
+  background-size: cover;
+  background-position: center; }
 
 .donate-btn {
-  width: 75%;
+  width: 65%;
   border-radius: 50px;
   height: 55px;
-  background-color: yellow;
+  background-color: #f6e24f;
   position: relative;
   bottom: -25px;
   text-transform: uppercase;
-  font-family: "Roboto Slab";
+  font-family: "Oswald";
   font-weight: 700;
   font-size: 1.2rem;
   color: #474747;
@@ -1991,13 +1991,13 @@ object {
     background-position-y: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1024px;
+    max-width: 80%;
     height: 400px; }
   .donation-image {
     background-image: url(../../assets/images/whatwedo.jpg);
     background-position: center; }
   .sponsor-image {
     background-image: url(../../assets/images/sponsor.jpg);
-    background-position: bottom; }
+    background-position: center; }
   .donate-btn {
     width: 35%; } }
