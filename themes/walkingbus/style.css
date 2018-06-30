@@ -1791,6 +1791,9 @@ object {
       margin: 1em; }
   .home .page-content .home-video {
     padding: 0; }
+    .home .page-content .home-video .video-container iframe {
+      width: 100vw;
+      height: 56.25vw; }
   .home .page-content .learn-more-button {
     cursor: pointer;
     display: inline-block;
