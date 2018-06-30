@@ -6,9 +6,18 @@
         text-align: center;
         font-size: 1rem;
         
+        
         h2, h3 {
             margin: 0;
             font-size: 1.3em;
+        }
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        h3 {
+            text-transform: lowercase;
         }
 
         & > section {
@@ -24,16 +33,9 @@
         }
 
         .home-about {
-            // padding: 1em 1.5em;
             background-color: rgba(246,226,79,1);
 
-            h2 {
-
-                text-transform: uppercase;
-            }
-
             h3 {
-                text-transform: lowercase;
                 color: whitesmoke;
             }
 
@@ -50,6 +52,42 @@
                     width: 100vw;
                     height: 56.25vw;
                 }
+            }
+        }
+
+        .home-infographic {
+            color: rgba(248,231,28,1);
+            background-color: rgba(4,128,158,1); 
+        
+            .infographic-contry {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        .home-goal {
+
+            h4 {
+                color: rgba(248,231,28,1);
+                margin: 0;
+                font-size: 6em;
+                font-weight: bold;
+                // text-shadow: -1px 1 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+                position: relative;
+                // font-size: 200px;
+                // font-family: Arial;
+                // font-weight: bold;
+                color: yellow;
+                -webkit-text-stroke: .02em white;
+                text-stroke: .02em white;
+                            
+              &:before {
+                content: attr(data-text);
+                position: absolute;
+                z-index: -1;
+                -webkit-text-stroke: .18em black;
+                text-stroke: .18em black;
+              }
             }
         }
 
