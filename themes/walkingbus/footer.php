@@ -44,13 +44,18 @@
 						<p id="contactus">contact us</p>
 					</div>
 					<div class="contact-info">
-					<div class="contact">
-						<p><?php echo CFS()->get( 'address' ); ?></p>
-						<p><?php echo CFS()->get( 'email' ); ?></p>
-						<p><?php echo CFS()->get( 'footer' ); ?></p>
-					</div>
-					<div class="registration"><p class="registration-footer">Charitable Registration # 81033 8723 RR0001</p>
-					<p class="registration-footer">2018 The Walking School Bus, All rights reserved</p></div>
+						<div class="contact">
+							<p id="footer-info">
+							<?php
+							if(is_active_sidebar('footer-info')){
+							dynamic_sidebar('footer-info');
+							}
+							?></p>
+						</div>
+						<div class="registration">
+							<p class="registration-footer">Charitable Registration # 81033 8723 RR0001</p>
+							<p class="registration-footer">2018 The Walking School Bus, All rights reserved</p>
+						</div>
 					</div>
 				</section>
 			</div><!-- .site-info -->

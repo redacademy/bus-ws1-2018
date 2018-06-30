@@ -579,22 +579,22 @@ template {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Bold.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Bold.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Regular.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Regular.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Medium.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Medium.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -1475,7 +1475,8 @@ object {
 
 .site-info {
   color: white;
-  font-family: "Roboto Slab"; }
+  font-family: "Montserrat";
+  letter-spacing: 0.5px; }
 
 .main-container-footer {
   height: auto;
@@ -1494,8 +1495,7 @@ object {
   display: none; }
 
 .featuredon-links p {
-  text-transform: capitalize;
-  font-weight: 700; }
+  text-transform: capitalize; }
 
 .subscription-container {
   display: -webkit-box;
@@ -1550,8 +1550,7 @@ object {
   height: auto; }
 
 .subscription-container form, .subscription-container input {
-  width: 85%;
-  font-family: "Roboto Slab"; }
+  width: 85%; }
 
 #email-input {
   background-color: #474747; }
@@ -1577,7 +1576,8 @@ object {
     height: 35px;
     font-size: 18px;
     padding-top: 7px;
-    border-width: 0.5px; }
+    border-width: 0.5px;
+    color: lightgray; }
 
 #contactus {
   margin-top: 10px;
@@ -1614,14 +1614,16 @@ object {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  justify-items: initial; }
+          flex-direction: column; }
 
 .featuredon-links p {
   margin-bottom: 5px; }
 
-/***********************MEDIA QUERY MIN 600PX*********************************/
-@media screen and (min-width: 960px) {
+.widget-title {
+  display: none; }
+
+/***********************MEDIA QUERY MIN 960PX*********************************/
+@media screen and (min-width: 1024px) {
   .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1635,8 +1637,9 @@ object {
     height: 550px;
     color: white; }
   .main-container-footer {
-    height: 500px;
-    width: 90%; }
+    height: 600px;
+    width: 85%;
+    margin-bottom: 40px; }
   .featuredon-links, .followuson-links {
     width: 50%; }
   .followuson-links {
@@ -1658,7 +1661,7 @@ object {
   .followuson-links-mob {
     display: none; }
   .footer-links {
-    height: 150px;
+    height: 180px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1666,56 +1669,69 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-weight: 700; }
     .footer-links ul {
       text-align: center;
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      margin: 0;
+      padding: 0;
+      height: 135px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      font-weight: 300; }
     .footer-links li {
       display: inline;
       margin-right: 10px; }
     .footer-links .fab {
       border-style: solid;
-      border-radius: 60px;
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      padding-top: 10px;
-      border-width: 1px; }
+      border-radius: 140px;
+      width: 55px;
+      height: 55px;
+      font-size: 27px;
+      padding-top: 12px;
+      border-width: 1px;
+      color: #d3d3d3; }
+      .footer-links .fab:hover {
+        color: white; }
     .footer-links p {
       text-align: center; }
+    .footer-links aside {
+      width: -webkit-fill-available; }
   .subscription-container form, .subscription-container input {
-    width: 70%;
+    width: 40%;
     color: white;
     font-weight: 300;
     padding-left: 25px; }
   .subscription-container {
-    margin-top: 30px; }
+    margin-top: 0px; }
     .subscription-container button {
       padding-top: 0;
       padding-bottom: 0;
-      width: 175px;
-      height: 100px;
+      width: 220px;
+      height: 60px;
       margin-top: 15px;
       margin-bottom: 0;
-      border-radius: 50px;
+      border-radius: 25px;
       background-color: #f6e24f;
       -webkit-box-shadow: none;
               box-shadow: none;
       color: #474747;
       border-color: #474747;
-      font-weight: 700;
+      font-weight: 500;
       text-shadow: none;
-      font-size: 14px; }
+      font-size: 1.5rem;
+      font-family: "Oswald"; }
     .subscription-container input {
-      font-size: 20px; }
+      font-size: 1.75rem;
+      font-weight: 300;
+      font-family: "Montserrat";
+      padding-bottom: 16px;
+      letter-spacing: 2px;
+      padding-left: 15px; }
   #contactus {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1730,37 +1746,40 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .contact, .registration {
-    width: 900px;
-    height: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .contact {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial; }
     .contact p {
-      margin-right: 50px;
-      font-size: 16px; }
+      font-size: 14px;
+      margin-right: 30px; }
   .registration {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 0px;
-    margin-bottom: 0px; }
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .registration p {
       margin-right: 70px;
-      font-size: 12px; }
+      font-size: 10px; }
   .bkg-featuredon {
-    height: 100px;
-    width: 450px; } }
+    height: 95px;
+    width: 100%;
+    background-position: initial; }
+  .widget .widget_text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fill-available; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1938,7 +1957,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 120px; }
 
 .image-page-donate {
@@ -1955,29 +1974,50 @@ object {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  background-repeat: no-repeat; }
 
 .donation-image {
   background-image: url(../../assets/images/whatwedo.jpg);
-  background-size: 415px 290px;
-  background-position-y: -48PX; }
+  background-size: cover;
+  background-position: center; }
 
 .sponsor-image {
   background-image: url(../../assets/images/sponsor.jpg);
-  background-size: 500px 330px;
-  background-position-y: -90px; }
+  background-size: cover;
+  background-position: center; }
 
 .donate-btn {
-  width: 75%;
+  width: 65%;
   border-radius: 50px;
   height: 55px;
-  background-color: yellow;
+  background-color: #f6e24f;
   position: relative;
   bottom: -25px;
   text-transform: uppercase;
-  font-family: "Roboto Slab";
+  font-family: "Oswald";
   font-weight: 700;
   font-size: 1.2rem;
   color: #474747;
   -webkit-box-shadow: 1px 2px #888888;
           box-shadow: 1px 2px #888888; }
+
+@media screen and (min-width: 768px) {
+  .site-main-donate {
+    margin-top: 100px;
+    margin-bottom: 120px; }
+  .image-page-donate {
+    background-size: 2014px 485px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 80%;
+    height: 400px; }
+  .donation-image {
+    background-image: url(../../assets/images/whatwedo.jpg);
+    background-position: center; }
+  .sponsor-image {
+    background-image: url(../../assets/images/sponsor.jpg);
+    background-position: center; }
+  .donate-btn {
+    width: 35%; } }
