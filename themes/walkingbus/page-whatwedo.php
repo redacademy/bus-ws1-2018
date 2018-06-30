@@ -74,7 +74,7 @@ get_header(); ?>
 
             <section class="curriculum">
                 <h1>Curriculum</h1>
-                <p>We incorporate the curriculum using the <span>SiMBi</span> app, an online reading resource.</p>
+                <p class=".p">We incorporate the curriculum using the <span>SiMBi</span> app, an online reading resource.</p>
             <section class="curriculum-how">
                 <h1>How it works</h1>
                 <ul>
@@ -103,7 +103,7 @@ get_header(); ?>
                 <i class="fas fa-angle-down angle5"></i>
             </div>  
             <div class="nutrition-desc-container container5">
-                <p class="nutrition-description">
+                <p class="curriculum-description">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Corrupti voluptates quod amet tempora sequi quaerat, aspernatur vel 
                     beatae fugiat id provident ipsam pariatur quisquam recusandae at voluptas minima ex modi!

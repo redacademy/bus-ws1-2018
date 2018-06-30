@@ -11,20 +11,28 @@ $j('.search-form').click(function(){
 });
 
 $j('.menu-toggle').click(function(){
-    $j('.menu').toggle('slow');
-    $j('.search-form').slideToggle('slow');
+    $j('.menu').toggle('fast');
+    $j('.search-form').slideToggle('fast');
 });
 
 $j('.angle1').click(function() {
-    $j('.container1').slideToggle('slow');
+    $j('.container1').slideToggle('fast');
 });
 
 $j('.angle2').click(function() {
-    $j('.container2').slideToggle('slow');
+    $j('.container2').slideToggle('fast');
 });
 
 $j('.angle3').click(function() {
-    $j('.container3').slideToggle('slow');
+    $j('.container3').slideToggle('fast');
+});
+
+$j('.angle4').click(function() {
+    $j('.container4').slideToggle('fast');
+});
+
+$j('.angle5').click(function() {
+    $j('.container5').slideToggle('fast');
 });
 
 
@@ -32,7 +40,7 @@ $j('.angle3').click(function() {
 
 if($j('.site-name').css('display') === 'none') {
     $j('.menu').show();
-}
+} 
 
 // SUBSCRIPTION FUNCTION
 

@@ -1124,7 +1124,8 @@ object {
   padding-bottom: 2%;
   border-bottom: 1px solid #474747;
   -webkit-box-shadow: 0 1px grey;
-          box-shadow: 0 1px grey; }
+          box-shadow: 0 1px grey;
+  z-index: 10; }
   .site-header .site-branding {
     display: none; }
   @media (min-width: 1080px) {
@@ -1147,7 +1148,7 @@ object {
       .site-header .header-logo {
         margin-left: 5%; } }
   .site-header .site-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
@@ -1167,7 +1168,8 @@ object {
       border: none;
       -webkit-box-shadow: none;
               box-shadow: none;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      bottom: 0; }
       @media (min-width: 768px) {
         .site-header .main-navigation .menu-toggle {
           display: inherit; } }
@@ -1185,7 +1187,7 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 60%;
+        width: 70%;
         -ms-flex-pack: distribute;
             justify-content: space-around;
         -webkit-box-align: center;
@@ -1194,10 +1196,13 @@ object {
         .site-header .main-navigation .search-form fieldset label {
           color: white; }
           .site-header .main-navigation .search-form fieldset label .search-field {
-            border: none;
             background: #e0e0e0;
+            border-radius: 15px;
+            border: none;
             width: 100%;
-            border-radius: 15px; }
+            padding: 0;
+            padding-left: 3px;
+            font-size: .8rem; }
         .site-header .main-navigation .search-form fieldset .search-submit {
           border: none;
           background: none;
@@ -1207,9 +1212,9 @@ object {
           position: absolute;
           width: 20%;
           z-index: 2;
-          top: 0; }
+          top: -10%; }
           .site-header .main-navigation .search-form fieldset .search-submit i {
-            color: #c7c7c7; }
+            color: #adadad; }
     .site-header .main-navigation .search-active {
       left: 2.5%;
       width: 90vw;
@@ -1260,6 +1265,213 @@ object {
         @media (min-width: 1080px) {
           .site-header .main-navigation .menu a {
             color: black; } }
+
+.page-template-page-whatwedo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .page-template-page-whatwedo .site-name {
+    font-size: 1rem; }
+  .page-template-page-whatwedo h1 {
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center; }
+  .page-template-page-whatwedo .access h1 {
+    margin-top: 5%; }
+  .page-template-page-whatwedo .access p {
+    color: gray;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .page-template-page-whatwedo .access p:nth-of-type(2) {
+      margin-bottom: -20px; }
+  .page-template-page-whatwedo .access-how {
+    width: 100%;
+    background: #04809E; }
+    .page-template-page-whatwedo .access-how h1 {
+      color: white; }
+    .page-template-page-whatwedo .access-how ul {
+      width: 80%;
+      margin: 0; }
+      .page-template-page-whatwedo .access-how ul li {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 5%;
+        color: white; }
+  .page-template-page-whatwedo .access-bttn {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-template-page-whatwedo .access-bttn .access-btn {
+      color: black;
+      background: #F6E24F;
+      border-radius: 20px;
+      padding: 8px 25px;
+      font-family: "Oswald";
+      text-decoration: none;
+      margin-top: 50%;
+      -webkit-box-shadow: 0px 2px silver;
+              box-shadow: 0px 2px silver;
+      font-weight: bold;
+      text-transform: capitalize; }
+  .page-template-page-whatwedo .nutrition h1 {
+    margin-top: 10%; }
+  .page-template-page-whatwedo .nutrition .p {
+    color: gray;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    text-align: center; }
+    .page-template-page-whatwedo .nutrition .p:first-of-type {
+      text-transform: initial; }
+    .page-template-page-whatwedo .nutrition .p:nth-of-type(2), .page-template-page-whatwedo .nutrition .p:nth-of-type(3) {
+      margin-bottom: -20px; }
+  .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+    width: 95%;
+    margin-top: -3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    -webkit-box-shadow: 0px 2px #cdcdcd;
+            box-shadow: 0px 2px #cdcdcd; }
+    .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+      font-size: 1rem;
+      text-align: left;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      color: gray; }
+    .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+      margin-bottom: 5%; }
+  .page-template-page-whatwedo .nutrition .nutrition-pillar {
+    position: relative;
+    height: 11vh;
+    width: 95%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: 50% 50%; }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+      color: white;
+      position: absolute;
+      bottom: 3%;
+      z-index: 1;
+      right: 3%;
+      font-size: 1.1rem; }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+      margin-top: 0;
+      padding: 0;
+      position: absolute;
+      bottom: -21%;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.5); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:first-of-type {
+      background-image: url("../../assets/images/Nutrition1.jpg"); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
+      background-image: url("../../assets/images/Nutrition2.jpg"); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
+      background-image: url("../../assets/images/Nutrition3.jpg"); }
+  .page-template-page-whatwedo .curriculum .p {
+    text-align: center;
+    color: gray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%; }
+    .page-template-page-whatwedo .curriculum .p span {
+      font-weight: bold; }
+  .page-template-page-whatwedo .curriculum .nutrition-desc-container {
+    width: 95%;
+    margin-top: -3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    -webkit-box-shadow: 0px 2px #cdcdcd;
+            box-shadow: 0px 2px #cdcdcd; }
+    .page-template-page-whatwedo .curriculum .nutrition-desc-container .curriculum-description {
+      font-size: 1rem;
+      text-align: left;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      color: gray;
+      text-align: left; }
+    .page-template-page-whatwedo .curriculum .nutrition-desc-container .access-bttn {
+      margin-bottom: 5%; }
+  .page-template-page-whatwedo .curriculum .curriculum-pillar {
+    position: relative;
+    height: 11vh;
+    width: 95%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-template-page-whatwedo .curriculum .curriculum-pillar h1 {
+      margin-top: 0;
+      padding: 0;
+      position: absolute;
+      bottom: -21%;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.5); }
+    .page-template-page-whatwedo .curriculum .curriculum-pillar i {
+      color: white;
+      position: absolute;
+      bottom: 3%;
+      z-index: 1;
+      right: 3%;
+      font-size: 1.1rem; }
+    .page-template-page-whatwedo .curriculum .curriculum-pillar:first-of-type {
+      background: url("../../assets/images/Curriculum2.jpg");
+      background-size: cover;
+      background-position: 50% 50%; }
+    .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(3) {
+      background: url("../../assets/images/Curriculum3.png");
+      background-size: cover;
+      background-position: 50% 50%; }
+  .page-template-page-whatwedo .curriculum-how {
+    width: 100%;
+    background: #04809E; }
+    .page-template-page-whatwedo .curriculum-how h1 {
+      color: white; }
+    .page-template-page-whatwedo .curriculum-how ul {
+      width: 80%;
+      margin: 0; }
+      .page-template-page-whatwedo .curriculum-how ul li {
+        list-style-type: none;
+        text-align: left;
+        padding-bottom: 5%;
+        color: white; }
 
 .site-info {
   color: white;
@@ -1598,51 +1810,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: white;
-  position: fixed;
-  width: 100%;
-  height: 10%;
-  padding-top: 2%;
-  top: 0;
-  padding-bottom: 2%;
-  border-bottom: 1px solid #474747;
-  -webkit-box-shadow: 0 1px grey;
-          box-shadow: 0 1px grey;
-  z-index: 10; }
-  .site-header .site-branding {
-    display: none; }
-  @media (min-width: 1080px) {
-    .site-header {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 100%; } }
-  .site-header .header-logo {
-    background-image: url("../../assets/images/twsb_logo-large.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    -ms-flex-preferred-size: 14%;
-        flex-basis: 14%;
-    -ms-flex-item-align: center;
-        align-self: center; }
-    @media (min-width: 1080px) {
-      .site-header .header-logo {
-        margin-left: 5%; } }
-  .site-header .site-name {
-    font-size: 1rem;
-    text-transform: uppercase;
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -1682,7 +1849,6 @@ object {
           flex-direction: column; }
   .page-template-archive-products .shop-page-header .banner h1 {
     position: absolute;
->>>>>>> f5be21320f270e06fe43e10b19ca1e8a961bc9cb
     text-align: center;
     bottom: 0px;
     background-color: rgba(76, 76, 76, 0.5);
@@ -1740,49 +1906,6 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-<<<<<<< HEAD
-      position: absolute;
-      left: 0;
-      margin-left: 2.5%;
-      margin-right: 2.5%;
-      width: 95%;
-      top: 160%;
-      background: #03B8E2;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      @media (min-width: 1080px) {
-        .site-header .main-navigation .menu {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          background: none;
-          width: 80%;
-          left: 8%;
-          top: 30%;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
-      .site-header .main-navigation .menu li {
-        border-top: 1px solid white;
-        padding: 8px; }
-        .site-header .main-navigation .menu li:first-of-type {
-          border-top: none; }
-      .site-header .main-navigation .menu a {
-        color: white;
-        font-family: "Oswald";
-        text-transform: uppercase;
-        font-size: 1.3rem; }
-        @media (min-width: 1080px) {
-          .site-header .main-navigation .menu a {
-            color: black; } }
-
-.page-template-page-whatwedo {
-=======
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       .page-template-archive-products .products-gallery-container .single-product .product-image img {
@@ -1802,7 +1925,6 @@ object {
       margin: 0px; }
 
 .site-main-donate {
->>>>>>> f5be21320f270e06fe43e10b19ca1e8a961bc9cb
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1815,145 +1937,6 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-<<<<<<< HEAD
-          align-items: center; }
-  .page-template-page-whatwedo .site-name {
-    font-size: 1rem; }
-  .page-template-page-whatwedo h1 {
-    text-transform: uppercase;
-    font-family: "Oswald";
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center; }
-  .page-template-page-whatwedo .access h1 {
-    margin-top: 5%; }
-  .page-template-page-whatwedo .access p {
-    color: gray;
-    font-size: 1.2rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; }
-    .page-template-page-whatwedo .access p:nth-of-type(2) {
-      margin-bottom: -20px; }
-  .page-template-page-whatwedo .access-how {
-    width: 100%;
-    background: #04809E; }
-    .page-template-page-whatwedo .access-how h1 {
-      color: white; }
-    .page-template-page-whatwedo .access-how ul {
-      width: 80%;
-      margin: 0; }
-      .page-template-page-whatwedo .access-how ul li {
-        list-style-type: none;
-        text-align: left;
-        padding-bottom: 5%;
-        color: white; }
-  .page-template-page-whatwedo .access-bttn {
-    margin-top: 5%; }
-    .page-template-page-whatwedo .access-bttn .access-btn {
-      color: black;
-      background: #F6E24F;
-      border-radius: 20px;
-      padding: 8px 25px;
-      font-family: "Oswald";
-      text-decoration: none;
-      margin-top: 50%;
-      -webkit-box-shadow: 0px 2px silver;
-              box-shadow: 0px 2px silver;
-      font-weight: bold;
-      text-transform: capitalize; }
-  .page-template-page-whatwedo .nutrition h1 {
-    margin-top: 10%; }
-  .page-template-page-whatwedo .nutrition .p {
-    color: gray;
-    font-size: 1.1rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: capitalize;
-    text-align: center; }
-    .page-template-page-whatwedo .nutrition .p:first-of-type {
-      text-transform: initial; }
-    .page-template-page-whatwedo .nutrition .p:nth-of-type(2), .page-template-page-whatwedo .nutrition .p:nth-of-type(3) {
-      margin-bottom: -20px; }
-  .page-template-page-whatwedo .nutrition .nutrition-desc-container {
-    width: 95%;
-    margin-top: -3%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
-    -webkit-box-shadow: 0px 2px #cdcdcd;
-            box-shadow: 0px 2px #cdcdcd; }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
-      font-size: 1rem;
-      text-align: left;
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
-      color: gray; }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
-      margin-bottom: 5%; }
-  .page-template-page-whatwedo .nutrition .nutrition-pillar {
-    position: relative;
-    height: 11vh;
-    width: 95%;
-    margin-bottom: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-position: 50% 50%; }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar i {
-      color: white;
-      position: absolute;
-      bottom: 3%;
-      z-index: 1;
-      right: 3%;
-      font-size: 1.1rem; }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
-      margin-top: 0;
-      padding: 0;
-      position: absolute;
-      bottom: -21%;
-      font-size: 1.1rem;
-      width: 100%;
-      text-align: center;
-      color: white;
-      text-transform: uppercase;
-      background: rgba(0, 0, 0, 0.5); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:first-of-type {
-      background-image: url("../../assets/images/Nutrition1.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
-      background-image: url("../../assets/images/Nutrition2.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
-      background-image: url("../../assets/images/Nutrition3.jpg"); }
-  .page-template-page-whatwedo .curriculum p {
-    text-align: center;
-    color: gray;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-    .page-template-page-whatwedo .curriculum p span {
-      font-weight: bold; }
-  .page-template-page-whatwedo .curriculum .curriculum-pillar:first-of-type {
-    background: red; }
-  .page-template-page-whatwedo .curriculum-how {
-    width: 100%;
-    background: #04809E; }
-    .page-template-page-whatwedo .curriculum-how h1 {
-      color: white; }
-    .page-template-page-whatwedo .curriculum-how ul {
-      width: 80%;
-      margin: 0; }
-      .page-template-page-whatwedo .curriculum-how ul li {
-        list-style-type: none;
-        text-align: left;
-        padding-bottom: 5%;
-        color: white; }
-=======
           align-items: center;
   margin-top: 60px;
   margin-bottom: 120px; }
@@ -1984,7 +1967,7 @@ object {
   background-size: 500px 330px;
   background-position-y: -90px; }
 
-button {
+.donate-btn {
   width: 75%;
   border-radius: 50px;
   height: 55px;
@@ -1998,4 +1981,3 @@ button {
   color: #474747;
   -webkit-box-shadow: 1px 2px #888888;
           box-shadow: 1px 2px #888888; }
->>>>>>> f5be21320f270e06fe43e10b19ca1e8a961bc9cb
