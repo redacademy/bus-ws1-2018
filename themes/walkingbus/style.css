@@ -1955,7 +1955,8 @@ object {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  background-repeat: no-repeat; }
 
 .donation-image {
   background-image: url(../../assets/images/whatwedo.jpg);
@@ -1981,3 +1982,22 @@ object {
   color: #474747;
   -webkit-box-shadow: 1px 2px #888888;
           box-shadow: 1px 2px #888888; }
+
+@media screen and (min-width: 768px) {
+  .site-main-donate {
+    margin-top: 100px; }
+  .image-page-donate {
+    background-size: 2014px 485px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1024px;
+    height: 400px; }
+  .donation-image {
+    background-image: url(../../assets/images/whatwedo.jpg);
+    background-position: center; }
+  .sponsor-image {
+    background-image: url(../../assets/images/sponsor.jpg);
+    background-position: bottom; }
+  .donate-btn {
+    width: 35%; } }
