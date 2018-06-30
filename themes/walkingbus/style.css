@@ -579,22 +579,22 @@ template {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Bold.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Bold.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Bold.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Regular.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Regular.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../../assets/fonts/Monserrat/Montserrat-Medium.eot");
-  src: url("../../assets/fonts/Monserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Monserrat/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Monserrat/Montserrat-Medium.woff") format("woff"), url("../../assets/fonts/Monserrat/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -1475,7 +1475,7 @@ object {
 
 .site-info {
   color: white;
-  font-family: "Roboto Slab"; }
+  font-family: "Montserrat"; }
 
 .main-container-footer {
   height: auto;
@@ -1985,7 +1985,8 @@ object {
 
 @media screen and (min-width: 768px) {
   .site-main-donate {
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-bottom: 120px; }
   .image-page-donate {
     background-size: 2014px 485px;
     background-position-y: 0px;
