@@ -43,7 +43,7 @@ get_header();
 				   foreach ($images as $image) {
                     echo '<img src="'.$image["image"].'"/>';
                 }?>
-<?php// endif; ?>   
+<?php// endif; ?>     
 			<?php endwhile; // End of the loop. ?>
             
 

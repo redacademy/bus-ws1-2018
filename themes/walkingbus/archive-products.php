@@ -7,7 +7,7 @@ Template Name: products
 /**
  * The template for displaying products page
  *
- * @package inhabitent
+ * 
  */
 
  
