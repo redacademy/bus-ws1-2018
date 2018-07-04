@@ -2088,3 +2088,131 @@ object {
     background-position: center; }
   .donate-btn {
     width: 35%; } }
+
+.site-main-impact h1 {
+  text-transform: uppercase;
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 300; }
+
+.hero-image-impact {
+  background-image: url(../../assets/images/impact-hero.jpg);
+  height: 220px;
+  width: 100%;
+  background-size: 800px 530px;
+  background-position: top;
+  background-position-x: -130px;
+  background-position-y: -100px; }
+
+/***************************** CAROUSEL *****************************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.test {
+  background-color: green;
+  height: 220px;
+  width: 100%; }
+
+.test2 {
+  background-color: yellow;
+  height: 220px;
+  width: 100%; }
+
+.news-title {
+  background-color: #04809E;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: white; }
+
+.see-reports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: -webkit-center;
+  padding: 0px 100px;
+  margin-bottom: 30px;
+  margin-top: 20px; }
+  .see-reports p {
+    margin: 0%; }
+
+.news-impact {
+  background-image: url("../../assets/images/Impact_News1.jpg");
+  height: 300px;
+  width: 100%;
+  margin-bottom: 10px; }

@@ -1,0 +1,79 @@
+<?php
+
+/*
+Template Name: impact
+*/
+
+?>
+<?php get_header(); ?>
+
+	<div id="primary" class="content-area-impact">
+		<main id="main" class="site-main-impact" role="main">
+        <h1>impact report</h1>
+        <div class="hero-image-impact"></div>
+        
+                    <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <div class="test"></div>
+            <div class="text">india</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <div class="test2"></div>
+            <div class="text">uganda</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        <section class="see-reports">
+            <p>See how we are tracking in each region by reviewing our annual report for 2016 - 17.</p><br>
+            <p>For old reports, go here</p>
+        </section>
+
+        <section class="videos-impact">
+            <embed width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+            <embed width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </section>
+        
+        <section class="news-title">news</section>
+
+        <div class="news-container">
+            <?php
+                $args = array( 'post_type' => 'article', 'order' => 'ASC', 'posts_per_page' => -1  );
+                $news = new WP_Query( $args ); // instantiate our object
+            ?>
+        
+            <?php if ( $news ->have_posts() ) : ?>
+            <?php while ( $news ->have_posts() ) : $news ->the_post(); ?>
+    
+        <?php endwhile; ?> 
+
+        <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+        
+            <h2>Nothing found!</h2>
+        
+        <?php endif; ?>
+        
+        </div>
+
+        </main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>
