@@ -1794,6 +1794,10 @@ object {
   .home .page-content h2, .home .page-content h3 {
     margin: 0;
     font-size: 1.3em; }
+  .home .page-content h2 {
+    text-transform: uppercase; }
+  .home .page-content h3 {
+    text-transform: lowercase; }
   .home .page-content > section {
     padding: 2em 2em; }
   .home .page-content .home-description h2 {
@@ -1801,15 +1805,35 @@ object {
     font-size: 1em; }
   .home .page-content .home-about {
     background-color: #f6e24f; }
-    .home .page-content .home-about h2 {
-      text-transform: uppercase; }
     .home .page-content .home-about h3 {
-      text-transform: lowercase;
       color: whitesmoke; }
     .home .page-content .home-about footer {
       margin: 1em; }
   .home .page-content .home-video {
     padding: 0; }
+    .home .page-content .home-video .video-container iframe {
+      width: 100vw;
+      height: 56.25vw; }
+  .home .page-content .home-infographic {
+    color: #f8e71c;
+    background-color: #04809e; }
+    .home .page-content .home-infographic .infographic-contry {
+      padding-bottom: 1.5rem; }
+  .home .page-content .home-goal h4 {
+    color: #f8e71c;
+    margin: 0;
+    font-size: 6em;
+    font-weight: bold;
+    position: relative;
+    color: yellow;
+    -webkit-text-stroke: .02em white;
+    text-stroke: .02em white; }
+    .home .page-content .home-goal h4:before {
+      content: attr(data-text);
+      position: absolute;
+      z-index: -1;
+      -webkit-text-stroke: .18em black;
+      text-stroke: .18em black; }
   .home .page-content .learn-more-button {
     cursor: pointer;
     display: inline-block;
