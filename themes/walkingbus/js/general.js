@@ -54,6 +54,7 @@ $j('#subscription-form').submit(function(event) {
     
  });
 
+<<<<<<< HEAD
  // CAROUSEL IMPACT PAGE
 
  var slideIndex = 1;
@@ -84,3 +85,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+=======
+
+ function move() {
+    var elem = document.getElementById('myBar'); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= elem.getAttribute('data-progress')) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+setTimeout(move, 1000);
+>>>>>>> 8574e51a4538b2e8b5a44a64e1afb73b1ccb624b

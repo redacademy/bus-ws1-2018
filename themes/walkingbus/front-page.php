@@ -107,12 +107,15 @@ get_header(); ?>
              <h4 data-text="2020">2020</h4>
         </header>
         <div>
-            <div id="myProgress">
-                <div id="myBar"></div>
+            <div id="myProgress" class="goal-progress">
+                <div id="myBar" class="progress-bar" data-progress="33">33%</div>
+            </div>
+            <div class="goal-reached">
+                1 million students reached
             </div>
         </div>
         <footer>
-            <a href="#">Get Involved</a>
+            <a class="get-involved-button" href="#">Get Involved</a>
         </footer>
     </section>
 
