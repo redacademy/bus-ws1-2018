@@ -7,7 +7,7 @@ Template Name: products
 /**
  * The template for displaying products page
  *
- * @package inhabitent
+ * 
  */
 
  
@@ -85,7 +85,7 @@ Template Name: products
 
             <!-- call custom field suite for product name and price-->
 
-                <p> <?php the_title();?> </p>
+                <p> <a href = "<?php the_permalink();?>"> <?php the_title();?> </p> </a>
                 <p> <?php echo CFS()->get( 'price' ); ?>  </p>
           
 
