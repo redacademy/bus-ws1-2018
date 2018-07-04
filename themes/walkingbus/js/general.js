@@ -53,3 +53,19 @@ $j('#subscription-form').submit(function(event) {
     eMail.val('')) : alert('Please submit an email address.')
     
  });
+
+
+ function move() {
+    var elem = document.getElementById('myBar'); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= elem.getAttribute('data-progress')) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+setTimeout(move, 1000);
