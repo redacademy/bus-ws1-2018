@@ -75,6 +75,58 @@ Template Name: get involved
         <h2>Nothing found!</h2>
     
     <?php endif; ?>
+
+
+    <!-- display all the team members (all the teams)-->
+
+    <?php
+			$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
+			$teams = new WP_Query( $args ); // instantiate our object
+		?>
+	
+		<?php if ( $teams ->have_posts() ) : ?>
+		<?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
+
+        	
+
+
+          <?php   
+          $teamMembers = CFS()->get('members'); 
+                        foreach ($teamMembers as $member) {?>
+
+                        <div class = "member-picture">
+                            <?php echo '<img src="'.$member['image'].'"/>';?>
+                        </div>
+
+                        <div class = "member-name">
+                           <?php  echo CFS()->get.$member['name']; ?>
+                        </div>     
+
+                        <div class = "member-role">
+                            <?php echo CFS()->get.$member['role'];?>
+                        </div>   
+
+                        <div class = "member-bio">
+                            <?php echo CFS()->get.$member['bio'];?>
+                        </div>   
+
+
+                          
+                        <?php } ?>
+ 
+ 
+
+    <?php endwhile; ?> 
+
+
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+    
+        <h2>Nothing found!</h2>
+    
+    <?php endif; ?>
+
+
 			
 
 
