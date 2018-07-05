@@ -8,6 +8,11 @@
 get_header(); ?>
 
 <main class="page-content">
+    <header class="page-content-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    </header><!-- .page-content-header -->
 
     <section class="home-description">
         <header>
@@ -17,7 +22,7 @@ get_header(); ?>
 
     <section class="home-about">
         <header>
-            <h2>About Us</h2>
+            <h2>About</h2>
         </header>
         <div>
             <?php echo CFS()->get('home_about_session'); ?>
@@ -92,7 +97,7 @@ get_header(); ?>
     <section class="home-goal">
         <header>
              <h2>Help us reach our goal</h2>
-             <h4 data-text="<?php echo CFS()->get('home_goal_final_year'); ?>"><?php echo CFS()->get('home_goal_final_year'); ?></h4>
+             <h3 data-text="<?php echo CFS()->get('home_goal_final_year'); ?>"><?php echo CFS()->get('home_goal_final_year'); ?></h3>
         </header>
         <div>
             <div id="myProgress" class="goal-progress">
