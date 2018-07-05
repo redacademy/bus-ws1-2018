@@ -35,8 +35,12 @@
         .home-about {
             background-color: rgba(246,226,79,1);
 
-            h3 {
+            em, strong {
                 color: whitesmoke;
+            }
+
+            strong {
+                font-weight: bolder;
             }
 
             footer {

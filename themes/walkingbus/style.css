@@ -1805,8 +1805,10 @@ object {
     font-size: 1em; }
   .home .page-content .home-about {
     background-color: #f6e24f; }
-    .home .page-content .home-about h3 {
+    .home .page-content .home-about em, .home .page-content .home-about strong {
       color: whitesmoke; }
+    .home .page-content .home-about strong {
+      font-weight: bolder; }
     .home .page-content .home-about footer {
       margin: 1em; }
   .home .page-content .home-video {
