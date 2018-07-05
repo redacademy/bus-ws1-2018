@@ -127,6 +127,59 @@ Template Name: get involved
     <?php endif; ?>
 
 
+
+    <?php
+			$args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
+			$thinkTank = new WP_Query( $args );
+		?>
+	
+		<?php if ($thinkTank ->have_posts() ) : ?>
+		<?php while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
+
+        	
+
+
+          <?php   
+          $researches = CFS()->get('research'); 
+                        foreach ($researches as $research) {?>
+
+                        <div class = "research-picture">
+                            <?php echo '<img src="'.$research['image'].'"/>';?>
+                        </div>
+
+                        <div class = "research-description">
+                           <?php  echo CFS()->get.$research['description']; ?>
+                        </div>     
+
+                        <div class = "research-subject">
+                            <?php echo CFS()->get.$research['subject'];?>
+                        </div>   
+
+                       
+
+
+                          
+                        <?php } ?>
+
+
+
+
+                        <!-- custom post type for events -->
+ 
+ 
+
+    <?php endwhile; ?> 
+
+
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+    
+        <h2>Nothing found!</h2>
+    
+    <?php endif; ?>
+
+
+
 			
 
 

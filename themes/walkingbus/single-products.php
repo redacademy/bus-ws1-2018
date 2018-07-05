@@ -1,5 +1,7 @@
 <?php
 /**
+ * 
+ * Template name: product single page 
  * The template for displaying all single products posts.
  *
  * 
@@ -21,12 +23,13 @@ get_header();
 
 			   <?php  $images = CFS()->get('products');
 				   foreach ($images as $image) {
+					echo the_post_thumbnail(); 
                     echo '<img src="'.$image["image"].'"/>';
 					$price = CFS()->get( 'price' );
-					$exerpt =CFS()->get( 'exerpt' );
-                   echo the_post_thumbnail(); ?>
+					$description =CFS()->get( 'description' );
+                ?>
 				<?php echo "<p class=\"price\"> \${$price}</p>";?>
-				<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";}?>
+				<?php echo "<p class=\"product-exerpt\">{$description}</p>";}?>
 
 
 

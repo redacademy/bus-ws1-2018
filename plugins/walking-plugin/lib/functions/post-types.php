@@ -180,7 +180,7 @@ add_action( 'init', 'News', 0 );
 
 
 
-// Register Custom Post Type for the walking bus team members 
+// Register Custom Post Type for the walking bus team members (it also has a taxonomy)
 
 function team() {
 
@@ -236,6 +236,63 @@ function team() {
 
 }
 add_action( 'init', 'team', 0 );
+
+
+// Register Custom Post Type
+function research() {
+
+	$labels = array(
+		'name'                  => _x( 'Research', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Research', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Research', 'text_domain' ),
+		'name_admin_bar'        => __( 'Research', 'text_domain' ),
+		'archives'              => __( 'Research Archives', 'text_domain' ),
+		'attributes'            => __( 'Research Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Research:', 'text_domain' ),
+		'all_items'             => __( 'All Researches', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Research', 'text_domain' ),
+		'add_new'               => __( 'Add New Research', 'text_domain' ),
+		'new_item'              => __( 'New Research', 'text_domain' ),
+		'edit_item'             => __( 'Edit Research', 'text_domain' ),
+		'update_item'           => __( 'Update Research', 'text_domain' ),
+		'view_item'             => __( 'View Research', 'text_domain' ),
+		'view_items'            => __( 'View Research', 'text_domain' ),
+		'search_items'          => __( 'Search Research', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Research', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this research', 'text_domain' ),
+		'items_list'            => __( 'Research list', 'text_domain' ),
+		'items_list_navigation' => __( 'Research list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Research list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'research', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail'),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'research', $args );
+
+}
+add_action( 'init', 'research', 0 );
 
 
 
