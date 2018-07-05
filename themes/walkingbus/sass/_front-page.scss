@@ -5,8 +5,7 @@
 
         text-align: center;
         font-size: 1rem;
-        
-        
+
         h2, h3 {
             margin: 0;
             font-size: 1.3em;
@@ -24,6 +23,12 @@
             padding: 2em 1.6em;
         }
 
+        .page-content-header {
+            img {
+                width: 100%;
+            }
+        }
+
         .home-description {
             
             h2 {
@@ -35,8 +40,12 @@
         .home-about {
             background-color: rgba(246,226,79,1);
 
-            h3 {
+            em, strong {
                 color: whitesmoke;
+            }
+
+            strong {
+                font-weight: bolder;
             }
 
             footer {
@@ -66,7 +75,7 @@
 
         .home-goal {
 
-            h4 {
+            h3 {
                 color: rgba(248,231,28,1);
                 margin: 0;
                 font-size: 6em;
@@ -94,7 +103,8 @@
                 box-sizing: border-box;
 
                 width: 100%;
-                height: 50px;
+                max-width: 450px;
+                height: 60px;
 
                 font-weight: bold;
 
@@ -155,5 +165,10 @@
             background-color:rgba(246,226,79,1);
             border-radius:20px;
         }
+
+        @include desktop {
+            font-size: 1.6rem;
+        }
+        
     }
 }
