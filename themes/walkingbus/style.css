@@ -1806,7 +1806,8 @@ object {
       width: 100%; }
   .home .page-content .home-description h2 {
     color: gray;
-    font-size: 1em; }
+    font-size: 1em;
+    text-transform: unset; }
   .home .page-content .home-donate {
     display: none;
     padding: .5em 0;
@@ -1926,6 +1927,8 @@ object {
       font-size: 1.6rem; }
       .home .page-content > section {
         padding: 2em 8em; }
+      .home .page-content .home-description {
+        font-size: 1.5em; }
       .home .page-content .home-donate,
       .home .page-content .page-content-header {
         display: block; }

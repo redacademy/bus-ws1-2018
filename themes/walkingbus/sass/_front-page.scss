@@ -35,6 +35,7 @@
             h2 {
                 color: gray;
                 font-size: 1em;
+                text-transform: unset;
             }
         }
 
@@ -209,6 +210,11 @@
 
             & > section {
                 padding: 2em 8em;
+            }
+            
+                
+            .home-description {
+                font-size: 1.5em;
             }
             
             .home-donate,
