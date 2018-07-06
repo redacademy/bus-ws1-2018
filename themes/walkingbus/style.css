@@ -1808,6 +1808,7 @@ object {
     color: gray;
     font-size: 1em; }
   .home .page-content .home-donate {
+    display: none;
     padding: .5em 0;
     margin-bottom: 10px;
     background-color: #f6e24f;
@@ -1821,13 +1822,25 @@ object {
       text-decoration: none;
       font-weight: bold; }
   .home .page-content .home-about {
-    background-color: #f6e24f; }
+    background-color: #f6e24f;
+    position: relative; }
     .home .page-content .home-about em, .home .page-content .home-about strong {
       color: whitesmoke; }
     .home .page-content .home-about strong {
       font-weight: bolder; }
     .home .page-content .home-about footer {
       margin: 1em; }
+    .home .page-content .home-about:before {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 180px;
+      background-image: url("../../assets/images/sun.svg");
+      background-repeat: no-repeat;
+      background-position: 90px 0;
+      position: absolute;
+      top: -90px;
+      right: 0; }
   .home .page-content .home-video {
     padding: 0; }
     .home .page-content .home-video .video-container iframe {
@@ -1912,9 +1925,15 @@ object {
     .home .page-content {
       font-size: 1.6rem; }
       .home .page-content > section {
-        padding: 2em 10em; }
+        padding: 2em 8em; }
+      .home .page-content .home-donate,
       .home .page-content .page-content-header {
-        display: block; } }
+        display: block; }
+      .home .page-content .home-about:before {
+        width: 600px;
+        height: 600px;
+        background-position: 300px 0;
+        top: -300px; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;

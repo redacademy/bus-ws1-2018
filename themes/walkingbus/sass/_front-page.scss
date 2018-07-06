@@ -39,6 +39,9 @@
         }
 
         .home-donate {
+            display: none;
+
+
             padding: .5em 0;
             margin-bottom: 10px;
             background-color: rgba(246,226,79, 1);
@@ -71,8 +74,20 @@
                 margin: 1em;
             }
 
-            &::before {
+            position: relative;
+            &:before {
+                $sun-image-size: 180px;
 
+                content: "";
+                display: block;
+                width: $sun-image-size;
+                height: $sun-image-size;
+                background-image: url("../../assets/images/sun.svg");
+                background-repeat: no-repeat;
+                background-position: $sun-image-size/2 0;
+                position: absolute;
+                top: -$sun-image-size/2;
+                right: 0;
             }
         }
 
@@ -193,14 +208,25 @@
             font-size: 1.6rem;
 
             & > section {
-                padding: 2em 10em;
+                padding: 2em 8em;
             }
-
+            
+            .home-donate,
             .page-content-header {
                 display: block;
             }
 
-            
+            .home-about {
+    
+                &:before {
+                    $sun-image-size: 600px;
+    
+                    width: $sun-image-size;
+                    height: $sun-image-size;
+                    background-position: $sun-image-size/2 0;
+                    top: -$sun-image-size/2;
+                }
+            }
         }
         
     }
