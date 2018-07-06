@@ -1699,8 +1699,6 @@ object {
         color: white; }
     .footer-links p {
       text-align: center; }
-    .footer-links aside {
-      width: -webkit-fill-available; }
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -1778,8 +1776,7 @@ object {
             justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: -webkit-fill-available; } }
+    display: flex; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2216,3 +2213,38 @@ object {
   height: 300px;
   width: 100%;
   margin-bottom: 10px; }
+
+.page-template-archive-expeditions .expedition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-archive-expeditions .expedition-info .expedition-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .page-template-archive-expeditions .expedition-info .expedition-image picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .page-template-archive-expeditions .expedition-info .expedition-name {
+    position: absolute;
+    background-color: rgba(76, 76, 76, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+    color: white; }

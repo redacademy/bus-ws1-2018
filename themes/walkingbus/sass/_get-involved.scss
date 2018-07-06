@@ -1,0 +1,33 @@
+.page-template-archive-expeditions{
+
+    .expedition-info{
+        display:flex;
+        flex-direction:row; 
+        flex-wrap:wrap; 
+
+      
+ 
+     .expedition-image{
+        display:flex;
+        position:relative;
+     
+
+        picture{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+     }
+
+    .expedition-name{ 
+        position: absolute;
+        background-color: rgba(76,76,76,.6);
+        display: flex;
+        align-self: flex-end;
+        width: 100%;
+        color:white;
+
+    }
+}
+   
+}

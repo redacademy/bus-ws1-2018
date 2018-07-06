@@ -22,80 +22,96 @@ Template Name: get involved
         <!-- displays get involved page banner  -->
 
           <?php  $images = CFS()->get('get_involved'); 
-                        foreach ($images as $image) {
-                            echo '<img src="'.$image['banner'].'"/>';
+
+                foreach ($images as $image) {?>
+
+                    <picture>
+                        <?php echo '<img src="'.$image['banner'].'"/>'; ?>
+                    </picture>
                         
-            }?>
+                <?php }?>
                  
 
-            <?php the_content();?>
+                <?php the_content();?>
 
-              <?php endwhile; ?>
+                <?php endwhile; ?>
 
-<!-- //TODO ADD THE CUSTOM FIELD SUITE FOR THE UPCOMMING EXPEDITIONS (CFS BECAUSE THIS PART IS GOING TO BE UPDATED OFTEN ) -->
+<!-- //TODO : ADD THE CUSTOM FIELD SUITE FOR THE UPCOMMING EXPEDITIONS (CFS BECAUSE THIS PART IS GOING TO BE UPDATED OFTEN ) -->
 
 
 <!-- displays past expeditions  -->
-<?php
+
+        <?php
 			$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => -1  );
-			$expeditions = new WP_Query( $args ); // instantiate our object
+			$expeditions = new WP_Query( $args ); 
 		?>
 	
-		<?php if ( $expeditions ->have_posts() ) : ?>
+		<?php if ( $expeditions ->have_posts() ) : ?> 
 		<?php while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
 
 
-          <?php   
-          $missions = CFS()->get('past_expeditions'); 
-                        foreach ($missions as $mission) {?>
-                        <div class = "expedition-image">
+        <?php $missions = CFS()->get('past_expeditions'); 
+            foreach ($missions as $mission) {?>
+            
+            <div class = "expedition-wrapper">
+
+            <div class = "single-expedition">
+
+                <div class = "expedition-info">
+
+                    <div class = "expedition-image">
+                        <picture>
                             <?php echo '<img src="'.$mission['image'].'"/>';?>
-                        </div>
+                        </picture>    
+                    </div>
 
-                        <div class = "expedition-name">
-                           <?php  echo CFS()->get.$mission['name']; ?>
-                        </div>     
+                    <div class = "expedition-name">
+                        <?php  echo the_title();?>
+                    </div>   
 
-                        <div class = "expedition-description">
-                            <?php echo CFS()->get.$mission['description'];?>
-                        </div>   
+                </div>  <!-- expedition-info -->
 
+                <div class = "expedition-description">
+                    <?php echo CFS()->get.$mission['excerpt'];?>
+                </div>   
 
-                          
-                        <?php } ?>
+                </div>
+
+            <?php } ?>
  
- 
+          
 
-    <?php endwhile; ?> 
+        <?php endwhile; ?> 
 
-
-    <?php wp_reset_postdata(); ?>
-    <?php else : ?>
-    
-        <h2>Nothing found!</h2>
-    
-    <?php endif; ?>
+  </div> <!-- expedition-wrapper-->
+        <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+        
+            <h2>Nothing found!</h2>
+        
+        <?php endif; ?>
 
 
     <!-- display all the team members (all the teams)-->
 
     <?php
-			$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
-			$teams = new WP_Query( $args ); // instantiate our object
+		$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
+		$teams = new WP_Query( $args ); 
 		?>
 	
 		<?php if ( $teams ->have_posts() ) : ?>
 		<?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
 
-        	
 
 
-          <?php   
-          $teamMembers = CFS()->get('members'); 
+        <?php $teamMembers = CFS()->get('members'); 
+
                         foreach ($teamMembers as $member) {?>
 
                         <div class = "member-picture">
+                        <picture>
                             <?php echo '<img src="'.$member['image'].'"/>';?>
+                        </picture>    
                         </div>
 
                         <div class = "member-name">
@@ -108,11 +124,9 @@ Template Name: get involved
 
                         <div class = "member-bio">
                             <?php echo CFS()->get.$member['bio'];?>
-                        </div>   
+                        </div> 
 
-
-                          
-                        <?php } ?>
+        <?php } ?>
  
  
 
@@ -129,9 +143,9 @@ Template Name: get involved
 
 
     <?php
-			$args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
-			$thinkTank = new WP_Query( $args );
-		?>
+		$args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
+		$thinkTank = new WP_Query( $args );
+	?>
 	
 		<?php if ($thinkTank ->have_posts() ) : ?>
 		<?php while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
@@ -143,18 +157,24 @@ Template Name: get involved
           $researches = CFS()->get('research'); 
                         foreach ($researches as $research) {?>
 
-                        <div class = "research-picture">
-                            <?php echo '<img src="'.$research['image'].'"/>';?>
+                        <div class = "single-research">
+ 
+                            <div class = "research-picture">
+                            <picture>
+                                <?php echo '<img src="'.$research['image'].'"/>';?>
+                            </picture>    
+                            </div>
+
+                            <div class = "research-description">
+                            <?php  echo CFS()->get.$research['description']; ?>
+                            </div>     
+
+                            <div class = "research-subject">
+                                <?php echo CFS()->get.$research['subject'];?>
+                            </div> 
+
+
                         </div>
-
-                        <div class = "research-description">
-                           <?php  echo CFS()->get.$research['description']; ?>
-                        </div>     
-
-                        <div class = "research-subject">
-                            <?php echo CFS()->get.$research['subject'];?>
-                        </div>   
-
                        
 
 
