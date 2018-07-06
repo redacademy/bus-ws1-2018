@@ -20,6 +20,12 @@ get_header(); ?>
         </header>
     </section>
 
+    <section class="home-donate">
+        <div>
+            <a class="donate-button" href="#">Donate</a>
+        </div>
+    </section>
+
     <section class="home-about">
         <header>
             <h2>About</h2>
