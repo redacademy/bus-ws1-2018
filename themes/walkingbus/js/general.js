@@ -6,6 +6,7 @@ $j('.menu').hide();
 $j('.search-form').hide();
 $j('.nutrition-desc-container').hide();
 
+
 $j('.search-form').click(function(){
     $j('.search-form').toggleClass('search-active');
 });
@@ -38,7 +39,7 @@ $j('.angle5').click(function() {
 
 // DESKTOP FUNCTIONS
 
-if($j('.site-name').css('display') === 'none') {
+if($j('.menu-toggle').css('display') === 'none') {
     $j('.menu').show();
 } 
 
@@ -55,17 +56,17 @@ $j('#subscription-form').submit(function(event) {
  });
 
 
- function move() {
-    var elem = document.getElementById('myBar'); 
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (width >= elem.getAttribute('data-progress')) {
-            clearInterval(id);
-        } else {
-            width++; 
-            elem.style.width = width + '%'; 
-        }
-    }
-}
-setTimeout(move, 1000);
+//  function move() {
+//     var elem = document.getElementById('myBar'); 
+//     var width = 1;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//         if (width >= elem.getAttribute('data-progress')) {
+//             clearInterval(id);
+//         } else {
+//             width++; 
+//             elem.style.width = width + '%'; 
+//         }
+//     }
+// }
+// setTimeout(move, 1000);
