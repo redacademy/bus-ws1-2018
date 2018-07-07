@@ -68,8 +68,6 @@ $j(function (){
         }
         var progress = $myBar.attr('data-progress');
         $j('#progress-bar-text').show();
-    
-        // console.log('moveBus');
 
         var width = 1;
         var id = setInterval(frame, 16);

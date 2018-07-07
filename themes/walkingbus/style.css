@@ -1869,7 +1869,7 @@ object {
             box-sizing: border-box;
     width: 100%;
     max-width: 600px;
-    height: 80px;
+    height: 60px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;
@@ -1879,7 +1879,7 @@ object {
     .home .page-content .home-goal .goal-progress .progress-bar {
       width: 0px;
       height: 100%;
-      background-color: yellow;
+      background-color: #f6e24f;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -1895,18 +1895,18 @@ object {
       position: relative; }
       .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
         display: none;
-        padding-right: 50px; }
+        padding-right: 35px; }
       .home .page-content .home-goal .goal-progress .progress-bar:before {
         content: "";
         display: block;
-        width: 140px;
+        width: 100px;
         height: 100%;
         background-image: url("../../assets/images/twsb-bus.svg");
         background-repeat: no-repeat;
-        background-size: 140px auto;
+        background-size: 100px auto;
         position: absolute;
-        top: 10px;
-        right: -50px; }
+        top: 8px;
+        right: -45px; }
   .home .page-content .home-goal .goal-reached {
     font-size: 1.2em;
     font-weight: bold;
@@ -1917,7 +1917,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -1928,7 +1927,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: #f6e24f;
@@ -1947,7 +1945,30 @@ object {
         width: 600px;
         height: 600px;
         background-position: 300px 0;
-        top: -300px; } }
+        top: -300px; }
+      .home .page-content .home-goal h3 {
+        color: #f8e71c;
+        margin: 0;
+        font-size: 6em;
+        font-weight: bold;
+        position: relative;
+        color: yellow;
+        -webkit-text-stroke: .02em white;
+        text-stroke: .02em white; }
+        .home .page-content .home-goal h3:before {
+          content: attr(data-text);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: .18em black;
+          text-stroke: .18em black; }
+      .home .page-content .home-goal .goal-progress {
+        height: 80px; }
+        .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+          padding-right: 50px; }
+        .home .page-content .home-goal .goal-progress .progress-bar:before {
+          width: 140px;
+          top: 10px;
+          right: -50px; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;
