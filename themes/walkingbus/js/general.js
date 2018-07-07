@@ -54,51 +54,22 @@ $j('#subscription-form').submit(function(event) {
     
  });
 
-<<<<<<< HEAD
- // CAROUSEL IMPACT PAGE
 
- var slideIndex = 1;
-showSlides(slideIndex);
+//  function move() {
+//     var elem = document.getElementById('myBar'); 
+//     if(!elem) {
+//         return;
+//     }
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-=======
-
- function move() {
-    var elem = document.getElementById('myBar'); 
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (width >= elem.getAttribute('data-progress')) {
-            clearInterval(id);
-        } else {
-            width++; 
-            elem.style.width = width + '%'; 
-        }
-    }
-}
-setTimeout(move, 1000);
->>>>>>> 8574e51a4538b2e8b5a44a64e1afb73b1ccb624b
+//     var width = 1;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//         if (width >= elem.getAttribute('data-progress')) {
+//             clearInterval(id);
+//         } else {
+//             width++; 
+//             elem.style.width = width + '%'; 
+//         }
+//     }
+// }
+// setTimeout(move, 1000);

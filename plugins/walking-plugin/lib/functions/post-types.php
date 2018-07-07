@@ -157,7 +157,7 @@ function News() {
 		'label'                 => __( 'news', 'text_domain' ),
 		'description'           => __( 'news_description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
