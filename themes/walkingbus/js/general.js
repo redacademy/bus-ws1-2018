@@ -55,21 +55,34 @@ $j('#subscription-form').submit(function(event) {
  });
 
 
-//  function move() {
-//     var elem = document.getElementById('myBar'); 
-//     if(!elem) {
-//         return;
-//     }
+// Front Page
 
-//     var width = 1;
-//     var id = setInterval(frame, 10);
-//     function frame() {
-//         if (width >= elem.getAttribute('data-progress')) {
-//             clearInterval(id);
-//         } else {
-//             width++; 
-//             elem.style.width = width + '%'; 
-//         }
-//     }
-// }
-// setTimeout(move, 1000);
+$j(function (){
+
+
+    function moveBus() {
+
+        var $myBar = $j('#progress-bar'); 
+        if(!$myBar) {
+            return;
+        }
+        var progress = $myBar.attr('data-progress');
+        $j('#progress-bar-text').show();
+    
+        // console.log('moveBus');
+
+        var width = 1;
+        var id = setInterval(frame, 16);
+        function frame() {
+            if (width >= progress) {
+                clearInterval(id);
+            } else {
+                width++; 
+                $myBar.width(width + '%'); 
+            }
+        }
+    }
+    setTimeout(moveBus, 1000);
+
+});
+

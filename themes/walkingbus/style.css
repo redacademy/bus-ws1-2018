@@ -1868,15 +1868,14 @@ object {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    max-width: 450px;
-    height: 60px;
+    max-width: 600px;
+    height: 80px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: relative; }
+    display: inline-flex; }
     .home .page-content .home-goal .goal-progress .progress-bar {
       width: 0px;
       height: 100%;
@@ -1892,7 +1891,22 @@ object {
               align-items: center;
       border-right: 1px solid black;
       -webkit-box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+      position: relative; }
+      .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+        display: none;
+        padding-right: 50px; }
+      .home .page-content .home-goal .goal-progress .progress-bar:before {
+        content: "";
+        display: block;
+        width: 140px;
+        height: 100%;
+        background-image: url("../../assets/images/twsb-bus.svg");
+        background-repeat: no-repeat;
+        background-size: 140px auto;
+        position: absolute;
+        top: 10px;
+        right: -50px; }
   .home .page-content .home-goal .goal-reached {
     font-size: 1.2em;
     font-weight: bold;
@@ -2269,44 +2283,6 @@ object {
   background-image: url("../../assets/images/Impact_News1.jpg");
   height: 300px;
   width: 100%;
-<<<<<<< HEAD
-  margin-bottom: 10px; }
-
-.page-template-archive-expeditions .expedition-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .page-template-archive-expeditions .expedition-info .expedition-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative; }
-    .page-template-archive-expeditions .expedition-info .expedition-image picture {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-  .page-template-archive-expeditions .expedition-info .expedition-name {
-    position: absolute;
-    background-color: rgba(76, 76, 76, 0.6);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: 100%;
-    color: white; }
-=======
   margin-bottom: 2px;
   background-size: cover;
   display: -webkit-box;
@@ -2454,4 +2430,38 @@ object {
   padding-left: 5%;
   font-family: "Montserrat";
   text-decoration: underline; }
->>>>>>> ac05a4c880c7a611ec6ee4898c7b15dde7c0a4b0
+
+.page-template-archive-expeditions .expedition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-archive-expeditions .expedition-info .expedition-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .page-template-archive-expeditions .expedition-info .expedition-image picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .page-template-archive-expeditions .expedition-info .expedition-name {
+    position: absolute;
+    background-color: rgba(76, 76, 76, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+    color: white; }
