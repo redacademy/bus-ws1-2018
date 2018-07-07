@@ -21,9 +21,9 @@ Template Name: get involved
 
         <!-- displays get involved page banner  -->
 
-          <?php  $images = CFS()->get('get_involved'); 
+          <?php  $images = CFS()->get('get_involved'); ?>
 
-                foreach ($images as $image) {?>
+               <?php foreach ($images as $image){ ?>
 
                     <picture>
                         <?php echo '<img src="'.$image['banner'].'"/>'; ?>
@@ -41,6 +41,8 @@ Template Name: get involved
 
 <!-- displays past expeditions  -->
 
+    <div class = "expedition-wrapper">
+
         <?php
 			$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => -1  );
 			$expeditions = new WP_Query( $args ); 
@@ -53,27 +55,39 @@ Template Name: get involved
         <?php $missions = CFS()->get('past_expeditions'); 
             foreach ($missions as $mission) {?>
             
-            <div class = "expedition-wrapper">
+        
 
             <div class = "single-expedition">
 
                 <div class = "expedition-info">
 
                     <div class = "expedition-image">
-                        <picture>
+                        <!-- <picture> -->
                             <?php echo '<img src="'.$mission['image'].'"/>';?>
-                        </picture>    
+                        <!-- </picture>     -->
                     </div>
 
-                    <div class = "expedition-name">
-                        <?php  echo the_title();?>
-                    </div>   
+                    <div class = "expedition-name" id = "expedition-name">
 
-                </div>  <!-- expedition-info -->
+                        <div class = "name-wrapper"> 
 
-                <div class = "expedition-description">
-                    <?php echo CFS()->get.$mission['excerpt'];?>
-                </div>   
+                       <p> <?php  echo the_title();?> </p>
+
+                        <i class="fas fa-angle-down"></i>
+
+                        </div>
+
+
+                         <div class = "expedition-description" id= "expedition-description">
+                            <?php echo CFS()->get.$mission['excerpt'];?>
+                        </div> <!-- expedition-description-->
+
+                    </div>   <!--expedition-name -->
+
+                     
+              
+
+               
 
                 </div>
 
