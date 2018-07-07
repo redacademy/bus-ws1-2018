@@ -1823,9 +1823,14 @@ object {
     background-color: #f6e24f;
     position: relative; }
     .home .page-content .home-about em, .home .page-content .home-about strong {
-      color: whitesmoke; }
+      color: whitesmoke;
+      font-size: 1.6rem; }
     .home .page-content .home-about strong {
-      font-weight: bolder; }
+      font-weight: bolder;
+      padding: 10px 0; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: "\a";
+        white-space: pre; }
     .home .page-content .home-about footer {
       margin: 1em; }
     .home .page-content .home-about:before {
@@ -1941,6 +1946,10 @@ object {
       .home .page-content .home-donate,
       .home .page-content .page-content-header {
         display: block; }
+      .home .page-content .home-about em, .home .page-content .home-about strong {
+        font-size: 1em; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: none; }
       .home .page-content .home-about:before {
         width: 600px;
         height: 600px;

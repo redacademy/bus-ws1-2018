@@ -65,10 +65,17 @@
 
             em, strong {
                 color: whitesmoke;
+                font-size: 1.6rem;
             }
 
             strong {
                 font-weight: bolder;
+                padding: 10px 0;
+                &:before,
+                &:after {
+                    content: "\a";
+                    white-space: pre;
+                  }
             }
 
             footer {
@@ -246,6 +253,17 @@
             }
 
             .home-about {
+
+                em, strong {
+                    font-size: 1em;
+                }
+    
+                strong {
+                    &:before,
+                    &:after {
+                        content: none;
+                    }
+                }
     
                 &:before {
                     $sun-image-size: 600px;
