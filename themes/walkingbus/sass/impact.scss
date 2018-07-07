@@ -3,20 +3,22 @@
 
 .site-main-impact h1 {
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
-    font-family: $Oswald;
-    font-weight: 300;
+    font-family: Oswald;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
 }
 
 .hero-image-impact {
     background-image: url(../../assets/images/impact-hero.jpg);
-    height: 220px;
+    height: 190px;
     width: 100%;
-    background-size: 800px 530px;
-    background-position: top;
-    background-position-x: -130px;
-    background-position-y: -100px;
+    background-size: 680px 450px;
+    background-position-x: -125px;
+    background-position-y: -70px;
 }
 
 /***************************** CAROUSEL *****************************/
@@ -28,7 +30,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 /* Hide the images by default */
@@ -84,13 +86,13 @@
 
 .test {
     background-color: green;
-    height: 220px;
+    height: 480px;
     width: 100%;
 }
 
 .test2 {
     background-color: yellow;
-    height: 220px;
+    height: 480px;
     width: 100%;
 }
 
@@ -101,29 +103,157 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 10px;
     color: white;
+    font-family: $Oswald;
 }
 
 .see-reports{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: -webkit-center;
-    padding: 0px 100px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    text-align: -webkit-cente;
+    display: flex;
+    width: 65%;
 
     p{
      margin: 0%;
+     font-family: $Mont;
+     font-size: 1rem;
+     line-height: initial;
     }
 }
 
-.news-impact {
+.see-reports-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-center;
+    margin: 25px 0px;
+}
+
+
+/************************************* NEWS *****************************/
+
+
+.new-impact {
     background-image: url('../../assets/images/Impact_News1.jpg');
     height: 300px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    h2 {
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    h2 a {
+        color: white;
+        text-decoration: none; 
+        font-size: 1rem;
+        text-align: -webkit-center;
+    }
+}
+
+.arrow-link-news {
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    border-width: 1px;
+    margin-left: 20px;
+    position: absolute;
+    left: 81%;
+    font-family: $Mont;
+}
+
+.text-area-news {
+    background-color:rgba(0,0,0,0.5);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Mont;
+    line-height: initial;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.title-area-news {
+    width: 70%;
+}
+
+.news-nophoto-area{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: grey;
+
+    a {
+        text-decoration: none;
+    
+        &:visited {
+            color: grey;
+        }
+    }
+}
+
+.news-nophoto {
+    color: black;
+    font-weight: 300;
+    font-family: $Mont;
+}
+
+.news-nophoto-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-link-news-nophoto {
+    border-radius: 50px;
+    border-color: gray;
+    border-style: solid;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    border-width: 1px;
+    color: gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.load-more {
+    color: black;
+    margin-top: 10px;
+}
+
+.load-more-area {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    padding-left: 5%;
+    font-family: $Mont;
+    text-decoration: underline;
 }

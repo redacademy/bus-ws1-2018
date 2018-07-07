@@ -39,10 +39,13 @@ Template Name: products
         <div class= "banner">
 
             <?php  $images = CFS()->get('shop_banner'); 
-                        foreach ($images as $image) {
-                            echo '<img src="'.$image['banner'].'"/>';
+                        foreach ($images as $image) {?>
+                         
+                            <picture> 
+                            <?php echo '<img src="'.$image['banner'].'"/>'; ?>
+                            </picture>
                         
-            }?>
+ <?php }?>
 
             <h1> <?php the_title(); ?> </h1>
 
@@ -60,7 +63,7 @@ Template Name: products
 
 			
         <?php
-            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => 4  );
+            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => 4 );
             $products = new WP_Query( $args ); 
         ?>
 
@@ -80,7 +83,10 @@ Template Name: products
             <div class = "product-info">
 
             <!-- call custom field suite for product name and price-->
+
+            <picture>
             <?php the_post_thumbnail();?>
+            </picture>
 
                 <p> <a href = "<?php the_permalink();?>"> <?php the_title();?> </p> </a>
                 <p> <?php echo CFS()->get( 'price' ); ?>  </p>

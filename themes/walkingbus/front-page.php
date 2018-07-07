@@ -8,6 +8,11 @@
 get_header(); ?>
 
 <main class="page-content">
+    <header class="page-content-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    </header><!-- .page-content-header -->
 
     <section class="home-description">
         <header>
@@ -15,23 +20,18 @@ get_header(); ?>
         </header>
     </section>
 
+    <section class="home-donate">
+        <div>
+            <a class="donate-button" href="#">Donate</a>
+        </div>
+    </section>
+
     <section class="home-about">
         <header>
-            <h2>About Us</h2>
-            <p>
-                Officia deserunt cillum velit nisi non aliquip cillum voluptate elit.
-            </p>
+            <h2>About</h2>
         </header>
         <div>
-            <h3>Access Education</h3>
-            <p>
-                Officia deserunt cillum velit nisi non aliquip cillum voluptate elit. Qui officia reprehenderit velit anim nostrud consequat ad ad velit irure irure nostrud nisi. Eiusmod labore exercitation non laboris aute occaecat eiusmod cupidatat veniam ut tempor irure officia nulla. Pariatur deserunt aliqua in laboris ex velit labore laboris amet do deserunt aliquip laboris do.
-            </p>
-            <h3>Lacked adequation <em>Nutrition</em></h3>
-            <p>
-                Ea ex fugiat ea fugiat. Ut consequat non aute laborum mollit proident sit adipisicing laborum dolor ut. Do nisi ipsum sit esse.
-            </p>
-            <h3>Improve the <em>Curriculum</em></h3>
+            <?php echo CFS()->get('home_about_session'); ?>
         </div>
         <footer>
             <a class="learn-more-button" href="#">Learn More</a>
@@ -43,7 +43,7 @@ get_header(); ?>
             <h2>Video</h2>
         </header>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lQQnaQ9wzl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <?php echo CFS()->get('home_video'); ?>
         </div>
     </section>
 
@@ -52,8 +52,7 @@ get_header(); ?>
             <h2>Impact</h2>
         </header>
         <div>
-            <p>Anim tempor reprehenderit do elit voluptate veniam. Culpa velit enim sunt sit magna aliquip officia sunt velit amet sit consequat. Quis fugiat exercitation nulla aliqua reprehenderit dolore duis est veniam nostrud. Irure voluptate veniam ea Lorem Lorem Lorem tempor sit incididunt cillum. Cillum mollit sunt amet cillum Lorem do excepteur ipsum irure eu quis Lorem elit.</p>
-            <p>Id voluptate nostrud ut esse fugiat et irure sunt cillum ea est elit pariatur labore. Est ut aliquip incididunt magna eiusmod aute incididunt dolore aute occaecat qui enim. Consequat sit est consectetur ut laborum laborum consectetur tempor nostrud deserunt exercitation reprehenderit tempor.</p>
+            <?php echo CFS()->get('home_impact_session'); ?>
         </div>
     </section>
 
@@ -104,14 +103,14 @@ get_header(); ?>
     <section class="home-goal">
         <header>
              <h2>Help us reach our goal</h2>
-             <h4 data-text="2020">2020</h4>
+             <h3 data-text="<?php echo CFS()->get('home_goal_final_year'); ?>"><?php echo CFS()->get('home_goal_final_year'); ?></h3>
         </header>
         <div>
             <div id="myProgress" class="goal-progress">
-                <div id="myBar" class="progress-bar" data-progress="33">33%</div>
+                <div id="myBar" class="progress-bar" data-progress="<?php echo CFS()->get('home_goal_percentage'); ?>"><?php echo CFS()->get('home_goal_percentage'); ?>%</div>
             </div>
             <div class="goal-reached">
-                1 million students reached
+                <?php echo CFS()->get('home_goal_reached_msg'); ?>
             </div>
         </div>
         <footer>

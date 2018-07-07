@@ -2036,8 +2036,6 @@ object {
         color: white; }
     .footer-links p {
       text-align: center; }
-    .footer-links aside {
-      width: -webkit-stretch; }
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -2115,8 +2113,7 @@ object {
             justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: -webkit-stretch; } }
+    display: flex; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2137,15 +2134,48 @@ object {
     text-transform: lowercase; }
   .home .page-content > section {
     padding: 2em 1.6em; }
+  .home .page-content .page-content-header {
+    display: none; }
+    .home .page-content .page-content-header img {
+      width: 100%; }
   .home .page-content .home-description h2 {
     color: gray;
-    font-size: 1em; }
+    font-size: 1em;
+    text-transform: unset; }
+  .home .page-content .home-donate {
+    display: none;
+    padding: .5em 0;
+    margin-bottom: 10px;
+    background-color: #f6e24f;
+    -webkit-box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+    .home .page-content .home-donate .donate-button {
+      width: 100%;
+      height: 100%;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold; }
   .home .page-content .home-about {
-    background-color: #f6e24f; }
-    .home .page-content .home-about h3 {
+    background-color: #f6e24f;
+    position: relative; }
+    .home .page-content .home-about em, .home .page-content .home-about strong {
       color: whitesmoke; }
+    .home .page-content .home-about strong {
+      font-weight: bolder; }
     .home .page-content .home-about footer {
       margin: 1em; }
+    .home .page-content .home-about:before {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 180px;
+      background-image: url("../../assets/images/sun.svg");
+      background-repeat: no-repeat;
+      background-position: 90px 0;
+      position: absolute;
+      top: -90px;
+      right: 0; }
   .home .page-content .home-video {
     padding: 0; }
     .home .page-content .home-video .video-container iframe {
@@ -2156,7 +2186,7 @@ object {
     background-color: #04809e; }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
-  .home .page-content .home-goal h4 {
+  .home .page-content .home-goal h3 {
     color: #f8e71c;
     margin: 0;
     font-size: 6em;
@@ -2165,7 +2195,7 @@ object {
     color: yellow;
     -webkit-text-stroke: .02em white;
     text-stroke: .02em white; }
-    .home .page-content .home-goal h4:before {
+    .home .page-content .home-goal h3:before {
       content: attr(data-text);
       position: absolute;
       z-index: -1;
@@ -2175,7 +2205,8 @@ object {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    height: 50px;
+    max-width: 450px;
+    height: 60px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;
@@ -2225,6 +2256,21 @@ object {
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: #f6e24f;
     border-radius: 20px; }
+  @media (min-width: 1080px) {
+    .home .page-content {
+      font-size: 1.6rem; }
+      .home .page-content > section {
+        padding: 2em 8em; }
+      .home .page-content .home-description {
+        font-size: 1.5em; }
+      .home .page-content .home-donate,
+      .home .page-content .page-content-header {
+        display: block; }
+      .home .page-content .home-about:before {
+        width: 600px;
+        height: 600px;
+        background-position: 300px 0;
+        top: -300px; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;
@@ -2428,19 +2474,21 @@ object {
 
 .site-main-impact h1 {
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
-  font-family: "Oswald";
-  font-weight: 300; }
+  font-family: Oswald;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-size: 1.75rem;
+  margin-bottom: 15px; }
 
 .hero-image-impact {
   background-image: url(../../assets/images/impact-hero.jpg);
-  height: 220px;
+  height: 190px;
   width: 100%;
-  background-size: 800px 530px;
-  background-position: top;
-  background-position-x: -130px;
-  background-position-y: -100px; }
+  background-size: 680px 450px;
+  background-position-x: -125px;
+  background-position-y: -70px; }
 
 /***************************** CAROUSEL *****************************/
 * {
@@ -2452,7 +2500,7 @@ object {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 30px; }
+  margin-top: 5px; }
 
 /* Hide the images by default */
 .mySlides {
@@ -2502,12 +2550,12 @@ object {
 
 .test {
   background-color: green;
-  height: 220px;
+  height: 480px;
   width: 100%; }
 
 .test2 {
   background-color: yellow;
-  height: 220px;
+  height: 480px;
   width: 100%; }
 
 .news-title {
@@ -2523,33 +2571,185 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  color: white; }
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Oswald"; }
 
 .see-reports {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: -webkit-cente;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%; }
+  .see-reports p {
+    margin: 0%;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: initial; }
+
+.see-reports-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: -webkit-center;
+  margin: 25px 0px; }
+
+/************************************* NEWS *****************************/
+.new-impact {
+  background-image: url("../../assets/images/Impact_News1.jpg");
+  height: 300px;
+  width: 100%;
+  margin-bottom: 2px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .new-impact h2 {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0px; }
+  .new-impact h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: -webkit-center; }
+
+.arrow-link-news {
+  border-radius: 50px;
+  border-color: white;
+  border-style: solid;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: -webkit-center;
-  padding: 0px 100px;
-  margin-bottom: 30px;
-  margin-top: 20px; }
-  .see-reports p {
-    margin: 0%; }
+  font-weight: 300;
+  border-width: 1px;
+  margin-left: 20px;
+  position: absolute;
+  left: 81%;
+  font-family: "Montserrat"; }
 
-.news-impact {
-  background-image: url("../../assets/images/Impact_News1.jpg");
-  height: 300px;
+.text-area-news {
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  margin-bottom: 10px; }
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat";
+  line-height: initial; }
+  .text-area-news h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.title-area-news {
+  width: 70%; }
+
+.news-nophoto-area {
+  height: 50px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: grey; }
+  .news-nophoto-area a {
+    text-decoration: none; }
+    .news-nophoto-area a:visited {
+      color: grey; }
+
+.news-nophoto {
+  color: black;
+  font-weight: 300;
+  font-family: "Montserrat"; }
+
+.news-nophoto-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.arrow-link-news-nophoto {
+  border-radius: 50px;
+  border-color: gray;
+  border-style: solid;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  border-width: 1px;
+  color: gray;
+  margin-bottom: 5px;
+  margin-left: 5px; }
+
+.load-more {
+  color: black;
+  margin-top: 10px; }
+
+.load-more-area {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px 0px;
+  padding-left: 5%;
+  font-family: "Montserrat";
+  text-decoration: underline; }
