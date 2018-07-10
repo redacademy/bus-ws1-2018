@@ -21,10 +21,19 @@ get_header();
 		
 			<div class = "product-info">
 
-			   <?php  $images = CFS()->get('products');
-				   foreach ($images as $image) {
-					echo the_post_thumbnail(); 
-                    echo '<img src="'.$image["image"].'"/>';
+			   <?php  $images = CFS()->get('products');?>
+
+			   <picture>
+					<?php echo the_post_thumbnail(); ?>
+				</picture>
+
+				
+				 <?php  foreach ($images as $image) {?>
+	
+					<picture>
+                    <?php echo '<img src="'.$image["image"].'"/>';?>
+					</picture>
+				<?php	
 					$price = CFS()->get( 'price' );
 					$description =CFS()->get( 'description' );
                 ?>

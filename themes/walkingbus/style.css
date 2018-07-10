@@ -1130,10 +1130,10 @@ object {
     display: none; }
   @media (min-width: 1080px) {
     .site-header {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 100%; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 100%;
+      height: 12%; } }
   .site-header .header-logo {
     background-image: url("../../assets/images/twsb_logo-large.png");
     background-size: contain;
@@ -1146,7 +1146,8 @@ object {
         align-self: center; }
     @media (min-width: 1080px) {
       .site-header .header-logo {
-        margin-left: 5%; } }
+        height: 80px;
+        margin-left: 3%; } }
   .site-header .site-name {
     font-size: 1rem;
     text-transform: uppercase;
@@ -1163,6 +1164,10 @@ object {
   .site-header .main-navigation {
     -ms-flex-preferred-size: 14%;
         flex-basis: 14%; }
+    @media (min-width: 1080px) {
+      .site-header .main-navigation {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
     .site-header .main-navigation .menu-toggle {
       background: none;
       border: none;
@@ -1237,6 +1242,21 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .site-header .main-navigation .menu li {
+        border-top: 1px solid white;
+        padding: 8px; }
+        .site-header .main-navigation .menu li:first-of-type {
+          border-top: none; }
+          .site-header .main-navigation .menu li:first-of-type i {
+            display: none; }
+      .site-header .main-navigation .menu a {
+        color: white;
+        font-family: "Oswald";
+        text-transform: uppercase;
+        font-size: 1.3rem; }
+        @media (min-width: 1080px) {
+          .site-header .main-navigation .menu a {
+            color: black; } }
       @media (min-width: 1080px) {
         .site-header .main-navigation .menu {
           display: -webkit-box;
@@ -1247,24 +1267,46 @@ object {
               -ms-flex-direction: row;
                   flex-direction: row;
           background: none;
-          width: 80%;
-          left: 8%;
-          top: 30%;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
-      .site-header .main-navigation .menu li {
-        border-top: 1px solid white;
-        padding: 8px; }
-        .site-header .main-navigation .menu li:first-of-type {
-          border-top: none; }
-      .site-header .main-navigation .menu a {
-        color: white;
-        font-family: "Oswald";
-        text-transform: uppercase;
-        font-size: 1.3rem; }
-        @media (min-width: 1080px) {
+          width: 100%;
+          position: relative;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-left: -4%;
+          margin-right: 0; }
+          .site-header .main-navigation .menu li {
+            height: 5%;
+            text-align: center;
+            padding: .5% 5%; }
+            .site-header .main-navigation .menu li:first-of-type {
+              -webkit-box-ordinal-group: 11;
+                  -ms-flex-order: 10;
+                      order: 10;
+              border-right: none;
+              background: #F6E24F; }
+              .site-header .main-navigation .menu li:first-of-type a {
+                font-weight: bold; }
+                .site-header .main-navigation .menu li:first-of-type a i {
+                  display: initial;
+                  color: #03B8E2;
+                  position: relative;
+                  left: 50px;
+                  background: #fbf2b0;
+                  padding: 8px; }
+            .site-header .main-navigation .menu li:hover {
+              background: #03B8E2; }
+            .site-header .main-navigation .menu li:last-of-type {
+              border-right: none; }
           .site-header .main-navigation .menu a {
-            color: black; } }
+            text-align: center;
+            font-size: 1rem; }
+            .site-header .main-navigation .menu a:hover {
+              color: white; }
+            .site-header .main-navigation .menu a:active {
+              background: #03B8E2; } }
 
 .page-template-page-whatwedo {
   display: -webkit-box;
@@ -1277,10 +1319,37 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center; }
+  .page-template-page-whatwedo .video {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .video {
+        display: block;
+        width: 100%;
+        height: 80vh; }
+        .page-template-page-whatwedo .video iframe {
+          width: 100%;
+          height: 100%; } }
+  .page-template-page-whatwedo .donate-btn-wwd {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .donate-btn-wwd {
+        display: block;
+        margin-bottom: -2.8%;
+        z-index: 10;
+        background: #F6E24F;
+        width: 100%;
+        -webkit-box-shadow: 0px 5px #474747;
+                box-shadow: 0px 5px #474747; }
+        .page-template-page-whatwedo .donate-btn-wwd a {
+          text-transform: uppercase;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          font-size: 3rem;
+          font-family: "Oswald";
+          color: black;
+          text-align: center; } }
   .page-template-page-whatwedo .site-name {
     font-size: 1rem; }
   .page-template-page-whatwedo h1 {
@@ -1289,48 +1358,159 @@ object {
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo h1 {
+        font-size: 3rem; } }
+  @media (min-width: 1080px) {
+    .page-template-page-whatwedo .access {
+      margin-top: 10%; } }
   .page-template-page-whatwedo .access h1 {
     margin-top: 5%; }
   .page-template-page-whatwedo .access p {
     color: gray;
     font-size: 1.2rem;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; }
+    text-align: center;
+    font-family: "Montserrat"; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .access p {
+        color: #03B8E2;
+        font-size: 1.5rem; }
+        .page-template-page-whatwedo .access p span {
+          padding: 1% 1.5%;
+          border: 1px solid #03B8E2;
+          border-radius: 100%;
+          text-align: center; }
+        .page-template-page-whatwedo .access p:first-of-type {
+          color: gray; } }
     .page-template-page-whatwedo .access p:nth-of-type(2) {
-      margin-bottom: -20px; }
+      margin-bottom: -2%; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .access p:nth-of-type(2) {
+          margin-bottom: 0; } }
   .page-template-page-whatwedo .access-how {
     width: 100%;
     background: #04809E; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .access-how {
+        padding-bottom: 15%; } }
     .page-template-page-whatwedo .access-how h1 {
       color: white; }
     .page-template-page-whatwedo .access-how ul {
       width: 80%;
       margin: 0; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .access-how ul {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; } }
       .page-template-page-whatwedo .access-how ul li {
         list-style-type: none;
         text-align: left;
         padding-bottom: 5%;
-        color: white; }
-  .page-template-page-whatwedo .access-bttn {
-    margin-top: 5%;
+        color: white;
+        font-family: "Montserrat"; }
+        .page-template-page-whatwedo .access-how ul li span {
+          display: none; }
+        @media (min-width: 1080px) {
+          .page-template-page-whatwedo .access-how ul li {
+            font-size: 1.5rem;
+            font-weight: 300; }
+            .page-template-page-whatwedo .access-how ul li span {
+              display: initial;
+              color: #F6E24F;
+              padding: 1% 1.5%;
+              border: 1px solid #F6E24F;
+              border-radius: 100%;
+              text-align: center;
+              margin-right: 1%; } }
+  .page-template-page-whatwedo .access-bttn, .page-template-page-whatwedo .white {
     margin-left: auto;
-    margin-right: auto; }
-    .page-template-page-whatwedo .access-bttn .access-btn {
+    margin-right: auto;
+    margin-top: 5%; }
+    .page-template-page-whatwedo .access-bttn .access-btn, .page-template-page-whatwedo .white .access-btn {
       color: black;
       background: #F6E24F;
       border-radius: 20px;
       padding: 8px 25px;
-      font-family: "Oswald";
+      font-family: "Montserrat";
       text-decoration: none;
       margin-top: 50%;
       -webkit-box-shadow: 0px 2px silver;
               box-shadow: 0px 2px silver;
       font-weight: bold;
       text-transform: capitalize; }
+  @media (min-width: 1080px) {
+    .page-template-page-whatwedo .white {
+      margin-top: -10%; } }
+  @media (min-width: 1080px) {
+    .page-template-page-whatwedo .white .access-btn {
+      font-size: 1.5rem;
+      padding: 16px 50px;
+      border-radius: 30px;
+      background: white; } }
   .page-template-page-whatwedo .nutrition h1 {
     margin-top: 10%; }
+  .page-template-page-whatwedo .nutrition .nutrition-descrip {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .nutrition-descrip {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 1.5rem; } }
+  @media (min-width: 1080px) {
+    .page-template-page-whatwedo .nutrition .nutrition-pillars-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+    color: gray;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat"; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background: #03B8E2;
+        width: 30%;
+        color: #F6E24F;
+        font-family: "Oswald";
+        padding: 3% 6%;
+        -webkit-box-shadow: 1px 2px gray;
+                box-shadow: 1px 2px gray; }
+        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(1), .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+          background: #028fb0; }
+        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+          opacity: .8; }
+        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p span {
+          width: 30%;
+          margin-bottom: 15%;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid #F6E24F;
+          border-radius: 100%;
+          text-align: center; } }
   .page-template-page-whatwedo .nutrition .p {
     color: gray;
     font-size: 1.1rem;
@@ -1338,11 +1518,11 @@ object {
     margin-left: auto;
     margin-right: auto;
     text-transform: capitalize;
-    text-align: center; }
-    .page-template-page-whatwedo .nutrition .p:first-of-type {
-      text-transform: initial; }
-    .page-template-page-whatwedo .nutrition .p:nth-of-type(2), .page-template-page-whatwedo .nutrition .p:nth-of-type(3) {
-      margin-bottom: -20px; }
+    text-align: center;
+    font-family: "Montserrat"; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .p {
+        font-size: 1.5rem; } }
   .page-template-page-whatwedo .nutrition .nutrition-desc-container {
     width: 95%;
     margin-top: -3%;
@@ -1354,6 +1534,23 @@ object {
     border-bottom: 1px solid #cdcdcd;
     -webkit-box-shadow: 0px 2px #cdcdcd;
             box-shadow: 0px 2px #cdcdcd; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+        margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+      display: none; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+          display: initial;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          width: 50%;
+          height: 650px; } }
     .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
       font-size: 1rem;
       text-align: left;
@@ -1361,8 +1558,19 @@ object {
       margin-left: auto;
       margin-right: auto;
       color: gray; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+          font-size: 1.5rem;
+          -ms-flex-preferred-size: 45%;
+              flex-basis: 45%;
+          margin-left: auto;
+          margin-right: auto;
+          color: black; } }
     .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
       margin-bottom: 5%; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+          display: none; } }
   .page-template-page-whatwedo .nutrition .nutrition-pillar {
     position: relative;
     height: 11vh;
@@ -1372,6 +1580,9 @@ object {
     margin-right: auto;
     background-size: cover;
     background-position: 50% 50%; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .nutrition-pillar {
+        height: 30vh; } }
     .page-template-page-whatwedo .nutrition .nutrition-pillar i {
       color: white;
       position: absolute;
@@ -1379,6 +1590,9 @@ object {
       z-index: 1;
       right: 3%;
       font-size: 1.1rem; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+          font-size: 4rem; } }
     .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
       margin-top: 0;
       padding: 0;
@@ -1390,21 +1604,48 @@ object {
       color: white;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.5); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:first-of-type {
-      background-image: url("../../assets/images/Nutrition1.jpg"); }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+          bottom: -12%;
+          -ms-flex-item-align: center;
+              align-self: center;
+          padding: 1.5%;
+          font-size: 2rem; } }
     .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
-      background-image: url("../../assets/images/Nutrition2.jpg"); }
+      background-image: url("../../assets/images/Nutrition1.jpg"); }
     .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
+      background-image: url("../../assets/images/Nutrition2.jpg"); }
+    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(7) {
       background-image: url("../../assets/images/Nutrition3.jpg"); }
-  .page-template-page-whatwedo .curriculum .p {
+  @media (min-width: 1080px) {
+    .page-template-page-whatwedo .curriculum h1 {
+      font-size: 4rem;
+      color: black; } }
+  .page-template-page-whatwedo .curriculum .pp {
     text-align: center;
     color: gray;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%; }
-    .page-template-page-whatwedo .curriculum .p span {
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum .pp {
+        font-size: 1.5rem;
+        margin-top: 0;
+        width: 50%;
+        margin-bottom: 3%; } }
+    .page-template-page-whatwedo .curriculum .pp span {
       font-weight: bold; }
+  .page-template-page-whatwedo .curriculum .join-simbi {
+    margin-bottom: 5%;
+    margin-top: -7%; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum .join-simbi .access-btn {
+        font-size: 1.5rem;
+        padding: 16px 50px;
+        border-radius: 30px;
+        background: #03B8E2;
+        color: white; } }
   .page-template-page-whatwedo .curriculum .nutrition-desc-container {
     width: 95%;
     margin-top: -3%;
@@ -1416,6 +1657,15 @@ object {
     border-bottom: 1px solid #cdcdcd;
     -webkit-box-shadow: 0px 2px #cdcdcd;
             box-shadow: 0px 2px #cdcdcd; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum .nutrition-desc-container {
+        margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 100%; } }
     .page-template-page-whatwedo .curriculum .nutrition-desc-container .curriculum-description {
       font-size: 1rem;
       text-align: left;
@@ -1424,8 +1674,28 @@ object {
       margin-right: auto;
       color: gray;
       text-align: left; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum .nutrition-desc-container .curriculum-description {
+          font-size: 1.5rem;
+          -ms-flex-preferred-size: 45%;
+              flex-basis: 45%;
+          margin-left: auto;
+          margin-right: auto;
+          color: black; } }
+    .page-template-page-whatwedo .curriculum .nutrition-desc-container img {
+      display: none; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum .nutrition-desc-container img {
+          display: initial;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          width: 50%;
+          height: 650px; } }
     .page-template-page-whatwedo .curriculum .nutrition-desc-container .access-bttn {
       margin-bottom: 5%; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum .nutrition-desc-container .access-bttn {
+          display: none; } }
   .page-template-page-whatwedo .curriculum .curriculum-pillar {
     position: relative;
     height: 11vh;
@@ -1433,6 +1703,13 @@ object {
     margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum .curriculum-pillar {
+        width: 100%;
+        margin-top: -1%;
+        height: 30vh; }
+        .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(4) {
+          margin-top: 0; } }
     .page-template-page-whatwedo .curriculum .curriculum-pillar h1 {
       margin-top: 0;
       padding: 0;
@@ -1444,6 +1721,13 @@ object {
       color: white;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.5); }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum .curriculum-pillar h1 {
+          bottom: -12%;
+          -ms-flex-item-align: center;
+              align-self: center;
+          padding: 1.5%;
+          font-size: 2rem; } }
     .page-template-page-whatwedo .curriculum .curriculum-pillar i {
       color: white;
       position: absolute;
@@ -1451,27 +1735,80 @@ object {
       z-index: 1;
       right: 3%;
       font-size: 1.1rem; }
-    .page-template-page-whatwedo .curriculum .curriculum-pillar:first-of-type {
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum .curriculum-pillar i {
+          font-size: 4rem; } }
+    .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(2) {
       background: url("../../assets/images/Curriculum2.jpg");
       background-size: cover;
       background-position: 50% 50%; }
-    .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(3) {
+    .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(4) {
       background: url("../../assets/images/Curriculum3.png");
       background-size: cover;
       background-position: 50% 50%; }
   .page-template-page-whatwedo .curriculum-how {
     width: 100%;
     background: #04809E; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum-how {
+        background: #F6E24F;
+        padding-bottom: 8%; } }
     .page-template-page-whatwedo .curriculum-how h1 {
       color: white; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum-how h1 {
+          color: black;
+          margin: 0;
+          margin-top: -10px;
+          padding-top: 2%; } }
     .page-template-page-whatwedo .curriculum-how ul {
       width: 80%;
       margin: 0; }
+      @media (min-width: 1080px) {
+        .page-template-page-whatwedo .curriculum-how ul {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2%; } }
       .page-template-page-whatwedo .curriculum-how ul li {
         list-style-type: none;
         text-align: left;
         padding-bottom: 5%;
-        color: white; }
+        color: white;
+        font-family: "Montserrat"; }
+        @media (min-width: 1080px) {
+          .page-template-page-whatwedo .curriculum-how ul li {
+            color: black;
+            font-size: 1.5rem; } }
+        .page-template-page-whatwedo .curriculum-how ul li .how-num {
+          display: none; }
+          @media (min-width: 1080px) {
+            .page-template-page-whatwedo .curriculum-how ul li .how-num {
+              display: initial;
+              padding: 1% 2%;
+              border-radius: 100%;
+              border: 1px solid #03B8E2;
+              color: #03B8E2;
+              font-size: 1.5rem;
+              margin-right: 1%; } }
+  .page-template-page-whatwedo .quote {
+    font-family: "Oswald";
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    margin-top: 10%;
+    font-size: 1.2rem;
+    margin-bottom: 10%; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .quote {
+        width: 50%;
+        text-align: left;
+        font-size: 1.5rem; } }
+    .page-template-page-whatwedo .quote span {
+      color: red;
+      display: block;
+      font-weight: bold; }
 
 .site-info {
   color: white;
@@ -1700,7 +2037,11 @@ object {
     .footer-links p {
       text-align: center; }
     .footer-links aside {
+<<<<<<< HEAD
       width: auto; }
+=======
+      width: -webkit-stretch; }
+>>>>>>> 5783786f2d244183da664c4ab95c92d5729fb856
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -1779,7 +2120,11 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     width: auto; } }
+=======
+    width: -webkit-stretch; } }
+>>>>>>> 5783786f2d244183da664c4ab95c92d5729fb856
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1826,9 +2171,14 @@ object {
     background-color: #f6e24f;
     position: relative; }
     .home .page-content .home-about em, .home .page-content .home-about strong {
-      color: whitesmoke; }
+      color: whitesmoke;
+      font-size: 1.6rem; }
     .home .page-content .home-about strong {
-      font-weight: bolder; }
+      font-weight: bolder;
+      padding: 10px 0; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: "\a";
+        white-space: pre; }
     .home .page-content .home-about footer {
       margin: 1em; }
     .home .page-content .home-about:before {
@@ -1871,19 +2221,18 @@ object {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
     height: 60px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: relative; }
+    display: inline-flex; }
     .home .page-content .home-goal .goal-progress .progress-bar {
       width: 0px;
       height: 100%;
-      background-color: yellow;
+      background-color: #f6e24f;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -1895,7 +2244,22 @@ object {
               align-items: center;
       border-right: 1px solid black;
       -webkit-box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+      position: relative; }
+      .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+        display: none;
+        padding-right: 35px; }
+      .home .page-content .home-goal .goal-progress .progress-bar:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100%;
+        background-image: url("../../assets/images/twsb-bus.svg");
+        background-repeat: no-repeat;
+        background-size: 100px auto;
+        position: absolute;
+        top: 8px;
+        right: -45px; }
   .home .page-content .home-goal .goal-reached {
     font-size: 1.2em;
     font-weight: bold;
@@ -1906,7 +2270,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -1917,7 +2280,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: #f6e24f;
@@ -1932,11 +2294,38 @@ object {
       .home .page-content .home-donate,
       .home .page-content .page-content-header {
         display: block; }
+      .home .page-content .home-about em, .home .page-content .home-about strong {
+        font-size: 1em; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: none; }
       .home .page-content .home-about:before {
         width: 600px;
         height: 600px;
         background-position: 300px 0;
-        top: -300px; } }
+        top: -300px; }
+      .home .page-content .home-goal h3 {
+        color: #f8e71c;
+        margin: 0;
+        font-size: 6em;
+        font-weight: bold;
+        position: relative;
+        color: yellow;
+        -webkit-text-stroke: .02em white;
+        text-stroke: .02em white; }
+        .home .page-content .home-goal h3:before {
+          content: attr(data-text);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: .18em black;
+          text-stroke: .18em black; }
+      .home .page-content .home-goal .goal-progress {
+        height: 80px; }
+        .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+          padding-right: 50px; }
+        .home .page-content .home-goal .goal-progress .progress-bar:before {
+          width: 140px;
+          top: 10px;
+          right: -50px; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;
@@ -2469,3 +2858,108 @@ object {
   padding-left: 5%;
   font-family: "Montserrat";
   text-decoration: underline; }
+
+<<<<<<< HEAD
+.page-template-archive-expeditions .expeditions-wrapper {
+=======
+.page-template-archive-expeditions .expedition-info {
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+<<<<<<< HEAD
+      flex-wrap: wrap;
+  width: 100%; }
+
+.page-template-archive-expeditions .single-expedition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto; }
+
+.page-template-archive-expeditions .expedition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+=======
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
+      flex-wrap: wrap; }
+  .page-template-archive-expeditions .expedition-info .expedition-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+<<<<<<< HEAD
+    position: relative;
+    width: 100%; }
+    .page-template-archive-expeditions .expedition-info .expedition-image img {
+      height: auto;
+      max-width: none;
+      width: 100%; }
+
+.page-template-archive-expeditions .expedition-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: #fff; }
+  .page-template-archive-expeditions .expedition-name .name-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.page-template-archive-expeditions .expedition-description {
+  display: none;
+  height: auto;
+  background-color: white;
+  color: black; }
+=======
+    position: relative; }
+    .page-template-archive-expeditions .expedition-info .expedition-image picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .page-template-archive-expeditions .expedition-info .expedition-name {
+    position: absolute;
+    background-color: rgba(76, 76, 76, 0.6);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+    color: white; }
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b

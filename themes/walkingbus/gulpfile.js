@@ -22,7 +22,7 @@ gulp.task('sass', function() {
     )
     .pipe(gulp.dest('./'))
     .pipe(cssnano())
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style.min.css')) 
     .pipe(gulp.dest('./build/css'));
 });
 
@@ -61,7 +61,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/walkingbus'
+    proxy: 'localhost:8888/walkingbus'    
   });
 
   gulp.watch(files).on('change', browserSync.reload);
