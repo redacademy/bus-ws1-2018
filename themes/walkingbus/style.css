@@ -1700,7 +1700,7 @@ object {
     .footer-links p {
       text-align: center; }
     .footer-links aside {
-      width: -webkit-fill-available; }
+      width: auto; }
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -1779,7 +1779,7 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-fill-available; } }
+    width: auto; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2140,7 +2140,7 @@ object {
 
 .site-main-impact h1 {
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 80px;
   text-align: center;
   font-family: Oswald;
   font-weight: 400;
@@ -2148,13 +2148,22 @@ object {
   font-size: 1.75rem;
   margin-bottom: 15px; }
 
+.hero-image-impact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .hero-image-impact {
   background-image: url(../../assets/images/impact-hero.jpg);
   height: 190px;
   width: 100%;
   background-size: 680px 450px;
   background-position-x: -125px;
-  background-position-y: -70px; }
+  background-position-y: -70px;
+  background-repeat: no-repeat; }
 
 /***************************** CAROUSEL *****************************/
 * {
@@ -2170,7 +2179,7 @@ object {
 
 /* Hide the images by default */
 .mySlides {
-  display: none; }
+  padding-top: 25px; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -2197,6 +2206,17 @@ object {
   background-color: rgba(0, 0, 0, 0.8); }
 
 /* Caption text */
+.text-aside {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 150px;
+  text-align: -webkit-center;
+  margin-right: 20px;
+  position: relative;
+  left: 200px;
+  top: 90px; }
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -2215,14 +2235,22 @@ object {
   top: 0; }
 
 .test {
-  background-color: green;
+  background-image: url(../../assets/images/uganda_popsicle.png);
+  background-repeat: no-repeat;
   height: 480px;
-  width: 100%; }
+  width: 50%;
+  background-size: 125px 400px;
+  padding-right: 50%;
+  margin-left: 5%; }
 
 .test2 {
-  background-color: yellow;
+  background-image: url(../../assets/images/india_popsicle.png);
+  background-repeat: no-repeat;
   height: 480px;
-  width: 100%; }
+  width: 50%;
+  background-size: 125px 400px;
+  padding-right: 50%;
+  margin-left: 5%; }
 
 .news-title {
   background-color: #04809E;
@@ -2237,7 +2265,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 7px;
   color: white;
   font-family: "Oswald"; }
 
@@ -2267,13 +2296,32 @@ object {
   text-align: -webkit-center;
   margin: 25px 0px; }
 
+/*********************************** VIDEOS *****************************/
+.videos-impact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .videos-impact div {
+    height: 203px; }
+  .videos-impact iframe {
+    height: 200px; }
+
 /************************************* NEWS *****************************/
 .new-impact {
   background-image: url("../../assets/images/Impact_News1.jpg");
-  height: 300px;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
   width: 100%;
   margin-bottom: 2px;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2302,8 +2350,8 @@ object {
   border-radius: 50px;
   border-color: white;
   border-style: solid;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2317,7 +2365,7 @@ object {
   border-width: 1px;
   margin-left: 20px;
   position: absolute;
-  left: 81%;
+  left: 83%;
   font-family: "Montserrat"; }
 
 .text-area-news {
@@ -2380,7 +2428,9 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 15px;
+  height: 40px; }
 
 .arrow-link-news-nophoto {
   border-radius: 50px;

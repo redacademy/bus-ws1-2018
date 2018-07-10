@@ -249,9 +249,9 @@
         }
 
         aside {
-            width: -webkit-fill-available;
+            width: auto;
         }
-    }
+    }   
 
     .subscription-container form, .subscription-container input {
         width: 40%;
@@ -332,6 +332,6 @@
     .widget .widget_text{
         justify-content: center;
         display: flex;
-        width: -webkit-fill-available;
+        width: auto;
     }
 }

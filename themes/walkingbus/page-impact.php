@@ -8,38 +8,35 @@ Template Name: impact
 <?php get_header(); ?>
 
 	<div id="primary" class="content-area-impact">
-		<main id="main" class="site-main-impact" role="main">
+	<main id="main" class="site-main-impact" role="main">
         <h1>impact report</h1>
-        <div class="hero-image-impact"></div>
-        
-                    <!-- Slideshow container -->
-            <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
+        <div class="hero-image-impact-wrapper">
+            <div class="hero-image-impact">
+            </div>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
+            <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
             <div class="test"></div>
             <div class="text">india</div>
-            </div>
-
+        </div>          
             <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
+            <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
             <div class="test2"></div>
             <div class="text">uganda</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <!-- Next and previous buttons -->
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
+        </div><br>
 
-            <!-- The dots/circles -->
-            <div style="text-align:center">
+        <!-- The dots/circles -->
+        <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+        </div>
         
         <div class="see-reports-wrapper">
             <section class="see-reports">
@@ -49,10 +46,9 @@ Template Name: impact
         </div>
 
         <section class="videos-impact">
-            <embed width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"> 
-            <embed width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            <div><?php echo CFS()->get('video1'); ?></div>
+            <div><?php echo CFS()->get('video2'); ?></div>
         </section>
-        
         <section class="news-title">news</section>  
             
             <div class = "news  -container">
@@ -74,28 +70,30 @@ Template Name: impact
                             <a class="arrow-link-news" href="<?php the_permalink(); ?>">></a></h2>
                             </div>
                         </a></div>
-                        <?php else : ?>
-                        <br>
-                        <div class="news-nophoto-wrapper">
-                            <div class="news-nophoto-area">
-                                <a class="news-nophoto" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                <a class="arrow-link-news-nophoto" href="<?php the_permalink(); ?>">></a></h2>
-                            </div>
-                        </div>
-
+                        
                         <?php endif; ?>
-
                     <?php endwhile; ?>
-                    
-                    <div class="load-more-area">
-                        <a class="load-more">Load more</a>
-                    </div>
-                    
                     <?php wp_reset_postdata(); ?>
                     
                 <?php else : ?>
                 <h2>Nothing found!</h2>
                 <?php endif; ?>
             </div>
+            
+            <div class="news-nophoto-wrapper">
+                <div class="news-nophoto-area">
+                    <a class="news-nophoto" href=""></a>
+                    <a class="arrow-link-news-nophoto" href="">></a>
+               </div>
+            </div>  
+            
+            <div>
+            <?php CFS()->get('news1'); ?>
+            </div>
+            
+            <div class="load-more-area">
+                <a class="load-more">Load more</a>
+            </div>
+                    
 
 <?php get_footer(); ?>
