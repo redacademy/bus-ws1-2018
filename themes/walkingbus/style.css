@@ -2801,7 +2801,11 @@ object {
   font-family: "Montserrat";
   text-decoration: underline; }
 
+<<<<<<< HEAD
+.page-template-archive-expeditions .expeditions-wrapper {
+=======
 .page-template-archive-expeditions .expedition-info {
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2810,11 +2814,76 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
+<<<<<<< HEAD
+      flex-wrap: wrap;
+  width: 100%; }
+
+.page-template-archive-expeditions .single-expedition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto; }
+
+.page-template-archive-expeditions .expedition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+=======
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
       flex-wrap: wrap; }
   .page-template-archive-expeditions .expedition-info .expedition-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    position: relative;
+    width: 100%; }
+    .page-template-archive-expeditions .expedition-info .expedition-image img {
+      height: auto;
+      max-width: none;
+      width: 100%; }
+
+.page-template-archive-expeditions .expedition-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: #fff; }
+  .page-template-archive-expeditions .expedition-name .name-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.page-template-archive-expeditions .expedition-description {
+  display: none;
+  height: auto;
+  background-color: white;
+  color: black; }
+=======
     position: relative; }
     .page-template-archive-expeditions .expedition-info .expedition-image picture {
       display: -webkit-box;
@@ -2835,3 +2904,4 @@ object {
         align-self: flex-end;
     width: 100%;
     color: white; }
+>>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b

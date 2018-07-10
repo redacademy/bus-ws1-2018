@@ -56,31 +56,8 @@ $j('#subscription-form').submit(function(event) {
  });
 
 
-// Front Page
+// EXPEDITIONS FUNCTION (show/hide expedition excerpt)
 
-$j(function (){
-
-    function moveBus() {
-
-        var $myBar = $j('#progress-bar'); 
-        if(!$myBar) {
-            return;
-        }
-        var progress = $myBar.attr('data-progress');
-        $j('#progress-bar-text').show();
-
-        var width = 1;
-        var id = setInterval(frame, 16);
-        function frame() {
-            if (width >= progress) {
-                clearInterval(id);
-            } else {
-                width++; 
-                $myBar.width(width + '%'); 
-            }
-        }
-    }
-    setTimeout(moveBus, 1000);
-
+$j('.expedition-name').click(function() {
+    $j(this).children('.expedition-description').slideToggle('fast');
 });
-
