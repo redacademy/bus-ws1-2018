@@ -264,6 +264,7 @@
         margin-top: 0px;
 
         button {
+            cursor: pointer;
             padding-top: 0;
             padding-bottom: 0;
             width: 220px;
@@ -332,10 +333,6 @@
     .widget .widget_text{
         justify-content: center;
         display: flex;
-<<<<<<< HEAD
         width: auto;
-=======
-        width: -webkit-stretch;
->>>>>>> 5783786f2d244183da664c4ab95c92d5729fb856
     }
 }

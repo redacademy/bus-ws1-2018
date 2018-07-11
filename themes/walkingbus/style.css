@@ -677,7 +677,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -2037,11 +2037,7 @@ object {
     .footer-links p {
       text-align: center; }
     .footer-links aside {
-<<<<<<< HEAD
       width: auto; }
-=======
-      width: -webkit-stretch; }
->>>>>>> 5783786f2d244183da664c4ab95c92d5729fb856
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -2050,6 +2046,7 @@ object {
   .subscription-container {
     margin-top: 0px; }
     .subscription-container button {
+      cursor: pointer;
       padding-top: 0;
       padding-bottom: 0;
       width: 220px;
@@ -2120,11 +2117,7 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     width: auto; } }
-=======
-    width: -webkit-stretch; } }
->>>>>>> 5783786f2d244183da664c4ab95c92d5729fb856
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2135,7 +2128,9 @@ object {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Montserrat" header;
+    font-family-font-family: 'Oswald'; }
   .home .page-content h2, .home .page-content h3 {
     margin: 0;
     font-size: 1.3em; }
@@ -2568,7 +2563,8 @@ object {
 
 /* Hide the images by default */
 .mySlides {
-  padding-top: 25px; }
+  padding-top: 25px;
+  height: 450px; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -2859,11 +2855,7 @@ object {
   font-family: "Montserrat";
   text-decoration: underline; }
 
-<<<<<<< HEAD
 .page-template-archive-expeditions .expeditions-wrapper {
-=======
-.page-template-archive-expeditions .expedition-info {
->>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2872,7 +2864,6 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-<<<<<<< HEAD
       flex-wrap: wrap;
   width: 100%; }
 
@@ -2897,14 +2888,11 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
-=======
->>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
       flex-wrap: wrap; }
   .page-template-archive-expeditions .expedition-info .expedition-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     position: relative;
     width: 100%; }
     .page-template-archive-expeditions .expedition-info .expedition-image img {
@@ -2941,25 +2929,3 @@ object {
   height: auto;
   background-color: white;
   color: black; }
-=======
-    position: relative; }
-    .page-template-archive-expeditions .expedition-info .expedition-image picture {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-  .page-template-archive-expeditions .expedition-info .expedition-name {
-    position: absolute;
-    background-color: rgba(76, 76, 76, 0.6);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: 100%;
-    color: white; }
->>>>>>> 4e204a7085b6c8869a6895b5efb3f50225ca5b7b
