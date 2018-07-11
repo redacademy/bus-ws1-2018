@@ -28,7 +28,7 @@
 				<div class="subscription-container">
 					<p>subscribe <span>to our </span>newsletter</p>
 					<form action="submit.php" method="post" class="subscription-form" id="subscription-form">
-						<input id="email-input" name="username" maxlength="36" placeholder="Email Adress"></input>
+						<input id="email-input" name="username" type="email" maxlength="36" placeholder="Email Adress"></input>
 						<button type="submit">Sign Up</button>
 					</form>
 					<div class="followuson-links-mob">

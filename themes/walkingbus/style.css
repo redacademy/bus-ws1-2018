@@ -2073,6 +2073,7 @@ object {
       text-align: center; }
     .footer-links aside {
       width: -webkit-stretch; }
+
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -2151,7 +2152,8 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-stretch; } }
+    width: -webkit-stretch; }
+
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2198,9 +2200,14 @@ object {
     background-color: #f6e24f;
     position: relative; }
     .home .page-content .home-about em, .home .page-content .home-about strong {
-      color: whitesmoke; }
+      color: whitesmoke;
+      font-size: 1.6rem; }
     .home .page-content .home-about strong {
-      font-weight: bolder; }
+      font-weight: bolder;
+      padding: 10px 0; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: "\a";
+        white-space: pre; }
     .home .page-content .home-about footer {
       margin: 1em; }
     .home .page-content .home-about:before {
@@ -2243,19 +2250,18 @@ object {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
     height: 60px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: relative; }
+    display: inline-flex; }
     .home .page-content .home-goal .goal-progress .progress-bar {
       width: 0px;
       height: 100%;
-      background-color: yellow;
+      background-color: #f6e24f;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -2267,7 +2273,22 @@ object {
               align-items: center;
       border-right: 1px solid black;
       -webkit-box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+              box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+      position: relative; }
+      .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+        display: none;
+        padding-right: 35px; }
+      .home .page-content .home-goal .goal-progress .progress-bar:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100%;
+        background-image: url("../../assets/images/twsb-bus.svg");
+        background-repeat: no-repeat;
+        background-size: 100px auto;
+        position: absolute;
+        top: 8px;
+        right: -45px; }
   .home .page-content .home-goal .goal-reached {
     font-size: 1.2em;
     font-weight: bold;
@@ -2278,7 +2299,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -2289,7 +2309,6 @@ object {
     padding: 5px 25px;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: #f6e24f;
@@ -2304,11 +2323,38 @@ object {
       .home .page-content .home-donate,
       .home .page-content .page-content-header {
         display: block; }
+      .home .page-content .home-about em, .home .page-content .home-about strong {
+        font-size: 1em; }
+      .home .page-content .home-about strong:before, .home .page-content .home-about strong:after {
+        content: none; }
       .home .page-content .home-about:before {
         width: 600px;
         height: 600px;
         background-position: 300px 0;
-        top: -300px; } }
+        top: -300px; }
+      .home .page-content .home-goal h3 {
+        color: #f8e71c;
+        margin: 0;
+        font-size: 6em;
+        font-weight: bold;
+        position: relative;
+        color: yellow;
+        -webkit-text-stroke: .02em white;
+        text-stroke: .02em white; }
+        .home .page-content .home-goal h3:before {
+          content: attr(data-text);
+          position: absolute;
+          z-index: -1;
+          -webkit-text-stroke: .18em black;
+          text-stroke: .18em black; }
+      .home .page-content .home-goal .goal-progress {
+        height: 80px; }
+        .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
+          padding-right: 50px; }
+        .home .page-content .home-goal .goal-progress .progress-bar:before {
+          width: 140px;
+          top: 10px;
+          right: -50px; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;
@@ -2512,7 +2558,7 @@ object {
 
 .site-main-impact h1 {
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 80px;
   text-align: center;
   font-family: Oswald;
   font-weight: 400;
@@ -2520,13 +2566,22 @@ object {
   font-size: 1.75rem;
   margin-bottom: 15px; }
 
+.hero-image-impact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .hero-image-impact {
   background-image: url(../../assets/images/impact-hero.jpg);
   height: 190px;
   width: 100%;
   background-size: 680px 450px;
   background-position-x: -125px;
-  background-position-y: -70px; }
+  background-position-y: -70px;
+  background-repeat: no-repeat; }
 
 /***************************** CAROUSEL *****************************/
 * {
@@ -2542,7 +2597,7 @@ object {
 
 /* Hide the images by default */
 .mySlides {
-  display: none; }
+  padding-top: 25px; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -2569,6 +2624,17 @@ object {
   background-color: rgba(0, 0, 0, 0.8); }
 
 /* Caption text */
+.text-aside {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 150px;
+  text-align: -webkit-center;
+  margin-right: 20px;
+  position: relative;
+  left: 200px;
+  top: 90px; }
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -2587,14 +2653,22 @@ object {
   top: 0; }
 
 .test {
-  background-color: green;
+  background-image: url(../../assets/images/uganda_popsicle.png);
+  background-repeat: no-repeat;
   height: 480px;
-  width: 100%; }
+  width: 50%;
+  background-size: 125px 400px;
+  padding-right: 50%;
+  margin-left: 5%; }
 
 .test2 {
-  background-color: yellow;
+  background-image: url(../../assets/images/india_popsicle.png);
+  background-repeat: no-repeat;
   height: 480px;
-  width: 100%; }
+  width: 50%;
+  background-size: 125px 400px;
+  padding-right: 50%;
+  margin-left: 5%; }
 
 .news-title {
   background-color: #04809E;
@@ -2609,7 +2683,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 7px;
   color: white;
   font-family: "Oswald"; }
 
@@ -2639,13 +2714,32 @@ object {
   text-align: -webkit-center;
   margin: 25px 0px; }
 
+/*********************************** VIDEOS *****************************/
+.videos-impact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .videos-impact div {
+    height: 203px; }
+  .videos-impact iframe {
+    height: 200px; }
+
 /************************************* NEWS *****************************/
 .new-impact {
   background-image: url("../../assets/images/Impact_News1.jpg");
-  height: 300px;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
   width: 100%;
   margin-bottom: 2px;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2674,8 +2768,8 @@ object {
   border-radius: 50px;
   border-color: white;
   border-style: solid;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2689,7 +2783,7 @@ object {
   border-width: 1px;
   margin-left: 20px;
   position: absolute;
-  left: 81%;
+  left: 83%;
   font-family: "Montserrat"; }
 
 .text-area-news {
@@ -2752,7 +2846,9 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 15px;
+  height: 40px; }
 
 .arrow-link-news-nophoto {
   border-radius: 50px;
@@ -2792,7 +2888,9 @@ object {
   font-family: "Montserrat";
   text-decoration: underline; }
 
+
 .page-template-archive-expeditions .expedition-info {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2801,12 +2899,75 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+  width: 100%; }
+
+.page-template-archive-expeditions .single-expedition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto; }
+
+.page-template-archive-expeditions .expedition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+
       flex-wrap: wrap; }
   .page-template-archive-expeditions .expedition-info .expedition-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative; }
+
+    position: relative;
+    width: 100%; }
+    .page-template-archive-expeditions .expedition-info .expedition-image img {
+      height: auto;
+      max-width: none;
+      width: 100%; }
+
+.page-template-archive-expeditions .expedition-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: #fff; }
+  .page-template-archive-expeditions .expedition-name .name-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.page-template-archive-expeditions .expedition-description {
+  display: none;
+  height: auto;
+  background-color: white;
+  color: black; }
+
     .page-template-archive-expeditions .expedition-info .expedition-image picture {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2826,3 +2987,4 @@ object {
         align-self: flex-end;
     width: 100%;
     color: white; }
+  }

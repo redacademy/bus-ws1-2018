@@ -107,7 +107,9 @@ get_header(); ?>
         </header>
         <div>
             <div id="myProgress" class="goal-progress">
-                <div id="myBar" class="progress-bar" data-progress="<?php echo CFS()->get('home_goal_percentage'); ?>"><?php echo CFS()->get('home_goal_percentage'); ?>%</div>
+                <div id="progress-bar" class="progress-bar" data-progress="<?php echo CFS()->get('home_goal_percentage'); ?>">
+                    <div id="progress-bar-text" class="progress-bar-text"><?php echo CFS()->get('home_goal_percentage'); ?>%</div>
+                </div>
             </div>
             <div class="goal-reached">
                 <?php echo CFS()->get('home_goal_reached_msg'); ?>

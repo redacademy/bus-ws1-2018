@@ -1,33 +1,74 @@
 .page-template-archive-expeditions{
 
+    .expeditions-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .single-expedition{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
     .expedition-info{
         display:flex;
-        flex-direction:row; 
+        flex-direction:column; 
         flex-wrap:wrap; 
 
       
  
-     .expedition-image{
-        display:flex;
-        position:relative;
-     
+        .expedition-image{
+            display:flex;
+            position:relative;
+            width:100%; 
 
-        picture{
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-        }
+            // picture{
+            //     display: flex;
+            //     width: 100%;
+            //     flex-direction: column;
+
+
+                img{ 
+                    height: auto;
+                    max-width: none;
+                    width: 100%;
+                }
+         }
+            // }
      }
 
     .expedition-name{ 
-        position: absolute;
-        background-color: rgba(76,76,76,.6);
-        display: flex;
-        align-self: flex-end;
+       // position: absolute;
+       background:linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
         width: 100%;
-        color:white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #fff;
+       
+
+        .name-wrapper{
+            display:inline-flex;
+            justify-content: space-between;
+            align-items:center;
+            
+        }
 
     }
-}
+
+   
+    //}
+
+    .expedition-description{
+        display:none;
+        height:auto;
+        background-color:white;
+        color:black;
+     }
    
 }
