@@ -12,8 +12,8 @@ get_header(); ?>
             <section class="access">
                 <h1>Access</h1>
                 <p>Our School Bus Model focuses on two main areas:</p>
-                <p><span>1.</span> Getting students to and from school.</p>
-                <p><span>2.</span> Financing the Bus.</p>
+                <p><span>1</span> Getting students to and from school.</p>
+                <p><span>2</span> Financing the Bus.</p>
             </section>
             <div class='video'><?php echo CFS()->get('video'); ?></div>
             <div class="donate-btn-wwd"><a href="">Donate</a></div>
@@ -49,10 +49,7 @@ get_header(); ?>
                 <div class="nutrition-desc-container container1">
                     <img src=<?php echo CFS()->get('wcs_image'); ?> />
                     <p class="nutrition-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Repellendus, eum. A, neque doloremque! Nisi esse accusamus architecto 
-                        magnam adipisci cumque reprehenderit fugit beatae perferendis repudiandae! 
-                        Numquam odit fuga repellendus officia!
+                        <?php echo CFS()->get('wcs_description'); ?>
                     </p>
                     <div class="access-bttn"><a class="access-btn" href="">Learn more</a></div>
                 </div>
@@ -63,9 +60,7 @@ get_header(); ?>
                 <div class="nutrition-desc-container container2">
                     <img src=<?php echo CFS()->get('cc_image'); ?> />
                     <p class="nutrition-description">
-                        Uganda has an average rainfall of 50 inches, which makes it 
-                        an ideal enviroment fr water catchment systems to provide clean water to 
-                        the community.<br>This water catchment system has a low installation cost (under $1000 USD).
+                        <?php echo CFS()->get('cc_description'); ?>
                     </p>
     
                     <div class="access-bttn"><a class="access-btn" href="">Learn more</a></div>               
@@ -77,9 +72,7 @@ get_header(); ?>
                 <div class="nutrition-desc-container container3">
                     <img src=<?php echo CFS()->get('csa_image'); ?> />
                     <p class="nutrition-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Corrupti voluptates quod amet tempora sequi quaerat, aspernatur vel 
-                        beatae fugiat id provident ipsam pariatur quisquam recusandae at voluptas minima ex modi!
+                        <?php echo CFS()->get('csa_description'); ?>
                     </p>
                     <div class="access-bttn"><a class="access-btn" href="">Learn more</a></div>
                 </div>
@@ -107,9 +100,7 @@ get_header(); ?>
             <div class="nutrition-desc-container container4">
                 <img src=<?php echo CFS()->get('simbi_rr'); ?> />
                 <p class="curriculum-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Corrupti voluptates quod amet tempora sequi quaerat, aspernatur vel 
-                    beatae fugiat id provident ipsam pariatur quisquam recusandae at voluptas minima ex modi!
+                    <?php echo CFS()->get('simbi_rr_description'); ?>
                 </p>
                 <div class="access-bttn"><a class="access-btn" href="">Learn more</a></div>
             </div>
@@ -120,9 +111,7 @@ get_header(); ?>
             <div class="nutrition-desc-container container5">
                 <img src=<?php echo CFS()->get('simbi_cr'); ?> />
                 <p class="curriculum-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Corrupti voluptates quod amet tempora sequi quaerat, aspernatur vel 
-                    beatae fugiat id provident ipsam pariatur quisquam recusandae at voluptas minima ex modi!
+                    <?php echo CFS()->get('simbi_cr_description'); ?>
                 </p>
                 <div class="access-bttn"><a class="access-btn" href="">Learn more</a></div>
             </div>
