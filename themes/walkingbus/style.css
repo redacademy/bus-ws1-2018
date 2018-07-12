@@ -1325,10 +1325,14 @@ object {
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .video {
         display: block;
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         height: 80vh; }
         .page-template-page-whatwedo .video iframe {
           width: 100%;
+          margin-left: auto;
+          margin-right: auto;
           height: 100%; } }
   .page-template-page-whatwedo .donate-btn-wwd {
     display: none; }
@@ -1338,12 +1342,16 @@ object {
         margin-bottom: -2.8%;
         z-index: 10;
         background: #F6E24F;
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         -webkit-box-shadow: 0px 5px #474747;
                 box-shadow: 0px 5px #474747; }
         .page-template-page-whatwedo .donate-btn-wwd a {
           text-transform: uppercase;
-          width: 100%;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
           height: 100%;
           text-decoration: none;
           font-size: 3rem;
@@ -1361,41 +1369,47 @@ object {
     @media (min-width: 1080px) {
       .page-template-page-whatwedo h1 {
         font-size: 3rem; } }
-  @media (min-width: 1080px) {
-    .page-template-page-whatwedo .access {
-      margin-top: 10%; } }
-  .page-template-page-whatwedo .access h1 {
-    margin-top: 5%; }
-  .page-template-page-whatwedo .access p {
-    color: gray;
-    font-size: 1.2rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: "Montserrat"; }
+  .page-template-page-whatwedo .access {
+    margin-top: 15%; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .access p {
-        color: #03B8E2;
-        font-size: 1.5rem; }
-        .page-template-page-whatwedo .access p span {
-          padding: 1% 1.5%;
-          border: 1px solid #03B8E2;
-          border-radius: 100%;
-          text-align: center; }
-        .page-template-page-whatwedo .access p:first-of-type {
-          color: gray; } }
-    .page-template-page-whatwedo .access p:nth-of-type(2) {
-      margin-bottom: -2%; }
+      .page-template-page-whatwedo .access {
+        margin-top: 10%;
+        margin-bottom: 10%; } }
+    .page-template-page-whatwedo .access h1 {
+      margin-top: 5%; }
+    .page-template-page-whatwedo .access p {
+      color: gray;
+      font-size: 1.2rem;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: "Montserrat"; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .access p:nth-of-type(2) {
-          margin-bottom: 0; } }
+        .page-template-page-whatwedo .access p {
+          color: #03B8E2;
+          font-size: 1.5rem; }
+          .page-template-page-whatwedo .access p span {
+            padding: 1% 1.5%;
+            border: 1px solid #03B8E2;
+            border-radius: 100%;
+            text-align: center; }
+          .page-template-page-whatwedo .access p:first-of-type {
+            color: gray; } }
+      .page-template-page-whatwedo .access p:nth-of-type(2) {
+        margin-bottom: -2%; }
+        @media (min-width: 1080px) {
+          .page-template-page-whatwedo .access p:nth-of-type(2) {
+            margin-bottom: 0; } }
   .page-template-page-whatwedo .access-how {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background: #04809E; }
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .access-how {
-        padding-bottom: 15%; } }
+        padding-bottom: 15%;
+        width: 90%; } }
     .page-template-page-whatwedo .access-how h1 {
       color: white; }
     .page-template-page-whatwedo .access-how ul {
@@ -1525,7 +1539,6 @@ object {
         font-size: 1.5rem; } }
   .page-template-page-whatwedo .nutrition .nutrition-desc-container {
     width: 95%;
-    margin-top: -3%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
@@ -1541,14 +1554,15 @@ object {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap;
+        width: 90%; } }
     .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
       display: none; }
       @media (min-width: 1080px) {
         .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
           display: initial;
-          -ms-flex-preferred-size: 50%;
-              flex-basis: 50%;
+          -ms-flex-preferred-size: 49%;
+              flex-basis: 49%;
           width: 50%;
           height: 650px; } }
     .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
@@ -1582,7 +1596,8 @@ object {
     background-position: 50% 50%; }
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .nutrition .nutrition-pillar {
-        height: 30vh; } }
+        height: 30vh;
+        width: 90%; } }
     .page-template-page-whatwedo .nutrition .nutrition-pillar i {
       color: white;
       position: absolute;
@@ -1594,12 +1609,13 @@ object {
         .page-template-page-whatwedo .nutrition .nutrition-pillar i {
           font-size: 4rem; } }
     .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
-      margin-top: 0;
       padding: 0;
       position: absolute;
-      bottom: -21%;
+      bottom: -15%;
       font-size: 1.1rem;
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
       color: white;
       text-transform: uppercase;
@@ -1617,6 +1633,14 @@ object {
       background-image: url("../../assets/images/Nutrition2.jpg"); }
     .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(7) {
       background-image: url("../../assets/images/Nutrition3.jpg"); }
+  .page-template-page-whatwedo .curri-img {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curri-img {
+        display: initial;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; } }
   @media (min-width: 1080px) {
     .page-template-page-whatwedo .curriculum h1 {
       font-size: 4rem;
@@ -1637,8 +1661,10 @@ object {
     .page-template-page-whatwedo .curriculum .pp span {
       font-weight: bold; }
   .page-template-page-whatwedo .curriculum .join-simbi {
-    margin-bottom: 5%;
-    margin-top: -7%; }
+    margin-bottom: 5%; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .curriculum .join-simbi {
+        margin-top: -7%; } }
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .curriculum .join-simbi .access-btn {
         font-size: 1.5rem;
@@ -1648,7 +1674,7 @@ object {
         color: white; } }
   .page-template-page-whatwedo .curriculum .nutrition-desc-container {
     width: 95%;
-    margin-top: -3%;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
@@ -1665,7 +1691,9 @@ object {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        width: 100%; } }
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto; } }
     .page-template-page-whatwedo .curriculum .nutrition-desc-container .curriculum-description {
       font-size: 1rem;
       text-align: left;
@@ -1705,7 +1733,9 @@ object {
     margin-right: auto; }
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .curriculum .curriculum-pillar {
-        width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: -1%;
         height: 30vh; }
         .page-template-page-whatwedo .curriculum .curriculum-pillar:nth-of-type(4) {
@@ -1714,9 +1744,11 @@ object {
       margin-top: 0;
       padding: 0;
       position: absolute;
-      bottom: -21%;
+      bottom: -15%;
       font-size: 1.1rem;
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
       color: white;
       text-transform: uppercase;
@@ -1748,11 +1780,14 @@ object {
       background-position: 50% 50%; }
   .page-template-page-whatwedo .curriculum-how {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background: #04809E; }
     @media (min-width: 1080px) {
       .page-template-page-whatwedo .curriculum-how {
         background: #F6E24F;
-        padding-bottom: 8%; } }
+        padding-bottom: 8%;
+        width: 90%; } }
     .page-template-page-whatwedo .curriculum-how h1 {
       color: white; }
       @media (min-width: 1080px) {
@@ -2524,7 +2559,7 @@ object {
 
 .site-main-impact h1 {
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
   font-family: Oswald;
   font-weight: 400;
@@ -2579,16 +2614,29 @@ object {
   font-size: 18px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 3px 3px 0;
+  left: 70%; }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
+  border-radius: 80px;
+  width: 50px;
+  height: 50px;
+  color: grey;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  margin-top: 20px; }
 
 /* Caption text */
 .text-aside {
@@ -2599,7 +2647,7 @@ object {
   text-align: -webkit-center;
   margin-right: 20px;
   position: relative;
-  left: 200px;
+  left: 55%;
   top: 90px; }
 
 .text {
@@ -2626,7 +2674,7 @@ object {
   width: 50%;
   background-size: 125px 400px;
   padding-right: 50%;
-  margin-left: 5%; }
+  margin-left: 15%; }
 
 .test2 {
   background-image: url(../../assets/images/india_popsicle.png);
@@ -2635,7 +2683,7 @@ object {
   width: 50%;
   background-size: 125px 400px;
   padding-right: 50%;
-  margin-left: 5%; }
+  margin-left: 15%; }
 
 .news-title {
   background-color: #04809E;

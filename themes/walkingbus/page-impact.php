@@ -31,13 +31,6 @@ Template Name: impact
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div><br>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
         <div class="see-reports-wrapper">
             <section class="see-reports">
                 <p>See how we are tracking in each region by reviewing our annual report for 2016 - 17.</p><br>
