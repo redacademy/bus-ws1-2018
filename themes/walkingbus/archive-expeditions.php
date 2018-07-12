@@ -41,7 +41,7 @@ Template Name: get involved
 
 <!-- displays past expeditions  -->
 
-    <div class = "expedition-wrapper">
+    <section class = "past-expeditions">
 
         <?php
 			$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => -1  );
@@ -65,31 +65,39 @@ Template Name: get involved
                         <!-- <picture> -->
                             <?php echo '<img src="'.$mission['image'].'"/>';?>
                         <!-- </picture>     -->
-                    </div>
+                   
 
-                    <div class = "expedition-name" id = "expedition-name">
+                        <div class = "expedition-name" id = "expedition-name">
 
-                        <div class = "name-wrapper"> 
+                            <div class = "name-wrapper"> 
 
-                       <p> <?php  echo the_title();?> </p>
+                                <div class = "expedition-title">
 
-                        <i class="fas fa-angle-down"></i>
+                                   <p> <?php  echo the_title();?> </p>
 
-                        </div>
+                                    <i class="fas fa-angle-down"></i>
+
+                                </div>
 
 
-                         <div class = "expedition-description" id= "expedition-description">
-                            <?php echo CFS()->get.$mission['excerpt'];?>
-                        </div> <!-- expedition-description-->
+                            <div class = "expedition-description" id= "expedition-description">
+                                <?php echo CFS()->get.$mission['excerpt'];?>
 
-                    </div>   <!--expedition-name -->
+                               <a href = "<?php the_permalink();?>"> <button> read more</button></a>
+                            </div> <!-- expedition-description-->
+
+                            </div> <!--  name-wrapper -->
+
+                        </div>   <!--expedition-name -->
 
                      
-              
+                     </div> <!--expedition-image -->
 
                
 
-                </div>
+                </div> <!--expedition-info -->
+
+              </div> <!--single-expedition -->    
 
             <?php } ?>
  
@@ -97,7 +105,7 @@ Template Name: get involved
 
         <?php endwhile; ?> 
 
-  </div> <!-- expedition-wrapper-->
+  </section> <!-- expedition-wrapper-->
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
         
@@ -106,9 +114,22 @@ Template Name: get involved
         <?php endif; ?>
 
 
+<!-- TODO insert list of sponsors in a list (custom field loop)-->
+
+        <section class = "sponsors">
+           
+            <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It’s an honour to work with you.</p>
+
+        </section>
+
     <!-- display all the team members (all the teams)-->
 
-    <?php
+
+    <section class = "wsb-team">
+
+        <ul class = "carousel-list" id = "carousel">
+
+        <?php
 		$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
 		$teams = new WP_Query( $args ); 
 		?>
@@ -120,25 +141,31 @@ Template Name: get involved
 
         <?php $teamMembers = CFS()->get('members'); 
 
-                        foreach ($teamMembers as $member) {?>
+            foreach ($teamMembers as $member) {?>
 
-                        <div class = "member-picture">
+                <div class = "single-member">
+
+                    <div class = "member-picture">
                         <picture>
                             <?php echo '<img src="'.$member['image'].'"/>';?>
                         </picture>    
-                        </div>
+                    
 
-                        <div class = "member-name">
-                           <?php  echo CFS()->get.$member['name']; ?>
-                        </div>     
+                    <div class = "member-name">
+                        <?php  echo CFS()->get.$member['name']; ?>
+                    </div>     
 
-                        <div class = "member-role">
-                            <?php echo CFS()->get.$member['role'];?>
-                        </div>   
+                    <div class = "member-role">
+                        <?php echo CFS()->get.$member['role'];?>
+                    </div>   
 
-                        <div class = "member-bio">
-                            <?php echo CFS()->get.$member['bio'];?>
-                        </div> 
+                    <div class = "member-bio">
+                        <?php echo CFS()->get.$member['bio'];?>
+                    </div> 
+
+                    </div> <!-- member-picture-->
+
+                </div> <!-- single-member-->
 
         <?php } ?>
  
@@ -153,6 +180,13 @@ Template Name: get involved
         <h2>Nothing found!</h2>
     
     <?php endif; ?>
+
+    </div> <!-- carousel-->
+
+    </div> <!-- wsb-team-->
+
+
+    <div class = "research">
 
 
 
@@ -213,6 +247,7 @@ Template Name: get involved
     <?php endif; ?>
 
 
+</div>
 
 			
 

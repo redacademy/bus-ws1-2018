@@ -23,30 +23,41 @@ get_header();
 
 			   <?php  $images = CFS()->get('products');?>
 
-			   <picture>
-					<?php echo the_post_thumbnail(); ?>
-				</picture>
+			   <div class = "main-image">
 
+					<picture>
+						<?php echo the_post_thumbnail(); ?>
+					</picture>
+					
+				</div>
 				
 				 <?php  foreach ($images as $image) {?>
 	
 					<picture>
-                    <?php echo '<img src="'.$image["image"].'"/>';?>
+					<?php echo '<img src="'.$image["image"].'"/>';?>
+					<?php echo '<img src="'.$image["image_2"].'"/>';?>
+					<?php echo '<img src="'.$image["image_3"].'"/>';?>
+					<?php echo '<img src="'.$image["image_4"].'"/>';?>
+
 					</picture>
-				<?php	
-					$price = CFS()->get( 'price' );
-					$description =CFS()->get( 'description' );
-                ?>
-				<?php echo "<p class=\"price\"> \${$price}</p>";?>
-				<?php echo "<p class=\"product-exerpt\">{$description}</p>";}?>
 
+				<div class = "product-details"> 
 
+					<?php	
+						$price = CFS()->get( 'price' );
+						$description =CFS()->get( 'description' );
+					?>
+					 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php echo "<p class=\"price\"> \${$price}</p>";?>
+					<?php echo "<p class=\"product-exerpt\">{$description}</p>";}?>
+
+				</div>
 
 			</div> <!-- product-info -->
 
  
 		
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+           
             
 		    
 			<?php endwhile; // End of the loop. ?>

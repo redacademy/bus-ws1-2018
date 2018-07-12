@@ -677,7 +677,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -2072,8 +2072,7 @@ object {
     .footer-links p {
       text-align: center; }
     .footer-links aside {
-      width: -webkit-stretch; }
-
+      width: auto; }
   .subscription-container form, .subscription-container input {
     width: 40%;
     color: white;
@@ -2082,6 +2081,7 @@ object {
   .subscription-container {
     margin-top: 0px; }
     .subscription-container button {
+      cursor: pointer;
       padding-top: 0;
       padding-bottom: 0;
       width: 220px;
@@ -2152,8 +2152,7 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-stretch; }
-
+    width: auto; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2164,7 +2163,9 @@ object {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Montserrat" header;
+    font-family-font-family: 'Oswald'; }
   .home .page-content h2, .home .page-content h3 {
     margin: 0;
     font-size: 1.3em; }
@@ -2444,8 +2445,6 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 10.6875rem;
-    min-height: 14.125rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -2461,10 +2460,9 @@ object {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-      .page-template-archive-products .products-gallery-container .single-product .product-image img {
-        width: 100%;
-        height: 100%; }
   .page-template-archive-products .products-gallery-container .product-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2474,8 +2472,13 @@ object {
             flex-direction: row;
     width: 100%;
     height: 20%; }
+    .page-template-archive-products .products-gallery-container .product-info a {
+      color: black; }
     .page-template-archive-products .products-gallery-container .product-info p {
       margin: 0px; }
+  .page-template-archive-products .products-gallery-container picture img {
+    width: 100%;
+    height: 100%; }
 
 .site-main-donate {
   display: -webkit-box;
@@ -2558,7 +2561,7 @@ object {
 
 .site-main-impact h1 {
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
   font-family: Oswald;
   font-weight: 400;
@@ -2597,7 +2600,8 @@ object {
 
 /* Hide the images by default */
 .mySlides {
-  padding-top: 25px; }
+  padding-top: 25px;
+  height: 450px; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -2612,16 +2616,29 @@ object {
   font-size: 18px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 3px 3px 0;
+  left: 70%; }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
+  border-radius: 80px;
+  width: 50px;
+  height: 50px;
+  color: grey;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  margin-top: 20px; }
 
 /* Caption text */
 .text-aside {
@@ -2632,7 +2649,7 @@ object {
   text-align: -webkit-center;
   margin-right: 20px;
   position: relative;
-  left: 200px;
+  left: 55%;
   top: 90px; }
 
 .text {
@@ -2659,7 +2676,7 @@ object {
   width: 50%;
   background-size: 125px 400px;
   padding-right: 50%;
-  margin-left: 5%; }
+  margin-left: 15%; }
 
 .test2 {
   background-image: url(../../assets/images/india_popsicle.png);
@@ -2668,7 +2685,7 @@ object {
   width: 50%;
   background-size: 125px 400px;
   padding-right: 50%;
-  margin-left: 5%; }
+  margin-left: 15%; }
 
 .news-title {
   background-color: #04809E;
@@ -2888,9 +2905,7 @@ object {
   font-family: "Montserrat";
   text-decoration: underline; }
 
-
-.page-template-archive-expeditions .expedition-info {
-
+.page-template-archive-expeditions .expeditions-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2899,7 +2914,6 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap;
   width: 100%; }
 
@@ -2911,9 +2925,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: auto; }
+  width: 100%; }
 
 .page-template-archive-expeditions .expedition-info {
   display: -webkit-box;
@@ -2924,13 +2936,11 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap; }
   .page-template-archive-expeditions .expedition-info .expedition-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
     position: relative;
     width: 100%; }
     .page-template-archive-expeditions .expedition-info .expedition-image img {
@@ -2945,16 +2955,27 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  color: #fff; }
+  color: #fff;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -6%; }
   .page-template-archive-expeditions .expedition-name .name-wrapper {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2967,12 +2988,17 @@ object {
   height: auto;
   background-color: white;
   color: black; }
+<<<<<<< HEAD
+=======
 
     .page-template-archive-expeditions .expedition-info .expedition-image picture {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      text-align: center;
       width: 100%;
+      -ms-flex-item-align: center;
+          align-self: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -2986,5 +3012,6 @@ object {
     -ms-flex-item-align: end;
         align-self: flex-end;
     width: 100%;
-    color: white; }
-  }
+    color: white; } }
+  
+>>>>>>> eef809e2da98cda58553acecdfaade1ce35e88d1

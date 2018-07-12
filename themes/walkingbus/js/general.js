@@ -52,12 +52,12 @@ $j('#subscription-form').submit(function(event) {
 
     0 !== eMail.val().length ? (alert('Thanks for subscribing!'),
     eMail.val('')) : alert('Please submit an email address.')
-    
+      
  });
-
+ 
 
 // EXPEDITIONS FUNCTION (show/hide expedition excerpt)
 
-$j('.expedition-name').click(function() {
+$j('.name-wrapper').click(function() {
     $j(this).children('.expedition-description').slideToggle('fast');
 });
