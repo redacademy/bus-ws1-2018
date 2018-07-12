@@ -61,7 +61,8 @@ Template Name: products
     <!-- loop to display all the products, to change the number of products displayed 
         set the post per page number to the desired value -->
 
-			
+		
+        <!-- custom field loop to display the products thumbnails as a gallery-->	
         <?php
             $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => 4 );
             $products = new WP_Query( $args ); 
@@ -75,23 +76,20 @@ Template Name: products
 
             <div class = "product-image"> 
 
-        <!-- custom field loop to display the products thumbnails as a gallery-->
-
+                <picture>
+                    <?php the_post_thumbnail();?>
+                </picture>
       
-            </div> <!-- .product-image -->
+             </div>  <!-- .product-image -->
 
+           
             <div class = "product-info">
 
-            <!-- call custom field suite for product name and price-->
-
-            <picture>
-            <?php the_post_thumbnail();?>
-            </picture>
+             <!-- call custom field suite for product name and price-->
 
                 <p> <a href = "<?php the_permalink();?>"> <?php the_title();?> </p> </a>
                 <p> <?php echo CFS()->get( 'price' ); ?>  </p>
           
-
             </div> <!-- .product-info-->
 
 

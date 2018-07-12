@@ -1,74 +1,78 @@
-.page-template-archive-expeditions{
+.page-template-archive-expeditions {
 
-    .expeditions-wrapper{
+    .past-expeditions {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        // flex-wrap: wrap;
         width: 100%;
     }
 
-    .single-expedition{
+    .expedition-info {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
 
+        .expedition-image {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+
+            img {
+                height: auto;
+                max-width: none;
+                width: 100%;
+            }
+        }
     }
+    .expedition-name {
 
-    .expedition-info{
-        display:flex;
-        flex-direction:column; 
-        flex-wrap:wrap; 
-
-      
- 
-        .expedition-image{
-            display:flex;
-            position:relative;
-            width:100%; 
-
-            // picture{
-            //     display: flex;
-            //     width: 100%;
-            //     flex-direction: column;
-
-
-                img{ 
-                    height: auto;
-                    max-width: none;
-                    width: 100%;
-                }
-         }
-            // }
-     }
-
-    .expedition-name{ 
-       // position: absolute;
-       background:linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
         color: #fff;
-       
+        height: auto;
+        align-items: center;
+        margin-top: -6%;
 
-        .name-wrapper{
-            display:inline-flex;
+        .name-wrapper {
+            flex-direction: column;
+            display: flex;
+            width: 100%;
             justify-content: space-between;
-            align-items:center;
-            
+            align-items: center;
         }
 
+        .expedition-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            p {
+                margin: 0px;
+                display: flex;
+                text-align: center;
+                width: 100%;
+                align-self: center;
+                flex-direction: column;
+            }
+        }
     }
 
-   
-    //}
+    .expedition-description {
+        display: none;
+        height: auto;
+        background-color: white;
+        color: black;
+        width: 100%;
+    }
+// sponsors section 
 
-    .expedition-description{
-        display:none;
-        height:auto;
-        background-color:white;
-        color:black;
-     }
-   
+
+    // the walking school bus team
+
+
 }

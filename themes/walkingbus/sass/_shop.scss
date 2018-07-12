@@ -90,10 +90,10 @@
 
     .single-product{
         display: flex;
-        min-width:10.6875rem;
-        // min-width: 171px;
-        // min-height:226px;
-       min-height: 14.125rem;
+    //     min-width:10.6875rem;
+    //     min-width: 171px;
+    //     min-height:226px;
+    //    min-height: 14.125rem;
         flex-wrap: wrap;
         flex-direction:row;
 
@@ -104,21 +104,35 @@
             display:flex;
             flex-wrap:wrap;
             
-            img{
-                width: 100%;
-                height:100%;
-            }
+            
          }
     }
         .product-info{
-            display:flex; 
-            flex-direction:row; 
-            width:100%;
-            height:20%;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20%;
+            
+            a{
+            color:black;
+            }
             p{
                 margin:0px;
+                
             }
         }
+
+        picture{
+
+
+            img{
+                width:100%;
+                height:100%;
+
+
+            }
+        }    
     }
         
 
