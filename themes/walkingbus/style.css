@@ -1922,7 +1922,8 @@ object {
   height: auto; }
 
 .subscription-container form, .subscription-container input {
-  width: 85%; }
+  width: 85%;
+  border-bottom-width: 2px; }
 
 #email-input {
   background-color: #474747; }
@@ -2096,7 +2097,7 @@ object {
       border-color: #474747;
       font-weight: 500;
       text-shadow: none;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-family: "Oswald"; }
     .subscription-container input {
       font-size: 1.75rem;
@@ -2106,8 +2107,8 @@ object {
       letter-spacing: 2px;
       padding-left: 15px; }
   #contactus {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-transform: none; }
   .contact-info {
     height: 100px;
@@ -2131,7 +2132,7 @@ object {
         -ms-flex-pack: center;
             justify-content: center; }
     .contact p {
-      font-size: 14px;
+      font-size: 1rem;
       margin-right: 30px; }
   .registration {
     margin: 0px;
@@ -2139,8 +2140,8 @@ object {
     display: -ms-flexbox;
     display: flex; }
     .registration p {
-      margin-right: 70px;
-      font-size: 10px; }
+      margin-right: 40px;
+      font-size: .75rem; }
   .bkg-featuredon {
     height: 95px;
     width: 100%;
@@ -2594,6 +2595,15 @@ object {
   background-position-y: -70px;
   background-repeat: no-repeat; }
 
+.title-image-impact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 /***************************** CAROUSEL *****************************/
 * {
   -webkit-box-sizing: border-box;
@@ -2912,6 +2922,127 @@ object {
   padding-left: 5%;
   font-family: "Montserrat";
   text-decoration: underline; }
+
+/******************************************** DESKTOP VERSION *****************************************/
+@media screen and (min-width: 600px) {
+  .site-main-impact {
+    width: 80%;
+    margin-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .title-image-impact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .content-area-impact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+  .hero-image-impact {
+    height: 600px;
+    width: 1200px;
+    background-size: 2300px 1500px;
+    background-repeat: no-repeat;
+    background-position-x: -415px;
+    background-position-y: -175px; }
+  .site-main-impact h1 {
+    text-transform: uppercase;
+    margin-top: 70px;
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 3.75rem;
+    margin-bottom: 15px;
+    color: black; }
+  .slideshow-container {
+    display: none; }
+  .popsicles-desktop-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 102%; }
+  .popsicle-desktop {
+    width: 200px;
+    height: 600px;
+    background-repeat: no-repeat; }
+  .popsicle-desktop-india {
+    background-image: url(../../assets/images/india_popsicle.png); }
+  .popsicle-desktop-uganda {
+    background-image: url(../../assets/images/uganda_popsicle.png); }
+  .text-aside-desktop {
+    height: 150px;
+    width: 300px;
+    text-align: -webkit-center;
+    margin-right: 25px;
+    font-size: 2rem;
+    font-weight: 200; }
+  .see-reports-wrapper {
+    margin: 0;
+    margin-bottom: 60px; }
+    .see-reports-wrapper p {
+      font-size: 1.75rem;
+      font-weight: 200; }
+    .see-reports-wrapper span {
+      text-decoration: underline; }
+  .videos-impact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 350px; }
+    .videos-impact div {
+      height: 350px; }
+    .videos-impact iframe {
+      height: 250px;
+      width: 450px;
+      margin: 20px; }
+  .news-title {
+    background-color: #04809e;
+    height: 250px;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 4rem; }
+  .new-impact {
+    height: 650px; }
+    .new-impact h2 a {
+      font-size: 1.75rem; } }
 
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
