@@ -63,16 +63,60 @@ $j('.name-wrapper').click(function() {
 });
 
 
-// show members bio on thumbnail click and hide on icon click   
+//Front Page
 
+$j(function() {
 
+    var isMovingTheBus = false;
+    var moveTheBusToProgressFunction = function() {
+        $j('#myProgress').off('appear', moveTheBusToProgressFunction);
+        if(isMovingTheBus) {
+            return;
+        }
+        isMovingTheBus = true;
 
-$j('.member-picture').click(function() {
-    $j(this).siblings('.member-info').show('slow');
+        var elem = document.getElementById('progress-bar'); 
+        if(!elem) {
+            return;
+        }
 
-    $j('.icon-wrapper').click(function() {
-        $j(this).next('.member-info').hide();
-    });
+        var width = 1;
+        var endProgress = elem.getAttribute('data-progress');
+    
+        setTimeout(function(){
+            var id = setInterval(frame, 16);
+            function frame() {
+                if (width >= endProgress) {
+                    $j('#progress-bar-text').show(200);
+                    clearInterval(id);
+                } else {
+                    width++; 
+                    elem.style.width = width + '%'; 
+                }
+            }
+        }, 1000);
+    }
+
+    $j.appear('#myProgress');
+    $j('#myProgress').on('appear', moveTheBusToProgressFunction);
+
 });
 
+//  function move() {
+//     var elem = document.getElementById('myBar'); 
+//     if(!elem) {
+//         return;
+//     }
 
+//     var width = 1;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//         if (width >= elem.getAttribute('data-progress')) {
+//             clearInterval(id);
+//         } else {
+//             width++; 
+//             elem.style.width = width + '%'; 
+//         }
+//     }
+// }
+// setTimeout(move, 1000);

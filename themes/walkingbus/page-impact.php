@@ -7,13 +7,17 @@ Template Name: impact
 ?>
 <?php get_header(); ?>
 
-	<div id="primary" class="content-area-impact">
-	<main id="main" class="site-main-impact" role="main">
-        <h1>impact report</h1>
-        <div class="hero-image-impact-wrapper">
-            <div class="hero-image-impact">
+	<div id="primary" class="content-area content-area-impact">
+	<main id="main" class="site-main site-main-impact" role="main">
+    
+        <div class="title-image-impact-wrapper">
+            <h1>impact report</h1>
+            <div class="hero-image-impact-wrapper">
+                <div class="hero-image-impact">
+                </div>
             </div>
         </div>
+
         <!-- Slideshow container -->
         <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -31,17 +35,16 @@ Template Name: impact
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div><br>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="popsicles-desktop-container">
+            <div class="popsicle-desktop popsicle-desktop-india"></div>
+            <div class="text-aside-desktop">Annual Impact Report for the year 2016-17.</div>
+            <div class="popsicle-desktop popsicle-desktop-uganda"></div>
         </div>
-        
+
         <div class="see-reports-wrapper">
             <section class="see-reports">
-                <p>See how we are tracking in each region by reviewing our annual report for 2016 - 17.</p><br>
-                <p>For old reports, go here</p>
+                <p>See how we are tracking in each region by reviewing our <br><span>annual report for 2016 - 17.</span></p><br>
+                <p>For old reports, <span>go here</span></p>
             </section>
         </div>
 
