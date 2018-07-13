@@ -127,7 +127,7 @@ Template Name: get involved
 
     <section class = "wsb-team">
 
-        <ul class = "carousel-list" id = "carousel">
+
 
         <?php
 		$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
@@ -135,43 +135,61 @@ Template Name: get involved
 		?>
 	
 		<?php if ( $teams ->have_posts() ) : ?>
-		<?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
+        <?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
 
+        <ul class = "team-type"> 
+        <p> <?php the_title()?> </p>
+       
 
+    
 
         <?php $teamMembers = CFS()->get('members'); 
 
+
+        
+
             foreach ($teamMembers as $member) {?>
 
-                <div class = "single-member">
+                <li class = "single-member">
 
-                    <div class = "member-picture">
-                        <picture>
+                   <div class = "member-thumbnail" id = "image">
+
+                       
+
+                            <div class = "member-name">
+                                <?php  echo CFS()->get.$member['name']; ?>
+                            </div>  <!-- member-name -->
+
+                        <div class = "member-picture">
                             <?php echo '<img src="'.$member['image'].'"/>';?>
-                        </picture>    
+                        </div>
+
+
+                        <div class = "icon-wrapper"> 
+                        <i class="fas fa-times"></i>
+                        </div>
+                            <div class = "member-info" id = "info">
+
+                                <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
+                                <p> <?php echo CFS()->get.$member['role'];?></p> 
+                                <p>  <?php echo CFS()->get.$member['bio'];?></p> 
+
+                            </div>    <!--member-info-->   
                     
+                    </div> <!--member-thuimbnail-->   
 
-                    <div class = "member-name">
-                        <?php  echo CFS()->get.$member['name']; ?>
-                    </div>     
+                   </li>   <!--single-member -->
 
-                    <div class = "member-role">
-                        <?php echo CFS()->get.$member['role'];?>
-                    </div>   
-
-                    <div class = "member-bio">
-                        <?php echo CFS()->get.$member['bio'];?>
-                    </div> 
-
-                    </div> <!-- member-picture-->
-
-                </div> <!-- single-member-->
+               
 
         <?php } ?>
  
- 
+    </ul>
 
     <?php endwhile; ?> 
+
+ 
+    
 
 
     <?php wp_reset_postdata(); ?>

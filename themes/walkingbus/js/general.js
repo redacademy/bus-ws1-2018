@@ -61,3 +61,18 @@ $j('#subscription-form').submit(function(event) {
 $j('.name-wrapper').click(function() {
     $j(this).children('.expedition-description').slideToggle('fast');
 });
+
+
+// show members bio on thumbnail click and hide on icon click   
+
+
+
+$j('.member-picture').click(function() {
+    $j(this).siblings('.member-info').show('slow');
+
+    $j('.icon-wrapper').click(function() {
+        $j(this).next('.member-info').hide();
+    });
+});
+
+
