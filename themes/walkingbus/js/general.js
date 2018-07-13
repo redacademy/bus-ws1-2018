@@ -87,6 +87,7 @@ $j(function() {
             var id = setInterval(frame, 16);
             function frame() {
                 if (width >= endProgress) {
+                    $j('#progress-bar-text').show(200);
                     clearInterval(id);
                 } else {
                     width++; 
