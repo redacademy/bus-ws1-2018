@@ -4,7 +4,7 @@ var $j = jQuery.noConflict();
 
 $j('.menu').hide();
 $j('.search-form').hide();
-$j('.nutrition-desc-container').hide();
+$j('.nutrition-desc-container').hide(); 
 
 
 $j('.search-form').click(function(){
@@ -56,11 +56,25 @@ $j('#subscription-form').submit(function(event) {
  });
  
 
-// EXPEDITIONS FUNCTION (show/hide expedition excerpt)
+// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
 
 $j('.name-wrapper').click(function() {
     $j(this).children('.expedition-description').slideToggle('fast');
 });
+
+
+//team members 
+
+$j('.member-picture').click(function() {
+    $j(this).siblings('.member-info').show('slow');
+
+    $j('.icon-wrapper').click(function() {
+        $j(this).next('.member-info').hide('slow');
+    
+        
+    });
+});
+
 
 
 //Front Page
