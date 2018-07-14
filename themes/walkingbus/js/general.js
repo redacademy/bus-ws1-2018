@@ -4,7 +4,7 @@ var $j = jQuery.noConflict();
 
 $j('.menu').hide();
 $j('.search-form').hide();
-$j('.nutrition-desc-container').hide();
+$j('.nutrition-desc-container').hide(); 
 
 
 $j('.search-form').click(function(){
@@ -56,8 +56,81 @@ $j('#subscription-form').submit(function(event) {
  });
  
 
-// EXPEDITIONS FUNCTION (show/hide expedition excerpt)
+// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
 
 $j('.name-wrapper').click(function() {
     $j(this).children('.expedition-description').slideToggle('fast');
 });
+
+
+//team members 
+
+$j('.member-picture').click(function() {
+    $j(this).siblings('.member-info').show('slow');
+
+    $j('.icon-wrapper').click(function() {
+        $j(this).next('.member-info').hide('slow');
+    
+        
+    });
+});
+
+
+
+//Front Page
+
+$j(function() {
+
+    var isMovingTheBus = false;
+    var moveTheBusToProgressFunction = function() {
+        $j('#myProgress').off('appear', moveTheBusToProgressFunction);
+        if(isMovingTheBus) {
+            return;
+        }
+        isMovingTheBus = true;
+
+        var elem = document.getElementById('progress-bar'); 
+        if(!elem) {
+            return;
+        }
+
+        var width = 1;
+        var endProgress = elem.getAttribute('data-progress');
+    
+        setTimeout(function(){
+            var id = setInterval(frame, 16);
+            function frame() {
+                if (width >= endProgress) {
+                    $j('#progress-bar-text').show(200);
+                    clearInterval(id);
+                } else {
+                    width++; 
+                    elem.style.width = width + '%'; 
+                }
+            }
+        }, 1000);
+    }
+
+    $j.appear('#myProgress');
+    $j('#myProgress').on('appear', moveTheBusToProgressFunction);
+
+});
+
+//  function move() {
+//     var elem = document.getElementById('myBar'); 
+//     if(!elem) {
+//         return;
+//     }
+
+//     var width = 1;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//         if (width >= elem.getAttribute('data-progress')) {
+//             clearInterval(id);
+//         } else {
+//             width++; 
+//             elem.style.width = width + '%'; 
+//         }
+//     }
+// }
+// setTimeout(move, 1000);

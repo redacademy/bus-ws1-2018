@@ -22,7 +22,7 @@ get_header(); ?>
 
     <section class="home-donate">
         <div>
-            <a class="donate-button" href="#">Donate</a>
+            <a class="donate-button" href="donate/">Donate</a>
         </div>
     </section>
 
@@ -34,7 +34,7 @@ get_header(); ?>
             <?php echo CFS()->get('home_about_session'); ?>
         </div>
         <footer>
-            <a class="learn-more-button" href="#">Learn More</a>
+            <a class="learn-more-button" href="what-we-do/">Learn More</a>
         </footer>
     </section>
 
@@ -76,7 +76,7 @@ get_header(); ?>
 
                 </div>
                 <footer>
-                    <a class="learn-more-button" href="#">Learn More</a>
+                    <a class="learn-more-button" href="what-we-do/">Learn More</a>
                 </footer>
             </article>
 
@@ -93,7 +93,7 @@ get_header(); ?>
                     <div class="infographic-graph graph-2"></div>
                 </div>
                 <footer>
-                    <a class="learn-more-button" href="#">Learn More</a>
+                    <a class="learn-more-button" href="what-we-do/">Learn More</a>
                 </footer>
             </article>
 
@@ -116,7 +116,7 @@ get_header(); ?>
             </div>
         </div>
         <footer>
-            <a class="get-involved-button" href="#">Get Involved</a>
+            <a class="get-involved-button" href="get-involved/">Get Involved</a>
         </footer>
     </section>
 
