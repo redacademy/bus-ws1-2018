@@ -3104,6 +3104,13 @@ object {
 .page-template-archive-expeditions .type a {
   color: red; }
 
+.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
+
+.page-template-archive-expeditions .type a {
+  color: red; }
+
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3112,6 +3119,8 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%; }
 
 .page-template-archive-expeditions .expedition-info {
@@ -3186,7 +3195,8 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .page-template-archive-expeditions .expedition-name .expedition-title p {
       margin: 0px;
       display: -webkit-box;
@@ -3202,11 +3212,7 @@ object {
               flex-direction: column; }
 
 .page-template-archive-expeditions .expedition-description {
-  display: none;
-  height: auto;
-  background-color: white;
-  color: black;
-  width: 100%; }
+  display: none; }
 
 .page-template-archive-expeditions .wsb-team,
 .page-template-archive-expeditions .research {
