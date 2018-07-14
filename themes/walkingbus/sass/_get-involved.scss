@@ -13,13 +13,13 @@
     }
 
     .past-expeditions {
-        display: flex;
-        flex-direction: column;
-        // flex-wrap: wrap;
-        width: 100%;
+       display: flex;
+       flex-direction: column;
+        flex-wrap: wrap;
+       width: 100%;
     }
 
-    .expedition-info {
+     .expedition-info {
         display: flex;
         flex-direction: column; 
         flex-wrap: wrap;
@@ -38,6 +38,7 @@
             }
         }
     }
+
     .expedition-name {
 
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
@@ -63,6 +64,7 @@
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            height:auto;
             p {
                 margin: 0px;
                 display: flex;
@@ -72,14 +74,14 @@
                 flex-direction: column;
             }
         }
-    }
+    } 
 
     .expedition-description {
-        display: none; 
-        height: auto; 
-        background-color: white;
-        color: black;
-        width: 100%;
+      display: none; 
+   
+    //     background-color: white;
+    //     color: black;
+    //     width: 100%;
     }
 // sponsors section 
 
