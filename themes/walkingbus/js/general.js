@@ -1,7 +1,7 @@
 var $j = jQuery.noConflict();
 
 // NEW VARIABLE FOR JQUERY
-
+console.log("file loaded");
 $j('.nutrition-desc-container').hide();
 
 

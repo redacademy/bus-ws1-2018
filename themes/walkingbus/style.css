@@ -1184,6 +1184,8 @@ object {
             text-transform: uppercase;
             text-align: left;
             font-family: "Oswald"; }
+    .site-header .main-navigation .visible {
+      display: block; }
   .site-header .search-form {
     display: none;
     position: absolute;
