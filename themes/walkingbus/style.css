@@ -2671,6 +2671,9 @@ object {
   left: 55%;
   top: 90px; }
 
+.text-aside-desktop {
+  display: none; }
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -3048,6 +3051,13 @@ object {
   .text-area-news {
     height: 25%; } }
 
+.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
+
+.page-template-archive-expeditions .type a {
+  color: red; }
+
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3151,3 +3161,64 @@ object {
   background-color: white;
   color: black;
   width: 100%; }
+
+.page-template-archive-expeditions .wsb-team,
+.page-template-archive-expeditions .research {
+  background-color: #04809E; }
+
+.page-template-archive-expeditions .wsb-team ul {
+  margin: 0px;
+  padding: 0px; }
+
+.page-template-archive-expeditions .wsb-team li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.page-template-archive-expeditions .member-thumbnail {
+  position: relative; }
+  .page-template-archive-expeditions .member-thumbnail .member-name {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%; }
+
+.page-template-archive-expeditions .member-info {
+  background-color: white;
+  display: none; }
+  .page-template-archive-expeditions .member-info .icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%; }
+    .page-template-archive-expeditions .member-info .icon-wrapper i {
+      border: 3px solid #fff;
+      -webkit-box-shadow: grey;
+              box-shadow: grey;
+      background-color: grey;
+      border-radius: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 3rem;
+      height: 3rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 2.5rem;
+      color: white; }
