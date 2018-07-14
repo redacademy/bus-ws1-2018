@@ -1965,7 +1965,8 @@ object {
   height: auto; }
 
 .subscription-container form, .subscription-container input {
-  width: 85%; }
+  width: 85%;
+  border-bottom-width: 2px; }
 
 #email-input {
   background-color: #474747; }
@@ -2139,7 +2140,7 @@ object {
       border-color: #474747;
       font-weight: 500;
       text-shadow: none;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-family: "Oswald"; }
     .subscription-container input {
       font-size: 1.75rem;
@@ -2149,8 +2150,8 @@ object {
       letter-spacing: 2px;
       padding-left: 15px; }
   #contactus {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-transform: none; }
   .contact-info {
     height: 100px;
@@ -2174,7 +2175,7 @@ object {
         -ms-flex-pack: center;
             justify-content: center; }
     .contact p {
-      font-size: 14px;
+      font-size: 1rem;
       margin-right: 30px; }
   .registration {
     margin: 0px;
@@ -2182,8 +2183,8 @@ object {
     display: -ms-flexbox;
     display: flex; }
     .registration p {
-      margin-right: 70px;
-      font-size: 10px; }
+      margin-right: 40px;
+      font-size: .75rem; }
   .bkg-featuredon {
     height: 95px;
     width: 100%;
@@ -2223,7 +2224,7 @@ object {
     .home .page-content .page-content-header img {
       width: 100%; }
   .home .page-content .home-description h2 {
-    color: gray;
+    color: black;
     font-size: 1em;
     text-transform: unset; }
   .home .page-content .home-donate {
@@ -2341,8 +2342,9 @@ object {
     cursor: pointer;
     display: inline-block;
     padding: 5px 25px;
-    color: black;
+    color: #04809E;
     text-decoration: none;
+    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -2351,8 +2353,9 @@ object {
     cursor: pointer;
     display: inline-block;
     padding: 5px 25px;
-    color: black;
+    color: #04809E;
     text-decoration: none;
+    font-weight: bold;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     background-color: #f6e24f;
@@ -2362,8 +2365,10 @@ object {
       font-size: 1.6rem; }
       .home .page-content > section {
         padding: 2em 8em; }
-      .home .page-content .home-description {
-        font-size: 1.5em; }
+      .home .page-content .home-description h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 0px 2px 10px rgba(110, 110, 110, 0.5); }
       .home .page-content .home-donate,
       .home .page-content .page-content-header {
         display: block; }
@@ -2394,11 +2399,15 @@ object {
       .home .page-content .home-goal .goal-progress {
         height: 80px; }
         .home .page-content .home-goal .goal-progress .progress-bar .progress-bar-text {
-          padding-right: 50px; }
+          padding-right: 45px; }
         .home .page-content .home-goal .goal-progress .progress-bar:before {
-          width: 140px;
+          width: 130px;
+          background-size: 130px auto;
           top: 10px;
-          right: -50px; } }
+          right: -45px; }
+      .home .page-content .learn-more-button,
+      .home .page-content .get-involved-button {
+        margin: 3rem 2rem; } }
 
 .page-template-archive-products .site-content {
   margin-top: 5%;
@@ -2538,7 +2547,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 100px;
-  margin-bottom: 120px; }
+  margin-bottom: 60px; }
 
 .image-page-donate {
   width: 90%;
@@ -2568,19 +2577,20 @@ object {
   background-position: center; }
 
 .donate-btn {
+  cursor: pointer;
   width: 65%;
   border-radius: 50px;
   height: 55px;
   background-color: #f6e24f;
   position: relative;
   bottom: -25px;
-  text-transform: uppercase;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 1.7rem;
   color: #474747;
-  -webkit-box-shadow: 1px 2px #888888;
-          box-shadow: 1px 2px #888888; }
+  -webkit-box-shadow: 0px 1px #888;
+          box-shadow: 0px 1px #888; }
 
 @media screen and (min-width: 768px) {
   .site-main-donate {
@@ -2628,6 +2638,15 @@ object {
   background-position-x: -125px;
   background-position-y: -70px;
   background-repeat: no-repeat; }
+
+.title-image-impact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /***************************** CAROUSEL *****************************/
 * {
@@ -2694,6 +2713,9 @@ object {
   position: relative;
   left: 55%;
   top: 90px; }
+
+.text-aside-desktop {
+  display: none; }
 
 .text {
   color: #f2f2f2;
@@ -2948,6 +2970,137 @@ object {
   font-family: "Montserrat";
   text-decoration: underline; }
 
+/******************************************** DESKTOP VERSION *****************************************/
+@media screen and (min-width: 600px) {
+  .site-main-impact {
+    width: 80%;
+    margin-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .title-image-impact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .content-area-impact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+  .hero-image-impact {
+    height: 600px;
+    width: 1200px;
+    background-size: 2300px 1500px;
+    background-repeat: no-repeat;
+    background-position-x: -415px;
+    background-position-y: -175px; }
+  .site-main-impact h1 {
+    text-transform: uppercase;
+    margin-top: 70px;
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 3.75rem;
+    margin-bottom: 15px;
+    color: black; }
+  .slideshow-container {
+    display: none; }
+  .popsicles-desktop-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 102%; }
+  .popsicle-desktop {
+    width: 200px;
+    height: 600px;
+    background-repeat: no-repeat; }
+  .popsicle-desktop-india {
+    background-image: url(../../assets/images/india_popsicle.png); }
+  .popsicle-desktop-uganda {
+    background-image: url(../../assets/images/uganda_popsicle.png); }
+  .text-aside-desktop {
+    height: 150px;
+    width: 300px;
+    text-align: -webkit-center;
+    margin-right: 25px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 35px; }
+  .see-reports-wrapper {
+    margin: 0;
+    margin-bottom: 60px; }
+    .see-reports-wrapper p {
+      font-size: 1.75rem;
+      font-weight: 200; }
+    .see-reports-wrapper span {
+      text-decoration: underline; }
+  .videos-impact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 350px; }
+    .videos-impact div {
+      height: 350px; }
+    .videos-impact iframe {
+      height: 250px;
+      width: 450px;
+      padding: 20px; }
+  .news-title {
+    background-color: #04809e;
+    height: 250px;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 4rem; }
+  .new-impact {
+    height: 650px; }
+    .new-impact h2 a {
+      font-size: 1.75rem; }
+  .text-area-news {
+    height: 25%; } }
+
+.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
+
+.page-template-archive-expeditions .type a {
+  color: red; }
+
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3051,3 +3204,64 @@ object {
   background-color: white;
   color: black;
   width: 100%; }
+
+.page-template-archive-expeditions .wsb-team,
+.page-template-archive-expeditions .research {
+  background-color: #04809E; }
+
+.page-template-archive-expeditions .wsb-team ul {
+  margin: 0px;
+  padding: 0px; }
+
+.page-template-archive-expeditions .wsb-team li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.page-template-archive-expeditions .member-thumbnail {
+  position: relative; }
+  .page-template-archive-expeditions .member-thumbnail .member-name {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%; }
+
+.page-template-archive-expeditions .member-info {
+  background-color: white;
+  display: none; }
+  .page-template-archive-expeditions .member-info .icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%; }
+    .page-template-archive-expeditions .member-info .icon-wrapper i {
+      border: 3px solid #fff;
+      -webkit-box-shadow: grey;
+              box-shadow: grey;
+      background-color: grey;
+      border-radius: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 3rem;
+      height: 3rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 2.5rem;
+      color: white; }

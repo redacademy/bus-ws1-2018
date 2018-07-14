@@ -39,7 +39,7 @@
         .home-description {
             
             h2 {
-                color: gray;
+                color: black;
                 font-size: 1em;
                 text-transform: unset;
             }
@@ -216,10 +216,10 @@
             display:inline-block;
 
             padding: 5px 25px;
-            color: black;
+            color: #04809E;
 
             text-decoration:none;
-            // font-weight: bold;
+            font-weight: bold;
 
             box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
             background-color:rgba(255,255,255,1);
@@ -231,10 +231,10 @@
             display:inline-block;
 
             padding: 5px 25px;
-            color: black;
+            color: #04809E;
 
             text-decoration:none;
-            // font-weight: bold;
+            font-weight: bold;
 
             box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
             background-color:rgba(246,226,79,1);
@@ -248,9 +248,12 @@
                 padding: 2em 8em;
             }
             
-                
             .home-description {
-                font-size: 1.5em;
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-shadow: 0px 2px 10px rgba(110,110,110,.5);
+                }
             }
             
             .home-donate,
@@ -308,7 +311,7 @@
                 }
     
                 .goal-progress {
-                    $bus-image-size: 140px;
+                    $bus-image-size: 130px;
                     height: 80px;
         
                     .progress-bar{
@@ -318,12 +321,18 @@
     
                         &:before {
                             width: $bus-image-size;
+                            background-size: $bus-image-size auto;
                             top: 10px;
                             right: -$bus-image-size/2 + 20px;
                         }
                     }
                 }
 
+            }
+
+            .learn-more-button,
+            .get-involved-button {
+                margin: 3rem 2rem;
             }
 
         }

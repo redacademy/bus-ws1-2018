@@ -27,6 +27,12 @@
     background-repeat: no-repeat;
 }
 
+
+.title-image-impact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 /***************************** CAROUSEL *****************************/
 
 * {box-sizing:border-box}
@@ -89,6 +95,10 @@
     position: relative;
     left: 55%;
     top: 90px;
+}
+
+.text-aside-desktop {
+    display: none;
 }
 
 .text {
@@ -310,4 +320,144 @@
     padding-left: 5%;
     font-family: $Mont;
     text-decoration: underline;
+}
+
+/******************************************** DESKTOP VERSION *****************************************/
+
+@media screen and (min-width: 600px){
+
+    .site-main-impact {
+        width: 80%;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .title-image-impact-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-area-impact {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-image-impact {
+        height: 600px;
+        width: 1200px;
+        background-size: 2300px 1500px;
+        background-repeat: no-repeat;
+        background-position-x: -415px;
+        background-position-y: -175px;
+    }
+
+    .site-main-impact h1 {
+        text-transform: uppercase;
+        margin-top: 70px;
+        text-align: center;
+        font-family: Oswald;
+        font-weight: 400;
+        letter-spacing: -1px;
+        font-size: 3.75rem;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+
+    .popsicles-desktop-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102%;
+    }
+
+    .popsicle-desktop {
+        width: 200px;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+
+    .popsicle-desktop-india {
+        background-image: url(../../assets/images/india_popsicle.png);
+    }
+
+    .popsicle-desktop-uganda {
+        background-image: url(../../assets/images/uganda_popsicle.png);
+    }
+
+    .text-aside-desktop {
+        height: 150px;
+        width: 300px;
+        text-align: -webkit-center;
+        margin-right: 25px;
+        font-size: 2rem;
+        font-weight: 200;
+        line-height: 35px;
+    }
+
+    .see-reports-wrapper {
+        margin: 0;
+        margin-bottom: 60px;
+
+        p{
+            font-size: 1.75rem;
+            font-weight: 200;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    .videos-impact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 350px;
+
+        div {
+            height: 350px;
+        }
+
+        iframe {
+            height: 250px;
+            width: 450px;
+            padding: 20px;
+        }
+    }
+
+    .news-title {
+        background-color: #04809e;
+        height: 250px;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        margin-top: 7px;
+        color: #fff;
+        font-family: Oswald;
+        font-size: 4rem;
+    }
+
+    .new-impact {
+        height: 650px;
+
+        h2 a{
+            font-size: 1.75rem;
+        }
+    }
+
+    .text-area-news {
+        height: 25%;
+    }
+
 }
