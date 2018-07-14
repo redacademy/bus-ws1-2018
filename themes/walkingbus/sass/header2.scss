@@ -1,0 +1,284 @@
+.site-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 2px rgb(170, 170, 170);
+    background: white;
+    top: 0;
+    padding-bottom: 1%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+
+    .header-logo {
+        background-image: url("../../assets/images/twsb_logo-large.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        flex-basis: 10%;
+    }
+
+    .site-name {
+        flex-basis: 70%;
+        font-family: $Oswald;
+        font-size: 1rem;
+        text-align: center;
+        color: red;
+    }
+
+    .main-navigation {
+        flex-basis: 10%;
+
+        .menu-toggle {
+            background: none;
+            color: black;
+            border: none;
+            box-shadow: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .menu-main-menu-container {
+            display: none;
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 95%;
+                left: 0;
+                top: 160%;
+                background: $blue;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+
+                li {
+                    border-top: 1px solid white;
+                    padding: 5px;
+
+                    &:first-of-type {
+                        border-top: none;
+
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        text-transform: uppercase;
+                        text-align: left;
+                        font-family: $Oswald;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .search-form {
+        display: none;
+        position: absolute;
+        width: 95%;
+        top: 110%;
+        transition-duration: 1s;
+
+
+        fieldset {
+            position: relative;
+            border: none;
+            padding: 0;
+            display: flex;
+            width: 25%;
+            float: right;
+            justify-content: space-around;
+            align-items: center;
+            transition-duration: 1s;
+
+
+            label {
+
+                color: white;
+
+                .search-field {
+
+                    background: lighten($grey, 60%);
+                    border-radius: 15px;
+                    border: none;
+                    width: 100%;
+                    padding: 0;
+                    padding-left: 3px;
+                    font-size: .8rem;
+                    
+                }
+            }
+
+            .search-submit {
+                border: none;
+                background: none;
+                box-shadow: none;
+                right: 0;
+                position: absolute;
+                width: 20%;
+                z-index: 2;
+                top: -10%;
+                
+
+                i {
+                    color: lighten($grey, 40%);
+                }
+            }
+        } 
+    }
+
+    .search-active {
+        float: left;
+        transition-duration: 1s;
+
+        fieldset {
+            width: 50%;
+            transition-duration: 1s;
+        }
+    }
+
+    // DESKTOP CSS FOR THE HEADER
+
+
+    @include desktop {
+
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 1px solid gray;
+        box-shadow: 0 2px rgb(170, 170, 170);
+        background: white;
+        top: 0;
+        padding-bottom: 1%;
+        z-index: 1000;
+        align-items: center;
+        justify-content: space-around;
+
+        .site-name {
+            display: none;
+        }
+
+        .search-form {
+            display: block;
+            width: 98.5%;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            top: 1px;
+                        
+            fieldset {
+                border: none;
+                float: right;
+
+                input {
+                    border: none;
+                    border-radius: 5px;
+                    background: rgb(236, 236, 236);
+                    color: gray;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+        }
+
+        .header-logo {
+            width: 6rem;
+            height: 6rem;
+            flex-basis: 10%;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+
+        .main-navigation {
+            flex-basis: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1%;
+            position: initial;
+            
+            
+            .menu-main-menu-container {
+                // flex-basis: 90%;
+                display: block;
+
+                .menu {
+                    display: flex;
+                    width: 95%;
+                    justify-content: space-between;   
+                    margin-left: auto;
+                    margin-right: auto;
+                    flex-direction: row;
+                    position: relative;
+                    background: none;
+    
+                    li {
+                        width: 16.666%;
+                        border-right: 1px solid gray;
+                        border-top: none;
+                        padding: 0;
+        
+                        &:first-of-type {
+                            order: 99;
+                            background: $yellow;
+                            border-right: none;
+                            position: relative;
+
+                            a {
+                                i {
+                                    display: initial;
+                                    position: absolute;
+                                    right: 0;
+                                    padding: 4% 3%;
+                                    top: 0;
+                                    background: lighten($yellow, 10%);
+                                    color: $blue;
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            border-right: none;
+                        }
+            
+                        a {
+                            color: black;
+                            font-size: 1.2rem;
+                            font-family: $Oswald;
+                            padding: 3px;
+                            text-align: center;
+
+                            &:hover {
+                                background: $blue;
+                                color: white;
+
+                                i {
+                                    background: lighten($blue, 10%);
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                    .current_page_item {
+                        background: $blue;
+                        
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }   
+    }  
+}
