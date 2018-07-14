@@ -1,10 +1,8 @@
 var $j = jQuery.noConflict();
 
 // NEW VARIABLE FOR JQUERY
-
-$j('.menu').hide();
-$j('.search-form').hide();
-$j('.nutrition-desc-container').hide(); 
+console.log("file loaded");
+$j('.nutrition-desc-container').hide();
 
 
 $j('.search-form').click(function(){
@@ -12,8 +10,10 @@ $j('.search-form').click(function(){
 });
 
 $j('.menu-toggle').click(function(){
-    $j('.menu').toggle('fast');
-    $j('.search-form').slideToggle('fast');
+    $j('.menu-main-menu-container').toggle();
+    $j('.search-form').toggle();
+    console.log($j('.menu'));
+
 });
 
 $j('.angle1').click(function() {
@@ -39,9 +39,9 @@ $j('.angle5').click(function() {
 
 // DESKTOP FUNCTIONS
 
-if($j('.menu-toggle').css('display') === 'none') {
-    $j('.menu').show();
-} 
+// if($j('.menu-toggle').css('display') === 'none') {
+//     $j('.menu').show();
+// } 
 
 // SUBSCRIPTION FUNCTION
 
