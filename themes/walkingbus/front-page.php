@@ -62,7 +62,31 @@ get_header(); ?>
         </header>
         <div class="infographic-container">
 
-            <article class="infographic-contry">
+            <?php
+                $query_args = array( 
+                    'post_type' => 'countries', 
+                    'orderby' => 'menu_order', 
+                    'order' => 'ASC'
+                );
+                $contries_posts = get_posts( $query_args ); // returns an array of posts
+            ?>
+            <?php if ( !empty( $contries_posts ) ) : ?>
+            <?php foreach ( $contries_posts as $post ) : setup_postdata( $post ); ?>
+                <article class="infographic-contry">
+                    <header>
+                        <h2><?php the_title(); ?></h2>
+                    </header>
+                    <div>
+                        <?php the_content(); ?>
+                    </div>
+                    <footer>
+                        <a class="learn-more-button" href="what-we-do/">Learn More</a>
+                    </footer>
+                </article>
+            <?php endforeach; wp_reset_postdata(); ?>
+            <?php endif; ?>
+
+            <!-- <article class="infographic-contry">
                 <header>
                     <h2>Uganda</h2>
                 </header>
@@ -95,7 +119,7 @@ get_header(); ?>
                 <footer>
                     <a class="learn-more-button" href="what-we-do/">Learn More</a>
                 </footer>
-            </article>
+            </article> -->
 
         </div>
     </section>

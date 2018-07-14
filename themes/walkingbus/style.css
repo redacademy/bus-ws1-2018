@@ -3104,13 +3104,6 @@ object {
 .page-template-archive-expeditions .type a {
   color: red; }
 
-.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
-
-.page-template-archive-expeditions .type a {
-  color: red; }
-
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
