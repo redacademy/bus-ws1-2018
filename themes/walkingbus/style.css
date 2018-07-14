@@ -3268,3 +3268,49 @@ object {
               align-items: center;
       font-size: 2.5rem;
       color: white; }
+
+.single-expedition .hero-image-exp {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 1080px) {
+    .single-expedition .hero-image-exp {
+      width: 100%;
+      height: 100vh;
+      position: relative; } }
+  .single-expedition .hero-image-exp .blk-ovr {
+    display: none; }
+    @media (min-width: 1080px) {
+      .single-expedition .hero-image-exp .blk-ovr {
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: block;
+        position: absolute; } }
+  .single-expedition .hero-image-exp img {
+    width: 100%;
+    height: 100%; }
+  .single-expedition .hero-image-exp .expedition-title {
+    font-family: "Montserrat";
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1080px) {
+      .single-expedition .hero-image-exp .expedition-title {
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 40%;
+        z-index: 2; } }
+
+.single-expedition .expedition-content {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Oswald";
+  color: gray; }
+  @media (min-width: 1080px) {
+    .single-expedition .expedition-content {
+      font-size: 1.3rem; } }
