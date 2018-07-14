@@ -79,19 +79,24 @@ Template Name: get involved
 
                                 </div>
 
+        </div> <!--  name-wrapper -->
 
-                            <div class = "expedition-description" id= "expedition-description">
+        </div>   <!--expedition-name -->
+
+         <div class = "expedition-description" id= "expedition-description">
                                 <?php echo CFS()->get.$mission['excerpt'];?>
 
                                <a href = "<?php the_permalink();?>"> <button> read more</button></a>
                             </div> <!-- expedition-description-->
+        </div> <!--expedition-image -->
 
-                            </div> <!--  name-wrapper -->
 
-                        </div>   <!--expedition-name -->
+                           
+
+              
 
                      
-                     </div> <!--expedition-image -->
+                   
 
                
 
