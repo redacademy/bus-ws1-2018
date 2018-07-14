@@ -97,6 +97,10 @@
     top: 90px;
 }
 
+.text-aside-desktop {
+    display: none;
+}
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -395,6 +399,8 @@
         margin-right: 25px;
         font-size: 2rem;
         font-weight: 200;
+        line-height: 35px;
+        display: block;
     }
 
     .see-reports-wrapper {
@@ -424,7 +430,7 @@
         iframe {
             height: 250px;
             width: 450px;
-            margin: 20px;
+            padding: 20px;
         }
     }
 
@@ -449,6 +455,10 @@
         h2 a{
             font-size: 1.75rem;
         }
+    }
+
+    .text-area-news {
+        height: 25%;
     }
 
 }

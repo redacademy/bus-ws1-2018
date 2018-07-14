@@ -61,7 +61,6 @@
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
-		<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/build/js/general.min.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

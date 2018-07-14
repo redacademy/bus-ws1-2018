@@ -1,5 +1,17 @@
 .page-template-archive-expeditions {
 
+
+    .expedition-name, .member-name  {
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    }
+
+    .type {
+        a{
+        color:red;
+    }
+    }
+
     .past-expeditions {
         display: flex;
         flex-direction: column;
@@ -9,7 +21,7 @@
 
     .expedition-info {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         flex-wrap: wrap;
         height: auto;
 
@@ -63,8 +75,8 @@
     }
 
     .expedition-description {
-        display: none;
-        height: auto;
+        display: none; 
+        height: auto; 
         background-color: white;
         color: black;
         width: 100%;
@@ -73,6 +85,73 @@
 
 
     // the walking school bus team
+
+    .wsb-team,
+    .research{
+        background-color:#04809E;
+    }
+
+    .wsb-team{
+
+        ul{
+            margin:0px;
+            padding:0px;
+        }
+        li{
+            list-style:none;
+            display:inline-flex; 
+
+           
+        }
+    }
+
+    .member-thumbnail{
+        position:relative;
+
+    .member-name{
+        position:absolute;
+        bottom:0px;
+        color:white;
+        width:100%;
+    }
+
+}
+
+    .member-info{
+
+        background-color:white;
+        display:none;
+
+
+        .icon-wrapper{
+
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content: flex-end;
+            width:100%;
+
+            i{
+                border: 3px solid #fff;
+                box-shadow: grey;
+                background-color: grey;
+                border-radius: 50px; 
+                display: flex;
+                flex-wrap: wrap;
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5rem;
+                color: white;
+            }
+
+        }
+     
+      
+    }
+
+
 
 
 }

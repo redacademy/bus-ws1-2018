@@ -13,7 +13,7 @@ Template Name: donate
                 <button href="" class="donate-btn">donation</button>
             </div>
             <div class="sponsor-image image-page-donate">
-                <button href"" class="donate-btn">sponsor a scholar</button>
+                <button href"" class="donate-btn">sponsor scholar</button>
             </div>
         </main><!-- #main -->
 	</div><!-- #primary -->
