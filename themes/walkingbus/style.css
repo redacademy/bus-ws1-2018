@@ -3254,6 +3254,12 @@ object {
       font-weight: bold;
       text-transform: capitalize; }
 
+.page-template-archive-expeditions .sponsors-logos {
+  background-image: url("../../assets/images/sponsors-logos.svg");
+  background-size: cover;
+  width: 100%;
+  height: 4rem; }
+
 .page-template-archive-expeditions .wsb-team,
 .page-template-archive-expeditions .research {
   background-color: #04809E; }
@@ -3291,7 +3297,12 @@ object {
       flex-basis: 45%; }
 
 .page-template-archive-expeditions .member-thumbnail {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
   .page-template-archive-expeditions .member-thumbnail .member-name {
     position: absolute;
     bottom: 0px;

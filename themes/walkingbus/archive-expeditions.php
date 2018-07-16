@@ -121,6 +121,9 @@ Template Name: get involved
                             
          <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It’s an honour to work with you.</p>
 
+<div class = "sponsors-logos">
+ 
+</div>
 
 
     </section>
@@ -162,11 +165,13 @@ Template Name: get involved
                             </div>
 
 
-                            <div class = "icon-wrapper"> 
-                                <i class="fas fa-times"></i>
-                            </div>
+                           
 
                             <div class = "member-info" id = "info">
+
+                                 <div class = "icon-wrapper"> 
+                                <i class="fas fa-times"></i>
+                            </div>
 
                                 <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
                                 <p> <?php echo CFS()->get.$member['role'];?></p> 
@@ -230,7 +235,7 @@ Template Name: get involved
                             </div>
 
                             <div class = "research-description">
-                            <?php  echo CFS()->get.$research['description']; ?>
+                            <?php //  echo CFS()->get.$research['description']; ?>
                             </div>     
 
                             <div class = "research-subject">
@@ -265,10 +270,6 @@ Template Name: get involved
 
 </div>
 
-			
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
 

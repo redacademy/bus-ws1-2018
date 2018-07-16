@@ -64,7 +64,7 @@ $j('.member-picture').click(function() {
     $j(this).siblings('.member-info').show('slow');
 
     $j('.icon-wrapper').click(function() {
-        $j(this).next('.member-info').hide('slow');
+        $j(this).parent('.member-info').hide('slow');
     
         
     });
