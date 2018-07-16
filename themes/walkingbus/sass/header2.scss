@@ -34,6 +34,7 @@
     .main-navigation {
         flex-basis: 10%;
 
+
         .menu-toggle {
             background: none;
             color: black;
@@ -76,6 +77,10 @@
                     }
                 }
             }
+        }
+
+        .visible {
+            display: block;
         }
     }
 
@@ -144,6 +149,7 @@
             transition-duration: 1s;
         }
     }
+
 
     // DESKTOP CSS FOR THE HEADER
 

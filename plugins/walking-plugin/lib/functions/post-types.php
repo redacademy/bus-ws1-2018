@@ -295,4 +295,59 @@ function research() {
 add_action( 'init', 'research', 0 );
 
 
+// Register Custom Post Type
+function countries_post_type() {
 
+	$labels = array(
+		'name'                  => _x( 'Countries', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Country', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Country', 'text_domain' ),
+		'name_admin_bar'        => __( 'Countries Served', 'text_domain' ),
+		'archives'              => __( 'Countries Served Archives', 'text_domain' ),
+		'attributes'            => __( 'Country Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Country:', 'text_domain' ),
+		'all_items'             => __( 'All Countries', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Country', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Country', 'text_domain' ),
+		'edit_item'             => __( 'Edit Country', 'text_domain' ),
+		'update_item'           => __( 'Update Country', 'text_domain' ),
+		'view_item'             => __( 'View Country', 'text_domain' ),
+		'view_items'            => __( 'View Countries', 'text_domain' ),
+		'search_items'          => __( 'Search Country', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Country Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set Country image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove Country image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as Country image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Country', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Country', 'text_domain' ),
+		'items_list'            => __( 'Countries list', 'text_domain' ),
+		'items_list_navigation' => __( 'Countries list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter countries list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Country', 'text_domain' ),
+		'description'           => __( 'Countries reached by the walking school bus', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 20,
+		'menu_icon'             => 'dashicons-location-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => false,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => false,
+		'rewrite'               => false,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'countries', $args );
+
+}
+add_action( 'init', 'countries_post_type', 0 );

@@ -1184,6 +1184,8 @@ object {
             text-transform: uppercase;
             text-align: left;
             font-family: "Oswald"; }
+    .site-header .main-navigation .visible {
+      display: block; }
   .site-header .search-form {
     display: none;
     position: absolute;
@@ -3116,6 +3118,8 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%; }
 
 .page-template-archive-expeditions .expedition-info {
@@ -3190,7 +3194,8 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .page-template-archive-expeditions .expedition-name .expedition-title p {
       margin: 0px;
       display: -webkit-box;
@@ -3206,11 +3211,7 @@ object {
               flex-direction: column; }
 
 .page-template-archive-expeditions .expedition-description {
-  display: none;
-  height: auto;
-  background-color: white;
-  color: black;
-  width: 100%; }
+  display: none; }
 
 .page-template-archive-expeditions .wsb-team,
 .page-template-archive-expeditions .research {
@@ -3272,3 +3273,49 @@ object {
               align-items: center;
       font-size: 2.5rem;
       color: white; }
+
+.single-expedition .hero-image-exp {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 1080px) {
+    .single-expedition .hero-image-exp {
+      width: 100%;
+      height: 100vh;
+      position: relative; } }
+  .single-expedition .hero-image-exp .blk-ovr {
+    display: none; }
+    @media (min-width: 1080px) {
+      .single-expedition .hero-image-exp .blk-ovr {
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: block;
+        position: absolute; } }
+  .single-expedition .hero-image-exp img {
+    width: 100%;
+    height: 100%; }
+  .single-expedition .hero-image-exp .expedition-title {
+    font-family: "Montserrat";
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1080px) {
+      .single-expedition .hero-image-exp .expedition-title {
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 40%;
+        z-index: 2; } }
+
+.single-expedition .expedition-content {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Oswald";
+  color: gray; }
+  @media (min-width: 1080px) {
+    .single-expedition .expedition-content {
+      font-size: 1.3rem; } }
