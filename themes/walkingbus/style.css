@@ -3104,13 +3104,6 @@ object {
 .page-template-archive-expeditions .type a {
   color: red; }
 
-.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
-
-.page-template-archive-expeditions .type a {
-  color: red; }
-
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3213,20 +3206,89 @@ object {
 
 .page-template-archive-expeditions .expedition-description {
   display: none; }
+  .page-template-archive-expeditions .expedition-description .expedition-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+  .page-template-archive-expeditions .expedition-description .excerpt-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-expeditions .expedition-description .excerpt-wrapper p {
+      width: 90%; }
+  .page-template-archive-expeditions .expedition-description span.button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5%; }
+    .page-template-archive-expeditions .expedition-description span.button-wrapper button {
+      color: black;
+      background: #F6E24F;
+      border-radius: 20px;
+      font-family: "Montserrat";
+      text-decoration: none;
+      -webkit-box-shadow: 0px 2px silver;
+              box-shadow: 0px 2px silver;
+      font-weight: bold;
+      text-transform: capitalize; }
 
 .page-template-archive-expeditions .wsb-team,
 .page-template-archive-expeditions .research {
   background-color: #04809E; }
 
+.page-template-archive-expeditions .research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-archive-expeditions .research .single-research {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; }
+
 .page-template-archive-expeditions .wsb-team ul {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .page-template-archive-expeditions .wsb-team li {
   list-style: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
 
 .page-template-archive-expeditions .member-thumbnail {
   position: relative; }

@@ -56,8 +56,6 @@ $j('#subscription-form').submit(function(event) {
  });
  
 
-// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
-
 
 
 //team members 
@@ -72,6 +70,8 @@ $j('.member-picture').click(function() {
     });
 });
 
+
+// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
 
 $j('.expedition-name').click(function() {
 

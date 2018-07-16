@@ -15,23 +15,23 @@ Template Name: get involved
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
+
     <main id="main" class="site-main" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-        <!-- displays get involved page banner  -->
+ <!--  displays get involved page banner  -->
 
-          <?php  $images = CFS()->get('get_involved'); ?>
+            <?php  $images = CFS()->get('get_involved'); ?>
 
-               <?php foreach ($images as $image){ ?>
+                <?php foreach ($images as $image){ ?>
 
                     <picture>
                         <?php echo '<img src="'.$image['banner'].'"/>'; ?>
                     </picture>
                         
                 <?php }?>
-                 
-
+               
                 <?php the_content();?>
 
                 <?php endwhile; ?>
@@ -55,140 +55,133 @@ Template Name: get involved
         <?php $missions = CFS()->get('past_expeditions'); 
             foreach ($missions as $mission) {?>
             
-        
+                <div class = "single-expedition">
 
-            <div class = "single-expedition">
+                    <div class = "expedition-info">
 
-                <div class = "expedition-info">
-
-                    <div class = "expedition-image">
-                        <!-- <picture> -->
+                        <div class = "expedition-image">
+                            <!-- <picture> -->
                             <?php echo '<img src="'.$mission['image'].'"/>';?>
-                        <!-- </picture>     -->
-                   
+                            <!-- </picture>     -->
 
-                        <div class = "expedition-name" id = "expedition-name">
+                            <div class = "expedition-name" id = "expedition-name">
 
-                            <div class = "name-wrapper"> 
+                                <div class = "name-wrapper"> 
 
-                                <div class = "expedition-title">
+                                    <div class = "expedition-title">
+                                        <p> <?php  echo the_title();?> </p>
+                                        <i class="fas fa-angle-down"></i>
+                                    </div> <!-- expedition-title -->
 
-                                   <p> <?php  echo the_title();?> </p>
+                                </div> <!--  name-wrapper -->
 
-                                    <i class="fas fa-angle-down"></i>
+                            </div>   <!--expedition-name -->
 
-                                </div>
 
-        </div> <!--  name-wrapper -->
+                            <div class = "expedition-description" id= "expedition-description">
+                                
+                                <div class= "expedition-content"> 
 
-        </div>   <!--expedition-name -->
+                                    <span class = "excerpt-wrapper">
+                                        <p>  <?php echo CFS()->get.$mission['excerpt'];?></p>
+                                    </span>
 
-         <div class = "expedition-description" id= "expedition-description">
-                                <?php echo CFS()->get.$mission['excerpt'];?>
+                                    <span class = "button-wrapper">
+                                        <a href = "<?php the_permalink();?>"> <button> read more</button></a>
+                                    </span>
 
-                               <a href = "<?php the_permalink();?>"> <button> read more</button></a>
+                                </div>  <!--expedition-content-->  
+
                             </div> <!-- expedition-description-->
-        </div> <!--expedition-image -->
 
 
-                           
-
-              
-
-                     
-                   
-
-               
-
-                </div> <!--expedition-info -->
-
-              </div> <!--single-expedition -->    
-
-            <?php } ?>
- 
-          
-
-        <?php endwhile; ?> 
-
-  </section> <!-- expedition-wrapper-->
-        <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-        
-            <h2>Nothing found!</h2>
-        
-        <?php endif; ?>
+                        </div> <!--expedition-image -->
 
 
-<!-- TODO insert list of sponsors in a list (custom field loop)-->
+                     </div> <!--expedition-info -->
 
-        <section class = "sponsors">
-           
-            <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It’s an honour to work with you.</p>
+                </div> <!--single-expedition -->    
 
-        </section>
+                <?php } ?>
+                <?php endwhile; ?> 
 
-    <!-- display all the team members (all the teams)-->
+     </section> <!-- expedition-wrapper-->
+
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+                            
+    <h2>Nothing found!</h2>
+                            
+    <?php endif; ?>
+
+
+    <!-- TODO insert list of sponsors in a list (custom field loop)-->
+
+     <section class = "sponsors">
+                            
+         <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It’s an honour to work with you.</p>
+
+
+
+    </section>
+
+
+<!-- display all the team members (all the teams)-->
 
 
     <section class = "wsb-team">
 
-
-
         <?php
-		$args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
-		$teams = new WP_Query( $args ); 
-		?>
-	
-		<?php if ( $teams ->have_posts() ) : ?>
+            $args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
+            $teams = new WP_Query( $args ); 
+        ?>
+                        
+        <?php if ( $teams ->have_posts() ) : ?>
         <?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
-
-        <ul class = "team-type"> 
         <p> <?php the_title()?> </p>
-       
-
-    
-
-        <?php $teamMembers = CFS()->get('members'); 
-
 
         
+        <ul class = "team-type"> 
+                        
 
-            foreach ($teamMembers as $member) {?>
+            <?php $teamMembers = CFS()->get('members'); 
 
-                <li class = "single-member">
 
-                   <div class = "member-thumbnail" id = "image">
+                foreach ($teamMembers as $member) {?>
 
-                       
+                    <li class = "single-member">
 
-                            <div class = "member-name">
+                        <div class = "member-thumbnail" id = "image">
+
+                            <div class = "member-name">                  
                                 <?php  echo CFS()->get.$member['name']; ?>
                             </div>  <!-- member-name -->
 
-                        <div class = "member-picture">
-                            <?php echo '<img src="'.$member['image'].'"/>';?>
-                        </div>
+                            <div class = "member-picture">
+                                 <?php echo '<img src="'.$member['image'].'"/>';?>
+                            </div>
 
 
-                        <div class = "icon-wrapper"> 
-                        <i class="fas fa-times"></i>
-                        </div>
+                            <div class = "icon-wrapper"> 
+                                <i class="fas fa-times"></i>
+                            </div>
+
                             <div class = "member-info" id = "info">
 
                                 <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
                                 <p> <?php echo CFS()->get.$member['role'];?></p> 
-                                <p>  <?php echo CFS()->get.$member['bio'];?></p> 
+                                                    <p>  <?php echo CFS()->get.$member['bio'];?></p> 
 
-                            </div>    <!--member-info-->   
+                                                </div>    <!--member-info-->   
+                                        
+                                        </div> <!--member-thuimbnail-->   
+
+                                    </li>   <!--single-member -->
+
+                                
+
+                            <?php } ?>
                     
-                    </div> <!--member-thuimbnail-->   
-
-                   </li>   <!--single-member -->
-
-               
-
-        <?php } ?>
- 
     </ul>
 
     <?php endwhile; ?> 
