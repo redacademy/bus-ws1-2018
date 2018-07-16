@@ -24,12 +24,10 @@ Template Name: impact
             <div class="mySlides fade">
             <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
             <div class="test"></div>
-            <div class="text">india</div>
         </div>          
             <div class="mySlides fade">
             <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
             <div class="test2"></div>
-            <div class="text">uganda</div>
         </div>
         <!-- Next and previous buttons -->
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -54,49 +52,44 @@ Template Name: impact
         </section>
         <section class="news-title">news</section>  
             
-            <div class = "news  -container">
-                <?php
-                    $args = array( 
-                        'post_type' => 'news',
-                        'posts_per_page' => 7, 
-                        'order' => 'ASC',
-                    ); 
-                    $news = new WP_Query( $args );
-                ?>
-                <?php if ( $news->have_posts() ) : ?>
-                    <?php while ( $news->have_posts() ) : $news->the_post(); ?>
-                        
-                        <?php if (has_post_thumbnail( $post->ID ) ): ?>
-                        <div class = "new-impact"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>">
-                            <div class="text-area-news">
-                            <h2><a class="title-area-news" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            <a class="arrow-link-news" href="<?php the_permalink(); ?>">></a></h2>
-                            </div>
-                        </a></div>
-                        
-                        <?php endif; ?>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
-                    
-                <?php else : ?>
-                <h2>Nothing found!</h2>
-                <?php endif; ?>
-            </div>
+        <div class = "news  -container">
+               <?php
+                   $args = array(
+                       'post_type' => 'news',
+                       'posts_per_page' => 7,
+                       'order' => 'ASC',
+                   );
+                   $news = new WP_Query( $args );
+               ?>
+               <?php if ( $news->have_posts() ) : ?>
+                   <?php while ( $news->have_posts() ) : $news->the_post(); ?>
+                       
+                       <?php if (has_post_thumbnail( $post->ID ) ) : ?>
+                       <div class = "new-impact"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="">
+                           <div class="text-area-news">
+                           <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
+                           <a class="arrow-link-news" href="">></a></h2>
+                           </div>
+                       </a></div>
+                       
+                       <?php endif; ?>
+                   <?php endwhile; ?>
+                   <?php wp_reset_postdata(); ?>
+                   
+               <?php else : ?>
+               <h2>Nothing found!</h2>
+               <?php endif; ?>
+           </div>
+        
+        <div class="news-nophoto-wrapper">
+            <div class="news-nophoto-area">
+                <a class="news-nophoto" href=""></a>
+                <a class="arrow-link-news-nophoto" href="">></a>
+           </div>
+        </div>  
             
-            <div class="news-nophoto-wrapper">
-                <div class="news-nophoto-area">
-                    <a class="news-nophoto" href=""></a>
-                    <a class="arrow-link-news-nophoto" href="">></a>
-               </div>
-            </div>  
-            
-            <div>
-            <?php CFS()->get('news1'); ?>
-            </div>
-            
-            <div class="load-more-area">
-                <a class="load-more">Load more</a>
-            </div>
-                    
-
+        <div class="load-more-area">
+            <a class="load-more">Load more</a>
+        </div>
+        
 <?php get_footer(); ?>
