@@ -2548,7 +2548,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 60px; }
 
 .image-page-donate {
@@ -2589,7 +2589,7 @@ object {
   text-transform: capitalize;
   font-family: Oswald;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #474747;
   -webkit-box-shadow: 0px 1px #888;
           box-shadow: 0px 1px #888; }
@@ -2605,15 +2605,27 @@ object {
   border-color: grey; }
 
 @media screen and (min-width: 768px) {
+  .content-area-donate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .site-main-donate {
     margin-top: 100px;
-    margin-bottom: 120px; }
+    margin-bottom: 120px;
+    width: 100%; }
   .image-page-donate {
     background-size: 2014px 485px;
     background-position-y: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 80%;
+    max-width: 1200px;
     height: 400px; }
   .donation-image {
     background-image: url(../../assets/images/whatwedo.jpg);
@@ -2622,7 +2634,8 @@ object {
     background-image: url(../../assets/images/sponsor.jpg);
     background-position: center; }
   .donate-btn {
-    width: 35%; } }
+    width: 35%;
+    font-size: 2rem; } }
 
 .site-main-impact h1 {
   text-transform: uppercase;
@@ -2846,7 +2859,8 @@ object {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  max-width: 1200px; }
   .new-impact h2 {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -3010,13 +3024,8 @@ object {
             flex-direction: column-reverse;
     margin-bottom: 40px; }
   .content-area-impact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%; }
+    width: 100%;
+    text-align: -webkit-center; }
   .hero-image-impact {
     height: 600px;
     width: 1200px;
@@ -3028,7 +3037,7 @@ object {
     text-transform: uppercase;
     margin-top: 70px;
     text-align: center;
-    font-family: Oswald;
+    font-family: "Oswald";
     font-weight: 400;
     letter-spacing: -1px;
     font-size: 3.75rem;
@@ -3091,6 +3100,18 @@ object {
       height: 250px;
       width: 450px;
       padding: 20px; }
+  .news-title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px; }
   .news-title {
     background-color: #04809e;
     height: 250px;
@@ -3105,7 +3126,8 @@ object {
     margin-top: 7px;
     color: #fff;
     font-family: Oswald;
-    font-size: 4rem; }
+    font-size: 4rem;
+    width: 100%; }
   .new-impact {
     height: 650px; }
     .new-impact h2 a {
@@ -3114,28 +3136,32 @@ object {
     height: 25%; }
   .link-news-container {
     position: absolute;
-    width: 1267px;
+    width: 80%;
     height: 1463px;
     background-color: transparent;
     position: absolute;
     top: 2858px; }
   .link-news-1 {
     position: absolute;
-    width: 1266px;
+    width: 80%;
     height: 160px;
-    background-color: transparent; }
+    background-color: transparent;
+    right: 90px;
+    left: 0px; }
   .link-news-2 {
     position: absolute;
-    width: 1266px;
+    width: 80%;
     height: 160px;
     background-color: transparent;
-    top: 652px; }
+    top: 652px;
+    right: 90px; }
   .link-news-3 {
     position: absolute;
-    width: 1266px;
+    width: 80%;
     height: 160px;
     background-color: transparent;
-    top: 1304px; } }
+    top: 1304px;
+    right: 90px; } }
 
 .page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
