@@ -72,11 +72,14 @@ $j('.member-picture').click(function() {
 
 
 // EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
+ 
+
 
 $j('.expedition-name').click(function() {
 
-    $j(this).next('.expedition-description').toggle('slow');
+    $j(this).children('.expedition-info').slideToggle('slow');
 
 
 });
+
 

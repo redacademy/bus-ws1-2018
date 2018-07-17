@@ -16,7 +16,7 @@ Template Name: get involved
 
 <div id="primary" class="content-area">
 
-    <main id="main" class="site-main" role="main">
+    <!-- <main id="main" class="site-main" role="main"> -->
 
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -49,7 +49,8 @@ Template Name: get involved
 		?>
 	
 		<?php if ( $expeditions ->have_posts() ) : ?> 
-		<?php while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
+        <?php while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
+        
 
 
         <?php $missions = CFS()->get('past_expeditions'); 
@@ -57,28 +58,34 @@ Template Name: get involved
             
                 <div class = "single-expedition">
 
-                    <div class = "expedition-info">
-
                         <div class = "expedition-image">
-                            <!-- <picture> -->
+
+                             <!-- <picture>  -->
                             <?php echo '<img src="'.$mission['image'].'"/>';?>
                             <!-- </picture>     -->
 
+                        </div> <!--expedition-image -->  
+
+
+
                             <div class = "expedition-name" id = "expedition-name">
 
-                                <div class = "name-wrapper"> 
+                                <!-- <div class = "name-wrapper">  -->
 
                                     <div class = "expedition-title">
                                         <p> <?php  echo the_title();?> </p>
                                         <i class="fas fa-angle-down"></i>
-                                    </div> <!-- expedition-title -->
+                                    </div>   <!-- expedition-title -->
 
-                                </div> <!--  name-wrapper -->
-
-                            </div>   <!--expedition-name -->
+                                <!-- </div>  -->  <!--  name-wrapper -->
 
 
-                            <div class = "expedition-description" id= "expedition-description">
+                        
+                            
+
+                        <div class = "expedition-info">
+
+                             <div class = "expedition-description" id= "expedition-description">
                                 
                                 <div class= "expedition-content"> 
 
@@ -94,11 +101,11 @@ Template Name: get involved
 
                             </div> <!-- expedition-description-->
 
+                         
+                        </div> <!--expedition-info -->
 
-                        </div> <!--expedition-image -->
+                       </div>   <!--expedition-name -->  
 
-
-                     </div> <!--expedition-info -->
 
                 </div> <!--single-expedition -->    
 
@@ -203,10 +210,10 @@ Template Name: get involved
     <?php endif; ?>
 
     </div> <!-- carousel-->
+                </section>
+     <!-- wsb-team-->
 
-    </div> <!-- wsb-team-->
-
-
+<section class = "research-projects">
     <div class = "research">
 
 
@@ -217,11 +224,16 @@ Template Name: get involved
 	?>
 	
 		<?php if ($thinkTank ->have_posts() ) : ?>
-		<?php while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
+        <?php while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
+        
 
+        <div class = "current-research">
         	
+            <p> <?php the_title()?> </p>
 
+        </div>
 
+<div class ="single-reserach-container">
           <?php   
           $researches = CFS()->get('research'); 
                         foreach ($researches as $research) {?>
@@ -244,6 +256,8 @@ Template Name: get involved
 
 
                         </div>
+
+                       
                        
 
 
@@ -251,7 +265,7 @@ Template Name: get involved
                         <?php } ?>
 
 
-
+ </div> <!-- single-reserach-container-->
 
                         <!-- custom post type for events -->
  
@@ -267,9 +281,12 @@ Template Name: get involved
     
     <?php endif; ?>
 
-
+</section>
 </div>
+                     
+</div> <!-- content-area -->
 
+    
 <?php get_footer(); ?>
 
 

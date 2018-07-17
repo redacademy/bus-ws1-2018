@@ -3097,26 +3097,48 @@ object {
   .text-area-news {
     height: 25%; } }
 
+.page-template-archive-expeditions .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto; }
+
 .page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
-
-.page-template-archive-expeditions .type a {
-  color: red; }
 
 .page-template-archive-expeditions .past-expeditions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%; }
+      flex-wrap: wrap; }
 
-.page-template-archive-expeditions .expedition-info {
+.page-template-archive-expeditions .single-expeditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-template-archive-expeditions .expedition-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3124,177 +3146,137 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: auto; }
-  .page-template-archive-expeditions .expedition-info .expedition-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%; }
-    .page-template-archive-expeditions .expedition-info .expedition-image img {
-      height: auto;
-      max-width: none;
-      width: 100%; }
+      flex-wrap: wrap; }
 
 .page-template-archive-expeditions .expedition-name {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.page-template-archive-expeditions .expedition-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-top: -6%; }
-  .page-template-archive-expeditions .expedition-name .name-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+          align-items: center; }
+  .page-template-archive-expeditions .expedition-title p, .page-template-archive-expeditions .expedition-title i {
+    color: white; }
+  .page-template-archive-expeditions .expedition-title i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .page-template-archive-expeditions .expedition-name .expedition-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    height: auto; }
-    .page-template-archive-expeditions .expedition-name .expedition-title p {
-      margin: 0px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      text-align: center;
-      width: 100%;
-      -ms-flex-item-align: center;
-          align-self: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
-.page-template-archive-expeditions .expedition-description {
-  display: none; }
-  .page-template-archive-expeditions .expedition-description .expedition-content {
+.page-template-archive-expeditions .expedition-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto; }
+  .page-template-archive-expeditions .expedition-title p {
+    margin: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%; }
-  .page-template-archive-expeditions .expedition-description .excerpt-wrapper {
+            flex-direction: column; }
+
+.page-template-archive-expeditions .expedition-info {
+  display: none;
+  background-color: white; }
+
+.page-template-archive-expeditions span.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5%; }
+  .page-template-archive-expeditions span.button-wrapper button {
+    color: black;
+    background: #F6E24F;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    -webkit-box-shadow: 0px 2px silver;
+            box-shadow: 0px 2px silver;
+    font-weight: bold;
+    text-transform: capitalize; }
+
+.page-template-archive-expeditions .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-archive-expeditions .sponsors .sponsors-logos {
+    background-image: url("../../assets/images/sponsors-logos.svg");
+    background-size: cover;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    height: 4rem; }
+
+.page-template-archive-expeditions .wsb-team,
+.page-template-archive-expeditions .research-projects {
+  background-color: #04809E; }
+
+.page-template-archive-expeditions .wsb-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%; }
+  .page-template-archive-expeditions .wsb-team ul {
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-archive-expeditions .expedition-description .excerpt-wrapper p {
-      width: 90%; }
-  .page-template-archive-expeditions .expedition-description span.button-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 5%; }
-    .page-template-archive-expeditions .expedition-description span.button-wrapper button {
-      color: black;
-      background: #F6E24F;
-      border-radius: 20px;
-      font-family: "Montserrat";
-      text-decoration: none;
-      -webkit-box-shadow: 0px 2px silver;
-              box-shadow: 0px 2px silver;
-      font-weight: bold;
-      text-transform: capitalize; }
-
-.page-template-archive-expeditions .sponsors-logos {
-  background-image: url("../../assets/images/sponsors-logos.svg");
-  background-size: cover;
-  width: 100%;
-  height: 4rem; }
-
-.page-template-archive-expeditions .wsb-team,
-.page-template-archive-expeditions .research {
-  background-color: #04809E; }
-
-.page-template-archive-expeditions .research {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .page-template-archive-expeditions .research .single-research {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .page-template-archive-expeditions .wsb-team li {
+    list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%; }
-
-.page-template-archive-expeditions .wsb-team ul {
-  margin: 0px;
-  padding: 0px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-
-.page-template-archive-expeditions .wsb-team li {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%; }
 
 .page-template-archive-expeditions .member-thumbnail {
   position: relative;
@@ -3303,6 +3285,12 @@ object {
   display: flex;
   width: 100%;
   height: 100%; }
+  .page-template-archive-expeditions .member-thumbnail .member-picture {
+    width: 100%;
+    height: 100%; }
+    .page-template-archive-expeditions .member-thumbnail .member-picture img {
+      width: 100%;
+      height: 100%; }
   .page-template-archive-expeditions .member-thumbnail .member-name {
     position: absolute;
     bottom: 0px;
@@ -3311,7 +3299,11 @@ object {
 
 .page-template-archive-expeditions .member-info {
   background-color: white;
-  display: none; }
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 32rem;
+  height: 44rem; }
   .page-template-archive-expeditions .member-info .icon-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3347,6 +3339,91 @@ object {
               align-items: center;
       font-size: 2.5rem;
       color: white; }
+
+.page-template-archive-expeditions .research-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 18rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 0%; }
+
+.page-template-archive-expeditions .current-research {
+  width: 100%;
+  background-color: white;
+  min-height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .current-research p {
+    padding-top: 5%; }
+
+.page-template-archive-expeditions .research {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .page-template-archive-expeditions .research .single-research {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-expeditions .research .single-research .research-picture {
+      width: 90%;
+      height: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page-template-archive-expeditions .research .single-research .research-picture img {
+        width: 100%;
+        height: 100%; }
+    .page-template-archive-expeditions .research .single-research .research-subject {
+      height: 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+.page-template-archive-expeditions .single-reserach-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  width: 100%; }
 
 .single-expedition .hero-image-exp {
   width: 100%;

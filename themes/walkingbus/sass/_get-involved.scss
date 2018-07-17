@@ -1,7 +1,13 @@
 .page-template-archive-expeditions {
 
 
-
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
 
 
 
@@ -12,58 +18,52 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
     }
 
-    .type {
-        a{
-        color:red;
-    }
-    }
-
-    .past-expeditions {
-       display: flex;
-       flex-direction: column;
-        flex-wrap: wrap;
-       width: 100%;
-    }
-
-     .expedition-info {
+    .past-expeditions{
         display: flex;
-        flex-direction: column; 
-        flex-wrap: wrap;
-        height: auto;
-
-        .expedition-image {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-
-            img {
-                height: auto;
-                max-width: none;
-                width: 100%;
-            }
-        }
-    }
-
-    .expedition-name {
-
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+        flex-direction: row;
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        color: #fff;
-        height: auto;
-        align-items: center;
-        margin-top: -6%;
+    }
 
-        .name-wrapper {
-            flex-direction: column;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .single-expeditions{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    
+    .expedition-image{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    .expedition-name{
+     
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+
+
+
+.expedition-title{
+    display: flex;
+    margin-top:-5%;
+    align-items: center;
+   
+   p, i{ color:white;
+   }
+
+   i{
+       display:flex;
+       align-self:flex-end;
+   }
+}
+    
+    
 
         .expedition-title {
             display: flex;
@@ -80,33 +80,13 @@
                 flex-direction: column;
             }
         }
-    } 
-
-    .expedition-description {
-      display: none; 
-
-      .expedition-content{
-          display:flex;
-          justify-content:center;
-          flex-direction:column;
-          width:100%;
-      }
-
-      .excerpt-wrapper{
-          width:100%;
-        display: flex;
-        flex-wrap:wrap;
-        flex-direction:row;
-        justify-content: center;
-         
-        p{
-            width:90%;
-        }
-
-          
-      }
-      
    
+
+    .expedition-info {
+      display: none; 
+     background-color:white;
+    }
+
     
     span.button-wrapper{
         display:flex;
@@ -129,11 +109,17 @@
     }
     
 
-    }
+    // }
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // sponsors section 
 ///////////////////////////////////////////////////////////////////////////////////////
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    flex-wrap: wrap;
 
 .sponsors-logos{
     background-image: url('../../assets/images/sponsors-logos.svg');
@@ -141,6 +127,7 @@
     width:100%;
     height:4rem; 
     
+}
 }
 
 
@@ -150,28 +137,28 @@
 
 
     .wsb-team,
-    .research{
+    .research-projects{
         background-color:#04809E;
 
     }
 
-    .research{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        .single-research{
-            display:flex;
-            flex-basis:45%;
-        }
-    }
+  
 
     .wsb-team{
+
+        //test
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+//test
 
         ul{
             margin:0px;
             padding:0px;
             display:inline-flex;
+            width: 100%;
+            justify-content: center;
         }
         li{
             list-style:none;
@@ -188,6 +175,15 @@
             display: flex;
             width: 100%;
             height: 100%;
+
+        .member-picture{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+            height: 100%; 
+            }
+        }    
         
 
     .member-name{
@@ -195,6 +191,7 @@
         bottom:0px;
         color:white;
         width:100%;
+     
     }
 
 }
@@ -203,6 +200,14 @@
 
         background-color:white;
         display:none;
+
+        //test
+        //display: block;
+        position: absolute;
+        z-index: 1;
+        width: 32rem;
+        height: 44rem;
+         //test
 
 
         .icon-wrapper{
@@ -233,7 +238,78 @@
       
     }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// RESEARCH
+ ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+ .research-projects{
+    display: flex;
+    width: 100%;
+    min-height: 18rem;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 0%;
+ }
 
+ .current-research{
+    width:100%;
+    background-color:white;
+    min-height:15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p{
+        padding-top:5%;
+    }
 }
+    .research{
+        width: 100%;
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start; 
+        
+
+        .single-research{
+            display:flex;
+            width:100%;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:center;
+            .research-picture{
+                width: 90%;
+                height: 100%;
+                flex-direction:row;
+                justify-content: center;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+ 
+            }
+
+            .research-subject{
+                height:5%;
+                display: flex;
+            }
+        }
+    }
+
+    .single-reserach-container{
+        display: flex;
+        padding-top: 5%;
+        padding-bottom:10%;
+        width:100%;
+    
+    }
+
+
+
+
+
+
+
+}// END OF PAGE TEMPLATE
