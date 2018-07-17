@@ -33,6 +33,10 @@
     flex-direction: column;
 }
 
+.mySlides .fade {
+    padding-top: 0px;
+}
+
 /***************************** CAROUSEL *****************************/
 
 * {box-sizing:border-box}
@@ -42,7 +46,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 5px;
+  margin-top: -40px;
 }
 
 /* Hide the images by default */
@@ -172,6 +176,7 @@
     justify-content: center;
     text-align: -webkit-center;
     margin: 25px 0px;
+    color: black;
 }
 
 /*********************************** VIDEOS *****************************/
@@ -204,6 +209,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    max-width: 1200px;
 
     h2 {
         display: -ms-flexbox;
@@ -337,12 +343,12 @@
     .title-image-impact-wrapper {
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 40px;
     }
 
     .content-area-impact {
-        display: flex;
-        justify-content: center;
         width: 100%;
+        text-align: -webkit-center;
     }
 
     .hero-image-impact {
@@ -358,7 +364,7 @@
         text-transform: uppercase;
         margin-top: 70px;
         text-align: center;
-        font-family: Oswald;
+        font-family: $Oswald;
         font-weight: 400;
         letter-spacing: -1px;
         font-size: 3.75rem;
@@ -369,7 +375,6 @@
     .slideshow-container {
         display: none;
     }
-
 
     .popsicles-desktop-container {
         display: flex;
@@ -397,10 +402,11 @@
         width: 300px;
         text-align: -webkit-center;
         margin-right: 25px;
-        font-size: 2rem;
-        font-weight: 200;
+        font-size: 1.75rem;
+        font-weight: 300;
         line-height: 35px;
         display: block;
+        color: black;
     }
 
     .see-reports-wrapper {
@@ -408,8 +414,8 @@
         margin-bottom: 60px;
 
         p{
-            font-size: 1.75rem;
-            font-weight: 200;
+            font-size: 1.5rem;
+            font-weight: 300;
         }
 
         span {
@@ -434,6 +440,14 @@
         }
     }
 
+    .news-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+
     .news-title {
         background-color: #04809e;
         height: 250px;
@@ -447,6 +461,7 @@
         color: #fff;
         font-family: Oswald;
         font-size: 4rem;
+        width: 100%;
     }
 
     .new-impact {
@@ -461,4 +476,40 @@
         height: 25%;
     }
 
+    .link-news-container {
+        position: absolute;
+        width: 80%;
+        height: 1463px;
+        background-color: transparent;
+        position: absolute;
+        top: 2858px;
+    }
+
+
+    .link-news-1 {
+        position: absolute;
+        width: 80%;
+        height: 160px;
+        background-color: transparent;
+        right: 90px;
+        left: 0px;
+    }
+
+    .link-news-2 {
+        position: absolute;
+        width: 80%;
+        height: 160px;
+        background-color: transparent;
+        top: 652px;
+        right: 90px;
+    }
+    
+    .link-news-3 {
+        position: absolute;
+        width: 80%;
+        height: 160px;
+        background-color: transparent;
+        top: 1304px;
+        right: 90px;
+    }
 }
