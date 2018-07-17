@@ -3354,5 +3354,128 @@ object {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
 
-.page-template-page-blog h1 {
-  color: black; }
+.page-template-page-blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+  display: none; }
+
+.page-template-page-blog .post-container .img-container, .single-post .post-container .img-container {
+  height: 30vh;
+  position: relative; }
+  .page-template-page-blog .post-container .img-container img, .single-post .post-container .img-container img {
+    height: 100%; }
+  .page-template-page-blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    background: #F6E24F;
+    opacity: .5; }
+
+.page-template-page-blog .post-container .post-title, .single-post .post-container .post-title {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 1.2rem;
+  width: 80%; }
+
+.page-template-page-blog .post-ex, .single-post .post-ex {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .9rem;
+  color: gray; }
+
+.page-template-page-blog .read-more-post, .single-post .read-more-post {
+  display: block;
+  padding: 2% 4%;
+  border-radius: 5px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+  font-size: .8rem;
+  background: #F6E24F;
+  font-family: "Montserrat";
+  font-weight: bold; }
+
+@media (min-width: 1080px) {
+  .page-template-page-blog .post-wrapper:first-of-type, .single-post .post-wrapper:first-of-type {
+    margin-top: 10%; }
+  .page-template-page-blog .post-container, .single-post .post-container {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-template-page-blog .post-container .post-title, .single-post .post-container .post-title {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      text-align: left;
+      font-size: 1.5rem;
+      background: rgba(246, 226, 79, 0.8);
+      padding: 2% 5%; }
+    .page-template-page-blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+      displaY: initial;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1% 1%;
+      background: #F6E24F;
+      color: black; }
+    .page-template-page-blog .post-container .img-container, .single-post .post-container .img-container {
+      width: 100%;
+      height: 80vh; }
+      .page-template-page-blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+        display: none; }
+      .page-template-page-blog .post-container .img-container img, .single-post .post-container .img-container img {
+        position: relative;
+        width: 100%; }
+  .page-template-page-blog .post-ex, .single-post .post-ex {
+    width: 85%;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    text-align: left; }
+    .page-template-page-blog .post-ex img, .single-post .post-ex img {
+      margin-left: auto;
+      margin-right: auto; }
+  .page-template-page-blog .read-more-post, .single-post .read-more-post {
+    width: 18%;
+    font-size: 1.3rem;
+    background: none;
+    border: 3px solid black;
+    margin-left: 7.5%;
+    padding: 1% 2%; }
+    .page-template-page-blog .read-more-post:hover, .single-post .read-more-post:hover {
+      background: #03B8E2;
+      color: white;
+      border-color: #03B8E2; } }
+
+.single-post .post-navigation .nav-links {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+  .single-post .post-navigation .nav-links a {
+    color: #03B8E2; }
+
+.single-post .comments-area {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+  .single-post .comments-area .submit {
+    background-color: #F6E24F;
+    color: black;
+    padding: 1% 3%;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Montserrat"; }
+    .single-post .comments-area .submit:hover {
+      background: #03B8E2; }
