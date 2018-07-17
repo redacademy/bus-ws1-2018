@@ -75,7 +75,7 @@ get_header(); ?>
                     <header>
                         <h2><?php the_title(); ?></h2>
                     </header>
-                    <div>
+                    <div class="infographic-contry-content">
                         <?php the_content(); ?>
                     </div>
                     <footer>
