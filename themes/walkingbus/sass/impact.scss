@@ -33,6 +33,10 @@
     flex-direction: column;
 }
 
+.mySlides .fade {
+    padding-top: 0px;
+}
+
 /***************************** CAROUSEL *****************************/
 
 * {box-sizing:border-box}
@@ -42,7 +46,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 5px;
+  margin-top: -40px;
 }
 
 /* Hide the images by default */
@@ -172,6 +176,7 @@
     justify-content: center;
     text-align: -webkit-center;
     margin: 25px 0px;
+    color: black;
 }
 
 /*********************************** VIDEOS *****************************/
@@ -337,6 +342,7 @@
     .title-image-impact-wrapper {
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 40px;
     }
 
     .content-area-impact {
@@ -370,7 +376,6 @@
         display: none;
     }
 
-
     .popsicles-desktop-container {
         display: flex;
         justify-content: center;
@@ -397,10 +402,11 @@
         width: 300px;
         text-align: -webkit-center;
         margin-right: 25px;
-        font-size: 2rem;
-        font-weight: 200;
+        font-size: 1.75rem;
+        font-weight: 300;
         line-height: 35px;
         display: block;
+        color: black;
     }
 
     .see-reports-wrapper {
@@ -408,8 +414,8 @@
         margin-bottom: 60px;
 
         p{
-            font-size: 1.75rem;
-            font-weight: 200;
+            font-size: 1.5rem;
+            font-weight: 300;
         }
 
         span {
@@ -461,4 +467,36 @@
         height: 25%;
     }
 
+    .link-news-container {
+        position: absolute;
+        width: 1267px;
+        height: 1463px;
+        background-color: transparent;
+        position: absolute;
+        top: 2858px;
+    }
+
+
+    .link-news-1 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+    }
+
+    .link-news-2 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+        top: 652px;
+    }
+    
+    .link-news-3 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+        top: 1304px;
+    }
 }

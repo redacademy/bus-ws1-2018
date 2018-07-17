@@ -49,6 +49,16 @@
     box-shadow: 0px 1px #888;
 }
 
+.donation-image button:hover {
+    box-shadow: none;
+    border-color: grey;
+}
+
+.sponsor-image button:hover {
+    box-shadow: none;
+    border-color: grey;
+}
+
 @media screen and (min-width: 768px){
     
     .site-main-donate{
