@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -44,7 +44,7 @@
     text-transform: capitalize;
     font-family: Oswald;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #474747;
     box-shadow: 0px 1px #888;
 }
@@ -61,9 +61,16 @@
 
 @media screen and (min-width: 768px){
     
+    .content-area-donate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .site-main-donate{
     margin-top: 100px;
     margin-bottom: 120px;
+    width: 100%;
     }   
 
     .image-page-donate {
@@ -71,7 +78,7 @@
         background-position-y: 0px;
         background-repeat: no-repeat;
         background-size: cover;
-        max-width: 80%;
+        max-width: 1200px;
         height: 400px;
     }
 
@@ -87,5 +94,6 @@
     
     .donate-btn {
         width: 35%;
+        font-size: 2rem;
     }
 }

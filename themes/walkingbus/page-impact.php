@@ -50,7 +50,10 @@ Template Name: impact
             <div><?php echo CFS()->get('video1'); ?></div>
             <div><?php echo CFS()->get('video2'); ?></div>
         </section>
-        <section class="news-title">news</section>  
+
+        <div class="news-title-container">
+            <section class="news-title">news</section>  
+        </div>
             
         <div class = "news-container">
                <?php
