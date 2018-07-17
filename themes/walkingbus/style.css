@@ -2594,6 +2594,16 @@ object {
   -webkit-box-shadow: 0px 1px #888;
           box-shadow: 0px 1px #888; }
 
+.donation-image button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: grey; }
+
+.sponsor-image button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: grey; }
+
 @media screen and (min-width: 768px) {
   .site-main-donate {
     margin-top: 100px;
@@ -3101,7 +3111,31 @@ object {
     .new-impact h2 a {
       font-size: 1.75rem; }
   .text-area-news {
-    height: 25%; } }
+    height: 25%; }
+  .link-news-container {
+    position: absolute;
+    width: 1267px;
+    height: 1463px;
+    background-color: transparent;
+    position: absolute;
+    top: 2858px; }
+  .link-news-1 {
+    position: absolute;
+    width: 1266px;
+    height: 160px;
+    background-color: transparent; }
+  .link-news-2 {
+    position: absolute;
+    width: 1266px;
+    height: 160px;
+    background-color: transparent;
+    top: 652px; }
+  .link-news-3 {
+    position: absolute;
+    width: 1266px;
+    height: 160px;
+    background-color: transparent;
+    top: 1304px; } }
 
 .page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));

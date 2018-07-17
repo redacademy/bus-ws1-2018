@@ -52,7 +52,7 @@ Template Name: impact
         </section>
         <section class="news-title">news</section>  
             
-        <div class = "news  -container">
+        <div class = "news-container">
                <?php
                    $args = array(
                        'post_type' => 'news',
@@ -79,8 +79,14 @@ Template Name: impact
                <?php else : ?>
                <h2>Nothing found!</h2>
                <?php endif; ?>
-           </div>
+        </div>
         
+        <div class="link-news-container">
+            <a class="link-news-1" href=""></a>
+            <a class="link-news-2" href=""></a>
+            <a class="link-news-3" href=""></a>
+        </div>    
+
         <div class="news-nophoto-wrapper">
             <div class="news-nophoto-area">
                 <a class="news-nophoto" href=""></a>

@@ -466,4 +466,37 @@
     .text-area-news {
         height: 25%;
     }
+
+    .link-news-container {
+        position: absolute;
+        width: 1267px;
+        height: 1463px;
+        background-color: transparent;
+        position: absolute;
+        top: 2858px;
+    }
+
+
+    .link-news-1 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+    }
+
+    .link-news-2 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+        top: 652px;
+    }
+    
+    .link-news-3 {
+        position: absolute;
+        width: 1266px;
+        height: 160px;
+        background-color: transparent;
+        top: 1304px;
+    }
 }
