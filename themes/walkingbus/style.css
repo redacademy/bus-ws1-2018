@@ -1315,7 +1315,7 @@ object {
             position: relative;
             background: none; }
             .site-header .main-navigation .menu-main-menu-container .menu li {
-              width: 16.666%;
+              width: 14.285%;
               border-right: 1px solid gray;
               border-top: none;
               padding: 0; }
@@ -3313,3 +3313,6 @@ object {
   @media (min-width: 1080px) {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
+
+.page-template-page-blog h1 {
+  color: black; }
