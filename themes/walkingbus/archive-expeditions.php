@@ -37,7 +37,60 @@ Template Name: get involved
                 <?php endwhile; ?>
 
 <!-- //TODO : ADD THE CUSTOM FIELD SUITE FOR THE UPCOMMING EXPEDITIONS (CFS BECAUSE THIS PART IS GOING TO BE UPDATED OFTEN ) -->
+<section class = "upcomig-expedition">
 
+  <?php
+			$args = array( 'post_type' => 'upcoming_expedition', 'order' => 'ASC', 'posts_per_page' => -1  );
+			$upcomingExpeditions = new WP_Query( $args ); 
+		?>
+	
+		<?php if ( $upcomingExpeditions  ->have_posts() ) : ?> 
+        <?php while ( $upcomingExpeditions  ->have_posts() ) : $upcomingExpeditions  ->the_post(); ?>
+        
+
+
+        <?php $nextMissions = CFS()->get('upcoming_expedition'); 
+            foreach ($nextMissions as $nextMission) {?>
+                <div class = "section-title">
+                    <p> <?php  echo the_title();?> </p>
+                </div>  
+
+                <div class = "upcoming-expedition-wrapper">
+
+                    <div class = "map-wrapper">
+                    <?php echo '<img src="'.$nextMission['map'].'"/>';?>
+                    
+                
+                    <div class = "upcomig-expedition-info">
+
+                        <div class = "expedition-details">
+                            <p>  <?php echo CFS()->get.$nextMission['date'];?></p>
+                            <p>  <?php echo CFS()->get.$nextMission['location'];?></p>
+                        </div>    
+
+                        <div class = "expedition-description">
+                            <p>  <?php echo CFS()->get.$nextMission['info'];?></p>
+                        </div>
+
+                    </div>
+                    </div>
+
+                </div> <!-- upcoming-expedition-wrapper -->
+        <?php } ?>
+                <?php endwhile; ?> 
+
+     </section> <!-- expedition-wrapper-->
+
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+                            
+    <h2>Nothing found!</h2>
+                            
+    <?php endif; ?>
+
+
+
+</section> <!-- section upcomming expedition-->
 
 <!-- displays past expeditions  -->
 

@@ -3110,33 +3110,28 @@ object {
       flex-wrap: wrap;
   height: auto; }
 
+.page-template-archive-expeditions .section-title {
+  background-color: #F6E24F; }
+  .page-template-archive-expeditions .section-title p {
+    margin: 0px; }
+
+.page-template-archive-expeditions .upcoming-expedition-wrapper {
+  background-color: #04809E; }
+  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-details {
+    color: #F6E24F; }
+  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description {
+    color: white; }
+
+.page-template-archive-expeditions .map-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative; }
+
 .page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
-
-.page-template-archive-expeditions .past-expeditions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.page-template-archive-expeditions .single-expeditions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
 
 .page-template-archive-expeditions .expedition-image {
   display: -webkit-box;
@@ -3146,30 +3141,39 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 10rem;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .page-template-archive-expeditions .expedition-image img {
+    height: 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .page-template-archive-expeditions .expedition-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
+  margin-top: -8%; }
 
 .page-template-archive-expeditions .expedition-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -5%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .page-template-archive-expeditions .expedition-title p, .page-template-archive-expeditions .expedition-title i {
-    color: white; }
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
   .page-template-archive-expeditions .expedition-title i {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3177,32 +3181,19 @@ object {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
-.page-template-archive-expeditions .expedition-title {
+.page-template-archive-expeditions .expedition-title p {
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
   width: 100%;
-  height: auto; }
-  .page-template-archive-expeditions .expedition-title p {
-    margin: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .page-template-archive-expeditions .expedition-info {
   display: none;
@@ -3424,6 +3415,10 @@ object {
   padding-top: 5%;
   padding-bottom: 10%;
   width: 100%; }
+
+@media screen and (min-width: 490px) {
+  .page-template-archive-expeditions .expedition-image {
+    height: 18rem; } }
 
 .single-expedition .hero-image-exp {
   width: 100%;
