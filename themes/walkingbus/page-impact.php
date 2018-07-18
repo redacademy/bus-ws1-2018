@@ -41,8 +41,8 @@ Template Name: impact
 
         <div class="see-reports-wrapper">
             <section class="see-reports">
-                <p>See how we are tracking in each region by reviewing our <br><span>annual report for 2016 - 17.</span></p><br>
-                <p>For old reports, <span>go here</span></p>
+                <p>See how we are tracking in each region by reviewing our <br><span><a href="">annual report for 2016 - 17.</a></span></p><br>
+                <p>For old reports, <span><a href="">go here</a></span></p>
             </section>
         </div>
 
@@ -70,8 +70,10 @@ Template Name: impact
                        <?php if (has_post_thumbnail( $post->ID ) ) : ?>
                        <div class = "new-impact"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="">
                            <div class="text-area-news">
+                            <?php $article_url = CFS()->get('article_url');?>
+                            <?php echo $article_url ?>
                            <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
-                           <a class="arrow-link-news" href="">></a></h2>
+                           <a class="arrow-link-news" href="">&#10093;</a></h2>
                            </div>
                        </a></div>
                        
@@ -84,12 +86,6 @@ Template Name: impact
                <?php endif; ?>
         </div>
         
-        <div class="link-news-container">
-            <a class="link-news-1" href=""></a>
-            <a class="link-news-2" href=""></a>
-            <a class="link-news-3" href=""></a>
-        </div>    
-
         <div class="news-nophoto-wrapper">
             <div class="news-nophoto-area">
                 <a class="news-nophoto" href=""></a>

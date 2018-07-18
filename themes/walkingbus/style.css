@@ -2019,7 +2019,7 @@ object {
   background-position: unset;
   background-size: cover; }
 
-.featuredon-links span {
+.featuredon-links picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2040,7 +2040,7 @@ object {
 .widget-title {
   display: none; }
 
-/***********************MEDIA QUERY MIN 960PX*********************************/
+/***********************MEDIA QUERY MIN 1024PX*********************************/
 @media screen and (min-width: 1024px) {
   .site-info {
     display: -webkit-box;
@@ -2056,8 +2056,9 @@ object {
     color: white; }
   .main-container-footer {
     height: 600px;
-    width: 85%;
-    margin-bottom: 40px; }
+    width: 90%;
+    margin-bottom: 40px;
+    max-width: 1400px; }
   .featuredon-links, .followuson-links {
     width: 50%; }
   .followuson-links {
@@ -2103,7 +2104,7 @@ object {
       font-weight: 300; }
     .footer-links li {
       display: inline;
-      margin-right: 10px; }
+      margin-right: 7px; }
     .footer-links .fab {
       border-style: solid;
       border-radius: 140px;
@@ -2120,7 +2121,7 @@ object {
     .footer-links aside {
       width: auto; }
   .subscription-container form, .subscription-container input {
-    width: 40%;
+    width: 50%;
     color: white;
     font-weight: 300;
     padding-left: 25px; }
@@ -2143,7 +2144,10 @@ object {
       font-weight: 500;
       text-shadow: none;
       font-size: 1.75rem;
-      font-family: "Oswald"; }
+      font-family: "Oswald";
+      border-bottom: black;
+      border-bottom-width: 2px;
+      border-bottom-style: solid; }
     .subscription-container input {
       font-size: 1.75rem;
       font-weight: 300;
@@ -2188,8 +2192,8 @@ object {
       margin-right: 40px;
       font-size: .75rem; }
   .bkg-featuredon {
-    height: 95px;
-    width: 100%;
+    height: 105px;
+    width: 520px;
     background-position: initial; }
   .widget .widget_text {
     -webkit-box-pack: center;
@@ -2808,6 +2812,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   width: 65%; }
+  .see-reports a {
+    color: black; }
   .see-reports p {
     margin: 0%;
     font-family: "Montserrat";
@@ -2960,7 +2966,8 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 15px;
-  height: 40px; }
+  height: 40px;
+  max-width: 1200px; }
 
 .arrow-link-news-nophoto {
   border-radius: 50px;
@@ -2981,14 +2988,17 @@ object {
   border-width: 1px;
   color: gray;
   margin-bottom: 5px;
-  margin-left: 5px; }
+  margin-left: 5px;
+  max-width: 1200px; }
 
 .load-more {
   color: black;
-  margin-top: 10px; }
+  margin-top: 10px;
+  max-width: 1200px; }
 
 .load-more-area {
   width: 80%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2999,6 +3009,9 @@ object {
   padding-left: 5%;
   font-family: "Montserrat";
   text-decoration: underline; }
+
+.cfs-hyperlink span {
+  display: none; }
 
 /******************************************** DESKTOP VERSION *****************************************/
 @media screen and (min-width: 600px) {
@@ -3095,7 +3108,7 @@ object {
             justify-content: center;
     height: 350px; }
     .videos-impact div {
-      height: 350px; }
+      height: 300px; }
     .videos-impact iframe {
       height: 250px;
       width: 450px;
@@ -3131,37 +3144,21 @@ object {
   .new-impact {
     height: 650px; }
     .new-impact h2 a {
-      font-size: 1.75rem; }
+      font-size: 1.75rem;
+      position: relative; }
   .text-area-news {
     height: 25%; }
-  .link-news-container {
-    position: absolute;
-    width: 80%;
-    height: 1463px;
+  .text-area-news .cfs-hyperlink {
     background-color: transparent;
-    position: absolute;
-    top: 2858px; }
-  .link-news-1 {
-    position: absolute;
-    width: 80%;
+    width: 75%;
     height: 160px;
-    background-color: transparent;
-    right: 90px;
-    left: 0px; }
-  .link-news-2 {
-    position: absolute;
-    width: 80%;
-    height: 160px;
-    background-color: transparent;
-    top: 652px;
-    right: 90px; }
-  .link-news-3 {
-    position: absolute;
-    width: 80%;
-    height: 160px;
-    background-color: transparent;
-    top: 1304px;
-    right: 90px; } }
+    position: absolute; }
+  .arrow-link-news {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    padding-left: 4px;
+    left: 7%; } }
 
 .page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));

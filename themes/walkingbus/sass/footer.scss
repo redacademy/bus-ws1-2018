@@ -152,7 +152,7 @@
 
 .featuredon-links {
     
-    span {
+    picture {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -168,7 +168,7 @@
     display: none;
 }
 
-/***********************MEDIA QUERY MIN 960PX*********************************/
+/***********************MEDIA QUERY MIN 1024PX*********************************/
 
 
 @media screen and (min-width: 1024px){
@@ -183,8 +183,9 @@
 
     .main-container-footer{
         height: 600px;
-        width: 85%;
+        width: 90%;
         margin-bottom: 40px;
+        max-width: 1400px;
     }
 
     .featuredon-links, .followuson-links{
@@ -227,7 +228,7 @@
         
         li{
             display: inline;
-            margin-right: 10px;
+            margin-right: 7px;
         }
 
         .fab {
@@ -255,7 +256,7 @@
     }   
 
     .subscription-container form, .subscription-container input {
-        width: 40%;
+        width: 50%;
         color: white;
         font-weight: 300;
         padding-left: 25px;
@@ -281,7 +282,10 @@
             text-shadow: none;
             font-size: 1.75rem;
             font-family: $Oswald;
-        }
+            border-bottom: black;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+        }   
 
         input {
             font-size: 1.75rem;
@@ -326,8 +330,8 @@
     }
 
     .bkg-featuredon {
-        height: 95px;
-        width: 100%;
+        height: 105px;
+        width: 520px;
         background-position: initial;
     }
  
