@@ -83,3 +83,13 @@ $j('.expedition-name').click(function() {
 });
 
 
+//shop image thumbnail switch
+$j('.img-min').click(function() {	
+  
+var imgMin = $j(this).clone().append();
+
+$j( ".main-image").html(imgMin);
+
+});
+
+

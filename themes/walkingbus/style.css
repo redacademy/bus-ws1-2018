@@ -3240,6 +3240,8 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%; }
+  .page-template-archive-expeditions .expedition-title p, .page-template-archive-expeditions .expedition-title i {
+    color: white; }
   .page-template-archive-expeditions .expedition-title i {
     display: -webkit-box;
     display: -ms-flexbox;

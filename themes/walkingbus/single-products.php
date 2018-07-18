@@ -29,17 +29,17 @@ get_header();
 						<?php echo the_post_thumbnail(); ?>
 					</picture>
 					
-				</div>
+				</div> <!-- main-image -->
 				
 				 <?php  foreach ($images as $image) {?>
 	
-					<picture>
-					<?php echo '<img src="'.$image["image"].'"/>';?>
-					<?php echo '<img src="'.$image["image_2"].'"/>';?>
-					<?php echo '<img src="'.$image["image_3"].'"/>';?>
-					<?php echo '<img src="'.$image["image_4"].'"/>';?>
+					<!-- <picture> -->
+					<div class = "img-min"> <?php echo '<img src="'.$image["image"].'"/>';?> </div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_2"].'"/>';?></div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_3"].'"/>';?></div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_4"].'"/>';?></div>
 
-					</picture>
+					<!-- </picture> -->
 
 				<div class = "product-details"> 
 
