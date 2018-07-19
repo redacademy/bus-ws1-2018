@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package wsb_Theme
  */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 				</div>
 				<h1 class="post-title"><?php the_title(); ?></h1>
 				<div class="entry-meta">
-					<?php red_starter_posted_on(); ?> / <?php comments_number('No comments', '1 Comment', '% Comments'); ?> / <?php red_starter_posted_by(); ?>
+					<?php wsb_posted_on(); ?> / <?php comments_number('No comments', '1 Comment', '% Comments'); ?> / <?php wsb_posted_by(); ?>
 				</div>
 			</div>
 			<div class="post-ex"><?php the_content(); ?></div>
