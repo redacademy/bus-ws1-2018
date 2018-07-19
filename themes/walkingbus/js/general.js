@@ -58,7 +58,7 @@ $j('#subscription-form').submit(function(event) {
 
 
 
-//team members 
+// show team members bio
 
 $j('.member-picture').click(function() {
     $j(this).siblings('.member-info').show('slow');
@@ -88,7 +88,7 @@ $j('.img-min').click(function() {
   
 var imgMin = $j(this).clone().append();
 
-$j( ".main-image").html(imgMin);
+$j( '.main-image').html(imgMin);
 
 });
 
