@@ -8,7 +8,7 @@
 // Add your custom post types here...
 
 // Register Custom Post Type
-function Expeditions() {
+function bus_register_expeditions_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Expeditions', 'Post Type General Name', 'text_domain' ),
@@ -62,12 +62,12 @@ function Expeditions() {
 	register_post_type( 'expedition', $args );
 
 }
-add_action( 'init', 'Expeditions', 0 );
+add_action( 'init', 'bus_register_expeditions_post_type', 0 );
 
 
 // upcoming expeditions Custom Post Type
 
-function upcoming_expedition() {
+function bus_register_upcoming_expeditions_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Upcoming Expeditions', 'Post Type General Name', 'text_domain' ),
@@ -120,12 +120,12 @@ function upcoming_expedition() {
 	register_post_type( 'upcoming_expedition', $args );
 
 }
-add_action( 'init', 'upcoming_expedition', 0 );
+add_action( 'init', 'bus_register_upcoming_expeditions_post_type', 0 );
 
 
 
 // Products Custom Post Type
-function Products() {
+function bus_register_product_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Products', 'Post Type General Name', 'text_domain' ),
@@ -179,10 +179,10 @@ function Products() {
 	register_post_type( 'products', $args );
 
 }
-add_action( 'init', 'Products', 0 );
+add_action( 'init', 'bus_register_product_post_type', 0 );
 
 // Register Custom Post Type
-function News() {
+function bus_register_news_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'news', 'Post Type General Name', 'text_domain' ),
@@ -236,13 +236,13 @@ function News() {
 	register_post_type( 'news', $args );
 
 }
-add_action( 'init', 'News', 0 );
+add_action( 'init', 'bus_register_news_post_type', 0 );
 
 
 
 // Register Custom Post Type for the walking bus team members (it also has a taxonomy)
 
-function team() {
+function bus_register_team_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Teams', 'Post Type General Name', 'text_domain' ),
@@ -295,11 +295,11 @@ function team() {
 	register_post_type( 'team', $args );
 
 }
-add_action( 'init', 'team', 0 );
+add_action( 'init', 'bus_register_team_post_type', 0 );
 
 
 // Register Custom Post Type
-function research() {
+function bus_register_research_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Research', 'Post Type General Name', 'text_domain' ),
@@ -352,11 +352,11 @@ function research() {
 	register_post_type( 'research', $args );
 
 }
-add_action( 'init', 'research', 0 );
+add_action( 'init', 'bus_register_research_post_type', 0 );
 
 
 // Register Custom Post Type
-function countries_post_type() {
+function bus_register_countries_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Countries', 'Post Type General Name', 'text_domain' ),
@@ -410,4 +410,4 @@ function countries_post_type() {
 	register_post_type( 'countries', $args );
 
 }
-add_action( 'init', 'countries_post_type', 0 );
+add_action( 'init', 'bus_register_countries_post_type', 0 );

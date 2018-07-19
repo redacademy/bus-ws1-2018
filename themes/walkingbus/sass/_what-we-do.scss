@@ -102,7 +102,7 @@
                 font-size: 1.5rem;
 
                 span {
-                    padding: 1% 1.5%;
+                    padding: 9px 18px;
                     border: 1px solid $blue;
                     border-radius: 100%;
                     text-align: center;
@@ -168,7 +168,7 @@
                     span {
                         display: initial;
                         color: $yellow;
-                        padding: 1% 1.5%;
+                        padding: 9px 18px;
                         border: 1px solid $yellow;
                         border-radius: 100%;
                         text-align: center;
@@ -243,6 +243,7 @@
 
         
         .nutrition-pillars-container {
+
 
             @include desktop {
                 display: flex;

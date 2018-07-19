@@ -65,8 +65,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 // Theme SCSS
-// @import "header";
-@import "header2";
+@import "header";
 @import 'what-we-do';
 @import	"footer";
 @import "page-templates";
@@ -79,3 +78,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "single-expeditions";
 @import "blog";
 @import "single-post";
+@import "search";
