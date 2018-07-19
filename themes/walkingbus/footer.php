@@ -40,9 +40,11 @@
 						<li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
 						<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
 					</ul>
+					
 					</div>
 						<p id="contactus">contact us</p>
 					</div>
+
 					<div class="contact-info">
 						<div class="contact">
 							<p id="footer-info">
