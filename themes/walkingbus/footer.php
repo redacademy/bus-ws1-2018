@@ -12,7 +12,7 @@
 			<section class="main-container-footer">
 				<div class="footer-links">
 					<div class="featuredon-links"><p>featured-on</p>
-						<span class="bkg-featuredon"></span>
+						<picture class="bkg-featuredon"></picture>
 					</div>
 					<div class="followuson-links"><p>follow us on</p>
 						<ul>

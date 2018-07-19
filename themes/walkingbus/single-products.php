@@ -23,23 +23,31 @@ get_header();
 
 			   <?php  $images = CFS()->get('products');?>
 
+			   <div class = "product-images"> 
+
 			   <div class = "main-image">
 
 					<picture>
 						<?php echo the_post_thumbnail(); ?>
 					</picture>
 					
-				</div>
+				</div> <!-- main-image -->
 				
 				 <?php  foreach ($images as $image) {?>
+				
+				<div class = "thumbnails-wrapper">
 	
-					<picture>
-					<?php echo '<img src="'.$image["image"].'"/>';?>
-					<?php echo '<img src="'.$image["image_2"].'"/>';?>
-					<?php echo '<img src="'.$image["image_3"].'"/>';?>
-					<?php echo '<img src="'.$image["image_4"].'"/>';?>
+					<!-- <picture> -->
+					<div class = "img-min"> <?php echo '<img src="'.$image["image"].'"/>';?> </div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_2"].'"/>';?></div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_3"].'"/>';?></div>
+					<div class = "img-min"> <?php echo '<img src="'.$image["image_4"].'"/>';?></div>
+				 </div>
+					<!-- </picture> -->
 
-					</picture>
+					</div> <!-- product-images-->
+
+				</div> <!-- product-info -->	
 
 				<div class = "product-details"> 
 
@@ -53,7 +61,7 @@ get_header();
 
 				</div>
 
-			</div> <!-- product-info -->
+			
 
  
 		

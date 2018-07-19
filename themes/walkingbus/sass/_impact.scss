@@ -163,6 +163,10 @@
     display: flex;
     width: 65%;
 
+    a{
+    color: black;
+    }
+
     p{
      margin: 0%;
      font-family: $Mont;
@@ -295,6 +299,7 @@
     justify-content: center;
     margin-top: 15px;
     height: 40px;
+    max-width: 1200px;
 }
 
 .arrow-link-news-nophoto {
@@ -311,15 +316,18 @@
     color: gray;
     margin-bottom: 5px;
     margin-left: 5px;
+    max-width: 1200px;
 }
 
 .load-more {
     color: black;
     margin-top: 10px;
+    max-width: 1200px;
 }
 
 .load-more-area {
     width: 80%;
+    max-width: 1200px;
     display: flex;
     justify-content: flex-start;
     margin: 20px 0px;
@@ -328,9 +336,12 @@
     text-decoration: underline;
 }
 
+.cfs-hyperlink span {
+    display: none;
+}
 /******************************************** DESKTOP VERSION *****************************************/
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
     .site-main-impact {
         width: 80%;
@@ -362,13 +373,13 @@
 
     .site-main-impact h1 {
         text-transform: uppercase;
-        margin-top: 70px;
+        margin-top: 30px;
         text-align: center;
         font-family: $Oswald;
         font-weight: 400;
         letter-spacing: -1px;
         font-size: 3.75rem;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         color: black;
     }
 
@@ -430,7 +441,7 @@
         height: 350px;
 
         div {
-            height: 350px;
+            height: 300px;
         }
 
         iframe {
@@ -465,10 +476,11 @@
     }
 
     .new-impact {
-        height: 650px;
+        height: 550px;
 
         h2 a{
             font-size: 1.75rem;
+            position: relative;
         }
     }
 
@@ -476,40 +488,18 @@
         height: 25%;
     }
 
-    .link-news-container {
-        position: absolute;
-        width: 80%;
-        height: 1463px;
+    .text-area-news .cfs-hyperlink {
         background-color: transparent;
+        width: 75%;
+        height: 160px;
         position: absolute;
-        top: 2858px;
     }
 
-
-    .link-news-1 {
-        position: absolute;
-        width: 80%;
-        height: 160px;
-        background-color: transparent;
-        right: 90px;
-        left: 0px;
-    }
-
-    .link-news-2 {
-        position: absolute;
-        width: 80%;
-        height: 160px;
-        background-color: transparent;
-        top: 652px;
-        right: 90px;
-    }
-    
-    .link-news-3 {
-        position: absolute;
-        width: 80%;
-        height: 160px;
-        background-color: transparent;
-        top: 1304px;
-        right: 90px;
+    .arrow-link-news {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+        padding-left: 4px;
+        left: 7%;
     }
 }
