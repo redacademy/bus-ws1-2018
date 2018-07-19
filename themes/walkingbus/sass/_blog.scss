@@ -1,4 +1,4 @@
-.page-template-page-blog, .single-post {
+.blog, .single-post {
 
     .post-container {
 
@@ -124,6 +124,10 @@
             font-size: 1.2rem;
             margin-top: 2%;
             text-align: left;
+
+            a {
+                color: $blue;
+            }
 
             img {
                 margin-left: auto;
