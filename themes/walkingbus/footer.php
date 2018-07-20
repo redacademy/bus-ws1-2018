@@ -13,6 +13,13 @@
 				<div class="footer-links">
 					<div class="featuredon-links"><p>featured-on</p>
 						<picture class="bkg-featuredon"></picture>
+						<div class="link2">
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+						</div>
 					</div>
 					<div class="followuson-links"><p>follow us on</p>
 						<ul>

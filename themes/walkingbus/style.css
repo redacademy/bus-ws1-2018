@@ -1985,7 +1985,9 @@ object {
       -webkit-filter: brightness(1.1);
               filter: brightness(1.1);
       -webkit-transition: all 0.2s ease 0s;
-      transition: all 0.2s ease 0s; }
+      transition: all 0.2s ease 0s;
+      color: #474747;
+      background-color: #F6E24F; }
   .subscription-container p {
     margin-top: 20px;
     margin-bottom: 12px;
@@ -2240,7 +2242,9 @@ object {
     .followuson-links p {
       margin-bottom: 25px; }
   .subscription-container button {
-    height: 220px; } }
+    height: 220px; }
+  #contactus {
+    margin-bottom: 15px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2652,7 +2656,11 @@ object {
 .donation-image button:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: grey; }
+  border-color: grey;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
 
 .sponsor-image button:hover {
   -webkit-box-shadow: none;
@@ -2898,7 +2906,7 @@ object {
   .videos-impact div {
     height: 203px; }
   .videos-impact iframe {
-    height: 200px; }
+    height: 220px; }
 
 /************************************* NEWS *****************************/
 .new-impact {
