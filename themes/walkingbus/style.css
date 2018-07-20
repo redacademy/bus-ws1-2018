@@ -2212,6 +2212,9 @@ object {
   font-size: 1rem;
   font-family: "Montserrat" header;
     font-family-font-family: 'Oswald'; }
+  @media (min-width: 1080px) {
+    .home .page-content {
+      width: 85%; } }
   .home .page-content h2, .home .page-content h3 {
     margin: 0;
     font-size: 1.3em; }
@@ -2278,6 +2281,32 @@ object {
     background-color: #04809e; }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
+      @media (min-width: 1080px) {
+        .home .page-content .home-infographic .infographic-contry h2 {
+          color: white;
+          font-size: 4em; } }
+      .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content i, .home .page-content .home-infographic .infographic-contry .infographic-contry-content em {
+          color: white; }
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+          width: 80%;
+          max-width: 300px;
+          height: auto; }
+        @media (min-width: 1080px) {
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+            -webkit-box-ordinal-group: 0;
+                -ms-flex-order: -1;
+                    order: -1; } }
   .home .page-content .home-goal h3 {
     color: #f8e71c;
     margin: 0;

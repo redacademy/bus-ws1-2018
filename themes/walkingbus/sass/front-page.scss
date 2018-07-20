@@ -12,6 +12,10 @@
             font-family: 'Oswald'
         }
 
+        @include desktop {
+            width: 85%;
+        }
+
         h2, h3 {
             margin: 0;
             font-size: 1.3em;
@@ -37,7 +41,6 @@
         }
 
         .home-description {
-            
             h2 {
                 color: black;
                 font-size: 1em;
@@ -115,7 +118,7 @@
                 }
             }
         }
-
+ 
         .home-infographic {
             color: rgba(248,231,28,1);
             background-color: rgba(4,128,158,1); 
@@ -123,22 +126,52 @@
             .infographic-contry {
                 padding-bottom: 1.5rem;
 
-                // .infographic-contry-content * {
-                //     margin-left: auto;
-                //     margin-right: auto;
-                //     // align-content: center
-                //     // display: flex;
-                //     // justify-content: center;
-                //     // align-items: center;
-                // }
+                h2 {
+                    @include desktop {
+                        color: white;
+                        font-size: 4em;
+                    }
+                }
+                .infographic-contry-content * {
+                    // margin-left: auto;
+                    // margin-right: auto;
+                    // align-content: center
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                }
 
-                // .infographic-contry-content {
-                //     i,em {
-                //         color: white;
-                //     }
-                                  
-                // }
+                .infographic-contry-content {
 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    i,em {
+                        color: white;
+                    }
+
+                    img {
+                        width: 80%;
+                        max-width: 300px;
+                        height: auto;
+                    }
+
+                    @include desktop {
+                        // display: flex;
+                        // flex-direction: column;
+
+                        // display:grid;
+                        // grid-template-columns: 45% 45%;
+                        // grid-row: auto auto;
+                        // grid-column-gap: 10%;
+                        // grid-row-gap: 20px;
+                    
+                        img {
+                            order: -1;
+                        }
+                    }
+                }
 
             }
         }
