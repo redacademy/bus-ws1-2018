@@ -1,0 +1,24 @@
+.search-results {
+
+    .page-title {
+        margin: 12% auto 2.5% auto;
+        width: 85%;
+        padding-bottom: 2.5%;
+        border-bottom: 1px solid gray;
+    }
+
+    article {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        color: black; 
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+

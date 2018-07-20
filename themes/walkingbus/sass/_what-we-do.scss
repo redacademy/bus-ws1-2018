@@ -1,0 +1,721 @@
+.page-template-page-whatwedo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+    .video {
+        display: none;
+        
+        @include desktop {
+
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 80vh;
+
+            iframe {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100%;
+            }
+
+        }
+    }
+
+    .donate-btn-wwd {
+        display: none;
+
+        @include desktop {
+            display: block;
+            margin-bottom: -2.8%;
+            z-index: 10;
+            background: $yellow;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 5px $grey;    
+               
+            a {
+            
+            text-transform: uppercase;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            text-decoration: none;
+            font-size: 3rem;
+            font-family: $Oswald;
+            color: black;
+            text-align: center;
+
+            }
+
+        }
+    }
+
+
+    .site-name {
+        font-size: 1rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-family: $Oswald;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+
+
+    .access {
+
+        margin-top: 15%;
+
+        @include desktop {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        
+        h1 {
+            margin-top: 5%;
+        }
+
+        p {
+            color: gray;
+            font-size: 1.2rem;
+            width: 90%;
+            margin-left: auto; 
+            margin-right: auto;
+            text-align: center;
+            font-family: $Mont;
+
+            @include desktop {
+                color: $blue;
+                font-size: 1.5rem;
+
+                span {
+                    padding: 9px 18px;
+                    border: 1px solid $blue;
+                    border-radius: 100%;
+                    text-align: center;
+                }
+
+                &:first-of-type {
+                    color: gray;
+                }
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: -2%;
+
+                @include desktop {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    
+
+    .access-how {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: $blue-bg;
+        
+        @include desktop {
+            padding-bottom: 15%;
+            width: 90%;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        ul {
+            width: 80%;
+            margin: 0;
+
+            @include desktop {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: left;
+                padding-bottom: 5%;
+                color: white;
+                font-family: $Mont;
+
+                span {
+                    display: none;
+                }
+
+                @include desktop {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+
+                    span {
+                        display: initial;
+                        color: $yellow;
+                        padding: 9px 18px;
+                        border: 1px solid $yellow;
+                        border-radius: 100%;
+                        text-align: center;
+                        margin-right: 1%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .access-bttn, .white {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+
+
+        .access-btn {
+            color: black;
+            background: $yellow;
+            border-radius: 20px;
+            padding: 8px 25px;
+            font-family: $Mont;
+            text-decoration: none;
+            margin-top: 50%;
+            box-shadow: 0px 2px $shadow;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    
+    }
+
+    .white {
+
+        @include desktop {
+            margin-top: -10%;
+        }
+
+        .access-btn {
+
+            @include desktop {
+                font-size: 1.5rem;
+                padding: 16px 50px;
+                border-radius: 30px;
+                background: white;
+            }
+
+        }
+
+    }
+
+    
+    .nutrition {
+
+        h1 {
+            margin-top: 10%;
+        }
+
+        .nutrition-descrip {
+            display: none;
+
+            @include desktop {
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-family: $Mont;
+                font-size: 1.5rem;
+            }
+        }
+
+        
+        .nutrition-pillars-container {
+
+
+            @include desktop {
+                display: flex;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            .p {
+                color: gray;
+                font-size: 1.1rem;
+                width: 80%;
+                margin-left: auto; 
+                margin-right: auto;
+                text-transform: capitalize;
+                text-align: center;
+                font-family: $Mont;
+
+    
+                @include desktop {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    display: flex;
+                    flex-direction: column;
+                    background: $blue;
+                    width: 30%;
+                    color: $yellow;
+                    font-family: $Oswald;
+                    padding: 3% 6%;
+                    box-shadow: 1px 2px gray;
+
+                    &:nth-of-type(1), &:nth-of-type(3) {
+                        background: darken($blue, 10%);
+                    }
+
+                    &:nth-of-type(3) {
+                        opacity: .8;
+                    }
+                
+
+                    span {
+                        width: 30%;
+                        margin-bottom: 15%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border: 1px solid $yellow;
+                        border-radius: 100%;
+                        text-align: center;
+                    }
+    
+                }
+            }
+        }
+
+        .p {
+            color: gray;
+            font-size: 1.1rem;
+            width: 80%;
+            margin-left: auto; 
+            margin-right: auto;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: $Mont;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
+
+        .nutrition-desc-container {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1%;
+            border-left: 1px solid lighten(gray, 30%);
+            border-right: 1px solid lighten(gray, 30%);
+            border-bottom: 1px solid lighten(gray, 30%);
+            box-shadow: 0px 2px lighten(gray, 30%);
+
+
+            @include desktop {
+                margin-top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+            }
+
+            img {
+                display: none;
+
+                @include desktop {
+                    display: initial;
+                    flex-basis: 49%;
+                    width: 50%;
+                    height: 650px;
+                }
+            }
+
+            .nutrition-description {
+                font-size: 1rem;
+                text-align: left;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                color: gray;
+
+                @include desktop {
+                    font-size: 1.5rem;
+                    flex-basis: 45%;
+                    margin-left: auto; 
+                    margin-right: auto;
+                    color: black;
+                }
+            }
+
+            .access-bttn {
+                margin-bottom: 5%;
+
+                @include desktop {
+                    display: none;
+                }
+            }
+
+        }
+
+        .nutrition-pillar {
+            position: relative;
+            height: 11vh;
+            width: 95%;
+            margin-bottom: 1%;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+            background-position: 50% 50%;
+
+            @include desktop {
+                height: 30vh;
+                width: 90%;
+            }
+
+
+            i {
+                color: white;
+                position: absolute;
+                bottom: 3%;
+                z-index: 1;
+                right: 3%;
+                font-size: 1.1rem;
+
+                @include desktop {
+                    font-size: 4rem;
+                }
+            }
+
+            h1 {
+                padding: 0;
+                position: absolute;
+                bottom: -15%;
+                font-size: 1.1rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                background: rgba(0,0,0,.5);
+
+                @include desktop {
+                    bottom: -12%;
+                    align-self: center;
+                    padding: 1.5%;
+                    font-size: 2rem;
+                }
+            }
+
+            &:nth-of-type(3) {
+                background-image: url("../../assets/images/Nutrition1.jpg");
+            }
+
+            &:nth-of-type(5) {
+                background-image: url("../../assets/images/Nutrition2.jpg");
+            }
+
+            &:nth-of-type(7) {
+                background-image: url("../../assets/images/Nutrition3.jpg");
+            }
+        }
+    }
+
+    .curri-img {
+        display: none;
+
+        @include desktop {
+            display: initial;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .curriculum {
+
+        h1 {
+
+            @include desktop {
+                font-size: 4rem;
+                color: black;
+            }
+        }
+
+        .pp {
+            text-align: center;
+            color: gray;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+
+            @include desktop {
+                font-size: 1.5rem;
+                margin-top: 0;
+                width: 50%;
+                margin-bottom: 3%;
+            }
+            
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .join-simbi {
+            margin-bottom: 5%;
+            
+            @include desktop {
+                margin-top: -7%;
+            }
+            
+            .access-btn {
+                
+                @include desktop {
+                    font-size: 1.5rem;
+                    padding: 16px 50px;
+                    border-radius: 30px; 
+                    background: $blue;
+                    color: white;
+                }
+                
+            }
+        }
+
+        .nutrition-desc-container {
+            width: 95%;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1%;
+            border-left: 1px solid lighten(gray, 30%);
+            border-right: 1px solid lighten(gray, 30%);
+            border-bottom: 1px solid lighten(gray, 30%);
+            box-shadow: 0px 2px lighten(gray, 30%);
+
+            @include desktop {
+                margin-top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .curriculum-description {
+                font-size: 1rem;
+                text-align: left;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                color: gray;
+                text-align: left;
+
+                @include desktop {
+                    font-size: 1.5rem;
+                    flex-basis: 45%;
+                    margin-left: auto; 
+                    margin-right: auto;
+                    color: black;
+                }
+            }
+
+            img {
+                display: none;
+        
+                @include desktop {
+                    display: initial;
+                    flex-basis: 50%;
+                    width: 50%;
+                    height: 650px;
+                }
+            }
+
+            .access-bttn {
+                margin-bottom: 5%;
+
+                @include desktop {
+                    display: none;
+                }
+            }
+
+        }
+
+        .curriculum-pillar {
+            position: relative;
+            height: 11vh;
+            width: 95%;
+            margin-bottom: 1%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include desktop {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -1%;
+                height: 30vh;
+
+                &:nth-of-type(4) {
+                    margin-top: 0;
+                }
+            }
+
+            h1 {
+                margin-top: 0;
+                padding: 0;
+                position: absolute;
+                bottom: -15%;
+                font-size: 1.1rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                background: rgba(0,0,0,.5);
+
+                @include desktop {
+                    bottom: -12%;
+                    align-self: center;
+                    padding: 1.5%;
+                    font-size: 2rem;
+                }
+            }
+
+            i {
+                color: white;
+                position: absolute;
+                bottom: 3%;
+                z-index: 1;
+                right: 3%;
+                font-size: 1.1rem;
+
+                @include desktop {
+                    font-size: 4rem;
+                }
+            }
+        
+            &:nth-of-type(2) {
+                background: url("../../assets/images/Curriculum2.jpg");
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+
+            &:nth-of-type(4) {
+                background: url("../../assets/images/Curriculum3.png");
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+        }
+    }
+
+
+    .curriculum-how {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: $blue-bg;
+
+        @include desktop {
+            background: $yellow;
+            padding-bottom: 8%;
+            width: 90%;
+            
+        }
+
+        h1 {
+            color: white;
+
+            @include desktop {
+                color: black;
+                margin: 0;
+                margin-top: -10px;
+                padding-top: 2%;
+            }
+        }
+
+        ul {
+            width: 80%;
+            margin: 0;
+
+            @include desktop {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2%;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: left;
+                padding-bottom: 5%;
+                color: white;
+                font-family: $Mont;
+
+                @include desktop {
+                    color: black;
+                    font-size: 1.5rem;
+                    
+                }
+
+                .how-num {
+                    display: none;
+
+                    @include desktop {
+                        display: initial;
+                        padding: 1% 2%;
+                        border-radius: 100%;
+                        border: 1px solid $blue;
+                        color: $blue;
+                        font-size: 1.5rem;
+                        margin-right: 1%;
+                    }
+                }
+            }
+        }
+    }
+
+    .quote {
+        font-family: $Oswald;
+        width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 300;
+        margin-top: 10%;
+        font-size: 1.2rem;
+        margin-bottom: 10%;
+
+        @include desktop {
+            width: 50%;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        span {
+            color: red;
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+
+
+    
+
+    
+
+    

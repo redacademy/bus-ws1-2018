@@ -12,7 +12,14 @@
 			<section class="main-container-footer">
 				<div class="footer-links">
 					<div class="featuredon-links"><p>featured-on</p>
-						<span class="bkg-featuredon"></span>
+						<picture class="bkg-featuredon"></picture>
+						<div class="link2">
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+							<a class="link1"></a>
+						</div>
 					</div>
 					<div class="followuson-links"><p>follow us on</p>
 						<ul>
@@ -40,9 +47,11 @@
 						<li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
 						<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
 					</ul>
+					
 					</div>
 						<p id="contactus">contact us</p>
 					</div>
+
 					<div class="contact-info">
 						<div class="contact">
 							<p id="footer-info">

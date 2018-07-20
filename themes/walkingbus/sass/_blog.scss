@@ -1,0 +1,153 @@
+.blog, .single-post {
+
+    .post-container {
+
+        .entry-meta {
+            display: none;
+        }
+    
+        .img-container {
+            height: 30vh;
+            position: relative;
+
+
+            img {
+                height: 100%;
+            }
+
+            .yellow-strip {
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                bottom: 0;
+                background: $yellow;
+                opacity: .5;
+            }
+
+        }
+
+        .post-title {
+            color: black;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $Mont;
+            text-align: center;
+            font-size: 1.2rem;
+            width: 80%;
+        }
+    }
+
+    .post-ex {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .9rem;
+        color: gray;
+    }
+
+    .read-more-post {
+        display: block;
+        padding: 2% 4%;
+        border-radius: 5px;
+        color: black;
+        text-transform: capitalize;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        text-align: center;
+        width: 40%;
+        font-size: .8rem;
+        background: $yellow;
+        font-family: $Mont;
+        font-weight: bold;
+    }
+
+    @include desktop {
+
+        .post-wrapper {
+            
+            &:first-of-type {
+                margin-top: 10%;
+
+            }
+
+        }
+
+        .post-container {
+            position: relative;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+
+            .post-title {
+                position: absolute;
+                top: 10%;
+                left: 0;
+                text-align: left;
+                font-size: 1.5rem;
+                background: transparentize($yellow, .2);
+                padding: 2% 5%;
+                
+            }
+
+            .entry-meta {
+                displaY: initial;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1% 1%;
+                background: $yellow;
+                color: black;
+            }
+
+            .img-container {
+
+                width: 100%;
+                height: 80vh;
+
+                .yellow-strip {
+                    display: none;
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        .post-ex {
+            width: 85%;
+            font-size: 1.2rem;
+            margin-top: 2%;
+            text-align: left;
+
+            a {
+                color: $blue;
+            }
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        .read-more-post {
+            width: 18%;
+            font-size: 1.3rem;
+            background: none;
+            border: 3px solid black;
+            margin-left: 7.5%;
+            padding: 1% 2%;
+
+            &:hover {
+                background: $blue;
+                color: white;
+                border-color: $blue;
+            }
+        }
+    }
+}

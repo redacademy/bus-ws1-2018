@@ -1,8 +1,6 @@
 <?php
 /** 
  * Template name: news single page 
- * The template for displaying all single products posts.
- *
  */
 
 get_header(); 

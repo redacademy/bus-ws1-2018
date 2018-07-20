@@ -56,27 +56,40 @@ $j('#subscription-form').submit(function(event) {
  });
  
 
-// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
 
 
-
-//team members 
+// show team members bio
 
 $j('.member-picture').click(function() {
     $j(this).siblings('.member-info').show('slow');
 
     $j('.icon-wrapper').click(function() {
-        $j(this).next('.member-info').hide('slow');
+        $j(this).parent('.member-info').hide('slow');
     
         
     });
 });
 
 
+// EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
+ 
+
+
 $j('.expedition-name').click(function() {
 
-    $j(this).next('.expedition-description').toggle('slow');
+    $j(this).children('.expedition-info').slideToggle('slow');
 
 
 });
+
+
+//shop image thumbnail switch
+$j('.img-min').click(function() {	
+  
+var imgMin = $j(this).clone().append();
+
+$j( '.main-image').html(imgMin);
+
+});
+
 

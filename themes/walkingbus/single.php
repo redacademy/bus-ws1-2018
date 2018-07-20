@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package wsb_Theme
  */
 
 get_header(); ?>
@@ -12,10 +12,18 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
+			<div class="post-container">
+				<div class="img-container">
+					<?php the_post_thumbnail(''); ?>
+					<div class="yellow-strip"></div>
+				</div>
+				<h1 class="post-title"><?php the_title(); ?></h1>
+				<div class="entry-meta">
+					<?php wsb_posted_on(); ?> / <?php comments_number('No comments', '1 Comment', '% Comments'); ?> / <?php wsb_posted_by(); ?>
+				</div>
+			</div>
+			<div class="post-ex"><?php the_content(); ?></div>
 			<?php the_post_navigation(); ?>
-
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -28,5 +36,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
