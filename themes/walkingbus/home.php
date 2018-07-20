@@ -28,7 +28,7 @@ get_header(); ?>
                         <h1 class="post-title"><?php the_title(); ?></h1>
 
                         <div class="entry-meta">
-			                <?php wsb_posted_on(); ?> / <?php comments_number('No comments', '1 Comment', '% Comments'); ?> / <?php wsb_posted_by(); ?>
+			                <?php wsb_posted_on(); ?> / <?php comments_number('No comments', '1 comment', '% Comments'); ?> / <?php wsb_posted_by(); ?>
 		                </div>
                     </div>
                 </a>
