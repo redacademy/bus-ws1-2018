@@ -3,12 +3,6 @@
 /*
 Template Name: get involved 
 */
-/**
- * The template for displaying products page
- *
- * 
- */
-
  
 ?>
 
@@ -16,11 +10,7 @@ Template Name: get involved
 
 <div id="primary" class="content-area">
 
-    <!-- <main id="main" class="site-main" role="main"> -->
-
         <?php while ( have_posts() ) : the_post(); ?>
-
- <!--  displays get involved page banner  -->
 
             <?php  $images = CFS()->get('get_involved'); ?>
 
@@ -36,7 +26,6 @@ Template Name: get involved
 
                 <?php endwhile; ?>
 
-<!-- //TODO : ADD THE CUSTOM FIELD SUITE FOR THE UPCOMMING EXPEDITIONS (CFS BECAUSE THIS PART IS GOING TO BE UPDATED OFTEN ) -->
 <section class = "upcomig-expedition">
 
   <?php
@@ -174,9 +163,6 @@ Template Name: get involved
                             
     <?php endif; ?>
 
-
-    <!-- TODO insert list of sponsors in a list (custom field loop)-->
-
      <section class = "sponsors">
                             
          <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It’s an honour to work with you.</p>
@@ -185,12 +171,7 @@ Template Name: get involved
  
 </div>
 
-
     </section>
-
-
-<!-- display all the team members (all the teams)-->
-
 
     <section class = "wsb-team">
 
@@ -251,10 +232,6 @@ Template Name: get involved
 
     <?php endwhile; ?> 
 
- 
-    
-
-
     <?php wp_reset_postdata(); ?>
     <?php else : ?>
     
@@ -268,8 +245,6 @@ Template Name: get involved
 
 <section class = "research-projects">
     <div class = "research">
-
-
 
     <?php
 		$args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
@@ -320,10 +295,6 @@ Template Name: get involved
 
  </div> <!-- single-reserach-container-->
 
-                        <!-- custom post type for events -->
- 
- 
-
     <?php endwhile; ?> 
 
 
@@ -339,7 +310,6 @@ Template Name: get involved
                      
 </div> <!-- content-area -->
 
-    
 <?php get_footer(); ?>
 
 

@@ -4,13 +4,6 @@
 Template Name: products
 */
 
-/**
- * The template for displaying products page
- *
- * 
- */
-
- 
 ?>
 
 <?php get_header();  ?>
