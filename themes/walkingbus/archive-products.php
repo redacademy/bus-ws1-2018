@@ -64,7 +64,7 @@ Template Name: products
 		
         <!-- custom field loop to display the products thumbnails as a gallery-->	
         <?php
-            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => 4 );
+            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1 );
             $products = new WP_Query( $args ); 
         ?>
 
