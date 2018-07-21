@@ -180,7 +180,7 @@
     }
 
 
-    .access-bttn, .white {
+    .access-bttn, .white-button {
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
@@ -201,7 +201,7 @@
     
     }
 
-    .white {
+    .white-button {
 
         @include desktop {
             margin-top: -10%;
@@ -220,6 +220,196 @@
 
     }
 
+    .nutrition-descrip {
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: $Mont;
+            font-size: 1.5rem;
+        }
+    }
+
+    .nutrition-pillars-container {
+
+
+        @include desktop {
+            display: flex;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .p {
+            color: gray;
+            font-size: 1.1rem;
+            width: 80%;
+            margin-left: auto; 
+            margin-right: auto;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: $Mont;
+
+
+            @include desktop {
+                font-size: 1.5rem;
+                font-weight: 300;
+                display: flex;
+                flex-direction: column;
+                background: $blue;
+                width: 30%;
+                color: $yellow;
+                font-family: $Oswald;
+                padding: 3% 6%;
+                box-shadow: 1px 2px gray;
+
+                &:nth-of-type(1), &:nth-of-type(3) {
+                    background: darken($blue, 10%);
+                }
+
+                &:nth-of-type(3) {
+                    opacity: .8;
+                }
+            
+
+                span {
+                    width: 30%;
+                    margin-bottom: 15%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 1px solid $yellow;
+                    border-radius: 100%;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+
+    .nutrition-desc-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1%;
+        border-left: 1px solid lighten(gray, 30%);
+        border-right: 1px solid lighten(gray, 30%);
+        border-bottom: 1px solid lighten(gray, 30%);
+        box-shadow: 0px 2px lighten(gray, 30%);
+
+
+        @include desktop {
+            margin-top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        img {
+            display: none;
+
+            @include desktop {
+                display: initial;
+                flex-basis: 49%;
+                width: 50%;
+                height: 650px;
+            }
+        }
+
+        .nutrition-description {
+            font-size: 1rem;
+            text-align: left;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            color: gray;
+
+            @include desktop {
+                font-size: 1.5rem;
+                flex-basis: 45%;
+                margin-left: auto; 
+                margin-right: auto;
+                color: black;
+            }
+        }
+
+        .access-bttn {
+            margin-bottom: 5%;
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+    }
+
+    .nutrition-pillar {
+        position: relative;
+        height: 11vh;
+        width: 95%;
+        margin-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position: 50% 50%;
+
+        @include desktop {
+            height: 30vh;
+            width: 90%;
+        }
+
+
+        i {
+            color: white;
+            position: absolute;
+            bottom: 3%;
+            z-index: 1;
+            right: 3%;
+            font-size: 1.1rem;
+
+            @include desktop {
+                font-size: 4rem;
+            }
+        }
+
+        h1 {
+            padding: 0;
+            position: absolute;
+            bottom: -15%;
+            font-size: 1.1rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            background: rgba(0,0,0,.5);
+
+            @include desktop {
+                bottom: -12%;
+                align-self: center;
+                padding: 1.5%;
+                font-size: 2rem;
+            }
+        }
+
+        &:nth-of-type(3) {
+            background-image: url("../../assets/images/Nutrition1.jpg");
+        }
+
+        &:nth-of-type(5) {
+            background-image: url("../../assets/images/Nutrition2.jpg");
+        }
+
+        &:nth-of-type(7) {
+            background-image: url("../../assets/images/Nutrition3.jpg");
+        }
+    }
+
     
     .nutrition {
 
@@ -227,77 +417,6 @@
             margin-top: 10%;
         }
 
-        .nutrition-descrip {
-            display: none;
-
-            @include desktop {
-                display: block;
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                font-family: $Mont;
-                font-size: 1.5rem;
-            }
-        }
-
-        
-        .nutrition-pillars-container {
-
-
-            @include desktop {
-                display: flex;
-                width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-
-            .p {
-                color: gray;
-                font-size: 1.1rem;
-                width: 80%;
-                margin-left: auto; 
-                margin-right: auto;
-                text-transform: capitalize;
-                text-align: center;
-                font-family: $Mont;
-
-    
-                @include desktop {
-                    font-size: 1.5rem;
-                    font-weight: 300;
-                    display: flex;
-                    flex-direction: column;
-                    background: $blue;
-                    width: 30%;
-                    color: $yellow;
-                    font-family: $Oswald;
-                    padding: 3% 6%;
-                    box-shadow: 1px 2px gray;
-
-                    &:nth-of-type(1), &:nth-of-type(3) {
-                        background: darken($blue, 10%);
-                    }
-
-                    &:nth-of-type(3) {
-                        opacity: .8;
-                    }
-                
-
-                    span {
-                        width: 30%;
-                        margin-bottom: 15%;
-                        margin-left: auto;
-                        margin-right: auto;
-                        border: 1px solid $yellow;
-                        border-radius: 100%;
-                        text-align: center;
-                    }
-    
-                }
-            }
-        }
 
         .p {
             color: gray;
@@ -312,126 +431,7 @@
             @include desktop {
                 font-size: 1.5rem;
             }
-        }
-
-        .nutrition-desc-container {
-            width: 95%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 1%;
-            border-left: 1px solid lighten(gray, 30%);
-            border-right: 1px solid lighten(gray, 30%);
-            border-bottom: 1px solid lighten(gray, 30%);
-            box-shadow: 0px 2px lighten(gray, 30%);
-
-
-            @include desktop {
-                margin-top: 0;
-                display: flex;
-                flex-wrap: wrap;
-                width: 90%;
-            }
-
-            img {
-                display: none;
-
-                @include desktop {
-                    display: initial;
-                    flex-basis: 49%;
-                    width: 50%;
-                    height: 650px;
-                }
-            }
-
-            .nutrition-description {
-                font-size: 1rem;
-                text-align: left;
-                width: 95%;
-                margin-left: auto;
-                margin-right: auto;
-                color: gray;
-
-                @include desktop {
-                    font-size: 1.5rem;
-                    flex-basis: 45%;
-                    margin-left: auto; 
-                    margin-right: auto;
-                    color: black;
-                }
-            }
-
-            .access-bttn {
-                margin-bottom: 5%;
-
-                @include desktop {
-                    display: none;
-                }
-            }
-
-        }
-
-        .nutrition-pillar {
-            position: relative;
-            height: 11vh;
-            width: 95%;
-            margin-bottom: 1%;
-            margin-left: auto;
-            margin-right: auto;
-            background-size: cover;
-            background-position: 50% 50%;
-
-            @include desktop {
-                height: 30vh;
-                width: 90%;
-            }
-
-
-            i {
-                color: white;
-                position: absolute;
-                bottom: 3%;
-                z-index: 1;
-                right: 3%;
-                font-size: 1.1rem;
-
-                @include desktop {
-                    font-size: 4rem;
-                }
-            }
-
-            h1 {
-                padding: 0;
-                position: absolute;
-                bottom: -15%;
-                font-size: 1.1rem;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                color: white;
-                text-transform: uppercase;
-                background: rgba(0,0,0,.5);
-
-                @include desktop {
-                    bottom: -12%;
-                    align-self: center;
-                    padding: 1.5%;
-                    font-size: 2rem;
-                }
-            }
-
-            &:nth-of-type(3) {
-                background-image: url("../../assets/images/Nutrition1.jpg");
-            }
-
-            &:nth-of-type(5) {
-                background-image: url("../../assets/images/Nutrition2.jpg");
-            }
-
-            &:nth-of-type(7) {
-                background-image: url("../../assets/images/Nutrition3.jpg");
-            }
-        }
+        }        
     }
 
     .curri-img {
