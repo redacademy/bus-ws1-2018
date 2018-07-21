@@ -76,25 +76,25 @@ Template Name: impact
                            <a class="arrow-link-news" href="">&#10093;</a></h2>
                            </div>
                        </a></div>
-                       
+                       <?php else : ?>
+
+                        <div class="text-area-news">
+                            <?php $article_url = CFS()->get('article_url');?>
+                            <?php echo $article_url ?>
+                           <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
+                           <a class="arrow-link-news" href="">&#10093;</a></h2>
+                           </div>
+
                        <?php endif; ?>
                    <?php endwhile; ?>
                    <?php wp_reset_postdata(); ?>
-                   
                <?php else : ?>
                <h2>Nothing found!</h2>
                <?php endif; ?>
         </div>
-        
-        <div class="news-nophoto-wrapper">
-            <div class="news-nophoto-area">
-                <a class="news-nophoto" href=""></a>
-                <a class="arrow-link-news-nophoto" href="">></a>
-           </div>
-        </div>  
             
         <div class="load-more-area">
-            <a class="load-more">Load more</a>
+            <a class="load-more">load more</a>
         </div>
         
 <?php get_footer(); ?>
