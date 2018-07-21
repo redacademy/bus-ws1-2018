@@ -52,6 +52,8 @@
 .donation-image button:hover {
     box-shadow: none;
     border-color: grey;
+    filter: brightness(1.1);
+    transition: all 0.2s ease 0s;
 }
 
 .sponsor-image button:hover {

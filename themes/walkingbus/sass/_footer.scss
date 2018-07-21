@@ -88,6 +88,8 @@
         &:hover {
             filter: brightness(1.1);
             transition: all 0.2s ease 0s;
+            color: $grey;
+            background-color: $yellow;
         }
     }
 
@@ -389,5 +391,9 @@
 
     .subscription-container button {
         height: 220px;
+    }
+
+    #contactus {
+        margin-bottom: 15px;
     }
 }
