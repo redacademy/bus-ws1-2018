@@ -103,5 +103,22 @@ $j(function(){
     });
 });
 
+$j('.slider-for-scholars').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav-scholars'
+  });
+
+$j('.slider-nav-scholars').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for-scholars',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+
 
  

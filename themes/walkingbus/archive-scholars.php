@@ -33,12 +33,14 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( $scholars->have_posts() ) : $scholars->the_post(); ?>
-
-				<?php
-                    the_title();
-                    the_content();
-                    the_post_thumbnail();
-				?>
+                <div class="scholar-container">
+                    <?php the_post_thumbnail(); ?>
+                    <div class="scholar-info">
+                        <?php the_title();
+                        the_content(); ?>
+                    </div>
+                </div>
+				
                 <?php wp_reset_query(); ?>
 			<?php endwhile; ?>
 
