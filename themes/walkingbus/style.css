@@ -3367,6 +3367,7 @@ object {
             justify-content: center; }
 
 .page-template-archive-expeditions .expedition-info {
+  display: none;
   background-color: white; }
 
 .page-template-archive-expeditions span.button-wrapper {
