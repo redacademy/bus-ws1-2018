@@ -173,7 +173,10 @@ Template Name: get involved
                             
     <?php endif; ?>
 
-     <section class = "sponsors">
+
+</section>    
+
+<section class = "sponsors">
                             
     <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It''s an honour to work with you.</p>
 
@@ -209,7 +212,7 @@ Template Name: get involved
             <!-- <ul> -->
 
 
- <div class = "team-type"> 
+ <div class = "team-type-carousel"> 
                         
                 <p> <?php the_title()?> </p>
                         <?php 
@@ -223,7 +226,7 @@ Template Name: get involved
                 foreach ($teamMembers as $member) {?>
                 
 
-        <div class = "carousel" id = "image">
+        <div class = "single-member" id = "image">
 
             <div class="item <?php// echo $class; ?>" > 
 
@@ -266,14 +269,7 @@ Template Name: get involved
        
 
 </div> <!--car teasm--> 
-<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> 
+ 
  </div> <!--carousel inerl--> 
 
 </section> <!-- wsb-team--> 
