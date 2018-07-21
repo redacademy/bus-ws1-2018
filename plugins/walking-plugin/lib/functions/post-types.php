@@ -503,7 +503,7 @@ function bus_register_scholars_post_type() {
 		'label'                 => __( 'Scholar', 'text_domain' ),
 		'description'           => __( 'Scholar', 'text_domain' ),
 		'labels'                => $labels,
-		//'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
