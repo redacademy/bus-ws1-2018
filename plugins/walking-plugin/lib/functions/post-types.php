@@ -44,7 +44,6 @@ function bus_register_expeditions_post_type() {
 		'description'           =>     'expedition_description', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -103,7 +102,6 @@ function bus_register_upcoming_expeditions_post_type() {
 		'description'           =>     'Post Type Description', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 'post-formats' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -161,7 +159,6 @@ function bus_register_product_post_type() {
 		'description'           =>     'product_description', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail'),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -278,7 +275,6 @@ function bus_register_team_post_type() {
 		'description'           =>     'team', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -335,7 +331,6 @@ function bus_register_research_post_type() {
 		'description'           =>     'Post Type Description', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail'),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -392,6 +387,7 @@ function bus_register_countries_post_type() {
 		'description'           =>     'Countries reached by the walking school bus', 
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -411,3 +407,117 @@ function bus_register_countries_post_type() {
 
 }
 add_action( 'init', 'bus_register_countries_post_type', 0 );
+
+
+
+// Register Custom Post Type
+function bus_register_events_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Events', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Event', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Events', 'text_domain' ),
+		'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
+		'archives'              => __( 'Events Archives', 'text_domain' ),
+		'attributes'            => __( 'Events Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Event:', 'text_domain' ),
+		'all_items'             => __( 'All Events', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Event', 'text_domain' ),
+		'add_new'               => __( 'Add New ', 'text_domain' ),
+		'new_item'              => __( 'New Event', 'text_domain' ),
+		'edit_item'             => __( 'Edit Event', 'text_domain' ),
+		'update_item'           => __( 'Update Event', 'text_domain' ),
+		'view_item'             => __( 'View Event', 'text_domain' ),
+		'view_items'            => __( 'View Event', 'text_domain' ),
+		'search_items'          => __( 'Search Event', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this event', 'text_domain' ),
+		'items_list'            => __( 'Events list', 'text_domain' ),
+		'items_list_navigation' => __( 'Events list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter events list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'event', 'text_domain' ),
+		'description'           => __( 'To add events to the get involved page', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'events', $args );
+
+}
+add_action( 'init', 'bus_register_events_post_type', 0 );
+
+
+//  cpt for Scholars (Scholars/Scholars)
+// Register Custom Post Type
+function bus_register_scholars_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Scholars', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Scholar', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Scholars', 'text_domain' ),
+		'name_admin_bar'        => __( 'Scholar', 'text_domain' ),
+		'archives'              => __( 'Scholars Archives', 'text_domain' ),
+		'attributes'            => __( 'Scholar Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Scholar', 'text_domain' ),
+		'all_items'             => __( 'All Scholars', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Scholar', 'text_domain' ),
+		'add_new'               => __( 'Add Scholar', 'text_domain' ),
+		'new_item'              => __( 'New Scholar', 'text_domain' ),
+		'edit_item'             => __( 'Edit Scholar', 'text_domain' ),
+		'update_item'           => __( 'Update Scholar', 'text_domain' ),
+		'view_item'             => __( 'View Scholar', 'text_domain' ),
+		'view_items'            => __( 'View Scholars', 'text_domain' ),
+		'search_items'          => __( 'Search Scholar', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Scholar', 'text_domain' ),
+		'items_list'            => __( 'Scholar list', 'text_domain' ),
+		'items_list_navigation' => __( 'Scholar list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Scholar list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Scholar', 'text_domain' ),
+		'description'           => __( 'Scholar', 'text_domain' ),
+		'labels'                => $labels,
+		//'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,  
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,   
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'scholars', $args );
+
+}
+add_action( 'init', 'bus_register_scholars_post_type', 0 );
+
