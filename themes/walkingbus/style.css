@@ -1332,7 +1332,8 @@ object {
                   display: initial;
                   position: absolute;
                   right: 0;
-                  padding: 4% 3%;
+                  font-size: 1.3rem;
+                  padding: 4.2% 3%;
                   top: 0;
                   background: #f8ea80;
                   color: #03B8E2; }
@@ -1487,11 +1488,11 @@ object {
               border-radius: 100%;
               text-align: center;
               margin-right: 1%; } }
-  .page-template-page-whatwedo .access-bttn, .page-template-page-whatwedo .white {
+  .page-template-page-whatwedo .access-bttn, .page-template-page-whatwedo .white-button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%; }
-    .page-template-page-whatwedo .access-bttn .access-btn, .page-template-page-whatwedo .white .access-btn {
+    .page-template-page-whatwedo .access-bttn .access-btn, .page-template-page-whatwedo .white-button .access-btn {
       color: black;
       background: #F6E24F;
       border-radius: 20px;
@@ -1504,20 +1505,18 @@ object {
       font-weight: bold;
       text-transform: capitalize; }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .white {
+    .page-template-page-whatwedo .white-button {
       margin-top: -10%; } }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .white .access-btn {
+    .page-template-page-whatwedo .white-button .access-btn {
       font-size: 1.5rem;
       padding: 16px 50px;
       border-radius: 30px;
       background: white; } }
-  .page-template-page-whatwedo .nutrition h1 {
-    margin-top: 10%; }
-  .page-template-page-whatwedo .nutrition .nutrition-descrip {
+  .page-template-page-whatwedo .nutrition-descrip {
     display: none; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-descrip {
+      .page-template-page-whatwedo .nutrition-descrip {
         display: block;
         width: 80%;
         margin-left: auto;
@@ -1526,14 +1525,14 @@ object {
         font-family: "Montserrat";
         font-size: 1.5rem; } }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .nutrition .nutrition-pillars-container {
+    .page-template-page-whatwedo .nutrition-pillars-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 50%;
       margin-left: auto;
       margin-right: auto; } }
-  .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+  .page-template-page-whatwedo .nutrition-pillars-container .p {
     color: gray;
     font-size: 1.1rem;
     width: 80%;
@@ -1543,7 +1542,7 @@ object {
     text-align: center;
     font-family: "Montserrat"; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+      .page-template-page-whatwedo .nutrition-pillars-container .p {
         font-size: 1.5rem;
         font-weight: 300;
         display: -webkit-box;
@@ -1560,11 +1559,11 @@ object {
         padding: 3% 6%;
         -webkit-box-shadow: 1px 2px gray;
                 box-shadow: 1px 2px gray; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(1), .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+        .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(1), .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(3) {
           background: #028fb0; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+        .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(3) {
           opacity: .8; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p span {
+        .page-template-page-whatwedo .nutrition-pillars-container .p span {
           width: 30%;
           margin-bottom: 15%;
           margin-left: auto;
@@ -1572,19 +1571,7 @@ object {
           border: 1px solid #F6E24F;
           border-radius: 100%;
           text-align: center; } }
-  .page-template-page-whatwedo .nutrition .p {
-    color: gray;
-    font-size: 1.1rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: capitalize;
-    text-align: center;
-    font-family: "Montserrat"; }
-    @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .p {
-        font-size: 1.5rem; } }
-  .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+  .page-template-page-whatwedo .nutrition-desc-container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -1595,7 +1582,7 @@ object {
     -webkit-box-shadow: 0px 2px #cdcdcd;
             box-shadow: 0px 2px #cdcdcd; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+      .page-template-page-whatwedo .nutrition-desc-container {
         margin-top: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1603,16 +1590,16 @@ object {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         width: 90%; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+    .page-template-page-whatwedo .nutrition-desc-container img {
       display: none; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+        .page-template-page-whatwedo .nutrition-desc-container img {
           display: initial;
           -ms-flex-preferred-size: 49%;
               flex-basis: 49%;
           width: 50%;
           height: 650px; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+    .page-template-page-whatwedo .nutrition-desc-container .nutrition-description {
       font-size: 1rem;
       text-align: left;
       width: 95%;
@@ -1620,19 +1607,19 @@ object {
       margin-right: auto;
       color: gray; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+        .page-template-page-whatwedo .nutrition-desc-container .nutrition-description {
           font-size: 1.5rem;
           -ms-flex-preferred-size: 45%;
               flex-basis: 45%;
           margin-left: auto;
           margin-right: auto;
           color: black; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+    .page-template-page-whatwedo .nutrition-desc-container .access-bttn {
       margin-bottom: 5%; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+        .page-template-page-whatwedo .nutrition-desc-container .access-bttn {
           display: none; } }
-  .page-template-page-whatwedo .nutrition .nutrition-pillar {
+  .page-template-page-whatwedo .nutrition-pillar {
     position: relative;
     height: 11vh;
     width: 95%;
@@ -1642,10 +1629,10 @@ object {
     background-size: cover;
     background-position: 50% 50%; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-pillar {
+      .page-template-page-whatwedo .nutrition-pillar {
         height: 30vh;
         width: 90%; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+    .page-template-page-whatwedo .nutrition-pillar i {
       color: white;
       position: absolute;
       bottom: 3%;
@@ -1653,9 +1640,9 @@ object {
       right: 3%;
       font-size: 1.1rem; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+        .page-template-page-whatwedo .nutrition-pillar i {
           font-size: 4rem; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+    .page-template-page-whatwedo .nutrition-pillar h1 {
       padding: 0;
       position: absolute;
       bottom: -15%;
@@ -1668,18 +1655,32 @@ object {
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.5); }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+        .page-template-page-whatwedo .nutrition-pillar h1 {
           bottom: -12%;
           -ms-flex-item-align: center;
               align-self: center;
           padding: 1.5%;
           font-size: 2rem; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(3) {
       background-image: url("../../assets/images/Nutrition1.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(5) {
       background-image: url("../../assets/images/Nutrition2.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(7) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(7) {
       background-image: url("../../assets/images/Nutrition3.jpg"); }
+  .page-template-page-whatwedo .nutrition h1 {
+    margin-top: 10%; }
+  .page-template-page-whatwedo .nutrition .p {
+    color: gray;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat"; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .p {
+        font-size: 1.5rem; } }
   .page-template-page-whatwedo .curri-img {
     display: none; }
     @media (min-width: 1080px) {
@@ -3717,15 +3718,15 @@ object {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
 
-.blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+.blog .entry-meta, .single-post .entry-meta {
   display: none; }
 
-.blog .post-container .img-container, .single-post .post-container .img-container {
+.blog .img-container, .single-post .img-container {
   height: 30vh;
   position: relative; }
-  .blog .post-container .img-container img, .single-post .post-container .img-container img {
+  .blog .img-container img, .single-post .img-container img {
     height: 100%; }
-  .blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+  .blog .img-container .yellow-strip, .single-post .img-container .yellow-strip {
     width: 100%;
     height: 20px;
     position: absolute;
@@ -3733,7 +3734,7 @@ object {
     background: #F6E24F;
     opacity: .5; }
 
-.blog .post-container .post-title, .single-post .post-container .post-title {
+.blog .post-title, .single-post .post-title {
   color: black;
   margin-left: auto;
   margin-right: auto;
@@ -3742,7 +3743,7 @@ object {
   font-size: 1.2rem;
   width: 80%; }
 
-.blog .post-ex, .single-post .post-ex {
+.post-ex {
   width: 80%;
   text-align: center;
   margin-left: auto;
@@ -3750,7 +3751,7 @@ object {
   font-size: .9rem;
   color: gray; }
 
-.blog .read-more-post, .single-post .read-more-post {
+.read-more-post {
   display: block;
   padding: 2% 4%;
   border-radius: 5px;
@@ -3768,14 +3769,14 @@ object {
   font-weight: bold; }
 
 @media (min-width: 1080px) {
-  .blog .post-wrapper:first-of-type, .single-post .post-wrapper:first-of-type {
+  .post-wrapper:first-of-type {
     margin-top: 10%; }
-  .blog .post-container, .single-post .post-container {
+  .post-container {
     position: relative;
     width: 85%;
     margin-left: auto;
     margin-right: auto; }
-    .blog .post-container .post-title, .single-post .post-container .post-title {
+    .post-container .post-title {
       position: absolute;
       top: 10%;
       left: 0;
@@ -3783,7 +3784,7 @@ object {
       font-size: 1.5rem;
       background: rgba(246, 226, 79, 0.8);
       padding: 2% 5%; }
-    .blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+    .post-container .entry-meta {
       displaY: initial;
       position: absolute;
       right: 0;
@@ -3791,32 +3792,32 @@ object {
       padding: 1% 1%;
       background: #F6E24F;
       color: black; }
-    .blog .post-container .img-container, .single-post .post-container .img-container {
+    .post-container .img-container {
       width: 100%;
       height: 80vh; }
-      .blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+      .post-container .img-container .yellow-strip {
         display: none; }
-      .blog .post-container .img-container img, .single-post .post-container .img-container img {
+      .post-container .img-container img {
         position: relative;
         width: 100%; }
-  .blog .post-ex, .single-post .post-ex {
+  .post-ex {
     width: 85%;
     font-size: 1.2rem;
     margin-top: 2%;
     text-align: left; }
-    .blog .post-ex a, .single-post .post-ex a {
+    .post-ex a {
       color: #03B8E2; }
-    .blog .post-ex img, .single-post .post-ex img {
+    .post-ex img {
       margin-left: auto;
       margin-right: auto; }
-  .blog .read-more-post, .single-post .read-more-post {
+  .read-more-post {
     width: 18%;
     font-size: 1.3rem;
     background: none;
     border: 3px solid black;
     margin-left: 7.5%;
     padding: 1% 2%; }
-    .blog .read-more-post:hover, .single-post .read-more-post:hover {
+    .read-more-post:hover {
       background: #03B8E2;
       color: white;
       border-color: #03B8E2; } }
