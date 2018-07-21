@@ -3,14 +3,6 @@
 /*
 Template Name: get involved 
 */
-
-
-/**
- * The template for displaying products page
- *
- * 
- */
-
  
 ?>
 
@@ -180,11 +172,8 @@ Template Name: get involved
     <h2>Nothing found!</h2>
                             
     <?php endif; ?>
-</section> <!-- expedition-wrapper-->
 
-    <!-- TODO insert list of sponsors in a list (custom field loop)-->
-
-<section class = "sponsors">
+     <section class = "sponsors">
                             
     <p>  Our expeditions are proudly supported by socially conscious brands and research organizations around the world. It''s an honour to work with you.</p>
 
@@ -356,7 +345,6 @@ Template Name: get involved
                      
 </div> <!-- content-area -->
 
-    
 <?php get_footer(); ?>
 
 

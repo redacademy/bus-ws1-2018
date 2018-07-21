@@ -2,8 +2,6 @@
 /**
  * 
  * Template name: product single page 
- * The template for displaying all single products posts.
- *
  * 
  */
 

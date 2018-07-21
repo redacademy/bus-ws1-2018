@@ -19,7 +19,7 @@
 
 .hero-image-impact {
     background-image: url(../../assets/images/impact-hero.jpg);
-    height: 190px;
+    height: 220px;
     width: 100%;
     background-size: 680px 450px;
     background-position-x: -125px;
@@ -139,7 +139,7 @@
     background-repeat: no-repeat;
     height: 480px;
     width: 50%;
-    background-size: 125px 400px;
+    background-size: 110px 400px;
     padding-right: 50%;
     margin-left: 15%;
 }
@@ -196,7 +196,7 @@
     }
 
     iframe {
-        height: 200px;
+        height: 220px;
     }
 }
 
@@ -344,7 +344,7 @@
 @media screen and (min-width: 768px){
 
     .site-main-impact {
-        width: 80%;
+        width: 100%;
         margin-top: 120px;
         display: flex;
         flex-direction: column;
@@ -391,7 +391,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 102%;
+        width: 100%;
     }
 
     .popsicle-desktop {
@@ -402,6 +402,7 @@
 
     .popsicle-desktop-india {
         background-image: url(../../assets/images/india_popsicle.png);
+        margin-left: 25px;
     }
 
     .popsicle-desktop-uganda {
@@ -490,16 +491,17 @@
 
     .text-area-news .cfs-hyperlink {
         background-color: transparent;
-        width: 75%;
-        height: 160px;
+        width: 80%;
+        height: 135px;
         position: absolute;
+        max-width: 1200px;
     }
 
     .arrow-link-news {
         width: 50px;
         height: 50px;
         font-size: 2rem;
-        padding-left: 4px;
+        padding-left: 2px;
         left: 7%;
     }
 }

@@ -5,6 +5,13 @@
  * @package RED_Starter_Theme
  */
 
+ 
+// To Remove the <p> from the Contect
+// https://stackoverflow.com/questions/6625458/removing-p-and-br-tags-in-wordpress-posts?rq=1
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+/////////////////////////////////////////////////////////////////////////////////////////////
+
 get_header(); ?>
 
 <main class="page-content">
@@ -72,10 +79,10 @@ get_header(); ?>
             <?php if ( !empty( $contries_posts ) ) : ?>
             <?php foreach ( $contries_posts as $post ) : setup_postdata( $post ); ?>
                 <article class="infographic-contry">
-                    <header>
-                        <h2><?php the_title(); ?></h2>
-                    </header>
                     <div class="infographic-contry-content">
+                        <header>
+                            <h2><?php the_title(); ?></h2>
+                        </header>
                         <?php the_content(); ?>
                     </div>
                     <footer>
@@ -109,51 +116,6 @@ get_header(); ?>
 
 </main>
 
-<script>
-        
-    var $j = jQuery.noConflict();
-
-    $j(function() {
-
-    var isMovingTheBus = false;
-    var moveTheBusToProgressFunction = function() {
-        $j('#myProgress').off('appear', moveTheBusToProgressFunction);
-        if(isMovingTheBus) {
-            return;
-        }
-        isMovingTheBus = true;
-
-        var elem = document.getElementById('progress-bar'); 
-        if(!elem) {
-            return;
-        }
-
-        var width = 1;
-        var endProgress = elem.getAttribute('data-progress');
-
-        setTimeout(function(){
-            var id = setInterval(frame, 16);
-            function frame() {
-                if (width >= endProgress) {
-                    $j('#progress-bar-text').show(200);
-                    clearInterval(id);
-                } else {
-                    width++; 
-                    elem.style.width = width + '%'; 
-                }
-            }
-        }, 1000);
-    }
-
-    $j.appear('#myProgress');
-    $j('#myProgress').on('appear', moveTheBusToProgressFunction);
-
-    $j('.infographic-container').slick();
-
-
-    });
-
-</script>
-
+<script type='text/javascript' src="<?php echo get_template_directory_uri() . '/build/js/front-page.min.js' ; ?>"></script>
 
 <?php get_footer(); ?>

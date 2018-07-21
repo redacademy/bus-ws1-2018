@@ -22,7 +22,30 @@
 .featuredon-links p {
     text-transform: capitalize;
     margin-bottom: -10px;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.bkg-featuredon {
+    background-image: url(../../assets/images/featured-logo.svg);
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 300px;
+    background-position: unset;
+    background-size: cover;
+}
+
+.featuredon-links {
+    
+    picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
 }
 
 .subscription-container {
@@ -61,6 +84,13 @@
         font-weight: bold;
         text-shadow: initial;
         font-size: 14px;
+        
+        &:hover {
+            filter: brightness(1.1);
+            transition: all 0.2s ease 0s;
+            color: $grey;
+            background-color: $yellow;
+        }
     }
 
     p{
@@ -142,34 +172,9 @@
     font-weight: 300;
 }
 
-
-.bkg-featuredon {
-    background-image: url(../../assets/images/featured-logo.svg);
-    background-repeat: no-repeat;
-    height: 65px;
-    width: 300px;
-    background-position: unset;
-    background-size: cover;
-}
-
-.featuredon-links {
-    
-    picture {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    p {
-        margin-bottom: 5px;
-    }
-}
-
 .widget-title {
     display: none;
 }
-
 
 /***********************MEDIA QUERY MIN 768PX*********************************/
 
@@ -185,10 +190,10 @@
     }
 
     .main-container-footer{
-        height: 600px;
-        width: 90%;
-        margin-bottom: 40px;
-        max-width: 1400px;
+        height: 550px;
+        width: 95%;
+        margin-bottom: 10px;
+        max-width: 1200px;
     }
 
     .featuredon-links, .followuson-links{
@@ -237,10 +242,10 @@
         .fab {
             border-style: solid;
             border-radius: 140px;
-            width: 50px;
-            height: 50px;
-            font-size: 24px;
-            padding-top: 12px;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            padding-top: 13px;
             border-width: 1px;
             color: #d3d3d3;
             
@@ -301,10 +306,25 @@
     }
 
     #contactus {
-        margin-top: 40px;
+        margin-top: 25px;
         margin-bottom: 40px;
         text-transform: none;
     }
+
+    .bkg-featuredon {
+        height: 120px;
+        width: auto;
+        background-position: initial;
+    }
+ 
+    .widget .widget_text{
+        justify-content: center;
+        display: flex;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1080px) {
 
     .contact-info {
         height: 100px;
@@ -335,16 +355,45 @@
             font-size: .75rem;
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
 
     .bkg-featuredon {
-        height: 105px;
-        width: 520px;
-        background-position: initial;
+        height: 80px;
+        width: 100%;
+        background-position: 0 0;
     }
- 
-    .widget .widget_text{
-        justify-content: center;
-        display: flex;
-        width: auto;
+
+    .footer-links .fab {
+        border-style: solid;
+        border-radius: 140px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding-top: 8px;
+        border-width: 1px;
+        color: #d3d3d3;
+    }
+
+    .followuson-links {
+        
+        justify-content: initial;
+    
+        ul{
+            height: auto;
+        }
+
+        p{
+            margin-bottom: 25px;
+        }
+    }
+
+    .subscription-container button {
+        height: 220px;
+    }
+
+    #contactus {
+        margin-bottom: 15px;
     }
 }

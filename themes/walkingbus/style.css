@@ -1916,7 +1916,33 @@ object {
 .featuredon-links p {
   text-transform: capitalize;
   margin-bottom: -10px;
-  font-weight: 600; }
+  font-weight: 700; }
+
+.bkg-featuredon {
+  background-image: url(../../assets/images/featured-logo.svg);
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 300px;
+  background-position: unset;
+  background-size: cover; }
+
+.featuredon-links picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.featuredon-links p {
+  margin-bottom: 5px; }
 
 .subscription-container {
   display: -webkit-box;
@@ -1955,6 +1981,13 @@ object {
     font-weight: bold;
     text-shadow: initial;
     font-size: 14px; }
+    .subscription-container button:hover {
+      -webkit-filter: brightness(1.1);
+              filter: brightness(1.1);
+      -webkit-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+      color: #474747;
+      background-color: #F6E24F; }
   .subscription-container p {
     margin-top: 20px;
     margin-bottom: 12px;
@@ -2015,32 +2048,6 @@ object {
   margin: 15px;
   font-weight: 300; }
 
-.bkg-featuredon {
-  background-image: url(../../assets/images/featured-logo.svg);
-  background-repeat: no-repeat;
-  height: 65px;
-  width: 300px;
-  background-position: unset;
-  background-size: cover; }
-
-.featuredon-links picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.featuredon-links p {
-  margin-bottom: 5px; }
-
 .widget-title {
   display: none; }
 
@@ -2059,10 +2066,10 @@ object {
     height: 550px;
     color: white; }
   .main-container-footer {
-    height: 600px;
-    width: 90%;
-    margin-bottom: 40px;
-    max-width: 1400px; }
+    height: 550px;
+    width: 95%;
+    margin-bottom: 10px;
+    max-width: 1200px; }
   .featuredon-links, .followuson-links {
     width: 50%; }
   .followuson-links {
@@ -2112,10 +2119,10 @@ object {
     .footer-links .fab {
       border-style: solid;
       border-radius: 140px;
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      padding-top: 12px;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      padding-top: 13px;
       border-width: 1px;
       color: #d3d3d3; }
       .footer-links .fab:hover {
@@ -2160,9 +2167,23 @@ object {
       letter-spacing: 2px;
       padding-left: 15px; }
   #contactus {
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 40px;
     text-transform: none; }
+  .bkg-featuredon {
+    height: 120px;
+    width: auto;
+    background-position: initial; }
+  .widget .widget_text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto; } }
+
+@media screen and (min-width: 1080px) {
   .contact-info {
     height: 100px;
     width: 100%;
@@ -2196,19 +2217,34 @@ object {
     display: flex; }
     .registration p {
       margin-right: 40px;
-      font-size: .75rem; }
+      font-size: .75rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
   .bkg-featuredon {
-    height: 105px;
-    width: 520px;
-    background-position: initial; }
-  .widget .widget_text {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto; } }
+    height: 80px;
+    width: 100%;
+    background-position: 0 0; }
+  .footer-links .fab {
+    border-style: solid;
+    border-radius: 140px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 8px;
+    border-width: 1px;
+    color: #d3d3d3; }
+  .followuson-links {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial; }
+    .followuson-links ul {
+      height: auto; }
+    .followuson-links p {
+      margin-bottom: 25px; }
+  .subscription-container button {
+    height: 220px; }
+  #contactus {
+    margin-bottom: 15px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2222,6 +2258,9 @@ object {
   font-size: 1rem;
   font-family: "Montserrat" header;
     font-family-font-family: 'Oswald'; }
+  @media (min-width: 1080px) {
+    .home .page-content {
+      width: 85%; } }
   .home .page-content h2, .home .page-content h3 {
     margin: 0;
     font-size: 1.3em; }
@@ -2288,6 +2327,32 @@ object {
     background-color: #04809e; }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
+      @media (min-width: 1080px) {
+        .home .page-content .home-infographic .infographic-contry h2 {
+          color: white;
+          font-size: 4em; } }
+      .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content i, .home .page-content .home-infographic .infographic-contry .infographic-contry-content em {
+          color: white; }
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+          width: 80%;
+          max-width: 300px;
+          height: auto; }
+        @media (min-width: 1080px) {
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+            -webkit-box-ordinal-group: 0;
+                -ms-flex-order: -1;
+                    order: -1; } }
   .home .page-content .home-goal h3 {
     color: #f8e71c;
     margin: 0;
@@ -2617,7 +2682,11 @@ object {
 .donation-image button:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: grey; }
+  border-color: grey;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
 
 .sponsor-image button:hover {
   -webkit-box-shadow: none;
@@ -2677,7 +2746,7 @@ object {
 
 .hero-image-impact {
   background-image: url(../../assets/images/impact-hero.jpg);
-  height: 190px;
+  height: 220px;
   width: 100%;
   background-size: 680px 450px;
   background-position-x: -125px;
@@ -2796,7 +2865,7 @@ object {
   background-repeat: no-repeat;
   height: 480px;
   width: 50%;
-  background-size: 125px 400px;
+  background-size: 110px 400px;
   padding-right: 50%;
   margin-left: 15%; }
 
@@ -2863,7 +2932,7 @@ object {
   .videos-impact div {
     height: 203px; }
   .videos-impact iframe {
-    height: 200px; }
+    height: 220px; }
 
 /************************************* NEWS *****************************/
 .new-impact {
@@ -3032,7 +3101,7 @@ object {
 /******************************************** DESKTOP VERSION *****************************************/
 @media screen and (min-width: 768px) {
   .site-main-impact {
-    width: 80%;
+    width: 100%;
     margin-top: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3084,13 +3153,14 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 102%; }
+    width: 100%; }
   .popsicle-desktop {
     width: 200px;
     height: 600px;
     background-repeat: no-repeat; }
   .popsicle-desktop-india {
-    background-image: url(../../assets/images/india_popsicle.png); }
+    background-image: url(../../assets/images/india_popsicle.png);
+    margin-left: 25px; }
   .popsicle-desktop-uganda {
     background-image: url(../../assets/images/uganda_popsicle.png); }
   .text-aside-desktop {
@@ -3166,14 +3236,15 @@ object {
     height: 25%; }
   .text-area-news .cfs-hyperlink {
     background-color: transparent;
-    width: 75%;
-    height: 160px;
-    position: absolute; }
+    width: 80%;
+    height: 135px;
+    position: absolute;
+    max-width: 1200px; }
   .arrow-link-news {
     width: 50px;
     height: 50px;
     font-size: 2rem;
-    padding-left: 4px;
+    padding-left: 2px;
     left: 7%; } }
 
 .page-template-archive-expeditions .expeditions-content-wrapper {
