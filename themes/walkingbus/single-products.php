@@ -92,6 +92,8 @@ get_header();
 					<?php echo "<p class=\"price\"> \${$price}</p>";?>
 					<?php echo "<p class=\"product-exerpt\">{$description}</p>";?>
 
+				
+
 
 				</div> <!-- product-details -->
 				

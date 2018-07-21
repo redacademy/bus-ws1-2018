@@ -92,4 +92,15 @@ $j( '.main-image').html(imgMin);
 
 });
 
+// team carousel
+
+$j(function(){
+
+    $j('.carousel').slick({
+    slidesToShow: 2,
+    dots:true,
+    centerMode: true,
+    });
+});
+
 

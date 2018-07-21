@@ -1,124 +1,156 @@
 .page-template-archive-expeditions {
-
-
-    .content{
+    .expeditions-content-wrapper {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        .expeditions-container {
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 12%;
+        }
+    }
+    .content {
         display: flex;
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
         height: auto;
     }
+    //upcoming expeditions
 
-//upcoming expeditions
-.section-title{
-    background-color:$yellow;
-    p{
-        margin:0px;
-    }
-
-}
-.upcoming-expedition-wrapper{
-    background-color:$blue-bg;
-
-    .expedition-details{
-        //p{
-            color:$yellow;
-      //  }
-    }
-
-    .expedition-description{
-        color:white;
-    }
-}
-
-
-.map-wrapper{
-    display:flex;
-    width:100%;
-    position:relative;
-
-
-}
-
-    // PAST EXPEDITIONS
-
-    .expedition-name, .member-name  {
-
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-    }
-
-    
-    .expedition-image{
-       display: flex;
-    flex-direction: column;
-    height: 10rem;
-    width: 100%;
-    flex-wrap: wrap;
-
-  img{  height: 100%;
-    max-width: 100%;
-    display: flex;
-  }
-}
-
-    // }
-    .expedition-name{
-     
+    .upcoming-expedition {
         display: flex;
-        flex-direction: column;
-        margin-top:-8%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%
     }
-
-
-
-.expedition-title{
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-   
-   p, i{ color:white;
-   }
-
-   i{
-       display:flex;
-       align-self:flex-end;
-   }
-}
-    
-    
-
-        .expedition-title {
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-between;
-            // width: 100%;
-            // height:auto;
-            p {
-                margin: 0px;
-                display: flex;
-                text-align: center;
-                width: 100%;
-                align-self: center;
-                flex-direction: column;
-            }
-        }
-   
-
-    .expedition-info {
-      display: none; 
-     background-color:white;
-    }
-
-    
-    span.button-wrapper{
+    .section-title{
         display:flex;
+        background-color:$yellow;
         width:100%;
         justify-content: center;
-        padding-bottom:5%;
+    }
+    
+    .upcoming-expedition-wrapper {
+        background-color: $blue-bg;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       // height: 15%;
 
-        button{
+        .map-wrapper{
+            display:flex;
+            width:100%;
+            img{
+                height: auto;
+                max-width: 100%;
+                position: absolute;
+                right: 5%;
+                width: 35%;
+            }
+
+            .upcoming-expedition-info{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 3%;
+            }
+        }
+    }
+   
+
+    
+    
+    // // PAST EXPEDITIONS
+
+    .past-expeditions{
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // width: 100%;
+    }
+
+    // .single-expedition{
+    //     display:flex;
+    //     position:relative;
+    // }
+
+
+    // .expedition-name,
+    // .member-name {
+    //     background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    // }
+    .expedition-image {
+    //     display: flex;
+    //     flex-direction: column;
+    //     height: 10rem;
+    //     width: 100%;
+    //     flex-wrap: wrap;
+    
+        img {
+    //         height: 100%;
+          width: 100%;
+         display: flex;
+        }
+    } // }
+    .expedition-name {
+        // position:absolute;
+        // width:100%;
+        // display:flex;}
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin-top: -8%;
+   }
+    .expedition-title {
+       display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    p{
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+    //     p,
+    //     i {
+    //         color: white;
+    //     }
+    //     i {
+    //         display: flex;
+    //         align-self: flex-end;
+    //     }
+    // }
+    // .expedition-title {
+    //     // display: flex;
+    //     // flex-direction: row;
+    //     // justify-content: space-between;
+    //     // width: 100%;
+    //     // height:auto;
+    //     p {
+    //         margin: 0px;
+    //         display: flex;
+    //         text-align: center;
+    //         width: 100%;
+    //         align-self: center;
+    //         flex-direction: column;
+    //     }
+    // }
+    .expedition-info {
+       // display: none;
+        background-color: white;
+    }
+    span.button-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 5%;
+        button {
             color: black;
             background: $yellow;
             border-radius: 20px;
@@ -127,126 +159,89 @@
             box-shadow: 0px 2px $shadow;
             font-weight: bold;
             text-transform: capitalize;
-            
-    
+        }
+     }
+    ///////////////////////////////////////////////////////////////////////////////////////
+    // sponsors section 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        flex-wrap: wrap;
+        .sponsors-logos {
+            background-image: url('../../assets/images/sponsors-logos.svg');
+            background-size: cover;
+            width: 100%;
+            height: 4rem;
         }
     }
-    
-
-    // }
-
-///////////////////////////////////////////////////////////////////////////////////////
-// sponsors section 
-///////////////////////////////////////////////////////////////////////////////////////
-
-.sponsors{
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    flex-wrap: wrap;
-
-.sponsors-logos{
-    background-image: url('../../assets/images/sponsors-logos.svg');
-    background-size:cover;
-    width:100%;
-    height:4rem; 
-    
-}
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////
     // TEAM MEMBERS
-///////////////////////////////////////////////////////////////////////////////////////
-
-
+    ///////////////////////////////////////////////////////////////////////////////////////
     .wsb-team,
-    .research-projects{
-        background-color:#04809E;
-
+    .research-projects {
+        background-color: #04809E;
     }
-
-  
-
-    .wsb-team{
-
+    .wsb-team {
         //test
         display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-//test
-
-        ul{
-            margin:0px;
-            padding:0px;
-            display:inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        //test
+        ul {
+            margin: 0px;
+            padding: 0px;
+            display: inline-flex;
             width: 100%;
             justify-content: center;
         }
-        li{
-            list-style:none;
-            display:inline-flex; 
-            flex-basis:45%;
-
-           
+        li {
+            list-style: none;
+            display: inline-flex;
+            flex-basis: 45%;
         }
     }
-
- 
     .member-thumbnail {
-            position: relative;
-            display: flex;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .member-picture {
             width: 100%;
             height: 100%;
-
-        .member-picture{
-            width: 100%;
-            height: 100%;
-            img{
+            img {
                 width: 100%;
-            height: 100%; 
+                height: 100%;
             }
-        }    
-        
-
-    .member-name{
-        position:absolute;
-        bottom:0px;
-        color:white;
-        width:100%;
-     
+        }
+        .member-name {
+            position: absolute;
+            bottom: 0px;
+            color: white;
+            width: 100%;
+        }
     }
-
-}
-
-    .member-info{
-
-        background-color:white;
-        display:none;
-
-        //test
+    .member-info {
+        background-color: white;
+        display: none; //test
         //display: block;
         position: absolute;
         z-index: 1;
         width: 32rem;
-        height: 44rem;
-         //test
-
-
-        .icon-wrapper{
-
-            display:flex;
-            flex-wrap:wrap;
-            flex-direction:row;
+        height: 44rem; //test
+        .icon-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: flex-end;
-            width:100%;
-
-            i{
+            width: 100%;
+            i {
                 border: 3px solid #fff;
                 box-shadow: grey;
                 background-color: grey;
-                border-radius: 50px; 
+                border-radius: 50px;
                 display: flex;
                 flex-wrap: wrap;
                 width: 3rem;
@@ -256,98 +251,88 @@
                 font-size: 2.5rem;
                 color: white;
             }
-
         }
-     
-      
     }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// RESEARCH
- ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
- .research-projects{
-    display: flex;
-    width: 100%;
-    min-height: 18rem;
-    justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 0%;
- }
-
- .current-research{
-    width:100%;
-    background-color:white;
-    min-height:15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    p{
-        padding-top:5%;
-    }
-}
-    .research{
+    .carousel{
+        width:90%;
+        margin:0px auto;
+      }
+      .slick-slide{
+        margin:10px;
+      }
+      .slick-slide img{
+        width:100%;
+      }
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    // RESEARCH
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    .research-projects {
+        display: flex;
         width: 100%;
-        height:100%;
+        min-height: 18rem;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    .current-research {
+        width: 100%;
+        background-color: white;
+        min-height: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        p {
+            padding-top: 5%;
+        }
+    }
+    .research {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start; 
-        
-
-        .single-research{
-            display:flex;
-            width:100%;
-            flex-direction:row;
-            flex-wrap:wrap;
-            justify-content:center;
-            .research-picture{
+        justify-content: flex-start;
+        .single-research {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .research-picture {
                 width: 90%;
                 height: 100%;
-                flex-direction:row;
+                flex-direction: row;
                 justify-content: center;
-
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
- 
             }
-
-            .research-subject{
-                height:5%;
+            .research-subject {
+                height: 5%;
                 display: flex;
             }
         }
     }
-
-    .single-reserach-container{
+    .single-reserach-container {
         display: flex;
         padding-top: 5%;
-        padding-bottom:10%;
-        width:100%;
-    
+        padding-bottom: 10%;
+        width: 100%;
     }
-
-
-
-
-
-
-
-}// END OF PAGE TEMPLATE
-
-
+} // END OF PAGE TEMPLATE
 //Media queries 
 .page-template-archive-expeditions {
-@media screen and (min-width: 490px) {
+    @media screen and (min-width: 490px) {
+        .expedition-image {
+           // height:18rem;
+        }
 
-    .expedition-image{
-        height:18rem; 
+        .sponsors-logos{
+            min-height: 10rem;
+        }
     }
-
-      
-
-}
 }
