@@ -3511,9 +3511,10 @@ object {
   margin: 10px; }
 
 .page-template-archive-expeditions .slick-slide img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
-.page-template-archive-expeditions .research-projects {
+.research-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3525,7 +3526,7 @@ object {
   padding-top: 5%;
   padding-bottom: 0%; }
 
-.page-template-archive-expeditions .current-research {
+.current-research {
   width: 100%;
   background-color: white;
   min-height: 15%;
@@ -3539,10 +3540,10 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-template-archive-expeditions .current-research p {
+  .current-research p {
     padding-top: 5%; }
 
-.page-template-archive-expeditions .research {
+.research {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3557,7 +3558,7 @@ object {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-  .page-template-archive-expeditions .research .single-research {
+  .research .single-research {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3571,7 +3572,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-archive-expeditions .research .single-research .research-picture {
+    .research .single-research .research-picture {
       width: 90%;
       height: 100%;
       -webkit-box-orient: horizontal;
@@ -3581,16 +3582,16 @@ object {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .page-template-archive-expeditions .research .single-research .research-picture img {
+      .research .single-research .research-picture img {
         width: 100%;
         height: 100%; }
-    .page-template-archive-expeditions .research .single-research .research-subject {
+    .research .single-research .research-subject {
       height: 5%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
 
-.page-template-archive-expeditions .single-reserach-container {
+.single-reserach-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3931,5 +3932,40 @@ object {
     color: #03B8E2; }
 
 .page-template-archive-scholars .site-content {
-  margin-top: 10%;
-  margin-bottom: 10%; }
+  margin-top: 12%; }
+
+.page-template-archive-scholars .page-title {
+  text-align: center; }
+
+@media (min-width: 1080px) {
+  .page-template-archive-scholars .page-description {
+    text-align: center; } }
+
+.page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 1080px) {
+    .page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
+      width: 60%; } }
+
+.page-template-archive-scholars .slider-nav {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.page-template-archive-scholars .one-time {
+  margin-bottom: 5%; }
+
+.page-template-archive-scholars .scholar-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.page-template-archive-scholars .scholar-bio {
+  text-align: justify; }
+
+.page-template-archive-scholars .scholar-info {
+  background: #03B8E2;
+  color: black;
+  padding: 0 1%;
+  font-family: "Montserrat"; }

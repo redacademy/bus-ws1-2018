@@ -1,0 +1,55 @@
+.page-template-archive-scholars{
+
+    .site-content {
+        margin-top: 12%;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .page-description {
+
+        @include desktop {
+            text-align: center;
+        }
+    }
+
+    .slider-for, .page-description, .slider-nav, .one-time {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            width: 60%;
+        }
+
+    }
+
+    .slider-nav {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .one-time {
+        margin-bottom: 5%;
+    }
+
+    .scholar-name {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    .scholar-bio {
+        text-align: justify;
+    }
+
+    .scholar-info {
+        background: $blue;
+        color: black;
+        padding: 0 1%;
+        font-family: $Mont;
+    }
+
+} 

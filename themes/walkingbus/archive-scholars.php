@@ -18,10 +18,8 @@ get_header(); ?>
         ?>
 
             <header class="page-header">
-                <?php
-                    the_title( '<h1 class="page-title">', '</h1>' );
-                    print(get_the_content());
-                ?>
+                <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+                <div class="page-description"><?php the_content(); ?></div>
             </header>
 
 			<!-- .page-header -->
@@ -30,21 +28,42 @@ get_header(); ?>
             $args = array( 'post_type' => 'Scholars', 'posts_per_page' => -1);
             $scholars = new WP_Query( $args );  ?>
 
+            <div class="slider-for scholars">
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( $scholars->have_posts() ) : $scholars->the_post(); ?>
+
                 <div class="scholar-container">
+
                     <?php the_post_thumbnail(); ?>
-                    <div class="scholar-info">
-                        <?php the_title();
-                        the_content(); ?>
-                    </div>
+
                 </div>
-				
-                <?php wp_reset_query(); ?>
+			
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+            </div>
+            
+            <div class="slider-nav">
+
+                <?php while( $scholars->have_posts() ) : $scholars->the_post(); ?>
+                    
+                    <?php the_post_thumbnail(); ?>
+                
+                <?php endwhile; ?>
+
+            </div>
+
+            <div class="one-time scholars">
+
+                <?php while( $scholars->have_posts() ) : $scholars->the_post(); ?>
+
+                    <div class="scholar-info">
+                        <h1 class="scholar-name"><?php the_title(); ?></h1>
+                        <div class="scholar-bio"><?php the_content(); ?></div>
+                    </div>
+
+                <?php endwhile; ?>
+
+            </div>
 
 		<?php else : ?>
 
