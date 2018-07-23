@@ -92,15 +92,15 @@ add_filter( 'stylesheet_uri', 'wsb_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
-function wsb_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+function wsb_scripts() { 
+	wp_enqueue_style( 'wsb-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'carrosel-slick-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
 	wp_enqueue_style( 'carrosel-slick-theme-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' );
 
 
 	wp_enqueue_script('main-js', get_template_directory_uri() .'/build/js/general.min.js', array('jquery'), null, true);
 	wp_enqueue_script('jquery-appear', get_template_directory_uri() .'/build/js/jquery.appear.min.js', array('jquery'), null, true);
-	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script('wsb-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	//wp_enqueue_script('chartjs', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js', array(), null, true );
 	wp_enqueue_script('carrosel-slick-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true );
@@ -132,3 +132,21 @@ function walkingbus_remove_front_page_editor() {
 	}
 }
 add_action( 'admin_head', 'walkingbus_remove_front_page_editor', 99 );
+
+
+
+// API for load more button
+
+ 
+function twsb_api_script() {
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'wsb_api', get_template_directory_uri() . '/build/js/scripts.min.js', array( 'jquery' ), false, true );
+	 wp_localize_script( 'wsb_api', 'api_vars', array(
+		 'rest_url' => esc_url_raw(rest_url()),
+	   'nonce' => wp_create_nonce( 'wp_rest' ), 
+	 //  'post_id' => get_the_ID()
+	//    'success' => 'Thanks, your submission was received!',
+	//    'failure' => 'Your submission could not be processed.',
+	 ) ); 
+ }
+ add_action( 'wp_enqueue_scripts', 'twsb_api_script' );

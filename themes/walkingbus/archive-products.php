@@ -9,53 +9,54 @@ Template Name: products
 <?php get_header();  ?>
 
 <div class = "site-content-wrapper">
+    <div class = "shop-page-content">
 
-<section class = "shop-page-header">
+        <section class = "shop-page-header">
 
-    <div class = "shop-info">
-       
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <?php the_content();?>
+            <div class = "shop-info">
             
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                <?php the_content();?>
+                    
+                
+                <?php endwhile;?>
+                <?php endif; ?>
+            </div> <!-- shop-info-->
         
-        <?php endwhile;?>
-        <?php endif; ?>
-    </div>
-       
 
 
-    <div class = "shop-banner">
+            <div class = "shop-banner">
 
-        <!-- loop to display the banner  -->
+                <!-- loop to display the banner  -->
 
-        <div class= "banner">
+                <div class= "banner">
 
-            <?php  $images = CFS()->get('shop_banner'); 
-                        foreach ($images as $image) {?>
-                         
-                            <picture> 
-                            <?php echo '<img src="'.$image['banner'].'"/>'; ?>
-                            </picture>
-                        
- <?php }?>
+                    <?php  $images = CFS()->get('shop_banner'); 
+                                foreach ($images as $image) {?>
+                                
+                                    <picture> 
+                                    <?php echo '<img src="'.$image['banner'].'"/>'; ?>
+                                    </picture>
+                                
+                    <?php }?>
 
-            <h1> <?php the_title(); ?> </h1>
+                    <h1> <?php the_title(); ?> </h1>
 
-        </div>
-    </div>
+                </div> <!-- BANNER-->
 
-</section>
+            </div><!-- SHOP BANNER-->
+
+        </section> <!-- shop-page-header -->
 
 <section class = "products-gallery">
 
     <div class = "products-gallery-container">
 
-    <!-- loop to display all the products, to change the number of products displayed 
-        set the post per page number to the desired value -->
+            <!-- loop to display all the products, to change the number of products displayed 
+                set the post per page number to the desired value -->
 
-		
-        <!-- custom field loop to display the products thumbnails as a gallery-->	
+	
         <?php
             $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1 );
             $products = new WP_Query( $args ); 
@@ -80,8 +81,8 @@ Template Name: products
 
              <!-- call custom field suite for product name and price-->
 
-                <p> <a href = "<?php the_permalink();?>"> <?php the_title();?> </p> </a>
-                <p> <?php echo CFS()->get( 'price' ); ?>  </p>
+                <p> <a href = "<?php the_permalink();?>"> <?php the_title();?>  </a></p>
+                <p> <?php echo CFS()->get( 'price' ); ?> CAD </p>
           
             </div> <!-- .product-info-->
 
@@ -90,11 +91,13 @@ Template Name: products
             
 
 
-            <?php endwhile; ?>
+        <?php endwhile; ?>
 
     </div> <!-- products-gallery-container -->
-    </section>
-    </div>
+
+</section> <!-- Pproducts gallery -->
+
+
     
     
             <?php wp_reset_postdata(); ?> 
@@ -104,6 +107,10 @@ Template Name: products
                 <h2>Nothing found!</h2>
 
             <?php endif; ?>
-                    
+
+</div> <!-- shop-page-content -->
+
+</div><!--site-content-wrapper  -->
+
 		
 <?php get_footer(); ?>

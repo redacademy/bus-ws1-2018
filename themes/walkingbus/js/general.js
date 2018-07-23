@@ -105,12 +105,12 @@ $j( '.main-image').html(imgMin);
  $j(function(){
 $j('.team-type-carousel').slick({
     infinite: true, 
-    // dots:true, 
     slidesToShow: 2,
-    slidesToScroll: 2, 
+    slidesToScroll: 1,  
+
   });
 
- });
+
       
 
 $j('.slider-for-scholars').slick({
@@ -130,5 +130,5 @@ $j('.slider-nav-scholars').slick({
     focusOnSelect: true
 });
 
-
+});
  

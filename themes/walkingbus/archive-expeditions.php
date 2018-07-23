@@ -31,8 +31,10 @@ Template Name: get involved
                 </picture>
                             
             <?php }?>
-                
+            <div class = "mission-statement">  
+                <?php the_title();?> 
             <?php the_content();?>
+            </div> 
 
             <?php endwhile; ?>
 
@@ -103,21 +105,24 @@ Template Name: get involved
 <section class = "past-expeditions">
 
     <?php
-		$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => -1  );
+		$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => 1  );
 		$expeditions = new WP_Query( $args ); 
 	?>
 	
 	<?php if ( $expeditions ->have_posts() ) : ?> 
     <?php while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
         
-    <?php $missions = CFS()->get('past_expeditions'); 
-    foreach ($missions as $mission) {?>
+    <?php // $missions = CFS()->get('past_expeditions'); 
+    //foreach ($missions as $mission) {?>
             
         <div class = "single-expedition">
 
             <div class = "expedition-image">
                      <picture> 
-                <?php echo '<img src="'.$mission['image'].'"/>';?>
+
+                     <?php the_post_thumbnail();?>
+                <?php // echo '<img src="'.$mission['image'].'"/>'; 
+                ?>
                     </picture>    
             </div> <!--expedition-image -->  
 
@@ -142,11 +147,11 @@ Template Name: get involved
                         <div class= "expedition-content"> 
 
                             <span class = "excerpt-wrapper">
-                                <p>  <?php echo CFS()->get.$mission['excerpt'];?></p>
+                                <p>  <?php the_content(); ?> </p>
                             </span>
 
                             <span class = "button-wrapper">
-                                <a href = "<?php the_permalink();?>"> <button> read more</button></a>
+                                <a href = "<?php //the_permalink();?>"> <button> read more</button></a>
                             </span>
 
                         </div>  <!--expedition-content-->  
@@ -161,7 +166,7 @@ Template Name: get involved
 
         </div> <!--single-expedition -->    
 
-    <?php } ?>
+    <?php// } ?>
     <?php endwhile; ?> 
 
 
@@ -172,7 +177,8 @@ Template Name: get involved
     <h2>Nothing found!</h2>
                             
     <?php endif; ?>
-
+    <button class = "load-more" > load more </button>
+        
 
 </section>    
 
@@ -211,10 +217,10 @@ Template Name: get involved
 
             <!-- <ul> -->
 
-
+  <p> <?php the_title()?> </p>
  <div class = "team-type-carousel"> 
                         
-                <p> <?php the_title()?> </p>
+              
                         <?php 
                             
                           //  if ( $c == 1 ) $class .= ' active';
@@ -228,7 +234,7 @@ Template Name: get involved
 
         <div class = "single-member" id = "image">
 
-            <div class="item <?php// echo $class; ?>" > 
+            <!-- <div class="item <?php// echo $class; ?>" >  -->
 
                 <div class = "member-name">                  
                     <?php  echo CFS()->get.$member['name']; ?>
@@ -249,7 +255,7 @@ Template Name: get involved
                     <p> <?php echo CFS()->get.$member['role'];?></p> 
                     <p>  <?php echo CFS()->get.$member['bio'];?></p> 
                 </div>    <!--member-info-->   
-            </div> <!--item--> 
+            <!-- </div> item  -->
         </div> <!--member-thumbnail-->     
 
                 <?php } ?>
@@ -268,9 +274,7 @@ Template Name: get involved
     
        
 
-</div> <!--car teasm--> 
- 
- </div> <!--carousel inerl--> 
+
 
 </section> <!-- wsb-team--> 
 
@@ -335,11 +339,14 @@ Template Name: get involved
 
 </section>
 
-</div> <!-- expeditions-container --> 
+</div> <!-- sections-container --> 
 
 </div><!-- expedition-content-wrapper-->
                      
 </div> <!-- content-area -->
+</div> <!--car teasm--> 
+ 
+ </div> <!--carousel inerl--> 
 
 <?php get_footer(); ?>
 
