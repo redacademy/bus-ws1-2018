@@ -26,14 +26,30 @@
 
     }
 
+    .slider-for {
+
+        .slick-slide {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
     .slider-nav {
         margin-top: 5%;
         margin-bottom: 5%;
+
+        .slick-slide {
+            padding: 0 1%;
+            height: 5%;
+            width: 2.5%;
+        }
     }
 
     .one-time {
         margin-bottom: 5%;
     }
+
 
     .scholar-name {
         text-align: center;

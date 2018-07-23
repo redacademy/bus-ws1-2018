@@ -3949,9 +3949,17 @@ object {
     .page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
       width: 60%; } }
 
+.page-template-archive-scholars .slider-for .slick-slide {
+  margin-left: auto;
+  margin-right: auto; }
+
 .page-template-archive-scholars .slider-nav {
   margin-top: 5%;
   margin-bottom: 5%; }
+  .page-template-archive-scholars .slider-nav .slick-slide {
+    padding: 0 1%;
+    height: 5%;
+    width: 2.5%; }
 
 .page-template-archive-scholars .one-time {
   margin-bottom: 5%; }
