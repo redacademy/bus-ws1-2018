@@ -38,12 +38,16 @@ function teams_custom_taxonomy() {
 		'labels'                     => $labels,
 		'hierarchical'               => false,
 		'public'                     => true,
-		'show_ui'                    => true,
+		'show_ui'                    => true, 
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'team_type', array( 'team' ), $args );
+	register_taxonomy( 'team_type', array( 'team' ), $args ); 
 
 }
 add_action( 'init', 'teams_custom_taxonomy', 0 ); 
+
+// donations  Custom Taxonomy (create donations & scholarships categories)
+
+

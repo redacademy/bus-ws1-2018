@@ -26,7 +26,7 @@ get_header(); ?>
                     <li><span>4</span>$10-$12 USD are saved each day to put in a fund for maintenance and repair.</li>
                 </ul>
             </section>
-            <div class="white"><a class="access-btn" href="">Learn more</a></div>
+            <div class="white-button"><a class="access-btn" href="">Learn more</a></div>
 
             <section class="nutrition">
                 <h1>Nutrition</h1>

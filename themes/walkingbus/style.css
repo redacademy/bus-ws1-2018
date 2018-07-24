@@ -1332,7 +1332,8 @@ object {
                   display: initial;
                   position: absolute;
                   right: 0;
-                  padding: 4% 3%;
+                  font-size: 1.3rem;
+                  padding: 4.2% 3%;
                   top: 0;
                   background: #f8ea80;
                   color: #03B8E2; }
@@ -1487,11 +1488,11 @@ object {
               border-radius: 100%;
               text-align: center;
               margin-right: 1%; } }
-  .page-template-page-whatwedo .access-bttn, .page-template-page-whatwedo .white {
+  .page-template-page-whatwedo .access-bttn, .page-template-page-whatwedo .white-button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%; }
-    .page-template-page-whatwedo .access-bttn .access-btn, .page-template-page-whatwedo .white .access-btn {
+    .page-template-page-whatwedo .access-bttn .access-btn, .page-template-page-whatwedo .white-button .access-btn {
       color: black;
       background: #F6E24F;
       border-radius: 20px;
@@ -1504,20 +1505,18 @@ object {
       font-weight: bold;
       text-transform: capitalize; }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .white {
+    .page-template-page-whatwedo .white-button {
       margin-top: -10%; } }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .white .access-btn {
+    .page-template-page-whatwedo .white-button .access-btn {
       font-size: 1.5rem;
       padding: 16px 50px;
       border-radius: 30px;
       background: white; } }
-  .page-template-page-whatwedo .nutrition h1 {
-    margin-top: 10%; }
-  .page-template-page-whatwedo .nutrition .nutrition-descrip {
+  .page-template-page-whatwedo .nutrition-descrip {
     display: none; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-descrip {
+      .page-template-page-whatwedo .nutrition-descrip {
         display: block;
         width: 80%;
         margin-left: auto;
@@ -1526,14 +1525,14 @@ object {
         font-family: "Montserrat";
         font-size: 1.5rem; } }
   @media (min-width: 1080px) {
-    .page-template-page-whatwedo .nutrition .nutrition-pillars-container {
+    .page-template-page-whatwedo .nutrition-pillars-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 50%;
       margin-left: auto;
       margin-right: auto; } }
-  .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+  .page-template-page-whatwedo .nutrition-pillars-container .p {
     color: gray;
     font-size: 1.1rem;
     width: 80%;
@@ -1543,7 +1542,7 @@ object {
     text-align: center;
     font-family: "Montserrat"; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p {
+      .page-template-page-whatwedo .nutrition-pillars-container .p {
         font-size: 1.5rem;
         font-weight: 300;
         display: -webkit-box;
@@ -1560,11 +1559,11 @@ object {
         padding: 3% 6%;
         -webkit-box-shadow: 1px 2px gray;
                 box-shadow: 1px 2px gray; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(1), .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+        .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(1), .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(3) {
           background: #028fb0; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p:nth-of-type(3) {
+        .page-template-page-whatwedo .nutrition-pillars-container .p:nth-of-type(3) {
           opacity: .8; }
-        .page-template-page-whatwedo .nutrition .nutrition-pillars-container .p span {
+        .page-template-page-whatwedo .nutrition-pillars-container .p span {
           width: 30%;
           margin-bottom: 15%;
           margin-left: auto;
@@ -1572,19 +1571,7 @@ object {
           border: 1px solid #F6E24F;
           border-radius: 100%;
           text-align: center; } }
-  .page-template-page-whatwedo .nutrition .p {
-    color: gray;
-    font-size: 1.1rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: capitalize;
-    text-align: center;
-    font-family: "Montserrat"; }
-    @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .p {
-        font-size: 1.5rem; } }
-  .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+  .page-template-page-whatwedo .nutrition-desc-container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -1595,7 +1582,7 @@ object {
     -webkit-box-shadow: 0px 2px #cdcdcd;
             box-shadow: 0px 2px #cdcdcd; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-desc-container {
+      .page-template-page-whatwedo .nutrition-desc-container {
         margin-top: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1603,16 +1590,16 @@ object {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         width: 90%; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+    .page-template-page-whatwedo .nutrition-desc-container img {
       display: none; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container img {
+        .page-template-page-whatwedo .nutrition-desc-container img {
           display: initial;
           -ms-flex-preferred-size: 49%;
               flex-basis: 49%;
           width: 50%;
           height: 650px; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+    .page-template-page-whatwedo .nutrition-desc-container .nutrition-description {
       font-size: 1rem;
       text-align: left;
       width: 95%;
@@ -1620,19 +1607,19 @@ object {
       margin-right: auto;
       color: gray; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container .nutrition-description {
+        .page-template-page-whatwedo .nutrition-desc-container .nutrition-description {
           font-size: 1.5rem;
           -ms-flex-preferred-size: 45%;
               flex-basis: 45%;
           margin-left: auto;
           margin-right: auto;
           color: black; } }
-    .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+    .page-template-page-whatwedo .nutrition-desc-container .access-bttn {
       margin-bottom: 5%; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-desc-container .access-bttn {
+        .page-template-page-whatwedo .nutrition-desc-container .access-bttn {
           display: none; } }
-  .page-template-page-whatwedo .nutrition .nutrition-pillar {
+  .page-template-page-whatwedo .nutrition-pillar {
     position: relative;
     height: 11vh;
     width: 95%;
@@ -1642,10 +1629,10 @@ object {
     background-size: cover;
     background-position: 50% 50%; }
     @media (min-width: 1080px) {
-      .page-template-page-whatwedo .nutrition .nutrition-pillar {
+      .page-template-page-whatwedo .nutrition-pillar {
         height: 30vh;
         width: 90%; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+    .page-template-page-whatwedo .nutrition-pillar i {
       color: white;
       position: absolute;
       bottom: 3%;
@@ -1653,9 +1640,9 @@ object {
       right: 3%;
       font-size: 1.1rem; }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-pillar i {
+        .page-template-page-whatwedo .nutrition-pillar i {
           font-size: 4rem; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+    .page-template-page-whatwedo .nutrition-pillar h1 {
       padding: 0;
       position: absolute;
       bottom: -15%;
@@ -1668,18 +1655,32 @@ object {
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.5); }
       @media (min-width: 1080px) {
-        .page-template-page-whatwedo .nutrition .nutrition-pillar h1 {
+        .page-template-page-whatwedo .nutrition-pillar h1 {
           bottom: -12%;
           -ms-flex-item-align: center;
               align-self: center;
           padding: 1.5%;
           font-size: 2rem; } }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(3) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(3) {
       background-image: url("../../assets/images/Nutrition1.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(5) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(5) {
       background-image: url("../../assets/images/Nutrition2.jpg"); }
-    .page-template-page-whatwedo .nutrition .nutrition-pillar:nth-of-type(7) {
+    .page-template-page-whatwedo .nutrition-pillar:nth-of-type(7) {
       background-image: url("../../assets/images/Nutrition3.jpg"); }
+  .page-template-page-whatwedo .nutrition h1 {
+    margin-top: 10%; }
+  .page-template-page-whatwedo .nutrition .p {
+    color: gray;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat"; }
+    @media (min-width: 1080px) {
+      .page-template-page-whatwedo .nutrition .p {
+        font-size: 1.5rem; } }
   .page-template-page-whatwedo .curri-img {
     display: none; }
     @media (min-width: 1080px) {
@@ -2486,112 +2487,29 @@ object {
       .home .page-content .get-involved-button {
         margin: 3rem 2rem; } }
 
-.page-template-archive-products .site-content {
-  margin-top: 5%;
-  height: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .page-template-archive-products .site-content .site-content-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%; }
-
-.page-template-archive-products .shop-page-header .shop-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  width: 100%; }
-
-.page-template-archive-products .shop-page-header .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .page-template-archive-products .shop-page-header .banner h1 {
-    position: absolute;
-    text-align: center;
-    bottom: 0px;
-    background-color: rgba(76, 76, 76, 0.5);
+@media (min-width: 1080px) {
+  .page-template-archive-products .site-content {
+    margin-top: 5%;
+    height: auto;
     width: 100%;
-    margin: 0px; }
-
-.page-template-archive-products .products-gallery {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 5%;
-  height: auto; }
-
-.page-template-archive-products .products-gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1rem;
-  width: 100%; }
-  .page-template-archive-products .products-gallery-container .single-product:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1; }
-  .page-template-archive-products .products-gallery-container .single-product:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1; }
-  .page-template-archive-products .products-gallery-container .single-product:nth-child(3) {
-    grid-column: 1;
-    grid-row: 2; }
-  .page-template-archive-products .products-gallery-container .single-product:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2; }
-  .page-template-archive-products .products-gallery-container .single-product {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .page-template-archive-products .products-gallery-container .single-product .product-image {
-      width: 100%;
-      min-height: 9.75rem;
-      height: 9.75rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-products .site-content .site-content-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-  .page-template-archive-products .products-gallery-container .product-info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 90%; }
+  .page-template-archive-products .shop-page-header .shop-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2599,17 +2517,97 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-    height: 20%; }
-    .page-template-archive-products .products-gallery-container .product-info a {
-      color: black; }
-    .page-template-archive-products .products-gallery-container .product-info p {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    width: 100%; }
+  .page-template-archive-products .shop-page-header .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .page-template-archive-products .shop-page-header .banner h1 {
+      position: absolute;
+      text-align: center;
+      bottom: 0px;
+      background-color: rgba(76, 76, 76, 0.5);
+      width: 100%;
       margin: 0px; }
-  .page-template-archive-products .products-gallery-container picture img {
+  .page-template-archive-products .products-gallery {
     width: 100%;
-    height: 100%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5%;
+    height: auto; }
+  .page-template-archive-products .products-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%; }
+    .page-template-archive-products .products-gallery-container .single-product:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1; }
+    .page-template-archive-products .products-gallery-container .single-product:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1; }
+    .page-template-archive-products .products-gallery-container .single-product:nth-child(3) {
+      grid-column: 1;
+      grid-row: 2; }
+    .page-template-archive-products .products-gallery-container .single-product:nth-child(4) {
+      grid-column: 2;
+      grid-row: 2; }
+    .page-template-archive-products .products-gallery-container .single-product {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .page-template-archive-products .products-gallery-container .single-product .product-image {
+        width: 100%;
+        min-height: 9.75rem;
+        height: 9.75rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .page-template-archive-products .products-gallery-container .product-info {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 100%;
+      height: 20%; }
+      .page-template-archive-products .products-gallery-container .product-info a {
+        color: black; }
+      .page-template-archive-products .products-gallery-container .product-info p {
+        margin: 0px; }
+    .page-template-archive-products .products-gallery-container picture img {
+      width: 100%;
+      height: 100%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) and (min-width: 768px) {
   .page-template-archive-products .products-gallery-container {
     grid-template-rows: 1fr 1fr; }
     .page-template-archive-products .products-gallery-container .single-product .product-image {
@@ -3250,6 +3248,28 @@ object {
     padding-left: 2px;
     left: 7%; } }
 
+.page-template-archive-expeditions .expeditions-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .expeditions-content-wrapper .expeditions-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 12%; }
+
 .page-template-archive-expeditions .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3263,30 +3283,30 @@ object {
       flex-wrap: wrap;
   height: auto; }
 
+.page-template-archive-expeditions .upcoming-expedition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
 .page-template-archive-expeditions .section-title {
-  background-color: #F6E24F; }
-  .page-template-archive-expeditions .section-title p {
-    margin: 0px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F6E24F;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .page-template-archive-expeditions .upcoming-expedition-wrapper {
-  background-color: #04809E; }
-  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-details {
-    color: #F6E24F; }
-  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description {
-    color: white; }
-
-.page-template-archive-expeditions .map-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative; }
-
-.page-template-archive-expeditions .expedition-name, .page-template-archive-expeditions .member-name {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
-
-.page-template-archive-expeditions .expedition-image {
+  background-color: #04809E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3294,61 +3314,58 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 10rem;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .page-template-archive-expeditions .expedition-image img {
-    height: 100%;
-    max-width: 100%;
+  width: 100%; }
+  .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%; }
+    .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper img {
+      height: auto;
+      max-width: 100%;
+      position: absolute;
+      right: 5%;
+      width: 35%; }
+    .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 3%; }
 
-.page-template-archive-expeditions .expedition-name {
+.page-template-archive-expeditions .expedition-image img {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: -8%; }
+  display: flex; }
 
 .page-template-archive-expeditions .expedition-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%; }
-  .page-template-archive-expeditions .expedition-title p, .page-template-archive-expeditions .expedition-title i {
-    color: white; }
-  .page-template-archive-expeditions .expedition-title i {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-archive-expeditions .expedition-title p {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
-
-.page-template-archive-expeditions .expedition-title p {
-  margin: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  width: 100%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .page-template-archive-expeditions .expedition-info {
   display: none;
@@ -3486,7 +3503,18 @@ object {
       font-size: 2.5rem;
       color: white; }
 
-.page-template-archive-expeditions .research-projects {
+.page-template-archive-expeditions .team-type-carousel {
+  width: 90%;
+  margin: 0px auto; }
+
+.page-template-archive-expeditions .slick-slide {
+  margin: 10px; }
+
+.page-template-archive-expeditions .slick-slide img {
+  width: 100%;
+  height: 100%; }
+
+.research-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3498,7 +3526,7 @@ object {
   padding-top: 5%;
   padding-bottom: 0%; }
 
-.page-template-archive-expeditions .current-research {
+.current-research {
   width: 100%;
   background-color: white;
   min-height: 15%;
@@ -3512,10 +3540,10 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-template-archive-expeditions .current-research p {
+  .current-research p {
     padding-top: 5%; }
 
-.page-template-archive-expeditions .research {
+.research {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3530,7 +3558,7 @@ object {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-  .page-template-archive-expeditions .research .single-research {
+  .research .single-research {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3544,7 +3572,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-archive-expeditions .research .single-research .research-picture {
+    .research .single-research .research-picture {
       width: 90%;
       height: 100%;
       -webkit-box-orient: horizontal;
@@ -3554,16 +3582,16 @@ object {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .page-template-archive-expeditions .research .single-research .research-picture img {
+      .research .single-research .research-picture img {
         width: 100%;
         height: 100%; }
-    .page-template-archive-expeditions .research .single-research .research-subject {
+    .research .single-research .research-subject {
       height: 5%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
 
-.page-template-archive-expeditions .single-reserach-container {
+.single-reserach-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3572,13 +3600,20 @@ object {
   width: 100%; }
 
 @media screen and (min-width: 490px) {
-  .page-template-archive-expeditions .expedition-image {
-    height: 18rem; } }
+  .page-template-archive-expeditions .sponsors-logos {
+    min-height: 10rem; } }
+
+.products-template-default.single-products .content-area {
+  padding-top: 5%; }
 
 .products-template-default.single-products .product-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3588,8 +3623,7 @@ object {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 80% 20%;
-  max-height: 20rem;
-  width: 80%;
+  width: 90%;
   padding: 5%; }
 
 .products-template-default.single-products .main-image {
@@ -3598,7 +3632,6 @@ object {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 1;
-  min-height: 20rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .products-template-default.single-products .main-image img {
@@ -3754,15 +3787,15 @@ object {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
 
-.blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+.blog .entry-meta, .single-post .entry-meta {
   display: none; }
 
-.blog .post-container .img-container, .single-post .post-container .img-container {
+.blog .img-container, .single-post .img-container {
   height: 30vh;
   position: relative; }
-  .blog .post-container .img-container img, .single-post .post-container .img-container img {
+  .blog .img-container img, .single-post .img-container img {
     height: 100%; }
-  .blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+  .blog .img-container .yellow-strip, .single-post .img-container .yellow-strip {
     width: 100%;
     height: 20px;
     position: absolute;
@@ -3770,7 +3803,7 @@ object {
     background: #F6E24F;
     opacity: .5; }
 
-.blog .post-container .post-title, .single-post .post-container .post-title {
+.blog .post-title, .single-post .post-title {
   color: black;
   margin-left: auto;
   margin-right: auto;
@@ -3779,7 +3812,7 @@ object {
   font-size: 1.2rem;
   width: 80%; }
 
-.blog .post-ex, .single-post .post-ex {
+.post-ex {
   width: 80%;
   text-align: center;
   margin-left: auto;
@@ -3787,7 +3820,7 @@ object {
   font-size: .9rem;
   color: gray; }
 
-.blog .read-more-post, .single-post .read-more-post {
+.read-more-post {
   display: block;
   padding: 2% 4%;
   border-radius: 5px;
@@ -3805,14 +3838,14 @@ object {
   font-weight: bold; }
 
 @media (min-width: 1080px) {
-  .blog .post-wrapper:first-of-type, .single-post .post-wrapper:first-of-type {
+  .post-wrapper:first-of-type {
     margin-top: 10%; }
-  .blog .post-container, .single-post .post-container {
+  .post-container {
     position: relative;
     width: 85%;
     margin-left: auto;
     margin-right: auto; }
-    .blog .post-container .post-title, .single-post .post-container .post-title {
+    .post-container .post-title {
       position: absolute;
       top: 10%;
       left: 0;
@@ -3820,7 +3853,7 @@ object {
       font-size: 1.5rem;
       background: rgba(246, 226, 79, 0.8);
       padding: 2% 5%; }
-    .blog .post-container .entry-meta, .single-post .post-container .entry-meta {
+    .post-container .entry-meta {
       displaY: initial;
       position: absolute;
       right: 0;
@@ -3828,32 +3861,32 @@ object {
       padding: 1% 1%;
       background: #F6E24F;
       color: black; }
-    .blog .post-container .img-container, .single-post .post-container .img-container {
+    .post-container .img-container {
       width: 100%;
       height: 80vh; }
-      .blog .post-container .img-container .yellow-strip, .single-post .post-container .img-container .yellow-strip {
+      .post-container .img-container .yellow-strip {
         display: none; }
-      .blog .post-container .img-container img, .single-post .post-container .img-container img {
+      .post-container .img-container img {
         position: relative;
         width: 100%; }
-  .blog .post-ex, .single-post .post-ex {
+  .post-ex {
     width: 85%;
     font-size: 1.2rem;
     margin-top: 2%;
     text-align: left; }
-    .blog .post-ex a, .single-post .post-ex a {
+    .post-ex a {
       color: #03B8E2; }
-    .blog .post-ex img, .single-post .post-ex img {
+    .post-ex img {
       margin-left: auto;
       margin-right: auto; }
-  .blog .read-more-post, .single-post .read-more-post {
+  .read-more-post {
     width: 18%;
     font-size: 1.3rem;
     background: none;
     border: 3px solid black;
     margin-left: 7.5%;
     padding: 1% 2%; }
-    .blog .read-more-post:hover, .single-post .read-more-post:hover {
+    .read-more-post:hover {
       background: #03B8E2;
       color: white;
       border-color: #03B8E2; } }
@@ -3897,3 +3930,50 @@ object {
   color: black; }
   .search-results a:hover {
     color: #03B8E2; }
+
+.page-template-archive-scholars .site-content {
+  margin-top: 12%; }
+
+.page-template-archive-scholars .page-title {
+  text-align: center; }
+
+@media (min-width: 1080px) {
+  .page-template-archive-scholars .page-description {
+    text-align: center; } }
+
+.page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 1080px) {
+    .page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
+      width: 60%; } }
+
+.page-template-archive-scholars .slider-for .slick-slide {
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-template-archive-scholars .slider-nav {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  .page-template-archive-scholars .slider-nav .slick-slide {
+    padding: 0 1%;
+    height: 5%;
+    width: 2.5%; }
+
+.page-template-archive-scholars .one-time {
+  margin-bottom: 5%; }
+
+.page-template-archive-scholars .scholar-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.page-template-archive-scholars .scholar-bio {
+  text-align: justify; }
+
+.page-template-archive-scholars .scholar-info {
+  background: #03B8E2;
+  color: black;
+  padding: 0 1%;
+  font-family: "Montserrat"; }
