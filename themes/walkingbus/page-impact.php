@@ -59,7 +59,7 @@ Template Name: impact
                <?php
                    $args = array(
                        'post_type' => 'news',
-                       'posts_per_page' => 7,
+                       'posts_per_page' => 10   ,
                        'order' => 'ASC',
                    );
                    $news = new WP_Query( $args );
@@ -78,11 +78,11 @@ Template Name: impact
                        </a></div>
                        <?php else : ?>
 
-                        <div class="text-area-news">
+                        <div class="text-area-news-nophoto">
                             <?php $article_url = CFS()->get('article_url');?>
                             <?php echo $article_url ?>
-                           <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
-                           <a class="arrow-link-news" href="">&#10093;</a></h2>
+                           <h2 class="title-area-news-nophoto" href=""><?php the_title(); ?>
+                           <a class="arrow-link-news-nophoto" href="">&#10093;</a></h2>
                            </div>
 
                        <?php endif; ?>
