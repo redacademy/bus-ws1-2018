@@ -255,7 +255,7 @@
     }
 
 
-    .carousel{
+    .team-type-carousel{
         width:90%;
         margin:0px auto;
       }
@@ -264,6 +264,10 @@
       }
       .slick-slide img{
         width:100%;
+      //  width: 100%;
+        height: 100%;
+       // display: flex;
+    }
       }
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -323,7 +327,7 @@
         padding-bottom: 10%;
         width: 100%;
     }
-} // END OF PAGE TEMPLATE
+ // END OF PAGE TEMPLATE
 //Media queries 
 .page-template-archive-expeditions {
     @media screen and (min-width: 490px) {

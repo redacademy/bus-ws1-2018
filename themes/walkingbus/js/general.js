@@ -94,13 +94,58 @@ $j( '.main-image').html(imgMin);
 
 // team carousel
 
-$j(function(){
+// $j(function(){
 
-    $j('.carousel').slick({
-    slidesToShow: 2,
-    dots:true,
-    centerMode: true,
+//     $j('.carousel').slick({
+//     slidesToShow: 2,
+//     dots:true,
+//     centerMode: true,
+//     });
+// });
+$j(function(){
+    $j('.team-type-carousel').slick({
+        infinite: true, 
+        // dots:true, 
+        slidesToShow: 2,
+        slidesToScroll: 2, 
     });
+
+ });
+      
+
+$j(function() {
+    $j('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav',
+        mobileFirst: true
+
+      });
+});
+
+$j(function() {
+    $j('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.scholars',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        mobileFirst: true
+
+    });
+});
+
+$j(function() {
+    $j('.one-time').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        asNavfor: '.slider-nav'
+      });
 });
 
 
