@@ -1,53 +1,48 @@
 <?php
 /**
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ * The header for our theme.
  *
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+?><!DOCTYPE html>
+<html id="error404-html" <?php language_attributes(); ?>>
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<?php wp_head(); ?>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
-				</header><!-- .page-header -->
+	</head>
 
-				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+	<body <?php body_class(); ?>>
+		<div id="page" class="hfeed site">
+			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-					<?php get_search_form(); ?>
+			<div id="content" class="site-content">
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+				<main id="main" class="site-main page-content" role="main">
+					<header class="page-header screen-reader-text">
+						<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					</header><!-- .page-header -->
 
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+					<section class="error-404 not-found">
+						<div class="nf-text">
+							<p>Looks like you missed the bus.</p>
+							<p><a href="javascript:history.back()">Go Back</a> and try an alternate rote.</p>
+						</div>
 
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+						<div class="nf-sign-and-bus"></div>
+					</section><!-- .error-404 -->
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+				</main><!-- #main -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+			</div><!-- #content -->
+				
+		</div><!-- #page -->
+		<?php wp_footer(); ?>
+	</body>
+</html>

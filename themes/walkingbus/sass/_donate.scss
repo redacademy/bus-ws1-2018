@@ -9,7 +9,7 @@
     margin-bottom: 60px;
 }
 
-.image-page-donate{
+.image-page-donate{ 
     width: 90%;
     height: 200px;
     background-size: cover;
@@ -47,6 +47,20 @@
     font-size: 1.5rem;
     color: #474747;
     box-shadow: 0px 1px #888;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #404040;
+    align-items: center;
+
+    &:visited {
+        color:#404040;
+    }
+
+    &:hover {
+        border-color: black;
+        filter: brightness(0.9);    
+    }
 }
 
 .donation-image button:hover {
