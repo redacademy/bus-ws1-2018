@@ -82,8 +82,12 @@ get_header(); ?>
                     <div class="infographic-contry-content">
                         <header>
                             <h2><?php the_title(); ?></h2>
+                            <div class="map"><?php the_post_thumbnail( 'large' ); ?></div>
                         </header>
-                        <?php the_content(); ?>
+                        <div class="first-line"><?php echo do_shortcode( CFS()->get('first_line') ); ?></div>
+                        <div class="first-graph"><?php echo do_shortcode( CFS()->get('first_graph') ); ?></div>
+                        <div class="second-line"><?php echo do_shortcode( CFS()->get('second_line') ); ?></div>
+                        <div class="second-graph"><?php echo do_shortcode( CFS()->get('second_graph') ); ?></div>
                     </div>
                     <footer>
                         <a class="learn-more-button" href="what-we-do/">Learn More</a>

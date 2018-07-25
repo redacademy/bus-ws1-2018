@@ -132,14 +132,14 @@
                         font-size: 4em;
                     }
                 }
-                .infographic-contry-content * {
-                    // margin-left: auto;
-                    // margin-right: auto;
-                    // align-content: center
-                    // display: flex;
-                    // justify-content: center;
-                    // align-items: center;
-                }
+                // .infographic-contry-content * {
+                //     margin-left: auto;
+                //     margin-right: auto;
+                //     align-content: center;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                // }
 
                 .infographic-contry-content {
 
@@ -151,28 +151,48 @@
                         color: white;
                     }
 
-                    img {
+                    .map,
+                    .first-graph,
+                    .second-graph {
                         width: 80%;
                         max-width: 300px;
                         height: auto;
+
+                        img {
+                            width: 100%;
+                        }
                     }
 
                     @include desktop {
+                        position: relative;
                         // display: flex;
                         // flex-direction: column;
 
                         // display:grid;
                         // grid-template-columns: 45% 45%;
-                        // grid-row: auto auto;
+                        // // grid-row: auto auto;
                         // grid-column-gap: 10%;
                         // grid-row-gap: 20px;
                     
-                        img {
+                        .info-header {}
+                        .map {
                             order: -1;
+
+                            width: 100%;
+                            max-width: unset;
                         }
+
+                        .first-line{}
+                        .first-graph{}
+                        .second-line{}
+                        .second-graph{}
                     }
                 }
 
+            }
+
+            .learn-more-button {
+                margin-top: 2rem;
             }
         }
 

@@ -1,5 +1,11 @@
 .single-post {
 
+    .post-container {
+        @include desktop {
+            margin-top: 60px;
+        }
+    }
+
     .post-navigation {
 
         .nav-links {

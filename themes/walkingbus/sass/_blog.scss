@@ -1,5 +1,11 @@
 .blog, .single-post {
 
+    a {
+        &:visited {
+            color: black;
+        }
+    }
+
     .entry-meta {
         display: none;
     }

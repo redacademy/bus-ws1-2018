@@ -1573,6 +1573,10 @@ object {
           text-align: center; } }
   .page-template-page-whatwedo .nutrition-desc-container {
     width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
@@ -1670,7 +1674,6 @@ object {
   .page-template-page-whatwedo .nutrition h1 {
     margin-top: 10%; }
   .page-template-page-whatwedo .nutrition .p {
-    color: gray;
     font-size: 1.1rem;
     width: 80%;
     margin-left: auto;
@@ -1724,6 +1727,10 @@ object {
     width: 95%;
     margin-top: 0;
     margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: auto;
     margin-bottom: 1%;
     border-left: 1px solid #cdcdcd;
@@ -2346,15 +2353,27 @@ object {
                 align-items: center; }
         .home .page-content .home-infographic .infographic-contry .infographic-contry-content i, .home .page-content .home-infographic .infographic-contry .infographic-contry-content em {
           color: white; }
-        .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map,
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph,
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
           width: 80%;
           max-width: 300px;
           height: auto; }
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map img,
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph img,
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph img {
+            width: 100%; }
         @media (min-width: 1080px) {
-          .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
-            -webkit-box-ordinal-group: 0;
-                -ms-flex-order: -1;
-                    order: -1; } }
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
+            position: relative; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map {
+              -webkit-box-ordinal-group: 0;
+                  -ms-flex-order: -1;
+                      order: -1;
+              width: 100%;
+              max-width: unset; } }
+    .home .page-content .home-infographic .learn-more-button {
+      margin-top: 2rem; }
   .home .page-content .home-goal h3 {
     color: #f8e71c;
     margin: 0;
@@ -3870,6 +3889,9 @@ object {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
 
+.blog a:visited, .single-post a:visited {
+  color: black; }
+
 .blog .entry-meta, .single-post .entry-meta {
   display: none; }
 
@@ -3974,6 +3996,10 @@ object {
       color: white;
       border-color: #03B8E2; } }
 
+@media (min-width: 1080px) {
+  .single-post .post-container {
+    margin-top: 60px; } }
+
 .single-post .post-navigation .nav-links {
   width: 85%;
   margin-left: auto;
@@ -4014,6 +4040,50 @@ object {
   .search-results a:hover {
     color: #03B8E2; }
 
+#error404-html {
+  height: 100%; }
+
+.error404 {
+  height: 100%; }
+  .error404 .site {
+    height: 100%; }
+    .error404 .site .site-content-nf {
+      height: 100%; }
+  .error404 .page-content {
+    width: 100%;
+    height: 100%; }
+    .error404 .page-content section {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background-color: #00B7E2;
+      background-image: url("../../assets/images/404-sign.svg"), url("../../assets/images/404-bus.svg");
+      background-position: 60% 65%, 130% 70%;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto 50%, auto 50%; }
+      @media (min-width: 768px) {
+        .error404 .page-content section {
+          background-position: 60% 65%, 110% 70%; } }
+      @media (min-width: 1080px) {
+        .error404 .page-content section {
+          background-position: 60% 65%, 100% 70%;
+          background-size: auto 60%, auto 60%; } }
+      .error404 .page-content section .nf-text {
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem; }
+        @media (min-width: 768px) {
+          .error404 .page-content section .nf-text {
+            font-size: 1.2rem; } }
+        @media (min-width: 1080px) {
+          .error404 .page-content section .nf-text {
+            font-size: 2rem; } }
+
 .page-template-archive-scholars .site-content {
   margin-top: 12%; }
 
@@ -4032,7 +4102,7 @@ object {
     .page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
       width: 60%; } }
 
-.page-template-archive-scholars .slider-for .slick-slide {
+.page-template-archive-scholars .slider-for .slick-slide img {
   margin-left: auto;
   margin-right: auto; }
 
@@ -4041,8 +4111,7 @@ object {
   margin-bottom: 5%; }
   .page-template-archive-scholars .slider-nav .slick-slide {
     padding: 0 1%;
-    height: 5%;
-    width: 2.5%; }
+    width: 95px; }
 
 .page-template-archive-scholars .one-time {
   margin-bottom: 5%; }

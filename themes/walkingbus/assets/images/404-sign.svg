@@ -1,0 +1,76 @@
+<svg width="449.99999999999994" height="1250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style>.cls-8{isolation:isolate}</style>
+  <linearGradient y2="0.5" y1="0.5" x2="1.001103" x1="0.003312" id="linear-gradient">
+   <stop stop-color="#595959" offset="0"/>
+   <stop stop-color="#afafae" offset="0.13"/>
+   <stop stop-color="#fff" offset="0.37"/>
+   <stop stop-color="#878786" offset="0.66"/>
+   <stop stop-color="#454543" offset="0.85"/>
+  </linearGradient>
+  <linearGradient y2="0.011512" y1="0.980226" x2="0.499999" x1="0.499999" id="linear-gradient-2">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linear-gradient-2" gradientTransform="matrix(-1 0 0 1 693.61 936.26)" y2="-284.84" y1="-403.58" x2="134.36" x1="134.36" id="linear-gradient-3"/>
+  <linearGradient xlink:href="#linear-gradient-2" gradientTransform="matrix(-1 0 0 1 693.61 926.13)" y2="-507.03" y1="-561.81" x2="134.36" x1="134.36" id="linear-gradient-4"/>
+  <linearGradient y2="0.500002" y1="0.500002" x2="0.999999" x1="0.000001" id="linear-gradient-5">
+   <stop stop-color="#595959" offset="0"/>
+   <stop stop-color="#afafae" offset="0.16"/>
+   <stop stop-color="#fff" offset="0.38"/>
+   <stop stop-color="#878786" offset="0.67"/>
+   <stop stop-color="#454543" offset="0.87"/>
+  </linearGradient>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(.68 0 0 -1.47 111.6 1384.97)" r="43.37" cy="710.97" cx="634.89" id="radial-gradient">
+   <stop stop-opacity="0" offset="0"/>
+   <stop offset="1"/>
+  </radialGradient>
+  <linearGradient y2="0.5" y1="0.5" x2="1.000051" x1="-0.000028" id="linear-gradient-6">
+   <stop stop-color="#fbd93b" offset="0"/>
+   <stop stop-color="#fbb50a" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.5" y1="0.5" x2="1.000331" x1="-0.00033" id="linear-gradient-7">
+   <stop stop-color="gray" offset="0"/>
+   <stop stop-color="#363636" offset="0.95"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linear-gradient-2" gradientTransform="matrix(0 1 1 0 -36.94 835.75)" y2="597.44" y1="597.44" x2="-428.97" x1="-449.64" id="linear-gradient-8"/>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 1566.3)" r="9" cy="1177.55" cx="557.46" id="radial-gradient-2">
+   <stop stop-color="#f0f0ef" offset="0"/>
+   <stop stop-color="#d3d3d2" offset="0.1"/>
+   <stop stop-color="#afafae" offset="0.63"/>
+   <stop stop-color="#545454" offset="1"/>
+  </radialGradient>
+  <linearGradient y2="0.336256" y1="0.703694" x2="0.349202" x1="0.687571" id="linear-gradient-9">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-opacity="0" stop-color="#fff" offset="1"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linear-gradient-2" gradientTransform="matrix(0 1 1 0 -36.94 835.75)" y2="597.44" y1="597.44" x2="-778.68" x1="-799.36" id="linear-gradient-10"/>
+  <radialGradient xlink:href="#radial-gradient-2" r="9" cy="1527.27" cx="557.46" id="radial-gradient-3"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="1252" width="452" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Layer_2">
+   <g id="Layer_1-2">
+    <path id="svg_1" d="m238.512285,1243.107161a47,47 0 0 1 -13.6,2.4a38.41,38.41 0 0 1 -13.6,-2.4l0,-879.6l27.1,0l0,879.6l0.1,0z" fill="url(#linear-gradient)"/>
+    <path id="svg_2" opacity="0.75" d="m211.412285,1082.207161l0,160.9s4.4,2.4 13.6,2.4a35.17,35.17 0 0 0 13.6,-2.4l0,-160.9l-27.2,0z" fill="url(#linear-gradient-2)"/>
+    <path id="svg_3" opacity="0.5" d="m211.412285,533.107161l27.1,0l0,122.6l-27.1,0l0,-122.6z" fill="url(#linear-gradient-3)"/>
+    <path id="svg_4" opacity="0.5" d="m211.412285,366.107161l27.1,0l0,56.5l-27.1,0l0,-56.5z" fill="url(#linear-gradient-4)"/>
+    <path id="svg_5" d="m207.812285,337.007161l34.3,0l0,29.1l-34.3,0l0,-29.1z" fill="url(#linear-gradient-5)"/>
+    <path id="svg_6" opacity="0.3" d="m207.812285,337.007161l34.3,0l0,29.1l-34.3,0l0,-29.1z" fill="url(#radial-gradient)"/>
+    <path id="svg_7" d="m438.212285,210.907161a10,10 0 0 1 0,14.1l-205,205a10,10 0 0 1 -14.1,0l-205,-205a10,10 0 0 1 0,-14.1l205,-205a10,10 0 0 1 14.1,0l205,205z" fill="url(#linear-gradient-6)"/>
+    <path id="svg_8" d="m438.212285,210.907161a10,10 0 0 1 0,14.1l-205,205a10,10 0 0 1 -14.1,0l-205,-205a10,10 0 0 1 0,-14.1l205,-205a10,10 0 0 1 14.1,0l205,205z" stroke-width="0.25" stroke-miterlimit="10" stroke="url(#linear-gradient-7)" fill="none"/>
+    <path id="svg_9" d="m421.812285,211.507161a9.17,9.17 0 0 1 0,13l-189.1,189.1a9.17,9.17 0 0 1 -13,0l-189.1,-189.1a9.17,9.17 0 0 1 0,-13l189.1,-189.1a9.17,9.17 0 0 1 13,0l189.1,189.1z" stroke-width="2" stroke-miterlimit="10" stroke="#000" fill="none"/>
+    <path id="svg_10" opacity="0.2" d="m226.212285,409.607161c-3.7,0 -6.7,-10.3 -6.7,-14a6.7,6.7 0 0 1 13.4,0c0,3.7 -3,14 -6.7,14z" fill="url(#linear-gradient-8)"/>
+    <path id="svg_11" d="m233.012285,393.607161a6.8,6.8 0 1 1 -6.8,-6.8a6.94,6.94 0 0 1 6.8,6.8z" fill="url(#radial-gradient-2)"/>
+    <path id="svg_12" opacity="0.15" d="m337.712285,124.607161a10,10 0 0 0 0,-14.1l-104.4,-104.5a10,10 0 0 0 -14.1,0l-205,205a10,10 0 0 0 0,14.1l104.5,104.5a10,10 0 0 0 14.1,0l204.9,-205z" fill="url(#linear-gradient-9)"/>
+    <path id="svg_13" opacity="0.2" d="m226.212285,59.907161c-3.7,0 -6.7,-10.3 -6.7,-14a6.7,6.7 0 0 1 13.4,0c0,3.7 -3,14 -6.7,14z" fill="url(#linear-gradient-10)"/>
+    <path id="svg_14" d="m233.012285,43.907161a6.8,6.8 0 1 1 -6.8,-6.8a6.81,6.81 0 0 1 6.8,6.8z" fill="url(#radial-gradient-3)"/>
+    <text id="svg_15" x="90.942296" y="278.457167" font-weight="700" font-size="153.47" font-family="Arial-BoldMT,Arial">404</text>
+   </g>
+  </g>
+ </g>
+</svg>
