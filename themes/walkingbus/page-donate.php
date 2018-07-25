@@ -10,10 +10,10 @@ Template Name: donate
 	<div id="primary" class="content-area-donate">
 		<main id="main" class="site-main-donate" role="main">
             <div class="donation-image image-page-donate">
-                <button href="" class="donate-btn">donation</button>
+                <a href="" class="donate-btn">donation</a>
             </div>
             <div class="sponsor-image image-page-donate">
-                <button href"" class="donate-btn">sponsor scholar</button>
+                <a class="donate-btn" href="http://bus.van.cp.academy.red/scholarships/">sponsor scholar</a>
             </div>
         </main><!-- #main -->
 	</div><!-- #primary -->
