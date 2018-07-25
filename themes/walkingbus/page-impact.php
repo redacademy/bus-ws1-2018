@@ -86,7 +86,8 @@ Template Name: impact
         </div>
             
         <div class="load-more-area">
-            <i class="loadmore-impact-btn">load more</i>
+            <p class="loadmore-impact-btn">load more</p>
+            <p class="hide-impact-btn">hide</p>
         </div>
 
 <?php get_footer(); ?>
