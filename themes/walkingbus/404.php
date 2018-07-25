@@ -21,7 +21,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content-nf">
 
 				<main id="main" class="site-main page-content" role="main">
 					<header class="page-header screen-reader-text">
@@ -30,8 +30,10 @@
 
 					<section class="error-404 not-found">
 						<div class="nf-text">
-							<p>Looks like you missed the bus.</p>
-							<p><a href="javascript:history.back()">Go Back</a> and try an alternate rote.</p>
+							<span>
+								<p>Looks like you missed the bus.</p>
+								<p><a href="javascript:history.back()">Go Back</a> and try an alternate rote.</p>
+							<span>
 						</div>
 
 						<!-- <div class="nf-sign-and-bus"></div> -->

@@ -7,21 +7,15 @@
     .site {
         height: 100%;
 
-        .site-content {
+        .site-content-nf {
             height: 100%;
         }
     }
 
     .page-content {
-
+        width: 100%;
         height: 100%;
 
-        @include center-block();
-
-        @include desktop {
-            width: 85%;
-        }
-        
         section {
             height: 100%;
             width: 100%;
@@ -38,9 +32,13 @@
             background-repeat: no-repeat, no-repeat;
             background-size: auto 50%, auto 50%;
 
+            @include tablet {
+                background-position: 60% 65%, 110% 70%;
+            }
+
             @include desktop {
-                background-position: 60% 65%, 130% 70%;
-                background-size: auto 50%, auto 50%;
+                background-position: 60% 65%, 100% 70%;
+                background-size: auto 60%, auto 60%;
             }
 
             .nf-text {
@@ -52,6 +50,15 @@
 
                 color: white;
                 font-weight: bold;
+                font-size: 1rem;
+
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+    
+                @include desktop {
+                    font-size: 2rem;
+                }
             }
 
             // .nf-sign-and-bus {
