@@ -5,7 +5,7 @@
     text-transform: uppercase;
     margin-top: 40px;
     text-align: center;
-    font-family: Oswald;
+    font-family: $Oswald;
     font-weight: 400;
     letter-spacing: -1px;
     font-size: 1.75rem;
@@ -31,10 +31,6 @@
 .title-image-impact-wrapper {
     display: flex;
     flex-direction: column;
-}
-
-.mySlides .fade {
-    padding-top: 0px;
 }
 
 /***************************** CAROUSEL *****************************/
@@ -225,7 +221,7 @@
 
 .arrow-link-news {
     border-radius: 50px;
-    border-color: white;
+    border-color:lightgray;
     border-style: solid;
     width: 30px;
     height: 30px;
@@ -236,8 +232,9 @@
     border-width: 1px;
     margin-left: 20px;
     position: absolute;
-    left: 83%;
+    left: 70%;
     font-family: $Mont;
+    color: lightgray;
 }
 
 .text-area-news {
@@ -249,6 +246,7 @@
     align-items: center;
     font-family: $Mont;
     line-height: initial;
+    max-width: 1200px;
 
     h2 {
         display: flex;
@@ -258,27 +256,46 @@
 }
 
     .title-area-news {
-        width: 70%;
+        width: 100%;
+        font-size: 1.25rem;
     }
 
-    .load-more {
-        color: black;
-        margin-top: 10px;
+    .loadmore-impact-btn {
+        color: grey;
+        margin-top: -5px;
         max-width: 1200px;
+        cursor: pointer;
+        font-size: 1.75rem;
     }
 
     .load-more-area {
-        width: 80%;
+        width: 700px;
         max-width: 1200px;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
-        margin: 20px 0px;
-        padding-left: 5%;
+        justify-content: baseline;
+        margin: 150px 0px 75px 120px;
         font-family: $Mont;
         text-decoration: underline;
+        text-decoration-color: gray;
+        font-weight: 200;
     }
 
+    .hide-impact-btn {
+        display: none;
+        color: grey;
+        margin-top: -5px;
+        max-width: 1200px;
+        cursor: pointer;
+        font-size: 1.75rem;
+    }
+    
     .cfs-hyperlink span {
+        display: none;
+    }
+
+    
+    .cfs-hyperlink .text {
         display: none;
     }
 
@@ -300,10 +317,124 @@
         }
     }
 
-    // .new-impact:nth-of-type(n+4){
-    //         display: none;
-    // }
+    .arrow-link-news {
+        width: 30px;
+        height: 30px;
+        font-size: 2.25rem;
+        padding-left: 1px;
+        position: absolute;
+        left: 85%;
+        font-weight: 100;
+        padding-bottom: 5px;
+    }
 
+    .text-area-news span {
+        color: gray;
+        border-color:gray;
+        font-weight: 300;
+        position: absolute;
+        left: 85%;
+        height: 20px;
+        width: 20px;
+        padding-left: 0px;
+        font-size: 1.5rem;
+        padding-top: 2px;
+        display: flex;
+    }
+
+    .text-area-news:nth-of-type(-n+3) {
+
+        span {
+        display: none;
+        }
+    }
+
+    .text-area-news:nth-of-type(-n+3) {
+        position: relative;
+        bottom: 110px;
+        margin-bottom: -147px;
+        color: white;
+    
+        span {
+            width: 35px;
+            height: 35px;
+            border-color: gray;
+            color: gray;
+            font-size: 2rem;
+            padding-left: 2px;
+            padding-bottom: 8px;
+        }
+    }
+
+    .text-area-news:nth-of-type(n+4) {
+        margin-top: 135px;
+        margin-bottom: -135px;
+        position: relative;
+        height: 35px;
+        color:black;
+        background-color: white;
+        display: -ms-flexbox;
+        display: flex;
+        width: 700px;
+        max-width: 1200px;
+        justify-content: left;
+        padding: 0px 60px;
+
+        &:hover {
+            text-decoration: underline;
+            filter: brightness(0.95);
+            cursor: pointer;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.75rem;
+        }
+
+        a {
+            height: 35px;      
+        }
+
+        span {
+            color: gray;
+            border-color:gray;
+            font-weight: 300;
+            position: absolute;
+            left: 85%;
+            height: 20px;
+            width: 20px;
+            padding-left: 0px;
+            font-size: 1.5rem;
+            padding-top: 2px;
+            display: flex;
+        }
+    }
+
+    .text-area-news:nth-of-type(-n+3) {
+        span {
+        display: flex;
+        }
+    }
+
+    .text-area-news:nth-of-type(n+9){
+        display: none;
+    }      
+    
+    .new-impact:nth-of-type(n+2){
+        margin-top: 40px;
+    }
+    
+    .new-impact:nth-of-type(n+4){
+        display: none;
+    }
+    
+    .text-area-news .cfs-hyperlink {
+        background-color: transparent;
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        max-width: 1200px;
+    }
 
 
 /******************************************** DESKTOP VERSION *****************************************/
@@ -445,7 +576,7 @@
 
     .new-impact {
         height: 550px;
-
+        
         h2 a{
             font-size: 1.75rem;
             position: relative;
@@ -455,37 +586,5 @@
     .text-area-news {
         height: 25%;
     }
-
-    .text-area-news .cfs-hyperlink {
-        background-color: transparent;
-        width: 80%;
-        height: 135px;
-        position: absolute;
-        max-width: 1200px;
-    }
-
-    .arrow-link-news {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        padding-left: 2px;
-        left: 7%;
-    }
 }
 
-.new-impact:nth-of-type(n+4){
-    display: none;
-}
-
-.text-area-news:nth-of-type(n+4){
-    background-color: white;
-}
-
-
-.text-area-news:nth-of-type(n+9){
-    background-color: blue;
-}
-
-.text-area-news:nth-of-type(n+9) {
-    display: none;
-}
