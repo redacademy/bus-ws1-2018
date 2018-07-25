@@ -5,7 +5,7 @@
     text-transform: uppercase;
     margin-top: 40px;
     text-align: center;
-    font-family: Oswald;
+    font-family: $Oswald;
     font-weight: 400;
     letter-spacing: -1px;
     font-size: 1.75rem;
@@ -225,7 +225,7 @@
 
 .arrow-link-news {
     border-radius: 50px;
-    border-color: white;
+    border-color:lightgray;
     border-style: solid;
     width: 30px;
     height: 30px;
@@ -236,8 +236,9 @@
     border-width: 1px;
     margin-left: 20px;
     position: absolute;
-    left: 83%;
+    left: 70%;
     font-family: $Mont;
+    color: lightgray;
 }
 
 .text-area-news {
@@ -249,6 +250,7 @@
     align-items: center;
     font-family: $Mont;
     line-height: initial;
+    max-width: 1200px;
 
     h2 {
         display: flex;
@@ -258,7 +260,8 @@
 }
 
     .title-area-news {
-        width: 70%;
+        width: 100%;
+        font-size: 1.25rem;
     }
 
     .load-more {
@@ -445,7 +448,7 @@
 
     .new-impact {
         height: 550px;
-
+        
         h2 a{
             font-size: 1.75rem;
             position: relative;
@@ -458,34 +461,64 @@
 
     .text-area-news .cfs-hyperlink {
         background-color: transparent;
-        width: 80%;
-        height: 135px;
+        width: 100%;
+        height: 110px;
         position: absolute;
         max-width: 1200px;
     }
 
     .arrow-link-news {
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        padding-left: 2px;
-        left: 7%;
+        width: 30px;
+        height: 30px;
+        font-size: 2.25rem;
+        padding-left: 0.2%;
+        position: absolute;
+        left: 85%;
+        font-weight: 100;
+        padding-bottom: 5px;
     }
+}
+
+.new-impact:nth-of-type(n+2){
+    margin-top: 40px;
+}
+
+.text-area-news:nth-of-type(4){
+    color: blue;
 }
 
 .new-impact:nth-of-type(n+4){
     display: none;
 }
 
-.text-area-news:nth-of-type(n+4){
+.text-area-news:nth-of-type(n+4) {
     background-color: white;
+    margin-top: 40px;
+    margin-bottom: -43px;
+    height: 50px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.text-area-news:nth-child(n+7) {
+    background-color: blue;
+    margin-top: 40px;
+    margin-bottom: -43px;
+    height: 50px;
 }
 
 
 .text-area-news:nth-of-type(n+9){
     background-color: blue;
-}
-
-.text-area-news:nth-of-type(n+9) {
     display: none;
 }
+
+.text-area-news:nth-of-type(-n+3) {
+    position: relative;
+    bottom: 110px;
+    margin-bottom: -147px;
+    color: white;
+}
+

@@ -73,7 +73,9 @@ Template Name: impact
                             <?php $article_url = CFS()->get('article_url');?>
                             <?php echo $article_url ?>
                            <h2><p class="title-area-news" href=""><?php the_title(); ?></p>
-                           <span class="arrow-link-news" href="">&#10093;</span></h2>
+                           </h2><span class="arrow-link-news">&#x203A;<?php echo $article_url ?>
+                           </span>
+                           
                 </div>
 
                    <?php endwhile; ?>
