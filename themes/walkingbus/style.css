@@ -2350,15 +2350,27 @@ object {
                 align-items: center; }
         .home .page-content .home-infographic .infographic-contry .infographic-contry-content i, .home .page-content .home-infographic .infographic-contry .infographic-contry-content em {
           color: white; }
-        .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map,
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph,
+        .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
           width: 80%;
           max-width: 300px;
           height: auto; }
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map img,
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph img,
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph img {
+            width: 100%; }
         @media (min-width: 1080px) {
-          .home .page-content .home-infographic .infographic-contry .infographic-contry-content img {
-            -webkit-box-ordinal-group: 0;
-                -ms-flex-order: -1;
-                    order: -1; } }
+          .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
+            position: relative; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map {
+              -webkit-box-ordinal-group: 0;
+                  -ms-flex-order: -1;
+                      order: -1;
+              width: 100%;
+              max-width: unset; } }
+    .home .page-content .home-infographic .learn-more-button {
+      margin-top: 2rem; }
   .home .page-content .home-goal h3 {
     color: #f8e71c;
     margin: 0;

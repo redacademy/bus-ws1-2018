@@ -35,6 +35,6 @@ $j(function() {
     $j.appear('#myProgress');
     $j('#myProgress').on('appear', moveTheBusToProgressFunction);
 
-    // $j('.infographic-container').slick();
+    $j('.infographic-container').slick();
 
 });
