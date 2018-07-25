@@ -2364,9 +2364,10 @@ object {
           .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 400px;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px; }
+            grid-template-rows: 10% 10% 10% 10% 10% 10% 20%;
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+            text-align: left; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map,
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph,
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
@@ -2374,7 +2375,9 @@ object {
               max-width: unset; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .info-header {
               grid-column: 2 / 2;
-              grid-row: 2 / 2; }
+              grid-row: 2 / 2;
+              font-size: 3.5rem;
+              color: white; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map {
               -webkit-box-ordinal-group: 0;
                   -ms-flex-order: -1;
@@ -2392,10 +2395,10 @@ object {
               grid-row: 6 / 8; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-line {
               grid-column: 1 / 1;
-              grid-row: 6 / 6; }
+              grid-row: 5 / 5; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
               grid-column: 1 / 1;
-              grid-row: 7 / 8; } }
+              grid-row: 6 / 8; } }
     .home .page-content .home-infographic .learn-more-button {
       margin-top: 2rem; }
   .home .page-content .home-goal h3 {
