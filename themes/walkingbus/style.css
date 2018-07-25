@@ -3931,6 +3931,46 @@ object {
   .search-results a:hover {
     color: #03B8E2; }
 
+#error404-html {
+  height: 100%; }
+
+.error404 {
+  height: 100%; }
+  .error404 .site {
+    height: 100%; }
+    .error404 .site .site-content {
+      height: 100%; }
+  .error404 .page-content {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1080px) {
+      .error404 .page-content {
+        width: 85%; } }
+    .error404 .page-content section {
+      height: 100%;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .error404 .page-content section .nf-text {
+        height: 100%;
+        width: 60%;
+        background-color: aquamarine; }
+      .error404 .page-content section .nf-sign-and-bus {
+        height: 100%;
+        width: 40%;
+        background-color: red;
+        background: url("../../assets/images/404-sign.svg") left bottom no-repeat, url("../../assets/images/404-bus.svg") right middle no-repeat;
+        background-size: cover; }
+
 .page-template-archive-scholars .site-content {
   margin-top: 12%; }
 

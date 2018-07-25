@@ -1,0 +1,57 @@
+#error404-html {
+    height: 100%;
+}
+.error404 {
+    height: 100%;
+
+    .site {
+        height: 100%;
+
+        .site-content {
+            height: 100%;
+        }
+    }
+
+    .page-content {
+
+        height: 100%;
+
+        @include center-block();
+
+        @include desktop {
+            width: 85%;
+        }
+        
+        section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+            .nf-text {
+                height: 100%;
+                width: 60%;
+
+                background-color: aquamarine;
+            }
+
+            .nf-sign-and-bus {
+                height: 100%;
+                width: 40%;
+
+                background-color: red;
+
+                background: url("../../assets/images/404-sign.svg") left bottom no-repeat, url("../../assets/images/404-bus.svg")  right middle no-repeat;
+                
+                background-size: cover;
+                // background-image: url("../../assets/images/404-sign.svg");
+                // background-image: url("../../assets/images/404-bus.svg");
+
+                // background-repeat: no-repeat;
+                // background-position: $sun-image-size/2 0;
+            }
+        }
+    }
+
+}
