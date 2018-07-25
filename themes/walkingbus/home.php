@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
         <?php 
-        $args = array( 'post_type' => 'post');
+        $args = array( 'post_type' => 'post', 'posts_per_page' => -1);
         $posts = new WP_Query( $args );  ?>
         
             <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 
                         <div class="img-container">
                             <?php the_post_thumbnail(''); ?>
-                            <div class="yellow-strip">HI</div>
+                            <div class="yellow-strip"></div>
                         </div>
 
                         <h1 class="post-title"><?php the_title(); ?></h1>
