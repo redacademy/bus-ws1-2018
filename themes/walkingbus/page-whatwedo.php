@@ -16,7 +16,7 @@ get_header(); ?>
                 <p><span>2</span> Financing the Bus.</p>
             </section>
             <div class='video'><?php echo CFS()->get('video'); ?></div>
-            <div class="donate-btn-wwd"><a href="">Donate</a></div>
+            <div class="donate-btn-wwd"><a href="../donate">Donate</a></div>
             <section class="access-how">
                 <h1>How it works</h1>
                 <ul>

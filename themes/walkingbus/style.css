@@ -1573,6 +1573,10 @@ object {
           text-align: center; } }
   .page-template-page-whatwedo .nutrition-desc-container {
     width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
@@ -1670,7 +1674,6 @@ object {
   .page-template-page-whatwedo .nutrition h1 {
     margin-top: 10%; }
   .page-template-page-whatwedo .nutrition .p {
-    color: gray;
     font-size: 1.1rem;
     width: 80%;
     margin-left: auto;
@@ -1724,6 +1727,10 @@ object {
     width: 95%;
     margin-top: 0;
     margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: auto;
     margin-bottom: 1%;
     border-left: 1px solid #cdcdcd;
@@ -3772,6 +3779,9 @@ object {
     .single-expedition .expedition-content {
       font-size: 1.3rem; } }
 
+.blog a:visited, .single-post a:visited {
+  color: black; }
+
 .blog .entry-meta, .single-post .entry-meta {
   display: none; }
 
@@ -3876,6 +3886,10 @@ object {
       color: white;
       border-color: #03B8E2; } }
 
+@media (min-width: 1080px) {
+  .single-post .post-container {
+    margin-top: 60px; } }
+
 .single-post .post-navigation .nav-links {
   width: 85%;
   margin-left: auto;
@@ -3978,7 +3992,7 @@ object {
     .page-template-archive-scholars .slider-for, .page-template-archive-scholars .page-description, .page-template-archive-scholars .slider-nav, .page-template-archive-scholars .one-time {
       width: 60%; } }
 
-.page-template-archive-scholars .slider-for .slick-slide {
+.page-template-archive-scholars .slider-for .slick-slide img {
   margin-left: auto;
   margin-right: auto; }
 
@@ -3987,8 +4001,7 @@ object {
   margin-bottom: 5%; }
   .page-template-archive-scholars .slider-nav .slick-slide {
     padding: 0 1%;
-    height: 5%;
-    width: 2.5%; }
+    width: 95px; }
 
 .page-template-archive-scholars .one-time {
   margin-bottom: 5%; }
