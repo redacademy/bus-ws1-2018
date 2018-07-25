@@ -34,7 +34,7 @@
 							<p><a href="javascript:history.back()">Go Back</a> and try an alternate rote.</p>
 						</div>
 
-						<div class="nf-sign-and-bus"></div>
+						<!-- <div class="nf-sign-and-bus"></div> -->
 					</section><!-- .error-404 -->
 
 				</main><!-- #main -->
