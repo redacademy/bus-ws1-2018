@@ -2362,13 +2362,40 @@ object {
             width: 100%; }
         @media (min-width: 1080px) {
           .home .page-content .home-infographic .infographic-contry .infographic-contry-content {
-            position: relative; }
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 400px;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map,
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph,
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
+              width: 100%;
+              max-width: unset; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .info-header {
+              grid-column: 2 / 2;
+              grid-row: 2 / 2; }
             .home .page-content .home-infographic .infographic-contry .infographic-contry-content .map {
               -webkit-box-ordinal-group: 0;
                   -ms-flex-order: -1;
                       order: -1;
-              width: 100%;
-              max-width: unset; } }
+              grid-column: 1 / 1;
+              grid-row: 1 / 5; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .content-line {
+              grid-column: 2 / 2;
+              grid-row: 3 / 3; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-line {
+              grid-column: 2 / 2;
+              grid-row: 5 / 5; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .first-graph {
+              grid-column: 2 / 2;
+              grid-row: 6 / 8; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-line {
+              grid-column: 1 / 1;
+              grid-row: 6 / 6; }
+            .home .page-content .home-infographic .infographic-contry .infographic-contry-content .second-graph {
+              grid-column: 1 / 1;
+              grid-row: 7 / 8; } }
     .home .page-content .home-infographic .learn-more-button {
       margin-top: 2rem; }
   .home .page-content .home-goal h3 {

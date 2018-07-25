@@ -151,6 +151,9 @@
                         color: white;
                     }
 
+                    .map {
+                            // order: -1;
+                    }
                     .map,
                     .first-graph,
                     .second-graph {
@@ -164,31 +167,55 @@
                     }
 
                     @include desktop {
-                        position: relative;
+                        //position: relative;
+
                         // display: flex;
                         // flex-direction: column;
 
-                        // display:grid;
-                        // grid-template-columns: 45% 45%;
-                        // // grid-row: auto auto;
-                        // grid-column-gap: 10%;
-                        // grid-row-gap: 20px;
-                    
-                        .info-header {}
-                        .map {
-                            order: -1;
-
+                        display:grid;
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 400px;
+                        grid-column-gap: 0px;
+                        grid-row-gap: 0px;
+                        
+                        .map,
+                        .first-graph,
+                        .second-graph {
                             width: 100%;
                             max-width: unset;
                         }
 
-                        .first-line{}
-                        .first-graph{}
-                        .second-line{}
-                        .second-graph{}
+                        .info-header {
+                            grid-column: 2 / 2;
+                            grid-row: 2 / 2;
+                        }
+                        .map {
+                            order: -1;
+                            grid-column: 1 / 1;
+                            grid-row: 1 / 5;
+                        }
+                        .content-line {
+                            grid-column: 2 / 2;
+                            grid-row: 3 / 3;
+                        }
+                        .first-line{
+                            grid-column: 2 / 2;
+                            grid-row: 5 / 5;
+                        }
+                        .first-graph{
+                            grid-column: 2 / 2;
+                            grid-row: 6 / 8;
+                        }
+                        .second-line{
+                            grid-column: 1 / 1;
+                            grid-row: 6 / 6;
+                        }
+                        .second-graph{
+                            grid-column: 1 / 1;
+                            grid-row: 7 / 8;
+                        }
                     }
                 }
-
             }
 
             .learn-more-button {
