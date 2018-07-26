@@ -18,6 +18,8 @@ get_header();
 
 			   <?php  $products = CFS()->get('products');?>
 
+			   <div class = "images-details-wrapper">
+
 				<div class = "product-images"> 
 
 					<div class = "main-image">
@@ -84,16 +86,33 @@ get_header();
 
 				<div class = "product-details"> 
 
-			
+					<div class = "name-price-wrapper">			
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<?php echo "<p class=\"price\"> \${$price} CAD</p>";?>
+					</div>
 
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					<?php echo "<p class=\"price\"> \${$price}</p>";?>
-					<?php echo "<p class=\"product-exerpt\">{$description}</p>";?>
+					<div class = "additional-info">
+						<?php echo the_content();?>  
+					</div><!-- additional info-->
 
-				
+					<div class = "select-buttons">
 
-
+						<select> Color </select>
+						<select> Quantity </select>
+						
+					</div><!-- select-buttons-->	
+						
+					
 				</div> <!-- product-details -->
+
+				</div><!-- images-details-wrapper-->
+                
+				<div class = "product-description">
+
+					<p> Description </p>
+
+					<?php echo "<p class=\"product-exerpt\">{$description}</p>";?>
+				</div> <!-- product-description -->
 				
 							<?php } ?>
 

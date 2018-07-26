@@ -61,7 +61,8 @@ $j('#subscription-form').submit(function(event) {
 // show team members bio
 
 $j('.member-picture').click(function() {
-    $j(this).siblings('.member-info').show('slow');
+    $j(this).children('.member-info').show('slow');
+
 
     $j('.icon-wrapper').click(function() {
         $j(this).parent('.member-info').hide('slow');
@@ -71,6 +72,10 @@ $j('.member-picture').click(function() {
 });
 
 
+
+
+
+
 // EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
  
 
@@ -78,6 +83,26 @@ $j('.member-picture').click(function() {
 $j('.expedition-name').click(function() {
 
     $j(this).children('.expedition-info').slideToggle('slow');
+
+
+});
+
+//var expeditionName = $j(.children('h3')
+
+ 
+
+
+$j('.alm-reveal').click(function() { 
+    $j(this).children(".li").children(".p").slideToggle('slow'); 
+
+ 
+});
+
+//Events Function 
+
+$j('.event-name').click(function() {
+
+    $j(this).children('.event-info').slideToggle('slow');
 
 
 });
@@ -102,6 +127,15 @@ $j( '.main-image').html(imgMin);
 //     centerMode: true,
 //     });
 // });
+<<<<<<< HEAD
+ $j(function(){
+$j('.team-type-carousel').slick({
+    infinite: true, 
+    slidesToShow: 2,
+    slidesToScroll: 1,  
+
+  });
+=======
 $j(function(){
     $j('.team-type-carousel').slick({
         infinite: true, 
@@ -109,8 +143,9 @@ $j(function(){
         slidesToShow: 2,
         slidesToScroll: 2, 
     });
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
 
- });
+
       
 
 $j(function() {
@@ -125,6 +160,10 @@ $j(function() {
       });
 });
 
+<<<<<<< HEAD
+});
+ 
+=======
 $j(function() {
     $j('.slider-nav').slick({
         slidesToShow: 4,
@@ -192,3 +231,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
