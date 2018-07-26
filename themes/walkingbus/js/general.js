@@ -131,7 +131,6 @@ $j( '.main-image').html(imgMin);
 $j(function(){
     $j('.team-type-carousel').slick({
         infinite: true, 
-        // dots:true, 
         slidesToShow: 2,
         slidesToScroll: 2, 
     });
@@ -149,8 +148,10 @@ $j(function() {
         mobileFirst: true
 
       });
-});
+    });
 
+});
+ 
 $j(function() {
     $j('.slider-nav').slick({
         slidesToShow: 4,
@@ -192,30 +193,3 @@ $j('.hide-impact-btn').click(function() {
     $j('.hide-impact-btn').css('display' , 'none');
 });
 
-// ****** LOAD MORE CAROUSEL - IMPACT PAGE ****** //
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   if (n > slides.length) {slideIndex = 1} 
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none"; 
-//   }
-//   slides[slideIndex-1].style.display = "block"; 
-//   dots[slideIndex-1].className += " active";
-// }
- });   

@@ -2017,7 +2017,10 @@ object {
 
 .subscription-container {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .subscription-container form, .subscription-container input {
   width: 330px;
@@ -2255,10 +2258,14 @@ object {
       height: auto; }
     .followuson-links p {
       margin-bottom: 25px; }
-  .subscription-container button {
-    height: 220px; }
-  .subscription-container p {
-    margin-top: 40px; }
+  .subscription-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .subscription-container button {
+      height: 220px; }
+    .subscription-container p {
+      margin-top: 40px; }
   #contactus {
     margin-bottom: 15px;
     margin-top: 10px; } }
@@ -2354,7 +2361,7 @@ object {
           left: -80px; }
         .home .page-content .home-infographic .slick-prev:before,
         .home .page-content .home-infographic .slick-next:before {
-          font-size: 20px; } }
+          font-size: 45px; } }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
       @media (min-width: 1080px) {
@@ -3232,7 +3239,7 @@ object {
   position: relative;
   height: 35px;
   border-bottom: solid 1px;
-  border-bottom-color: gray;
+  border-bottom-color: lightgray;
   color: #000;
   background-color: #fff;
   display: -ms-flexbox;
@@ -3243,7 +3250,7 @@ object {
   -ms-flex-pack: left;
   -webkit-box-pack: left;
           justify-content: left;
-  padding: 0 60px;
+  padding: 20px 60px;
   margin-left: 30px; }
   .text-area-news:nth-of-type(n+4):hover {
     text-decoration: underline;
@@ -3948,7 +3955,11 @@ object {
   margin: 10px;
   position: relative; }
 
+<<<<<<< HEAD
 .page-template-archive-expeditions .slick-slide img {
+=======
+.slick-slide img {
+>>>>>>> 2e21182cd894786db476cd24d4b728fe2250b507
   width: 100%;
   height: 100%; }
 
@@ -4019,7 +4030,11 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+<<<<<<< HEAD
   .page-template-archive-expeditions .current-research p {
+=======
+  .current-research p {
+>>>>>>> 2e21182cd894786db476cd24d4b728fe2250b507
     padding-top: 5%;
     text-transform: uppercase;
     font-weight: bold; }
@@ -4038,6 +4053,7 @@ object {
           flex-direction: row;
   width: 100%;
   -ms-flex-wrap: wrap;
+<<<<<<< HEAD
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -4084,6 +4100,26 @@ object {
   .page-template-archive-expeditions .research-subject .alm-listing {
     width: 100%;
     height: 100%;
+=======
+      flex-wrap: wrap; }
+
+.alm-listing {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .alm-listing .alm-reveal {
+>>>>>>> 2e21182cd894786db476cd24d4b728fe2250b507
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4093,6 +4129,7 @@ object {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+<<<<<<< HEAD
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
@@ -4102,10 +4139,19 @@ object {
       display: flex;
       width: 100%;
       padding: 5%;
+=======
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .alm-listing .alm-reveal .research-picture {
+      width: 90%;
+      height: 100%;
+>>>>>>> 2e21182cd894786db476cd24d4b728fe2250b507
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
+<<<<<<< HEAD
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-pack: justify;
@@ -4113,6 +4159,23 @@ object {
               justify-content: space-between; }
       .page-template-archive-expeditions .research-subject .alm-listing .alm-reveal li {
         list-style: none;
+=======
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .alm-listing .alm-reveal .research-picture img {
+        width: 100%;
+        height: 100%; }
+    .alm-listing .alm-reveal .research-subject {
+      height: 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: white;
+      font-family: "Montserrat";
+      text-transform: capitalize; }
+      .alm-listing .alm-reveal .research-subject .ajax-load-more {
+>>>>>>> 2e21182cd894786db476cd24d4b728fe2250b507
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4713,3 +4776,107 @@ object {
   color: black;
   padding: 0 1%;
   font-family: "Montserrat"; }
+
+.page-template-page-application {
+  font-family: "Montserrat"; }
+  .page-template-page-application .app-title {
+    margin-top: 60px;
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 1.2rem; }
+    @media (min-width: 1080px) {
+      .page-template-page-application .app-title {
+        background: #F6E24F;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3rem;
+        margin-top: 0; } }
+  @media (min-width: 1080px) {
+    .page-template-page-application .gform_wrapper {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; } }
+  .page-template-page-application .gform_body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .page-template-page-application input:focus {
+    color: gray; }
+  .page-template-page-application input::-webkit-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input:-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::placeholder {
+    color: #03B8E2; }
+  .page-template-page-application .gform_confirmation_message {
+    width: 95%;
+    text-align: center;
+    margin: 25% 0; }
+  .page-template-page-application .textarea {
+    padding: 5% !important; }
+    .page-template-page-application .textarea:focus {
+      color: gray; }
+  .page-template-page-application li {
+    position: relative; }
+  .page-template-page-application .ginput_complexm input[type="text"], .page-template-page-application .ginput_container input[type="text"] {
+    padding: 3% 5% !important; }
+  .page-template-page-application .gform_drop_instructions {
+    margin-top: 10%; }
+  .page-template-page-application input[type="button"] {
+    background: #F6E24F;
+    color: black;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px; }
+  .page-template-page-application .gform_footer {
+    width: 100%; }
+  .page-template-page-application .gform_button {
+    width: 50% !important;
+    margin: 0 25% !important;
+    background: #F6E24F;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px;
+    color: black; }
+  .page-template-page-application .gfield_label {
+    color: #03B8E2;
+    font-style: normal;
+    font-family: "Roboto Slab";
+    font-size: .6rem;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 10; }
+    .page-template-page-application .gfield_label span {
+      visibility: hidden;
+      position: absolute; }
+  .page-template-page-application span label {
+    visibility: hidden;
+    position: absolute; }
+  .page-template-page-application #field_1_4 label {
+    visibility: visible;
+    position: relative;
+    font-weight: 300;
+    color: black;
+    font-family: "Montserrat"; }
+  .page-template-page-application input[type="radio"]:active {
+    font-weight: 300; }
+  .page-template-page-application img {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-application img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%; } }
+  .page-template-page-application .ui-datepicker-trigger {
+    margin-top: 0; }

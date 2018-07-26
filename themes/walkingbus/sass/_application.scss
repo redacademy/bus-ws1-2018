@@ -1,0 +1,160 @@
+.page-template-page-application {
+
+    font-family: $Mont;
+
+    .app-title {
+        margin-top: 60px;
+        font-family: $Oswald;
+        text-align: center;
+        font-size: 1.2rem;
+
+        @include desktop {
+            background: $yellow;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 90%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    }
+    
+
+    .gform_wrapper {
+        
+        @include desktop {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
+
+    .gform_body {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input:focus {
+        color: gray;
+    }
+
+    input::placeholder {
+        color: $blue;
+    }
+
+    .gform_confirmation_message {
+        width: 95%;
+        text-align: center;
+        margin: 25% 0;
+    }
+
+
+    .textarea {
+        padding: 5% !important;
+        &:focus {
+            color: gray;
+        }
+    }
+
+
+    li {
+        position: relative;
+
+        
+    }
+
+    .ginput_complexm, .ginput_container {
+        input[type="text"] {
+            padding: 3% 5% !important;
+
+        }
+    }
+
+    .gform_drop_instructions {
+        margin-top: 10%;
+    }
+
+    input[type="button"] {
+        background: $yellow;
+        color: black;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+
+    .gform_footer {
+        width: 100%;
+    }
+
+    .gform_button {
+        width: 50% !important;
+        margin: 0 25% !important;
+        background: $yellow;
+        box-shadow: none;
+        border-radius: 15px;
+        color: black;
+    }
+
+    .gfield_label {
+
+        color: $blue;
+        font-style: normal;
+        font-family: $Roboto;
+        font-size: .6rem;
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        z-index: 10;
+
+        span {
+            visibility: hidden;
+            position: absolute;
+            
+        }
+    }
+
+    span {
+        label {
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+
+    #field_1_4 {
+        label {
+            visibility: visible;
+            position: relative;
+            font-weight: 300;
+            color: black;
+            font-family: $Mont;
+        }
+    }
+
+    input[type="radio"] {
+        &:active {
+            font-weight: 300;
+        }
+    }
+
+
+
+    img {
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+    }
+
+    .ui-datepicker-trigger {
+        margin-top: 0;
+    }
+}
