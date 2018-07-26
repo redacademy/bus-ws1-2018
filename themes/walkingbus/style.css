@@ -3604,12 +3604,6 @@ object {
     display: -ms-flexbox;
     display: flex; } }
 
-.page-template-archive-expeditions .fa-image {
-  font-size: 5rem;
-  width: 100%;
-  text-align: center;
-  color: gray; }
-
 .page-template-archive-expeditions .expeditions-content-wrapper .expeditions-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4349,6 +4343,14 @@ object {
   .page-template-archive-expeditions .apply-button button {
     border-radius: 50px;
     font-size: 1.5rem; } }
+
+.products-template-default.single-products .fas {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%; }
+  @media (min-width: 1080px) {
+    .products-template-default.single-products .fas {
+      margin-top: 20%; } }
 
 .products-template-default.single-products .content-area {
   padding-top: 5%; }

@@ -1,4 +1,15 @@
 .products-template-default.single-products {
+
+    .fas {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        
+        @include desktop {
+            margin-top: 20%;
+        }
+    }
+
     .content-area {
         padding-top: 5%;
     }
