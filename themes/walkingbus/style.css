@@ -1593,7 +1593,11 @@ object {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        width: 90%; } }
+        width: 90%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
     .page-template-page-whatwedo .nutrition-desc-container img {
       display: none; }
       @media (min-width: 1080px) {
@@ -1744,6 +1748,10 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         width: 90%;
@@ -2851,7 +2859,8 @@ object {
   display: none; }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -3089,7 +3098,7 @@ object {
   font-size: 1.75rem; }
 
 .load-more-area {
-  width: 700px;
+  width: 200px;
   max-width: 1200px;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -3193,7 +3202,7 @@ object {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 700px;
+  width: 400px;
   max-width: 1200px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -3206,7 +3215,8 @@ object {
     cursor: pointer; }
   .text-area-news:nth-of-type(n+4) p {
     font-weight: 300;
-    font-size: 1.75rem; }
+    font-size: 1.75rem;
+    margin: 0px; }
   .text-area-news:nth-of-type(n+4) a {
     height: 35px; }
   .text-area-news:nth-of-type(n+4) span {
@@ -3240,7 +3250,7 @@ object {
 
 .text-area-news .cfs-hyperlink {
   background-color: transparent;
-  width: 100%;
+  width: 90%;
   height: 110px;
   position: absolute;
   max-width: 1200px; }
@@ -3380,7 +3390,11 @@ object {
       font-size: 1.75rem;
       position: relative; }
   .text-area-news {
-    height: 25%; } }
+    height: 25%; }
+  .text-area-news:nth-of-type(n+4) {
+    width: 700px; }
+  .load-more-area {
+    width: 80%; } }
 
 .page-template-archive-expeditions .expeditions-content-wrapper {
   display: -webkit-box;
