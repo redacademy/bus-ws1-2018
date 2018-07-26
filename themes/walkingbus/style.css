@@ -2558,138 +2558,157 @@ object {
       .home .page-content .get-involved-button {
         margin: 3rem 2rem; } }
 
-@media (min-width: 1080px) {
-  .page-template-archive-products .site-content {
-    margin-top: 5%;
-    height: auto;
-    width: 100%;
+.page-template-archive-products .shop-banner {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.page-template-archive-products .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .page-template-archive-products .banner picture {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .page-template-archive-products .site-content .site-content-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      width: 90%; }
-  .page-template-archive-products .shop-page-header .shop-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: center;
-    width: 100%; }
-  .page-template-archive-products .shop-page-header .banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .page-template-archive-products .shop-page-header .banner h1 {
-      position: absolute;
-      text-align: center;
-      bottom: 0px;
-      background-color: rgba(76, 76, 76, 0.5);
-      width: 100%;
-      margin: 0px; }
-  .page-template-archive-products .products-gallery {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5%;
-    height: auto; }
-  .page-template-archive-products .products-gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
     width: 100%; }
-    .page-template-archive-products .products-gallery-container .single-product:nth-child(1) {
-      grid-column: 1;
-      grid-row: 1; }
-    .page-template-archive-products .products-gallery-container .single-product:nth-child(2) {
-      grid-column: 2;
-      grid-row: 1; }
-    .page-template-archive-products .products-gallery-container .single-product:nth-child(3) {
-      grid-column: 1;
-      grid-row: 2; }
-    .page-template-archive-products .products-gallery-container .single-product:nth-child(4) {
-      grid-column: 2;
-      grid-row: 2; }
-    .page-template-archive-products .products-gallery-container .single-product {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-      .page-template-archive-products .products-gallery-container .single-product .product-image {
-        width: 100%;
-        min-height: 9.75rem;
-        height: 9.75rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .page-template-archive-products .products-gallery-container .product-info {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      width: 100%;
-      height: 20%; }
-      .page-template-archive-products .products-gallery-container .product-info a {
-        color: black; }
-      .page-template-archive-products .products-gallery-container .product-info p {
-        margin: 0px; }
-    .page-template-archive-products .products-gallery-container picture img {
-      width: 100%;
-      height: 100%; } }
+    .page-template-archive-products .banner picture img {
+      position: relative; }
+  .page-template-archive-products .banner h1 {
+    bottom: 0%;
+    position: absolute;
+    margin: 0;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
-@media (min-width: 1080px) and (min-width: 768px) {
+.page-template-archive-products .alm-reveal li {
+  list-style: none;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  height: auto; }
+  .page-template-archive-products .alm-reveal li img {
+    height: 80%;
+    width: 100%; }
+
+.page-template-archive-products .alm-reveal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 12rem;
+  grid-gap: 1rem;
+  width: 100%;
+  height: 15rem; }
+  .page-template-archive-products .alm-reveal li {
+    padding: 1%; }
+  .page-template-archive-products .alm-reveal li:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1; }
+  .page-template-archive-products .alm-reveal li:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1; }
+  .page-template-archive-products .alm-reveal li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2; }
+  .page-template-archive-products .alm-reveal li:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2; }
+
+@media screen and (min-width: 500px) {
+  .page-template-archive-products .alm-reveal {
+    grid-auto-rows: 16rem; } }
+
+@media screen and (min-width: 650px) {
+  .page-template-archive-products .alm-reveal {
+    grid-auto-rows: 18rem; } }
+
+@media (min-width: 768px) {
   .page-template-archive-products .products-gallery-container {
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 20rem; }
     .page-template-archive-products .products-gallery-container .single-product .product-image {
       width: 100%;
-      min-height: 90%;
-      height: 90%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
+
+@media screen and (min-width: 800px) {
+  .page-template-archive-products .alm-reveal {
+    grid-auto-rows: 22rem; } }
+
+@media screen and (min-width: 950px) {
+  .page-template-archive-products .alm-reveal {
+    grid-auto-rows: 24rem; } }
+
+@media (min-width: 1080px) {
+  .page-template-archive-products .alm-listing {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (min-width: 1080px) {
+  .page-template-archive-products .alm-reveal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%; }
+    .page-template-archive-products .alm-reveal li {
+      list-style: none;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      padding: 1%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 25%;
+      height: 20rem; } }
 
 .site-main-donate {
   display: -webkit-box;
@@ -3019,7 +3038,7 @@ object {
   background-image: url("../../assets/images/Impact_News1.jpg");
   background-position: center;
   background-size: cover;
-  height: 250px;
+  height: 315px;
   width: 100%;
   margin-bottom: 2px;
   display: -webkit-box;
@@ -3073,7 +3092,7 @@ object {
 .text-area-news {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 20%;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3106,23 +3125,26 @@ object {
   margin-top: -5px;
   max-width: 1200px;
   cursor: pointer;
-  font-size: 1.75rem; }
+  font-size: 1.25rem; }
 
 .load-more-area {
-  width: 200px;
-  max-width: 1200px;
+  width: 100%;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
+  -ms-flex-pack: baseline;
   -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
           justify-content: baseline;
-  margin: 150px 0px 75px 120px;
-  font-family: "Montserrat";
+  margin: 175px 0 25px;
+  font-family: Montserrat;
   text-decoration: underline;
   -webkit-text-decoration-color: gray;
-          text-decoration-color: gray;
-  font-weight: 200; }
+  text-decoration-color: gray;
+  font-weight: 200;
+  -ms-flex-pack: end;
+  -webkit-box-pack: center;
+          justify-content: center;
+  cursor: pointer; }
 
 .hide-impact-btn {
   display: none;
@@ -3130,7 +3152,7 @@ object {
   margin-top: -5px;
   max-width: 1200px;
   cursor: pointer;
-  font-size: 1.75rem; }
+  font-size: 1.25rem; }
 
 .cfs-hyperlink span {
   display: none; }
@@ -3193,7 +3215,8 @@ object {
   position: relative;
   bottom: 110px;
   margin-bottom: -147px;
-  color: white; }
+  color: white;
+  text-align: -webkit-center; }
   .text-area-news:nth-of-type(-n+3) span {
     width: 35px;
     height: 35px;
@@ -3208,17 +3231,20 @@ object {
   margin-bottom: -135px;
   position: relative;
   height: 35px;
-  color: black;
-  background-color: white;
+  border-bottom: solid 1px;
+  border-bottom-color: gray;
+  color: #000;
+  background-color: #fff;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 400px;
+  width: 320px;
   max-width: 1200px;
+  -ms-flex-pack: left;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
           justify-content: left;
-  padding: 0px 60px; }
+  padding: 0 60px;
+  margin-left: 30px; }
   .text-area-news:nth-of-type(n+4):hover {
     text-decoration: underline;
     -webkit-filter: brightness(0.95);
@@ -3226,7 +3252,7 @@ object {
     cursor: pointer; }
   .text-area-news:nth-of-type(n+4) p {
     font-weight: 300;
-    font-size: 1.75rem;
+    font-size: 1rem;
     margin: 0px; }
   .text-area-news:nth-of-type(n+4) a {
     height: 35px; }
@@ -3245,16 +3271,11 @@ object {
     display: -ms-flexbox;
     display: flex; }
 
-.text-area-news:nth-of-type(-n+3) span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .text-area-news:nth-of-type(n+9) {
   display: none; }
 
 .new-impact:nth-of-type(n+2) {
-  margin-top: 40px; }
+  margin-top: 80px; }
 
 .new-impact:nth-of-type(n+4) {
   display: none; }
@@ -3265,6 +3286,25 @@ object {
   height: 110px;
   position: absolute;
   max-width: 1200px; }
+
+.text-area-news:nth-of-type(3) {
+  bottom: 70px; }
+
+.text-area-news:nth-of-type(-n+2) {
+  bottom: 67px; }
+
+.cfs-hyperlink:nth-of-type(n+4) {
+  background-color: transparent;
+  width: 80%;
+  height: 110px;
+  position: absolute;
+  max-width: 1200px;
+  border-bottom: solid;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 1px; }
+
+.cfs-hyperlink span {
+  display: none; }
 
 /******************************************** DESKTOP VERSION *****************************************/
 @media screen and (min-width: 768px) {
@@ -3403,31 +3443,53 @@ object {
   .text-area-news {
     height: 25%; }
   .text-area-news:nth-of-type(n+4) {
-    width: 700px; }
+    width: 700px;
+    padding: 0 30px; }
+    .text-area-news:nth-of-type(n+4) p {
+      font-size: 1.75rem; }
   .load-more-area {
-    width: 80%; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 585px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left; }
+  .text-area-news:nth-of-type(3) {
+    top: -110px; }
+  .text-area-news .cfs-hyperlink {
+    width: 100%; }
+  .new-impact:nth-of-type(n+2) {
+    margin-top: 40px; }
+  .text-area-news:nth-of-type(-n+2) {
+    bottom: 110px; }
+  .text-area-news:nth-of-type(n+4) {
+    border-style: none;
+    border-bottom: none; }
+  .loadmore-impact-btn {
+    font-size: 1.75rem; }
+  .hide-impact-btn {
+    font-size: 1.75rem; } }
 
-.page-template-archive-expeditions .expeditions-content-wrapper {
+@media screen and (min-width: 900px) {
+  .text-area-news:nth-of-type(-n+3) span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.page-template-archive-expeditions .expeditions-content-wrapper .expeditions-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .page-template-archive-expeditions .expeditions-content-wrapper .expeditions-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-top: 12%; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10%; }
 
 .page-template-archive-expeditions .content {
   display: -webkit-box;
@@ -3442,6 +3504,38 @@ object {
       flex-wrap: wrap;
   height: auto; }
 
+.page-template-archive-expeditions .expeditions-banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-archive-expeditions .mission-statement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .mission-statement .p1 {
+    text-align: center; }
+
 .page-template-archive-expeditions .upcoming-expedition {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3453,16 +3547,19 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%; }
-
-.page-template-archive-expeditions .section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #F6E24F;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  .page-template-archive-expeditions .upcoming-expedition .section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #F6E24F;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-expeditions .upcoming-expedition .section-title p {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: "Montserrat"; }
 
 .page-template-archive-expeditions .upcoming-expedition-wrapper {
   background-color: #04809E;
@@ -3478,7 +3575,9 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 1%; }
     .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper img {
       height: auto;
       max-width: 100%;
@@ -3497,14 +3596,99 @@ object {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       padding: 3%; }
+      .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p {
+        color: #F6E24F;
+        text-transform: uppercase;
+        font-family: "Montserrat"; }
+  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description p {
+    color: white; }
 
-.page-template-archive-expeditions .expedition-image img {
-  width: 100%;
+.alm-reveal li {
+  list-style: none;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .alm-reveal li h3 {
+    width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    margin: 0px;
+    height: 2rem;
+    margin-top: -2rem;
+    text-align: center;
+    text-decoration: none; }
+  .alm-reveal li .entry-meta {
+    display: none; }
 
-.page-template-archive-expeditions .expedition-title {
+.alm-reveal p {
+  display: none; }
+
+.ajax-load-more-wrap {
+  margin-top: -0.7rem; }
+  .ajax-load-more-wrap .alm-load-more-btn {
+    color: #04809E; }
+
+.single-expedition {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .single-expedition .expedition-name {
+    width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    margin: 0;
+    height: 2rem;
+    margin-top: -2rem;
+    text-align: center;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .single-expedition .expedition-name p, .single-expedition .expedition-name h3 {
+      margin: 0px;
+      color: white; }
+  .single-expedition .entry-meta {
+    display: none; }
+
+.expedition-info {
+  display: none; }
+
+.single-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.event-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3515,8 +3699,9 @@ object {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .page-template-archive-expeditions .expedition-title p {
+          align-items: center;
+  height: 1.5rem; }
+  .event-title p {
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3524,13 +3709,14 @@ object {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    color: white; }
 
-.page-template-archive-expeditions .expedition-info {
+.event-info {
   display: none;
   background-color: white; }
 
-.page-template-archive-expeditions span.button-wrapper {
+span.button-wrapper, .alm-btn-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3539,18 +3725,19 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 5%; }
-  .page-template-archive-expeditions span.button-wrapper button {
-    color: black;
-    background: #F6E24F;
-    border-radius: 20px;
-    font-family: "Montserrat";
-    text-decoration: none;
-    -webkit-box-shadow: 0px 2px silver;
-            box-shadow: 0px 2px silver;
-    font-weight: bold;
-    text-transform: capitalize; }
 
-.page-template-archive-expeditions .sponsors {
+button, .alm-load-more-btn {
+  color: black;
+  background: #F6E24F;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  text-decoration: none;
+  -webkit-box-shadow: 0px 2px silver;
+          box-shadow: 0px 2px silver;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.sponsors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3561,17 +3748,17 @@ object {
   padding: 5%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .page-template-archive-expeditions .sponsors .sponsors-logos {
+  .sponsors .sponsors-logos {
     background-image: url("../../assets/images/sponsors-logos.svg");
     background-size: cover;
     width: 100%;
     height: 4rem; }
 
-.page-template-archive-expeditions .wsb-team,
-.page-template-archive-expeditions .research-projects {
+.wsb-team,
+.research-projects {
   background-color: #04809E; }
 
-.page-template-archive-expeditions .wsb-team {
+.wsb-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3582,51 +3769,47 @@ object {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 100%; }
-  .page-template-archive-expeditions .wsb-team ul {
-    margin: 0px;
-    padding: 0px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .wsb-team p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .page-template-archive-expeditions .wsb-team li {
-    list-style: none;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%; }
 
-.page-template-archive-expeditions .member-thumbnail {
+.single-member {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%; }
-  .page-template-archive-expeditions .member-thumbnail .member-picture {
+  .single-member .member-picture {
     width: 100%;
-    height: 100%; }
-    .page-template-archive-expeditions .member-thumbnail .member-picture img {
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .single-member .member-picture img {
       width: 100%;
-      height: 100%; }
-  .page-template-archive-expeditions .member-thumbnail .member-name {
+      height: 100%;
+      border: 2px solid white; }
+  .single-member .member-name {
     position: absolute;
     bottom: 0px;
     color: white;
     width: 100%; }
 
-.page-template-archive-expeditions .member-info {
+.member-info {
   background-color: white;
   display: none;
   position: absolute;
   z-index: 1;
-  width: 32rem;
+  width: 250%;
   height: 44rem; }
-  .page-template-archive-expeditions .member-info .icon-wrapper {
+  .member-info .icon-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3640,7 +3823,7 @@ object {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%; }
-    .page-template-archive-expeditions .member-info .icon-wrapper i {
+    .member-info .icon-wrapper i {
       border: 3px solid #fff;
       -webkit-box-shadow: grey;
               box-shadow: grey;
@@ -3662,14 +3845,18 @@ object {
       font-size: 2.5rem;
       color: white; }
 
-.page-template-archive-expeditions .team-type-carousel {
+.team-type-carousel {
   width: 90%;
   margin: 0px auto; }
 
-.page-template-archive-expeditions .slick-slide {
+.slick-slide {
   margin: 10px; }
 
+<<<<<<< HEAD
+.slick-slide img {
+=======
 .page-template-archive-expeditions .slick-slide img {
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
   width: 100%;
   height: 100%; }
 
@@ -3700,9 +3887,29 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
   .current-research p {
+<<<<<<< HEAD
+    padding-top: 5%;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.alm-listing {
+=======
     padding-top: 5%; }
 
 .research {
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3717,7 +3924,11 @@ object {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+<<<<<<< HEAD
+  .alm-listing .alm-reveal {
+=======
   .research .single-research {
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3731,7 +3942,11 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+<<<<<<< HEAD
+    .alm-listing .alm-reveal .research-picture {
+=======
     .research .single-research .research-picture {
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
       width: 90%;
       height: 100%;
       -webkit-box-orient: horizontal;
@@ -3741,14 +3956,32 @@ object {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+<<<<<<< HEAD
+      .alm-listing .alm-reveal .research-picture img {
+        width: 100%;
+        height: 100%; }
+    .alm-listing .alm-reveal .research-subject {
+=======
       .research .single-research .research-picture img {
         width: 100%;
         height: 100%; }
     .research .single-research .research-subject {
+>>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
       height: 5%;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      color: white;
+      font-family: "Montserrat";
+      text-transform: capitalize; }
+      .alm-listing .alm-reveal .research-subject .ajax-load-more {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
 
 .single-reserach-container {
   display: -webkit-box;
@@ -3758,9 +3991,81 @@ object {
   padding-bottom: 10%;
   width: 100%; }
 
+.single-research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.events {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.single-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative; }
+  .single-events a p {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat"; }
+  .single-events p {
+    margin: 0px; }
+  .single-events a {
+    position: absolute;
+    bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25)); }
+  .single-events .alm-load-more-btn {
+    color: #04809E; }
+
 @media screen and (min-width: 490px) {
   .page-template-archive-expeditions .sponsors-logos {
     min-height: 10rem; } }
+
+@media (min-width: 1080px) {
+  .page-template-archive-expeditions .expedition-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-expeditions .expedition-content-wrapper .expeditions-container {
+      width: 95%; }
+  .page-template-archive-expeditions .mission-statement {
+    width: 60%; } }
 
 .products-template-default.single-products .content-area {
   padding-top: 5%; }
@@ -3769,10 +4074,12 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3782,7 +4089,7 @@ object {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 80% 20%;
-  width: 90%;
+  width: 100%;
   padding: 5%; }
 
 .products-template-default.single-products .main-image {
@@ -3828,16 +4135,104 @@ object {
       padding-left: 3%;
       padding-right: 3%; }
 
+.products-template-default.single-products .product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .products-template-default.single-products .product-details .name-price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .products-template-default.single-products .product-details .name-price-wrapper h1, .products-template-default.single-products .product-details .name-price-wrapper p {
+      margin: 0px;
+      font-size: 1rem; }
+  .products-template-default.single-products .product-details .additional-info {
+    width: 90%; }
+
+.products-template-default.single-products .product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .products-template-default.single-products .product-description p {
+    width: 90%; }
+
 @media (min-width: 768px) {
   .products-template-default.single-products .product-images {
     max-height: 40rem; } }
 
 @media (min-width: 1080px) {
+  .products-template-default.single-products .images-details-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 3%; }
   .products-template-default.single-products .product-images {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 26rem;
     grid-template-columns: 60% 40%;
-    width: 80%; }
+    width: 75%;
+    padding-left: 2%; }
+  .products-template-default.single-products .product-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5%; }
+  .products-template-default.single-products .product-details {
+    width: 30%;
+    padding-right: 1%;
+    padding-top: 5%;
+    height: 60%; }
+  .products-template-default.single-products .product-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .products-template-default.single-products .product-description p {
+      width: 95%; }
   .products-template-default.single-products .main-image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3872,7 +4267,7 @@ object {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 35rem; }
+    height: auto; }
     .products-template-default.single-products .thumbnails-wrapper .img-min:first-child {
       width: 100%;
       height: 50%;
@@ -3898,7 +4293,10 @@ object {
               flex-direction: row;
       height: 25%;
       width: 50%;
-      padding-top: 3%; } }
+      padding-top: 3%; }
+  .products-template-default.single-products .name-price-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .single-expedition .hero-image-exp {
   width: 100%;
@@ -4186,3 +4584,101 @@ object {
   color: black;
   padding: 0 1%;
   font-family: "Montserrat"; }
+
+.page-template-page-application {
+  font-family: "Montserrat"; }
+  .page-template-page-application .app-title {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 1.2rem; }
+    @media (min-width: 1080px) {
+      .page-template-page-application .app-title {
+        background: #F6E24F;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3rem;
+        margin-top: 0; } }
+  .page-template-page-application .gform_body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1080px) {
+      .page-template-page-application .gform_body {
+        width: 90%; } }
+  .page-template-page-application input:focus {
+    color: gray; }
+  .page-template-page-application input::-webkit-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input:-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::placeholder {
+    color: #03B8E2; }
+  .page-template-page-application .gform_confirmation_message {
+    width: 95%;
+    text-align: center;
+    margin: 25% 0; }
+  .page-template-page-application .textarea {
+    padding: 5% !important; }
+    .page-template-page-application .textarea:focus {
+      color: gray; }
+  .page-template-page-application li {
+    position: relative; }
+  .page-template-page-application .ginput_complexm input[type="text"], .page-template-page-application .ginput_container input[type="text"] {
+    padding: 3% 5% !important; }
+  .page-template-page-application .gform_drop_instructions {
+    margin-top: 10%; }
+  .page-template-page-application input[type="button"] {
+    background: #F6E24F;
+    color: black;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px; }
+  .page-template-page-application .gform_footer {
+    width: 100%; }
+  .page-template-page-application .gform_button {
+    width: 50% !important;
+    margin: 0 25% !important;
+    background: #F6E24F;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px;
+    color: black; }
+  .page-template-page-application .gfield_label {
+    color: #03B8E2;
+    font-style: normal;
+    font-family: "Roboto Slab";
+    font-size: .6rem;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 10; }
+    .page-template-page-application .gfield_label span {
+      visibility: hidden;
+      position: absolute; }
+  .page-template-page-application span label {
+    visibility: hidden;
+    position: absolute; }
+  .page-template-page-application #field_1_4 label {
+    visibility: visible;
+    position: relative;
+    font-weight: 300;
+    color: black;
+    font-family: "Montserrat"; }
+  .page-template-page-application input[type="radio"]:active {
+    font-weight: 300; }
+  .page-template-page-application img {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-application img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%; } }
