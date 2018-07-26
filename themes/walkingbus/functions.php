@@ -150,3 +150,93 @@ function twsb_api_script() {
 	 ) ); 
  }
  add_action( 'wp_enqueue_scripts', 'twsb_api_script' );
+
+
+
+ //https://www.weichieprojects.com/blog/ajax-load-more-posts-wordpress/ 
+
+//  add_action('rest_api_init', 'custom_api_get_expeditions');
+// function custom_api_get_expeditions(){
+//   register_rest_route( 'expedition', '/all-posts', array(
+//     'methods' => 'GET',
+//     'callback' => 'custom_api_get_expeditions_callback'
+//   ));
+// }
+
+//  function custom_api_get_expeditions_callback($request){
+//     $posts_data = array();
+//     $paged = $request->get_param('page');
+//     $paged = (isset($paged) || !(empty($paged))) ? $paged : 1;
+//     $posts = get_posts( array(
+//       'post_type'       => 'expedition',
+//       'status'          => 'published',
+//       'posts_per_page'  => 1,
+//       'orderby'         => 'post_date',
+//       'order'           => 'DESC',
+//       'paged'           => $paged
+//     ));
+
+//     foreach($posts as $post){
+//       $id = $post->ID;
+//       $post_thumbnail = (has_post_thumbnail($id)) ? get_the_post_thumbnail_url($id) : null;
+//       $post_cat = get_the_category($id);
+//       $featured = (get_field('expedition_featured', $id)) ? true : false;
+
+//       $posts_data[] = (object)array(
+//         'id' => $id,
+//         'slug' => $post->post_name,
+//         'type' => $post->post_type,
+//         'title' => $post->post_title,
+//         'featured_img_src' => $post_thumbnail,
+//         'featured' => $featured,
+//         'category' => $post_cat[0]->cat_name
+//       );
+//     }
+//     return $posts_data;
+// }
+// wp_localize_script( 'ajax-script', 'ajax_posts', array(
+//     'ajaxurl' => admin_url( 'admin-ajax.php' ),
+//     'noposts' => __('No older posts found'),
+// ));
+
+// function more_post_ajax(){
+
+//     $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 1;
+//     $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
+
+//     //header("Content-Type: text/html");
+
+//     $args = array(
+//         //'suppress_filters' => true, 
+//         'post_type' => 'post', 
+//         'posts_per_page' => $ppp,
+//        // 'cat' => 8,
+//         'paged'    => $page,
+//     ); 
+
+//     $loop = new WP_Query($args);
+
+//     $out = '';
+
+//     if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
+//         $out .= '<div class="past-expeditios-more">
+//                 <h1>'.get_the_title().'</h1>
+//                 <p>'.get_the_content().'</p>
+//          </div>';
+
+//     endwhile;
+//     endif;
+//     wp_reset_postdata();
+//     die($out);
+// }
+
+// add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
+// add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
+
+// remove automatic resizing of thumbnails
+
+function alm_remove_image_size() {
+	global $ajax_load_more;
+	remove_filter( 'after_setup_theme', array( $ajax_load_more, 'alm_image_sizes' ) );
+ }
+ add_action( 'after_setup_theme', 'alm_remove_image_size', 1 );

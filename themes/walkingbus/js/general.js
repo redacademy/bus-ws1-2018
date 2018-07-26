@@ -61,7 +61,8 @@ $j('#subscription-form').submit(function(event) {
 // show team members bio
 
 $j('.member-picture').click(function() {
-    $j(this).siblings('.member-info').show('slow');
+    $j(this).children('.member-info').show('slow');
+
 
     $j('.icon-wrapper').click(function() {
         $j(this).parent('.member-info').hide('slow');
@@ -71,6 +72,10 @@ $j('.member-picture').click(function() {
 });
 
 
+
+
+
+
 // EXPEDITIONS FUNCTION (show/hide expedition excerpt) 
  
 
@@ -78,6 +83,26 @@ $j('.member-picture').click(function() {
 $j('.expedition-name').click(function() {
 
     $j(this).children('.expedition-info').slideToggle('slow');
+
+
+});
+
+//var expeditionName = $j(.children('h3')
+
+ 
+
+
+$j('.alm-reveal').click(function() {
+    $j(this).children(".li").children(".p").slideToggle('slow'); 
+
+ 
+});
+
+//Events Function 
+
+$j('.event-name').click(function() {
+
+    $j(this).children('.event-info').slideToggle('slow');
 
 
 });

@@ -1,15 +1,15 @@
 .page-template-archive-expeditions {
     .expeditions-content-wrapper {
-        display: flex;
-        width: 100%;
-        height: auto;
-        justify-content: center;
+      
         .expeditions-container {
-            display: flex;   
-            width: 99%;
-            flex-direction: column;
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            margin-top: 12%;
+            margin-top: 10%;
+       
         }
     }
     .content {
@@ -50,15 +50,24 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width:100%
-    }
+        width:100%;
+  
     .section-title{
         display:flex;
         background-color:$yellow;
         width:100%;
         justify-content: center;
+        
+        p{
+        text-transform:uppercase;
+        font-weight:bold;
+        font-family:$Mont;
+        
+        }
+        
     }
-    
+
+}
     .upcoming-expedition-wrapper {
         background-color: $blue-bg;
         display: flex;
@@ -86,60 +95,186 @@
                 width: 100%;
                 flex-wrap: wrap;
                 padding: 3%;
+
+                .expedition-details{
+                    p{
+                        color: $yellow;
+                        text-transform: uppercase;
+                        font-family:$Mont;
+                    }
+                }
             }
+
+
+        }
+
+        .expedition-description{
+            p{
+                color:white;
+                
+            }
+
         }
     }
    
 
-    
-    
-    // // PAST EXPEDITIONS
+   
+}
 
-    .expedition-image {
+.alm-reveal{
+
+   
+    li{
+        list-style:none; 
+        list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+        h3{
+            width:100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+            margin: 0px;
+            height: 2rem;
+            margin-top: -2rem;
+            text-align:center;
+            text-decoration:none;
+        } 
+
+        .entry-meta{
+            display:none;
+        }
+       
+    }
+    p{
+        display:none;
+    }
+
+
+}
+
+.ajax-load-more-wrap{
+    margin-top: -0.7rem;
+
+    .alm-load-more-btn {
+        color: $blue-bg;
+    }
+}      
+   
+
+   
+       
+
+   
+    .single-expedition{
+            list-style:none; 
+            // list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        
+        
+                .expedition-name{
+                    width: 100%;
+                    background: linear-gradient(0deg,rgba(0,0,0,.26),rgba(0,0,0,.25));
+                    margin: 0;
+                    height: 2rem;
+                    margin-top: -2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                
+                    p, h3 {
+                        margin:0px;
+                        color:white; 
+                    }
+                } 
+        
+                .entry-meta{
+                    display:none;
+                }
+               
+            }
+            .expedition-info{
+                display:none;
+            }
+        
+      
+               
+           
+     
+
+    .single-event{
+        display: flex;
+        width:100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    } 
+
+   // .expedition-image, .event-image {
   
     
-        img {
+       // img {
     //         height: 100%;
-          width: 100%;
-         display: flex;
-        }
-    } // }
-    .expedition-name {
+         // width: 100%;
+       //  display: flex;
+    //    }
+  //  } // }
+   
+    .event-name { 
+      //  margin-top:-10%;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+            
       
    }
-    .expedition-title {
+    //.expedition-title,
+    .event-title {
        display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
+   // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+    height:1.5rem;     
     p{
         margin: 0;
         display: flex;
         width: 100%;
         justify-content: center;
+        color:white;
     }
 }
    
-    .expedition-info {
+    //.expedition-info, 
+    
+    .event-info {
        display: none;
         background-color: white; 
     }
-    span.button-wrapper {
+    span.button-wrapper, .alm-btn-wrap {
         display: flex;
         width: 100%;
         justify-content: center;
         padding-bottom: 5%;
-        button {
-            color: black;
-            background: $yellow;
-            border-radius: 20px;
-            font-family: $Mont;
-            text-decoration: none;
-            box-shadow: 0px 2px $shadow;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
+       
      }
+
+     button, .alm-load-more-btn {
+        color: black;
+        background: $yellow;
+        border-radius: 20px;
+        font-family: $Mont;
+        text-decoration: none;
+        box-shadow: 0px 2px $shadow;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    
     ///////////////////////////////////////////////////////////////////////////////////////
     // sponsors section 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -173,18 +308,7 @@
             width: 100%;
             justify-content: center;
         }
-        // ul {
-        //     margin: 0px;
-        //     padding: 0px;
-        //     display: inline-flex;
-        //     width: 100%;
-        //     justify-content: center;
-        // }
-        // li {
-        //     list-style: none;
-        //     display: inline-flex;
-        //     flex-basis: 45%;
-        // }
+       
     }
     .single-member {
         position: relative;
@@ -194,6 +318,8 @@
         .member-picture {
             width: 100%;
             height: 100%;
+            position: relative;
+            display: flex;
             img {
                 width: 100%;
                 height: 100%;
@@ -209,11 +335,11 @@
     }
     .member-info {
         background-color: white;
-        display: none; //test
+       display: none; //test
         //display: block;
         position: absolute;
         z-index: 1;
-        width: 32rem;
+        width: 250%;
         height: 44rem; //test
         .icon-wrapper {
             display: flex;
@@ -252,7 +378,7 @@
         height: 100%;
        // display: flex;
     }
-      }
+      
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     // RESEARCH
@@ -274,16 +400,26 @@
         justify-content: center;
         p {
             padding-top: 5%;
+            text-transform:uppercase;
+            font-weight:bold;
+            //font-famil
         }
     }
-    .research {
+
+    .research{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .alm-listing{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        .single-research {
+        .alm-reveal {
             display: flex;
             width: 100%;
             flex-direction: row;
@@ -302,6 +438,17 @@
             .research-subject {
                 height: 5%;
                 display: flex;
+                color:white;
+                font-family:$Mont;
+                text-transform:capitalize;
+
+                .ajax-load-more-wrap{
+                    display:flex;
+                    flex-direction:row;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    width:100%;
+                }
             }
         }
     }
@@ -311,6 +458,59 @@
         padding-bottom: 10%;
         width: 100%;
     }
+
+    .single-research{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+
+       
+    }
+
+    .events{
+        padding-top:5%;
+     padding-bottom:5%;
+
+     
+    }
+
+    .single-events{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        position:relative;
+      a p{
+        color:white;  
+        text-transform:uppercase;
+        font-family:$Mont;
+        
+          
+          
+      }
+      p{
+          margin:0px;
+      }
+      a{
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        text-decoration:none;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+     
+      }
+      .alm-load-more-btn {
+          color: $blue-bg;
+      }
+        
+    }
+//}
+
 //} // END OF PAGE TEMPLATE
 //Media queries 
 .page-template-archive-expeditions {

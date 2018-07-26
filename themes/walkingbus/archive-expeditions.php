@@ -33,7 +33,8 @@ Template Name: get involved
             <?php }?>
             <div class = "mission-statement">  
                 <?php the_title();?> 
-            <?php the_content();?>
+                <p>  <?php echo CFS()->get.$image['mission_statement'];?></p>
+    
             </div> 
 
             <?php endwhile; ?>
@@ -104,81 +105,91 @@ Template Name: get involved
 
 <section class = "past-expeditions">
 
+    <h1> Past Expeditions </h1>
+
+           
+
     <?php
-		$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => 1  );
+  //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => 1,    'paged' => $paged  );
 		$expeditions = new WP_Query( $args ); 
 	?>
 	
-	<?php if ( $expeditions ->have_posts() ) : ?> 
-    <?php while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
+	<?php  if ( $expeditions ->have_posts() ) : ?> 
+    <?php  while ( $expeditions ->have_posts() ) : $expeditions ->the_post(); ?>
         
-    <?php // $missions = CFS()->get('past_expeditions'); 
-    //foreach ($missions as $mission) {?>
+    <?php  $missions = CFS()->get('past_expeditions'); 
+    foreach ($missions as $mission) {?>
             
         <div class = "single-expedition">
 
-            <div class = "expedition-image">
-                     <picture> 
+            <!-- <div class = "expedition-image"> -->
+                     <!-- <picture>  -->
 
-                     <?php the_post_thumbnail();?>
+                     <?php //the_post_thumbnail();?>
                 <?php // echo '<img src="'.$mission['image'].'"/>'; 
                 ?>
-                    </picture>    
-            </div> <!--expedition-image -->  
+                    <!-- </picture>     -->
+            <!-- </div> expedition-image   -->
 
 
 
-            <div class = "expedition-name" id = "expedition-name">
+             <!-- <div class = "expedition-name" id = "expedition-name"> -->
 
                     <!-- <div class = "name-wrapper">  -->
 
-                <div class = "expedition-title">
-                    <p> <?php  echo the_title();?> </p>
-                    <i class="fas fa-angle-down"></i>
-                </div>   <!-- expedition-title -->
+                <!-- <div class = "expedition-title"> -->
+                    <p><h3><?php  //echo the_title();?><h3> </p>
+                    <!-- <i class="fas fa-angle-down"></i> -->
+                <!-- </div>   expedition-title -->
 
                 <!-- </div>  -->  <!--  name-wrapper -->
 
+            <!-- </div>   expedition-name  -->
 
                 <div class = "expedition-info">
 
-                    <div class = "expedition-description" id= "expedition-description">
+                    <!-- <div class = "expedition-description" id= "expedition-description"> -->
                                     
                         <div class= "expedition-content"> 
 
-                            <span class = "excerpt-wrapper">
-                                <p>  <?php the_content(); ?> </p>
-                            </span>
+                           
+                                <p>  <?php //the_content(); ?> </p>
+                          
 
-                            <span class = "button-wrapper">
+                            <!-- <span class = "button-wrapper">  -->
                                 <a href = "<?php //the_permalink();?>"> <button> read more</button></a>
-                            </span>
+                            <!-- </span> -->
 
                         </div>  <!--expedition-content-->  
 
-                    </div> <!-- expedition-description-->
+                    <!-- </div> expedition-description -->
 
                             
                 </div> <!--expedition-info -->
-
-            </div>   <!--expedition-name -->  
+ 
 
 
         </div> <!--single-expedition -->    
 
-    <?php// } ?>
-    <?php endwhile; ?> 
+    <?php } ?>
+ 
+    <?php endwhile; ?>  
 
 
+<?php // if($expeditions->post_count < 1){?>
+    <!-- <div class="load-more"><a class="btn secondary-button">no more projects</a></div>
+<?php // }else{?>
+<div id="expedition-loader" class="loading-banner"><button class = "load-more" > load more </button></div> -->
+<?php// }?>
 
     <?php wp_reset_postdata(); ?>
     <?php else : ?>
-                            
-    <h2>Nothing found!</h2>
+  
                             
     <?php endif; ?>
-    <button class = "load-more" > load more </button>
-        
+    <!--  -->
+    <?php the_content();?>  
 
 </section>    
 
@@ -199,13 +210,6 @@ Template Name: get involved
 <section class = "wsb-team">
 
 
-    <!-- <div id="carousel-team" class="carousel slide" data-ride="carousel"> -->
-        <!-- <div class = "carousel"> -->
-            <?php 
-            // $c = 0;
-            // $class = '';
-            ?>
-
             <?php
                 $args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
                 $teams = new WP_Query( $args ); 
@@ -219,14 +223,9 @@ Template Name: get involved
 
   <p> <?php the_title()?> </p>
  <div class = "team-type-carousel"> 
-                        
-              
-                        <?php 
+        
                             
-                          //  if ( $c == 1 ) $class .= ' active';
-                          //  else $class = " ";
-          ?>
-
+                          
             <?php $teamMembers = CFS()->get('members'); 
 
                 foreach ($teamMembers as $member) {?>
@@ -243,18 +242,20 @@ Template Name: get involved
    
                 <div class = "member-picture">
                     <?php echo '<img src="'.$member['image'].'"/>';?>
-                </div>
+               
 
-                <div class = "member-info" id = "info">
+                    <div class = "member-info" id = "info">
 
-                    <div class = "icon-wrapper"> 
-                        <i class="fas fa-times"></i>
-                    </div>
+                        <div class = "icon-wrapper"> 
+                            <i class="fas fa-times"></i>
+                        </div>
 
-                    <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
-                    <p> <?php echo CFS()->get.$member['role'];?></p> 
-                    <p>  <?php echo CFS()->get.$member['bio'];?></p> 
-                </div>    <!--member-info-->   
+                        <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
+                        <p> <?php echo CFS()->get.$member['role'];?></p> 
+                        <p>  <?php echo CFS()->get.$member['bio'];?></p> 
+                    </div>    <!--member-info-->   
+
+                 </div> <!-- member-picture-->
             <!-- </div> item  -->
         </div> <!--member-thumbnail-->     
 
@@ -282,18 +283,32 @@ Template Name: get involved
 
     <div class = "research">
 
+       
+
         <?php
-            $args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
-            $thinkTank = new WP_Query( $args );
+           // $args = array( 'post_type' => 'research', 'order' => 'ASC', 'posts_per_page' => -1  );
+          // $thinkTank = new WP_Query( $args );
         ?>
 	
-		<?php if ($thinkTank ->have_posts() ) : ?>
-        <?php while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
-        
+		<?php // if ($thinkTank ->have_posts() ) : ?>
+        <?php // while ( $thinkTank ->have_posts() ) : $thinkTank ->the_post(); ?>
 
-            <div class = "current-research">
+         <p> <?php// the_title();?> </p>
+                <p> <?php// the_content();?> </p>
+                <?php //endwhile; ?> 
+    <?php // wp_reset_postdata(); ?>
+
+                   <?php// endif; ?>
                 
-                <p> <?php the_title()?> </p>
+        
+        <?php while ( have_posts() ) : the_post(); ?>
+
+     
+            <div class = "current-research">
+
+            <h1> Current research </h1>
+                
+               
 
             </div>
 
@@ -306,7 +321,7 @@ Template Name: get involved
  
                         <div class = "research-picture">
                             <picture>
-                                <?php echo '<img src="'.$research['image'].'"/>';?>
+                                <?php //echo '<img src="'.$research['image'].'"/>';?>
                             </picture>    
                         </div>
 
@@ -315,7 +330,8 @@ Template Name: get involved
                         </div>     
 
                         <div class = "research-subject">
-                            <?php echo CFS()->get.$research['subject'];?>
+                            <?php //echo CFS()->get.$research['subject'];?>
+                            <?php echo CFS()->get.$research['load_more'];?> 
                         </div> 
 
 
@@ -331,13 +347,61 @@ Template Name: get involved
 
         <?php endwhile; ?> 
         <?php wp_reset_postdata(); ?>
-        <?php else : ?>
+        <?php //else : ?>
     
-            <h2>Nothing found!</h2>
+            <!-- <h2>Nothing found!</h2> -->
     
-        <?php endif; ?>
+     
 
 </section>
+
+
+
+<section class = "events">
+
+    <h1> Events </h1>
+
+<div class = "events-wrapper">
+
+    <?php
+        $args = array( 'post_type' => 'events', 'order' => 'ASC', 'posts_per_page' => -1  );
+       $events = new WP_Query( $args );
+
+    ?>
+
+    <?php if ($events ->have_posts() ) : ?>
+    <?php  while ( $events->have_posts() ) : $events->the_post(); ?>
+
+
+        <div class = "single-events">
+           
+        <?php the_post_thumbnail();?>
+             <a href = "<?php the_permalink();?>">  <p> <?php the_title();?> </p>     </a>
+            </div>
+            <?php endwhile; ?> 
+            <?php wp_reset_postdata(); ?>
+
+               <?php endif; ?>
+            
+    
+   
+
+
+        </div> <!-- events-wrapper-->
+<!-- custom post type for events -->
+
+
+
+    <?php// endwhile; ?> 
+    <?php// wp_reset_postdata(); ?>
+    <?php //else : ?>
+
+        <!-- <h2>Nothing found!</h2> -->
+
+ 
+
+</section>
+
 
 </div> <!-- sections-container --> 
 

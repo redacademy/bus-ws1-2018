@@ -17,11 +17,10 @@ Template Name: products
             
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <?php the_content();?>
-                    
+              
                 
-                <?php endwhile;?>
-                <?php endif; ?>
+                <?php// endwhile;?>
+                <?php// endif; ?>
             </div> <!-- shop-info-->
         
 
@@ -56,14 +55,15 @@ Template Name: products
             <!-- loop to display all the products, to change the number of products displayed 
                 set the post per page number to the desired value -->
 
-	
+	  <?php the_content();?>
+                    
         <?php
-            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1 );
-            $products = new WP_Query( $args ); 
+           // $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1 );
+          //  $products = new WP_Query( $args ); 
         ?>
 
-            <?php if ( $products->have_posts() ) : ?>
-            <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+            <?php // if ( $products->have_posts() ) : ?>
+            <?php // while ( $products->have_posts() ) : $products->the_post(); ?>
 
 
         <div class = "single-product">
@@ -71,7 +71,7 @@ Template Name: products
             <div class = "product-image"> 
 
                 <picture>
-                    <?php the_post_thumbnail();?>
+                    <?php // the_post_thumbnail();?>
                 </picture>
       
              </div>  <!-- .product-image -->
@@ -81,8 +81,10 @@ Template Name: products
 
              <!-- call custom field suite for product name and price-->
 
-                <p> <a href = "<?php the_permalink();?>"> <?php the_title();?>  </a></p>
-                <p> <?php echo CFS()->get( 'price' ); ?> CAD </p>
+                <p> <a href = "<?php // the_permalink();?>"> <?php// the_title();?>  </a></p>
+                <p> <?php // echo CFS()->get( 'price' ); ?>  </p>
+                <p> <?php //echo CFS()->get( 'button' ); ?> </p>
+                <p> <?php //echo CFS()->get( 'load_more' ); ?> </p>
           
             </div> <!-- .product-info-->
 
@@ -94,8 +96,9 @@ Template Name: products
         <?php endwhile; ?>
 
     </div> <!-- products-gallery-container -->
+  
 
-</section> <!-- Pproducts gallery -->
+</section> <!-- Pproducts gallery --> 
 
 
     
