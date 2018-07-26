@@ -93,7 +93,8 @@ $j('.expedition-name').click(function() {
 
 
 $j('.alm-reveal').click(function() { 
-    $j(this).children(".li").children(".p").slideToggle('slow'); 
+    alert("The paragraph was clicked.");
+    // $j(this).children(".li").children(".p").slideToggle('slow'); 
 
  
 });
@@ -127,15 +128,6 @@ $j( '.main-image').html(imgMin);
 //     centerMode: true,
 //     });
 // });
-<<<<<<< HEAD
- $j(function(){
-$j('.team-type-carousel').slick({
-    infinite: true, 
-    slidesToShow: 2,
-    slidesToScroll: 1,  
-
-  });
-=======
 $j(function(){
     $j('.team-type-carousel').slick({
         infinite: true, 
@@ -143,7 +135,6 @@ $j(function(){
         slidesToShow: 2,
         slidesToScroll: 2, 
     });
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
 
 
       
@@ -160,10 +151,6 @@ $j(function() {
       });
 });
 
-<<<<<<< HEAD
-});
- 
-=======
 $j(function() {
     $j('.slider-nav').slick({
         slidesToShow: 4,
@@ -207,28 +194,28 @@ $j('.hide-impact-btn').click(function() {
 
 // ****** LOAD MORE CAROUSEL - IMPACT PAGE ****** //
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   if (n > slides.length) {slideIndex = 1} 
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none"; 
+//   }
+//   slides[slideIndex-1].style.display = "block"; 
+//   dots[slideIndex-1].className += " active";
+// }
+ });   

@@ -2618,7 +2618,7 @@ object {
   grid-auto-rows: 12rem;
   grid-gap: 1rem;
   width: 100%;
-  height: 15rem; }
+  height: 1rem; }
   .page-template-archive-products .alm-reveal li {
     padding: 1%; }
   .page-template-archive-products .alm-reveal li:nth-child(1) {
@@ -3489,7 +3489,7 @@ object {
           flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 10%; }
+  margin-top: 5%; }
 
 .page-template-archive-expeditions .content {
   display: -webkit-box;
@@ -3503,6 +3503,22 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto; }
+
+.page-template-archive-expeditions button {
+  color: black;
+  background: #F6E24F;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  text-decoration: none;
+  -webkit-box-shadow: 0px 2px silver;
+          box-shadow: 0px 2px silver;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.page-template-archive-expeditions h1 {
+  text-transform: uppercase;
+  font-family: Oswald;
+  text-align: center; }
 
 .page-template-archive-expeditions .expeditions-banner-wrapper {
   display: -webkit-box;
@@ -3533,7 +3549,9 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-template-archive-expeditions .mission-statement .p1 {
+  .page-template-archive-expeditions .mission-statement p {
+    font-family: "Montserrat";
+    font-size: 1rem;
     text-align: center; }
 
 .page-template-archive-expeditions .upcoming-expedition {
@@ -3552,14 +3570,15 @@ object {
     display: -ms-flexbox;
     display: flex;
     background-color: #F6E24F;
+    font-family: "Oswald";
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .page-template-archive-expeditions .upcoming-expedition .section-title p {
+            justify-content: center;
+    text-align: center; }
+    .page-template-archive-expeditions .upcoming-expedition .section-title h1 {
       text-transform: uppercase;
-      font-weight: bold;
-      font-family: "Montserrat"; }
+      font-weight: bold; }
 
 .page-template-archive-expeditions .upcoming-expedition-wrapper {
   background-color: #04809E;
@@ -3577,13 +3596,15 @@ object {
     display: flex;
     width: 100%;
     padding-left: 3%;
-    padding-right: 1%; }
+    padding-right: 1%;
+    position: relative; }
     .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper img {
       height: auto;
       max-width: 100%;
       position: absolute;
-      right: 5%;
-      width: 35%; }
+      right: 3%;
+      width: 34%;
+      top: 7%; }
     .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3596,14 +3617,60 @@ object {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       padding: 3%; }
-      .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p {
+      .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p, .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details h3 {
         color: #F6E24F;
         text-transform: uppercase;
         font-family: "Montserrat"; }
-  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description p {
-    color: white; }
+      .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p {
+        font-weight: 200; }
+  .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 95%; }
+    .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description p {
+      color: white;
+      font-family: "Montserrat";
+      font-size: 1rem; }
 
-.alm-reveal li {
+.page-template-archive-expeditions .expedition-btn-wrapper {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .expedition-btn-wrapper button {
+    width: 10rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 2%;
+    height: 2.5rem; }
+
+.page-template-archive-expeditions .past-expeditions h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%; }
+
+.page-template-archive-expeditions .past-expeditions p {
+  margin: 0px; }
+
+.page-template-archive-expeditions .alm-reveal li {
   list-style: none;
   list-style: none;
   display: -webkit-box;
@@ -3616,7 +3683,7 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%; }
-  .alm-reveal li h3 {
+  .page-template-archive-expeditions .alm-reveal li h3 {
     width: 100%;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
@@ -3625,18 +3692,21 @@ object {
     margin-top: -2rem;
     text-align: center;
     text-decoration: none; }
-  .alm-reveal li .entry-meta {
+    .page-template-archive-expeditions .alm-reveal li h3 a {
+      text-decoration: none;
+      text-transform: uppercase; }
+  .page-template-archive-expeditions .alm-reveal li .entry-meta {
     display: none; }
 
-.alm-reveal p {
+.page-template-archive-expeditions .alm-reveal p {
   display: none; }
 
-.ajax-load-more-wrap {
+.page-template-archive-expeditions .ajax-load-more-wrap {
   margin-top: -0.7rem; }
-  .ajax-load-more-wrap .alm-load-more-btn {
+  .page-template-archive-expeditions .ajax-load-more-wrap .alm-load-more-btn {
     color: #04809E; }
 
-.single-expedition {
+.page-template-archive-expeditions .single-expedition {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3648,7 +3718,7 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%; }
-  .single-expedition .expedition-name {
+  .page-template-archive-expeditions .single-expedition .expedition-name {
     width: 100%;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.25)));
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
@@ -3667,16 +3737,17 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .single-expedition .expedition-name p, .single-expedition .expedition-name h3 {
+    .page-template-archive-expeditions .single-expedition .expedition-name p,
+    .page-template-archive-expeditions .single-expedition .expedition-name h3 {
       margin: 0px;
       color: white; }
-  .single-expedition .entry-meta {
+  .page-template-archive-expeditions .single-expedition .entry-meta {
     display: none; }
 
-.expedition-info {
+.page-template-archive-expeditions .expedition-info {
   display: none; }
 
-.single-event {
+.page-template-archive-expeditions .single-event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3688,7 +3759,7 @@ object {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.event-title {
+.page-template-archive-expeditions .event-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3701,7 +3772,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   height: 1.5rem; }
-  .event-title p {
+  .page-template-archive-expeditions .event-title p {
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3712,11 +3783,12 @@ object {
             justify-content: center;
     color: white; }
 
-.event-info {
+.page-template-archive-expeditions .event-info {
   display: none;
   background-color: white; }
 
-span.button-wrapper, .alm-btn-wrap {
+.page-template-archive-expeditions span.button-wrapper,
+.page-template-archive-expeditions .alm-btn-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3724,20 +3796,21 @@ span.button-wrapper, .alm-btn-wrap {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 5%; }
+  padding: 5%; }
 
-button, .alm-load-more-btn {
-  color: black;
-  background: #F6E24F;
+.page-template-archive-expeditions .past-expeditions .alm-load-more-btn {
+  color: white;
+  background: #04809E;
   border-radius: 20px;
   font-family: "Montserrat";
   text-decoration: none;
   -webkit-box-shadow: 0px 2px silver;
           box-shadow: 0px 2px silver;
   font-weight: bold;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  text-shadow: none; }
 
-.sponsors {
+.page-template-archive-expeditions .sponsors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3746,19 +3819,39 @@ button, .alm-load-more-btn {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5%;
+  padding-top: 0px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .sponsors .sponsors-logos {
+  .page-template-archive-expeditions .sponsors .sponsors-logos {
     background-image: url("../../assets/images/sponsors-logos.svg");
     background-size: cover;
     width: 100%;
     height: 4rem; }
+  .page-template-archive-expeditions .sponsors p {
+    margin: 0px; }
 
-.wsb-team,
-.research-projects {
+.page-template-archive-expeditions .section-title,
+.page-template-archive-expeditions .current-research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-archive-expeditions .wsb-team,
+.page-template-archive-expeditions .research-projects {
   background-color: #04809E; }
 
-.wsb-team {
+.page-template-archive-expeditions .wsb-team {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3769,47 +3862,49 @@ button, .alm-load-more-btn {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 100%; }
-  .wsb-team p {
+  .page-template-archive-expeditions .wsb-team p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    font-family: "Montserrat";
+    color: white; }
 
-.single-member {
+.page-template-archive-expeditions .single-member {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%; }
-  .single-member .member-picture {
+  .page-template-archive-expeditions .single-member .member-picture {
     width: 100%;
     height: 100%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .single-member .member-picture img {
+    .page-template-archive-expeditions .single-member .member-picture img {
       width: 100%;
       height: 100%;
       border: 2px solid white; }
-  .single-member .member-name {
+  .page-template-archive-expeditions .single-member .member-name {
     position: absolute;
-    bottom: 0px;
     color: white;
-    width: 100%; }
+    width: 250%;
+    width: 300%; }
 
-.member-info {
+.page-template-archive-expeditions .member-info {
   background-color: white;
   display: none;
   position: absolute;
   z-index: 1;
   width: 250%;
   height: 44rem; }
-  .member-info .icon-wrapper {
+  .page-template-archive-expeditions .member-info .icon-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3823,7 +3918,7 @@ button, .alm-load-more-btn {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%; }
-    .member-info .icon-wrapper i {
+    .page-template-archive-expeditions .member-info .icon-wrapper i {
       border: 3px solid #fff;
       -webkit-box-shadow: grey;
               box-shadow: grey;
@@ -3845,22 +3940,60 @@ button, .alm-load-more-btn {
       font-size: 2.5rem;
       color: white; }
 
-.team-type-carousel {
+.page-template-archive-expeditions .team-type-carousel {
   width: 90%;
   margin: 0px auto; }
 
-.slick-slide {
-  margin: 10px; }
+.page-template-archive-expeditions .slick-slide {
+  margin: 10px;
+  position: relative; }
 
-<<<<<<< HEAD
-.slick-slide img {
-=======
 .page-template-archive-expeditions .slick-slide img {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
   width: 100%;
   height: 100%; }
 
-.research-projects {
+.page-template-archive-expeditions .slick-prev, .page-template-archive-expeditions .slick-next {
+  border-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent; }
+
+.page-template-archive-expeditions .apply-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .apply-button button {
+    background: #F6E24F;
+    text-shadow: none;
+    border-radius: 85px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 60%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.page-template-archive-expeditions .research-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3872,7 +4005,7 @@ button, .alm-load-more-btn {
   padding-top: 5%;
   padding-bottom: 0%; }
 
-.current-research {
+.page-template-archive-expeditions .current-research {
   width: 100%;
   background-color: white;
   min-height: 15%;
@@ -3886,126 +4019,117 @@ button, .alm-load-more-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .current-research p {
-<<<<<<< HEAD
+  .page-template-archive-expeditions .current-research p {
     padding-top: 5%;
     text-transform: uppercase;
     font-weight: bold; }
 
-.research {
+.page-template-archive-expeditions .single-research-container {
+  padding: 5%; }
+
+.page-template-archive-expeditions .research-submission-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 15%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.alm-listing {
-=======
-    padding-top: 5%; }
-
-.research {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-<<<<<<< HEAD
-  .alm-listing .alm-reveal {
-=======
-  .research .single-research {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-archive-expeditions .research-submission-wrapper button {
+    background: #F6E24F;
+    text-shadow: none;
+    border-radius: 85px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 60%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.page-template-archive-expeditions .research-subject {
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Montserrat";
+  text-transform: capitalize; }
+  .page-template-archive-expeditions .research-subject .ajax-load-more-wrap {
+    margin-top: 0px; }
+  .page-template-archive-expeditions .research-subject .alm-btn-wrap {
+    padding: 0px; }
+    .page-template-archive-expeditions .research-subject .alm-btn-wrap .alm-load-more-btn {
+      width: 3rem;
+      height: 3rem;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #F6E24F;
+      border-radius: 50px; }
+  .page-template-archive-expeditions .research-subject .alm-listing {
     width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-<<<<<<< HEAD
-    .alm-listing .alm-reveal .research-picture {
-=======
-    .research .single-research .research-picture {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
-      width: 90%;
-      height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .page-template-archive-expeditions .research-subject .alm-listing .alm-reveal {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      padding: 5%;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-<<<<<<< HEAD
-      .alm-listing .alm-reveal .research-picture img {
-        width: 100%;
-        height: 100%; }
-    .alm-listing .alm-reveal .research-subject {
-=======
-      .research .single-research .research-picture img {
-        width: 100%;
-        height: 100%; }
-    .research .single-research .research-subject {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
-      height: 5%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      color: white;
-      font-family: "Montserrat";
-      text-transform: capitalize; }
-      .alm-listing .alm-reveal .research-subject .ajax-load-more {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .page-template-archive-expeditions .research-subject .alm-listing .alm-reveal li {
+        list-style: none;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; }
-
-.single-reserach-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  width: 100%; }
-
-.single-research {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%; }
+        .page-template-archive-expeditions .research-subject .alm-listing .alm-reveal li img {
+          width: 100%;
+          height: 100%; }
 
 .events {
   padding-top: 5%;
@@ -4054,7 +4178,11 @@ button, .alm-load-more-btn {
     min-height: 10rem; } }
 
 @media (min-width: 1080px) {
-  .page-template-archive-expeditions .expedition-content-wrapper {
+  .page-template-archive-expeditions-php h1 {
+    font-size: 2.5rem; }
+  .page-template-archive-expeditions-php .mission-statement {
+    width: 60%; }
+  .page-template-archive-expeditions-php .expeditions-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4062,10 +4190,11 @@ button, .alm-load-more-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-archive-expeditions .expedition-content-wrapper .expeditions-container {
-      width: 95%; }
-  .page-template-archive-expeditions .mission-statement {
-    width: 60%; } }
+    .page-template-archive-expeditions-php .expeditions-content-wrapper .expeditions-container {
+      width: 90%; }
+  .page-template-archive-expeditions-php .apply-button button {
+    border-radius: 50px;
+    font-size: 1.5rem; } }
 
 .products-template-default.single-products .content-area {
   padding-top: 5%; }
