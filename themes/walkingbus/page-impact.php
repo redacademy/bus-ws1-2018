@@ -60,7 +60,7 @@ Template Name: impact
                    $args = array(
                        'post_type' => 'news',
                        'posts_per_page' => 15,
-                       'order' => 'DESC',
+                       'order' => 'ASC',
                    );
                    $news = new WP_Query( $args );
                ?>
