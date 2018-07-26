@@ -48,15 +48,13 @@ get_header();
 						
 					?>
 
-					<?php $defaultImage = "./wp-content/themes/walkingbus/assets/images/placeholder.png" ?>
-
 					<div class = "thumbnails-wrapper">
 					
 						<div class = "img-min"> 
 
 							<?php if (!empty ($smallImage1) ) { ?>
 								<picture> <?php	echo '<img src="'.$smallImage1.'"/>'; ?> </picture>
-							<?php } else { echo '<img src="'.$defaultImage.'"/>'; } ?>
+							<?php } else { echo '<i class="fas fa-image"></i>'; } ?>
  
 						</div>
 
@@ -64,7 +62,7 @@ get_header();
 						
 							<?php if(!empty ($smallImage2)) {?>	
 								<picture> <?php echo '<img src="'.$smallImage2.'"/>';?> </picture>
-							<?php } else { echo '<img src="'.$defaultImage.'"/>'; } ?>
+							<?php } else { echo '<i class="fas fa-image"></i>'; } ?>
 
 						</div>
 
@@ -73,7 +71,7 @@ get_header();
 
 							<?php if(!empty ($smallImage3)) {?>
 							 <?php echo '<img src="'.$smallImage3.'"/>';?> 
-							 <?php } else {echo '<img src="'.$defaultImage.'"/>'; } ?>
+							 <?php } else {echo '<i class="fas fa-image"></i>'; } ?>
 
 						</div>			
 
@@ -81,7 +79,7 @@ get_header();
 
 							<?php if(!empty ($smallImage4)) {?>
 							 <?php echo '<img src="'.$smallImage4.'"/>';?> 
-							 <?php } else {echo '<img src="'.$defaultImage.'"/>'; } ?>
+							 <?php } else {echo '<i class="fas fa-image"></i>'; } ?>
 
 						</div>
 
