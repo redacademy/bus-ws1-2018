@@ -639,6 +639,12 @@
 
     @include desktop {
 
+        .map-wrapper {
+            img {
+                width: 30%;
+            }
+        }
+
         h1{ 
             font-size:2.5rem;
         }
