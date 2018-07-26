@@ -60,16 +60,16 @@ $j('#subscription-form').submit(function(event) {
 
 // show team members bio
 
-$j('.member-picture').click(function() {
-    $j(this).children('.member-info').show('slow');
+// $j('.member-picture').click(function() {
+//     $j(this).children('.member-info').show('slow');
 
 
-    $j('.icon-wrapper').click(function() {
-        $j(this).parent('.member-info').hide('slow');
+//     $j('.icon-wrapper').click(function() {
+//         $j(this).parent('.member-info').hide('slow');
     
         
-    });
-});
+//     });
+// });
 
 
 
