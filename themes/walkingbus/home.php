@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
         <?php 
-        $args = array( 'post_type' => 'post', 'posts_per_page' => -1);
+        $args = array( 'post_type' => 'post', 'posts_per_page' => 5);
         $posts = new WP_Query( $args );  ?>
         
             <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
