@@ -3604,6 +3604,12 @@ object {
     display: -ms-flexbox;
     display: flex; } }
 
+.page-template-archive-expeditions .fa-image {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  color: gray; }
+
 .page-template-archive-expeditions .expeditions-content-wrapper .expeditions-container {
   display: -webkit-box;
   display: -ms-flexbox;
