@@ -311,12 +311,14 @@ Template Name: get involved
             <!-- <h2>Nothing found!</h2> -->
     
 
+
+</section>
+
+
 <span class = "research-submission-wrapper">
             <button> submit research </button>
            
 </span>
-
-</section>
 
 
 

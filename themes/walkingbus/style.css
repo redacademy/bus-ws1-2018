@@ -4097,9 +4097,11 @@ object {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background-color: #04809E; }
   .page-template-archive-expeditions .apply-button button {
     background: #F6E24F;
     text-shadow: none;
@@ -4157,7 +4159,7 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 15%;
+  height: 3rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -4167,7 +4169,8 @@ object {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: -20px; }
   .page-template-archive-expeditions .research-submission-wrapper button {
     background: #F6E24F;
     text-shadow: none;
@@ -4178,13 +4181,14 @@ object {
             box-shadow: none;
     font-weight: 700;
     text-transform: capitalize;
-    width: 60%;
+    width: 12rem;
     height: 100%;
+    font-size: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
             justify-content: center; }
 
 .page-template-archive-expeditions .research-subject {
@@ -4194,19 +4198,37 @@ object {
   display: flex;
   color: white;
   font-family: "Montserrat";
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  padding: 5%; }
   .page-template-archive-expeditions .research-subject .ajax-load-more-wrap {
-    margin-top: 0px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    height: auto; }
   .page-template-archive-expeditions .research-subject .alm-btn-wrap {
-    padding: 0px; }
+    padding-bottom: 15%; }
     .page-template-archive-expeditions .research-subject .alm-btn-wrap .alm-load-more-btn {
       width: 3rem;
       height: 3rem;
       background-color: transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
-      color: #F6E24F;
-      border-radius: 50px; }
+      color: #f6e24f;
+      border-radius: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-shadow: none; }
   .page-template-archive-expeditions .research-subject .alm-listing {
     width: 100%;
     height: 100%;

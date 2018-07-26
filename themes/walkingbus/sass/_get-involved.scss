@@ -418,7 +418,9 @@
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    padding: 5%;
     justify-content: center;
+    background-color: $blue-bg;
      button{
         background: $yellow;
         text-shadow:none;
@@ -475,24 +477,27 @@
     }
     .research-submission-wrapper {
         display: flex;
-        height: 15%;
+        height: 3rem;
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top:-20px;
          button{
             background: $yellow;
-            text-shadow:none;
-            
+            text-shadow: none;
             border-radius: 85px;
             font-family: $Mont;
             text-decoration: none;
             box-shadow: none;
             font-weight: 700;
             text-transform: capitalize;
-            width: 60%;
+            width: 12rem;
             height: 100%;
+            font-size: 1rem;
+    
             display: flex;
+            -ms-flex-pack: center;
             justify-content: center;
         }
     }
@@ -505,25 +510,33 @@
         color: white;
         font-family: $Mont;
         text-transform: capitalize;
+        padding: 5%;
 
-        // .ajax-load-more {
-        //     display: flex;
-        //     flex-direction: row;
-        // }
+    
         .ajax-load-more-wrap{
-            margin-top:0px;
+          
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: auto;
         }
 
         .alm-btn-wrap{
-            padding:0px;
+            //padding:0px;
+            padding-bottom: 15%;
 
             .alm-load-more-btn{
-                width:3rem;
-                height:3rem;
+             
+                width: 3rem;
+                height: 3rem;
                 background-color: transparent;
-                box-shadow:none;
-                color:$yellow;
+                box-shadow: none;
+                color: #f6e24f;
                 border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                text-shadow: none;
             }
         }
 
