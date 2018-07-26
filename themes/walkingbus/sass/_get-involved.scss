@@ -1,6 +1,6 @@
 .page-template-archive-expeditions {
+
     .expeditions-content-wrapper {
-      
         .expeditions-container {
             display: flex;
             width: 100%;
@@ -8,10 +8,11 @@
             flex-direction: row;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            margin-top: 10%;
-       
+            margin-top: 5%;
         }
     }
+
+
     .content {
         display: flex;
         flex-direction: column;
@@ -19,251 +20,8 @@
         flex-wrap: wrap;
         height: auto;
     }
-//banner & mission statement 
 
-.expeditions-banner-wrapper{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.mission-statement{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .p1{
-       // width:100%;
-       // display:flex;
-        text-align: center;
-    }
-}
-
-
-    //upcoming expeditions
-
-    .upcoming-expedition {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width:100%;
-  
-    .section-title{
-        display:flex;
-        background-color:$yellow;
-        width:100%;
-        justify-content: center;
-        
-        p{
-        text-transform:uppercase;
-        font-weight:bold;
-        font-family:$Mont;
-        
-        }
-        
-    }
-
-}
-    .upcoming-expedition-wrapper {
-        background-color: $blue-bg;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       // height: 15%;
-
-        .map-wrapper{
-            
-            display: flex;
-            width: 100%;
-            padding-left: 3%;
-            padding-right: 1%;
-            img{
-                height: auto;
-                max-width: 100%;
-                position: absolute;
-                right: 5%;
-                width: 35%;
-            }
-
-            .upcoming-expedition-info{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                flex-wrap: wrap;
-                padding: 3%;
-
-                .expedition-details{
-                    p{
-                        color: $yellow;
-                        text-transform: uppercase;
-                        font-family:$Mont;
-                    }
-                }
-            }
-
-
-        }
-
-        .expedition-description{
-            p{
-                color:white;
-                
-            }
-
-        }
-    }
-   
-
-   
-}
-
-.alm-reveal{
-
-   
-    li{
-        list-style:none; 
-        list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
-
-        h3{
-            width:100%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-            margin: 0px;
-            height: 2rem;
-            margin-top: -2rem;
-            text-align:center;
-            text-decoration:none;
-        } 
-
-        .entry-meta{
-            display:none;
-        }
-       
-    }
-    p{
-        display:none;
-    }
-
-
-}
-
-.ajax-load-more-wrap{
-    margin-top: -0.7rem;
-
-    .alm-load-more-btn {
-        color: $blue-bg;
-    }
-}      
-   
-
-   
-       
-
-   
-    .single-expedition{
-            list-style:none; 
-            // list-style: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-        
-        
-                .expedition-name{
-                    width: 100%;
-                    background: linear-gradient(0deg,rgba(0,0,0,.26),rgba(0,0,0,.25));
-                    margin: 0;
-                    height: 2rem;
-                    margin-top: -2rem;
-                    text-align: center;
-                    text-decoration: none;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                
-                    p, h3 {
-                        margin:0px;
-                        color:white; 
-                    }
-                } 
-        
-                .entry-meta{
-                    display:none;
-                }
-               
-            }
-            .expedition-info{
-                display:none;
-            }
-        
-      
-               
-           
-     
-
-    .single-event{
-        display: flex;
-        width:100%;
-        flex-wrap: wrap;
-        flex-direction: column;
-    } 
-
-   // .expedition-image, .event-image {
-  
-    
-       // img {
-    //         height: 100%;
-         // width: 100%;
-       //  display: flex;
-    //    }
-  //  } // }
-   
-    .event-name { 
-      //  margin-top:-10%;
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-            
-      
-   }
-    //.expedition-title,
-    .event-title {
-       display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-   // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-    height:1.5rem;     
-    p{
-        margin: 0;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        color:white;
-    }
-}
-   
-    //.expedition-info, 
-    
-    .event-info {
-       display: none;
-        background-color: white; 
-    }
-    span.button-wrapper, .alm-btn-wrap {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding-bottom: 5%;
-       
-     }
-
-     button, .alm-load-more-btn {
+    button{
         color: black;
         background: $yellow;
         border-radius: 20px;
@@ -272,9 +30,259 @@
         box-shadow: 0px 2px $shadow;
         font-weight: bold;
         text-transform: capitalize;
+
+    } 
+
+    h1{   
+         text-transform: uppercase;
+        font-family: Oswald;
+        text-align: center;
     }
 
+
+    //banner & mission statement 
+
+
+    .expeditions-banner-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mission-statement {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            font-family: $Mont;
+            font-size:1rem;
+            text-align: center;
+        }
+    } //upcoming expeditions
+
+    .upcoming-expedition {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .section-title {
+            display: flex;
+            background-color: $yellow;
+            font-family:$Oswald;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
     
+    }
+    .upcoming-expedition-wrapper {
+        background-color: $blue-bg;
+        display: flex;
+        flex-direction: column;
+        width: 100%; // height: 15%;
+        .map-wrapper {
+            display: flex;
+            width: 100%;
+            padding-left: 3%;
+            padding-right: 1%;
+            position:relative;
+            img {
+                height: auto;
+                max-width: 100%;
+                position: absolute;
+                right: 3%;
+                width: 34%;
+                top: 7%;
+            }
+            .upcoming-expedition-info {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 3%;
+                .expedition-details {
+                    p , h3{
+                        color: $yellow;
+                        text-transform: uppercase;
+                        font-family: $Mont;
+                        
+
+                       
+                    }
+                    p{
+                        font-weight:200;
+                       
+                        
+                    }
+                }
+            }
+        }
+        .expedition-description {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 95%;
+            p {
+                color: white;
+                font-family: $Mont;
+                font-size:1rem;
+            }
+        }
+    } 
+    .expedition-btn-wrapper{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:100%;
+        justify-content:center;
+        button{
+            width: 10rem;
+            align-self: center;
+            margin: 2%;
+            height: 2.5rem;
+        }
+
+    }
+
+
+    // past expeditions
+
+    .past-expeditions{
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        p{
+            margin:0px;
+        }
+    }
+
+
+    .alm-reveal {
+        li {
+            list-style: none;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            h3 {
+                width: 100%;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+                margin: 0px;
+                height: 2rem;
+                margin-top: -2rem;
+                text-align: center;
+                text-decoration: none;
+                a{
+                    text-decoration:none;
+                    text-transform:uppercase;
+                }
+            }
+            .entry-meta {
+                display: none;
+            }
+        }
+        p {
+            display: none;
+        }
+    }
+    .ajax-load-more-wrap {
+        margin-top: -0.7rem;
+        .alm-load-more-btn {
+            color: $blue-bg;
+        }
+    }
+    .single-expedition {
+        list-style: none; // list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .expedition-name {
+            width: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .26), rgba(0, 0, 0, .25));
+            margin: 0;
+            height: 2rem;
+            margin-top: -2rem;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            p,
+            h3 {
+                margin: 0px;
+                color: white;
+            }
+        }
+        .entry-meta {
+            display: none;
+        }
+    }
+    .expedition-info {
+        display: none;
+    }
+    .single-event {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    } 
+
+    .event-title {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center; // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+        height: 1.5rem;
+        p {
+            margin: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            color: white;
+        }
+    } //.expedition-info, 
+    .event-info {
+        display: none;
+        background-color: white;
+    }
+    span.button-wrapper,
+    .alm-btn-wrap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 5%;
+    }
+    .past-expeditions{
+    
+        .alm-load-more-btn {
+            color: white;
+            background: $blue-bg;
+            border-radius: 20px;
+            font-family: $Mont;
+            text-decoration: none;
+            box-shadow: 0px 2px $shadow;
+            font-weight: bold;
+            text-transform: capitalize;
+            text-shadow: none;
+
+        } 
+    }   
     ///////////////////////////////////////////////////////////////////////////////////////
     // sponsors section 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -282,6 +290,7 @@
         display: flex;
         flex-direction: column;
         padding: 5%;
+        padding-top:0px;
         flex-wrap: wrap;
         .sponsors-logos {
             background-image: url('../../assets/images/sponsors-logos.svg');
@@ -289,26 +298,43 @@
             width: 100%;
             height: 4rem;
         }
+
+        p{
+            margin:0px;
+        }
+        
     }
     ///////////////////////////////////////////////////////////////////////////////////////
     // TEAM MEMBERS
     ///////////////////////////////////////////////////////////////////////////////////////
+    .section-title,
+    .current-research{
+        display:flex;
+        width:100%;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        
+    }
+   
+    
     .wsb-team,
     .research-projects {
         background-color: #04809E;
     }
     .wsb-team {
-        //test
+        position:relative;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
-        p{ 
+        p {
             display: flex;
             width: 100%;
             justify-content: center;
+            font-family:$Mont;
+            color:white;
         }
-       
     }
     .single-member {
         position: relative;
@@ -328,14 +354,15 @@
         }
         .member-name {
             position: absolute;
-            bottom: 0px;
+           // bottom: 0px;
             color: white;
-            width: 100%;
+            width: 250%;
+            width:300%; 
         }
     }
     .member-info {
         background-color: white;
-       display: none; //test
+        display: none; //test
         //display: block;
         position: absolute;
         z-index: 1;
@@ -363,24 +390,62 @@
             }
         }
     }
-
-
-    .team-type-carousel{
-        width:90%;
-        margin:0px auto;
-      }
-      .slick-slide{
-        margin:10px;
-      }
-      .slick-slide img{
-        width:100%;
-      //  width: 100%;
-        height: 100%;
-       // display: flex;
+    .team-type-carousel {
+        width: 90%;
+        margin: 0px auto;
     }
+    .slick-slide {
+        margin: 10px;
+        position:relative;
+    }
+    .slick-slide img {
+        width: 100%; //  width: 100%;
+        height: 100%; // display: flex;
+    }
+
+    .slick-prev, .slick-next{
+        border-color:transparent;
+        outline:none;
+        box-shadow: none;
+        background-color:transparent;
+
+    }
+
+   .apply-button{
+
+    display: flex;
+    height: 15%;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+     button{
+        background: $yellow;
+        text-shadow:none;
+        
+        border-radius: 85px;
+        font-family: $Mont;
+        text-decoration: none;
+        box-shadow: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
       
-    
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
+//    }
+   
+        
+        
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
     // RESEARCH
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     .research-projects {
@@ -400,146 +465,183 @@
         justify-content: center;
         p {
             padding-top: 5%;
-            text-transform:uppercase;
-            font-weight:bold;
-            //font-famil
+            text-transform: uppercase;
+            font-weight: bold; //font-famil
         }
     }
 
-    .research{
+    .single-research-container{
+        padding:5%;
+    }
+    .research-submission-wrapper {
         display: flex;
+        height: 15%;
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
-    }
-    .alm-listing{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        .alm-reveal {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            .research-picture {
-                width: 90%;
-                height: 100%;
-                flex-direction: row;
-                justify-content: center;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .research-subject {
-                height: 5%;
-                display: flex;
-                color:white;
-                font-family:$Mont;
-                text-transform:capitalize;
-
-                .ajax-load-more{
-                    display:flex;
-                    flex-direction:row;
-                    
-                }
-            }
-        }
-    }
-    .single-reserach-container {
-        display: flex;
-        padding-top: 5%;
-        padding-bottom: 10%;
-        width: 100%;
-    }
-
-    .single-research{
-        display: flex;
         justify-content: center;
-        flex-direction: row;
-        flex-basis: 50%;
-        flex-wrap: wrap;
+         button{
+            background: $yellow;
+            text-shadow:none;
+            
+            border-radius: 85px;
+            font-family: $Mont;
+            text-decoration: none;
+            box-shadow: none;
+            font-weight: 700;
+            text-transform: capitalize;
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+   
+    .research-subject {
+        height: 5%;
+        display: flex;
+        color: white;
+        font-family: $Mont;
+        text-transform: capitalize;
+
+        // .ajax-load-more {
+        //     display: flex;
+        //     flex-direction: row;
+        // }
+        .ajax-load-more-wrap{
+            margin-top:0px;
+        }
+
+        .alm-btn-wrap{
+            padding:0px;
+
+            .alm-load-more-btn{
+                width:3rem;
+                height:3rem;
+                background-color: transparent;
+                box-shadow:none;
+                color:$yellow;
+                border-radius: 50px;
+            }
+        }
 
        
+        .alm-listing {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .alm-reveal {
+                display: flex;
+                width: 100%;
+                padding: 5%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-basis: 45%;
+                        
+               // .research-picture {
+                    // width: 90%;
+                    // height: 100%;
+                    // flex-direction: row;
+                    // justify-content: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        }
     }
+    
+  
 
-    .events{
-        padding-top:5%;
-     padding-bottom:5%;
 
-     
+
+// events     
+    .events {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
-
-    .single-events{
+    .single-events {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        position:relative;
-      a p{
-        color:white;  
-        text-transform:uppercase;
-        font-family:$Mont;
-        
-          
-          
-      }
-      p{
-          margin:0px;
-      }
-      a{
-        position: absolute;
-        bottom: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        text-decoration:none;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
-     
-      }
-      .alm-load-more-btn {
-          color: $blue-bg;
-      }
-        
+        position: relative;
+        a p {
+            color: white;
+            text-transform: uppercase;
+            font-family: $Mont;
+        }
+        p {
+            margin: 0px;
+        }
+        a {
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            text-decoration: none;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+        }
+        .alm-load-more-btn {
+            color: $blue-bg;
+        }
     }
-//}
+    //}
+
 
 //} // END OF PAGE TEMPLATE
- // END OF PAGE TEMPLATE
+// END OF PAGE TEMPLATE
 //Media queries 
 .page-template-archive-expeditions {
     @media screen and (min-width: 490px) {
         .expedition-image {
-           // height:18rem;
+            // height:18rem;
         }
-
-        .sponsors-logos{
+        .sponsors-logos {
             min-height: 10rem;
         }
     }
 }
 
-
 /// 
-.page-template-archive-expeditions {
-@include desktop {
-    .expedition-content-wrapper{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-.expeditions-container{
-    width:95%;
+.page-template-archive-expeditions-php {
+    @include desktop {
 
-}
-    }
+        h1{
+            font-size:2.5rem;
+        }
+        .mission-statement {
+            width: 60%;
+        }
+        .expeditions-content-wrapper {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            .expeditions-container {
+                width: 90%;
+            }
+        }
 
-    .mission-statement{
-        width:60%;
+       .apply-button button{
+        border-radius: 50px;
+        font-size:1.5rem;
+       }
     }
-}
 }

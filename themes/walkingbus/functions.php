@@ -241,3 +241,28 @@ function alm_remove_image_size() {
 	remove_filter( 'after_setup_theme', array( $ajax_load_more, 'alm_image_sizes' ) );
  }
  add_action( 'after_setup_theme', 'alm_remove_image_size', 1 );
+
+ function my_login_logo() { ?>	
+
+    <style type="text/css">
+
+        .login h1 a {
+
+            background-image: url("./wp-content/themes/walkingbus/assets/images/twsb_logo-large.png");
+
+            width: 200px;
+
+            height: 200px;
+
+            background-size: contain;
+
+        }
+
+    </style>
+
+<?php }
+
+
+add_action( 'login_head', 'my_login_logo' );
+
+

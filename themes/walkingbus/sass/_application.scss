@@ -3,6 +3,7 @@
     font-family: $Mont;
 
     .app-title {
+        margin-top: 60px;
         font-family: $Oswald;
         text-align: center;
         font-size: 1.2rem;
@@ -20,15 +21,22 @@
             margin-top: 0;
         }
     }
+    
+
+    .gform_wrapper {
+        
+        @include desktop {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+    }
 
     .gform_body {
         width: 95%;
         margin-left: auto;
         margin-right: auto;
-
-        @include desktop {
-            width: 90%;
-        }
     }
 
     input:focus {
@@ -56,6 +64,8 @@
 
     li {
         position: relative;
+
+        
     }
 
     .ginput_complexm, .ginput_container {
@@ -142,5 +152,9 @@
             margin-right: auto;
             margin-top: 10%;
         }
+    }
+
+    .ui-datepicker-trigger {
+        margin-top: 0;
     }
 }
