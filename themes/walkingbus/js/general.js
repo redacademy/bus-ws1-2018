@@ -127,15 +127,6 @@ $j( '.main-image').html(imgMin);
 //     centerMode: true,
 //     });
 // });
-<<<<<<< HEAD
- $j(function(){
-$j('.team-type-carousel').slick({
-    infinite: true, 
-    slidesToShow: 2,
-    slidesToScroll: 1,  
-
-  });
-=======
 $j(function(){
     $j('.team-type-carousel').slick({
         infinite: true, 
@@ -143,7 +134,6 @@ $j(function(){
         slidesToShow: 2,
         slidesToScroll: 2, 
     });
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
 
 
       
@@ -160,10 +150,8 @@ $j(function() {
       });
 });
 
-<<<<<<< HEAD
 });
  
-=======
 $j(function() {
     $j('.slider-nav').slick({
         slidesToShow: 4,
@@ -229,6 +217,4 @@ function showSlides(n) {
       slides[i].style.display = "none"; 
   }
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
 }
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
