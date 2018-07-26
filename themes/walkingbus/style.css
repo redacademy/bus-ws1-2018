@@ -4152,6 +4152,8 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .page-template-archive-expeditions .current-research h1 {
+    background: #04809E; }
   .page-template-archive-expeditions .current-research p {
     padding-top: 5%;
     text-transform: uppercase;
