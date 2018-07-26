@@ -192,25 +192,27 @@
     background-image: url('../../assets/images/Impact_News1.jpg');
     background-position: center;
     background-size: cover;
-    height: 315px;
+    height: 350px;
     width: 100%;
     margin-bottom: 2px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     max-width: 1200px;
+    
     h2 {
         display: -ms-flexbox;
         display: flex;
         justify-content: center;
         width: 100%;
         margin: 0px;
-    }
-    h2 a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        text-align: -webkit-center;
+    
+         a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: -webkit-center;
+        }
     }
 }
 
@@ -259,7 +261,7 @@
     margin-top: -5px;
     max-width: 1200px;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .load-more-area {
@@ -268,7 +270,7 @@
     display: flex;
     -ms-flex-pack: baseline;
     justify-content: baseline;
-    margin: 175px 0 25px;
+    margin: 50px 0 25px;
     font-family: Montserrat;
     text-decoration: underline;
     -webkit-text-decoration-color: gray;
@@ -285,7 +287,7 @@
     margin-top: -5px;
     max-width: 1200px;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .cfs-hyperlink span {
@@ -294,23 +296,6 @@
 
 .cfs-hyperlink .text {
     display: none;
-}
-
-.title-area-news-nophoto {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    a {
-        background-color: transparent;
-        width: 50%;
-        height: 35px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 .arrow-link-news {
@@ -332,7 +317,7 @@
     left: 85%;
     height: 20px;
     width: 20px;
-    padding-left: 0px;
+    padding-left: 2px;
     font-size: 1.5rem;
     padding-top: 2px;
     display: flex;
@@ -347,9 +332,11 @@
 .text-area-news:nth-of-type(-n+3) {
     position: relative;
     bottom: 110px;
-    margin-bottom: -147px;
+    margin-bottom: -146px;
     color: white;
     text-align: -webkit-center;
+    height: 65px;
+
     span {
         width: 35px;
         height: 35px;
@@ -361,11 +348,13 @@
     }
 }
 
+.text-area-news:nth-of-type(4) {
+    margin-top: 100px;
+}
+
 .text-area-news:nth-of-type(n+4) {
-    margin-top: 135px;
-    margin-bottom: -135px;
     position: relative;
-    height: 35px;
+    height: 75px;
     border-bottom: solid 1px;
     border-bottom-color: lightgray;
     color: #000;
@@ -420,8 +409,8 @@
 
 .text-area-news .cfs-hyperlink {
     background-color: transparent;
-    width: 90%;
-    height: 110px;
+    width: 80%;
+    height: 70px;
     position: absolute;
     max-width: 1200px;
 }
@@ -434,7 +423,7 @@
     bottom: 67px;
 }
 
-.cfs-hyperlink:nth-of-type(n+4) {
+.cfs-hyperlink:nth-of-type(n+3) {
     background-color: transparent;
     width: 80%;
     height: 110px;
@@ -453,6 +442,12 @@
 /******************************************** DESKTOP VERSION *****************************************/
 
 @media screen and (min-width: 768px) {
+
+    .text-area-news .cfs-hyperlink {
+        width: 100%;
+        height: 110px;
+    }
+
     .site-main-impact {
         width: 100%;
         margin-top: 120px;
@@ -582,7 +577,7 @@
         padding: 0 30px;
 
         p {
-            font-size: 1.75rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -593,7 +588,7 @@
     }
 
     .text-area-news:nth-of-type(3) {
-        top: -110px;
+        top: -202px;
     }
 
     .text-area-news .cfs-hyperlink {
@@ -604,8 +599,15 @@
         margin-top: 40px;
     }
 
-    .text-area-news:nth-of-type(-n+2) {
-        bottom: 110px;
+    .text-area-news:nth-of-type(-n+3) {
+        bottom: 202px;
+        margin-bottom: -240px;
+        height: 200px;
+
+        a {
+            height: 202px;
+            top:0px;
+        }
     }
 
     .text-area-news:nth-of-type(n+4)  {
@@ -614,11 +616,20 @@
     } 
 
     .loadmore-impact-btn {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     .hide-impact-btn {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
+    }
+    
+    .text-area-news:nth-of-type(-n+3) {
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+        }
     }
 }
 

@@ -177,7 +177,7 @@ $j(function() {
 // ****** LOAD MORE NEWS - IMPACT PAGE ****** //
 
 $j('.loadmore-impact-btn').click(function() {
-    $j('.text-area-news:nth-of-type(n+9)').slideToggle('fast');
+    $j('.text-area-news:nth-of-type(n+9)').slideToggle(500);
     $j('.text-area-news:nth-of-type(n+9)').css('display' , 'flex');
     $j('.loadmore-impact-btn').css('display' , 'none');
     $j('.hide-impact-btn').css('display' , 'flex');
@@ -186,10 +186,8 @@ $j('.loadmore-impact-btn').click(function() {
 
 
 $j('.hide-impact-btn').click(function() {
-    $j('.text-area-news:nth-of-type(n+9)').slideToggle('fast');
+    $j('.text-area-news:nth-of-type(n+9)').slideToggle('slow');
     $j('.text-area-news:nth-of-type(n+9)').css('display' , 'none');
     $j('.loadmore-impact-btn').css('display' , 'flex');
     $j('.hide-impact-btn').css('display' , 'none');
 });
-
-

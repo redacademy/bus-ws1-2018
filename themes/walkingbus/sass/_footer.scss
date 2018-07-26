@@ -389,13 +389,12 @@
     }
 
     .subscription-container {
-        display: flex;
 
         button {
         height: 220px;
         }
     
-        p {
+       p {
             margin-top: 40px;
         }
     
@@ -406,4 +405,8 @@
         margin-bottom: 15px;
         margin-top: 10px;
     }
+}
+
+.subscription-container {
+    display: flex;
 }
