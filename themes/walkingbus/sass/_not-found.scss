@@ -7,50 +7,63 @@
     .site {
         height: 100%;
 
-        .site-content {
+        .site-content-nf {
             height: 100%;
         }
     }
 
     .page-content {
-
+        width: 100%;
         height: 100%;
 
-        @include center-block();
-
-        @include desktop {
-            width: 85%;
-        }
-        
         section {
             height: 100%;
             width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            position: relative;
+
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: nowrap;
             
+            background-color: #00B7E2;
+            background-image: url("../../assets/images/404-sign.svg"), 
+                              url("../../assets/images/404-bus.svg");
+            background-position: 60% 65%, 130% 70%;
+            background-repeat: no-repeat, no-repeat;
+            background-size: auto 50%, auto 50%;
+
+            @include tablet {
+                background-position: 60% 65%, 110% 70%;
+            }
+
+            @include desktop {
+                background-position: 60% 65%, 100% 70%;
+                background-size: auto 60%, auto 60%;
+            }
+
             .nf-text {
                 height: 100%;
-                width: 60%;
+                width: 50%;
+                position: absolute;
+                top: 55%;
+                left: 5%;
 
-                background-color: aquamarine;
+                color: white;
+                font-weight: bold;
+                font-size: 1rem;
+
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+    
+                @include desktop {
+                    font-size: 2rem;
+                }
             }
 
-            .nf-sign-and-bus {
-                height: 100%;
-                width: 40%;
-
-                background-color: red;
-
-                background: url("../../assets/images/404-sign.svg") left bottom no-repeat, url("../../assets/images/404-bus.svg")  right middle no-repeat;
-                
-                background-size: cover;
-                // background-image: url("../../assets/images/404-sign.svg");
-                // background-image: url("../../assets/images/404-bus.svg");
-
-                // background-repeat: no-repeat;
-                // background-position: $sun-image-size/2 0;
-            }
+            // .nf-sign-and-bus {
+               
+            // }
         }
     }
 

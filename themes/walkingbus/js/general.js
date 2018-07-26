@@ -152,6 +152,18 @@ $j(function() {
 
 $j('.loadmore-impact-btn').click(function() {
     $j('.text-area-news:nth-of-type(n+9)').slideToggle('fast');
+    $j('.text-area-news:nth-of-type(n+9)').css('display' , 'flex');
+    $j('.loadmore-impact-btn').css('display' , 'none');
+    $j('.hide-impact-btn').css('display' , 'flex');
+    $j('.cfs-hyperlink span').css('display' , 'none');
+});
+
+
+$j('.hide-impact-btn').click(function() {
+    $j('.text-area-news:nth-of-type(n+9)').slideToggle('fast');
+    $j('.text-area-news:nth-of-type(n+9)').css('display' , 'none');
+    $j('.loadmore-impact-btn').css('display' , 'flex');
+    $j('.hide-impact-btn').css('display' , 'none');
 });
 
 // ****** LOAD MORE CAROUSEL - IMPACT PAGE ****** //
@@ -172,14 +184,10 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
