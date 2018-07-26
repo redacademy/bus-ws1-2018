@@ -126,6 +126,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Remove the Content Editor for the Home Page (Front page)
  */
+
 function walkingbus_remove_front_page_editor() {
 	if((int) get_option('page_on_front')==get_the_ID()) {
 		remove_post_type_support('page', 'editor');
