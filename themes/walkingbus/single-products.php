@@ -48,7 +48,7 @@ get_header();
 						
 					?>
 
-					<?php $defaultImage = "the-walking-bus/wp-content/themes/walkingbus/assets/images/placeholder.png" ?>
+					<?php $defaultImage = "./wp-content/themes/walkingbus/assets/images/placeholder.png" ?>
 
 					<div class = "thumbnails-wrapper">
 					
