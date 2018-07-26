@@ -2601,6 +2601,9 @@ object {
         -ms-flex-pack: center;
             justify-content: center; }
 
+.page-template-archive-products .shop-info {
+  display: none; }
+
 .page-template-archive-products .single-product {
   list-style: none;
   display: -ms-flexbox;
@@ -2692,7 +2695,8 @@ object {
 @media (min-width: 768px) {
   .page-template-archive-products .products-gallery-container {
     grid-template-rows: 1fr 1fr;
-    grid-auto-rows: 22rem; }
+    grid-auto-rows: 22rem;
+    padding-bottom: 5%; }
     .page-template-archive-products .products-gallery-container picture {
       height: 18rem; }
     .page-template-archive-products .products-gallery-container .single-product .product-image {
