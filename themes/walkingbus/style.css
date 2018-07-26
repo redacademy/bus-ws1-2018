@@ -3997,8 +3997,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: "Montserrat";
-    color: white; }
+    font-family: "Montserrat"; }
 
 .page-template-archive-expeditions .single-member {
   position: relative;
