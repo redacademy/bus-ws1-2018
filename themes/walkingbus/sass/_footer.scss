@@ -150,7 +150,7 @@
         height: 35px;
         font-size: 18px;
         padding-top: 7px;
-        border-width: 0.5px;
+        border-width: 0.1px;
         color: lightgray;
     }
 }
@@ -191,9 +191,7 @@
 
     .main-container-footer{
         height: 550px;
-        width: 95%;
-        margin-bottom: 10px;
-        max-width: 1200px;
+        width: 90%;
     }
 
     .featuredon-links, .followuson-links{
@@ -236,7 +234,7 @@
         
         li{
             display: inline;
-            margin-right: 7px;
+            margin-right: 10px;
         }
 
         .fab {
@@ -389,11 +387,20 @@
         }
     }
 
-    .subscription-container button {
+    .subscription-container {
+        button {
         height: 220px;
+        }
+    
+        p {
+            margin-top: 40px;
+        }
+    
     }
+
 
     #contactus {
         margin-bottom: 15px;
+        margin-top: 10px;
     }
 }

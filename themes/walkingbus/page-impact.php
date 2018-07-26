@@ -19,15 +19,15 @@ Template Name: impact
         </div>
 
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container-impact">
         <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
             <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
-            <div class="test"></div>
+            <div class="uganda-slide"></div>
         </div>          
             <div class="mySlides fade">
             <div class="text-aside">Annual Impact Report for the year 2016-17.</div>
-            <div class="test2"></div>
+            <div class="india-slide"></div>
         </div>
         <!-- Next and previous buttons -->
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -59,42 +59,35 @@ Template Name: impact
                <?php
                    $args = array(
                        'post_type' => 'news',
-                       'posts_per_page' => 7,
+                       'posts_per_page' => 15,
                        'order' => 'ASC',
                    );
                    $news = new WP_Query( $args );
                ?>
                <?php if ( $news->have_posts() ) : ?>
-                   <?php while ( $news->have_posts() ) : $news->the_post(); ?>
+                   <?php while ( $news->have_posts() ) : $news->the_post(); ?>                       
+                       <section class = "new-impact"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+                        </section>
                        
-                       <?php if (has_post_thumbnail( $post->ID ) ) : ?>
-                       <div class = "new-impact"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="">
-                           <div class="text-area-news">
+                       <div class="text-area-news">
                             <?php $article_url = CFS()->get('article_url');?>
                             <?php echo $article_url ?>
-                           <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
-                           <a class="arrow-link-news" href="">&#10093;</a></h2>
-                           </div>
-                       </a></div>
-                       <?php else : ?>
+                           <h2><p class="title-area-news" href=""><?php the_title(); ?></p>
+                           </h2><span class="arrow-link-news">&#x203A;<?php echo $article_url ?>
+                           </span>
+                           
+                </div>
 
-                        <div class="text-area-news">
-                            <?php $article_url = CFS()->get('article_url');?>
-                            <?php echo $article_url ?>
-                           <h2><a class="title-area-news" href=""><?php the_title(); ?></a>
-                           <a class="arrow-link-news" href="">&#10093;</a></h2>
-                           </div>
-
-                       <?php endif; ?>
                    <?php endwhile; ?>
                    <?php wp_reset_postdata(); ?>
                <?php else : ?>
                <h2>Nothing found!</h2>
-               <?php endif; ?>
+               <?php endif; ?>               
         </div>
             
         <div class="load-more-area">
-            <a class="load-more">load more</a>
+            <p class="loadmore-impact-btn">load more</p>
+            <p class="hide-impact-btn">hide</p>
         </div>
-        
+
 <?php get_footer(); ?>
