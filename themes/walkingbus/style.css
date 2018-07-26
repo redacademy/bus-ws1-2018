@@ -2342,6 +2342,19 @@ object {
   .home .page-content .home-infographic {
     color: #f8e71c;
     background-color: #04809e; }
+    .home .page-content .home-infographic .slick-prev,
+    .home .page-content .home-infographic .slick-next {
+      -webkit-box-shadow: unset;
+              box-shadow: unset; }
+    @media (min-width: 1080px) {
+      .home .page-content .home-infographic {
+        padding-left: 100px;
+        padding-right: 100px; }
+        .home .page-content .home-infographic .slick-prev {
+          left: -80px; }
+        .home .page-content .home-infographic .slick-prev:before,
+        .home .page-content .home-infographic .slick-next:before {
+          font-size: 20px; } }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
       @media (min-width: 1080px) {
@@ -2432,7 +2445,7 @@ object {
             box-sizing: border-box;
     width: 100%;
     max-width: 600px;
-    height: 60px;
+    height: 20px;
     font-weight: bold;
     background-color: lightgray;
     border: 1px solid black;

@@ -81,7 +81,7 @@ get_header(); ?>
                 <article class="infographic-contry">
                     <div class="infographic-contry-content">
                         <h2 class="info-header"><?php the_title(); ?></h2>
-                        <div class="map"><?php the_post_thumbnail( 'large' ); ?></div>
+                        <div class="map"><?php the_post_thumbnail( 'full' ); ?></div>
                         <div class="content-line"><?php the_content(); ?></div>
                         <div class="first-line"><?php echo do_shortcode( CFS()->get('first_line') ); ?></div>
                         <div class="first-graph"><?php echo do_shortcode( CFS()->get('first_graph') ); ?></div>

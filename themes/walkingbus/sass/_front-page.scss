@@ -122,7 +122,27 @@
         .home-infographic {
             color: rgba(248,231,28,1);
             background-color: rgba(4,128,158,1); 
-        
+            
+            .slick-prev,
+            .slick-next {
+                box-shadow: unset;
+            }
+
+            @include desktop {
+                padding-left: 100px;
+                padding-right: 100px;
+
+                .slick-prev{
+                    left: -80px;
+                }
+
+                .slick-prev:before,
+                .slick-next:before
+                {
+                    font-size: 20px;
+                }
+            }
+
             .infographic-contry {
                 padding-bottom: 1.5rem;
 
@@ -256,7 +276,7 @@
 
                 width: 100%;
                 max-width: 600px;
-                height: 60px;//80px;
+                height: 20px;//80px;
 
                 font-weight: bold;
 
