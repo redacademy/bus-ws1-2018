@@ -2258,10 +2258,14 @@ object {
       height: auto; }
     .followuson-links p {
       margin-bottom: 25px; }
-  .subscription-container button {
-    height: 220px; }
-  .subscription-container p {
-    margin-top: 40px; }
+  .subscription-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .subscription-container button {
+      height: 220px; }
+    .subscription-container p {
+      margin-top: 40px; }
   #contactus {
     margin-bottom: 15px;
     margin-top: 10px; } }
@@ -3246,7 +3250,7 @@ object {
   -ms-flex-pack: left;
   -webkit-box-pack: left;
           justify-content: left;
-  padding: 0 60px;
+  padding: 20px 60px;
   margin-left: 30px; }
   .text-area-news:nth-of-type(n+4):hover {
     text-decoration: underline;

@@ -192,6 +192,7 @@ $j('.hide-impact-btn').click(function() {
     $j('.hide-impact-btn').css('display' , 'none');
 });
 
+<<<<<<< HEAD
 // ****** LOAD MORE CAROUSEL - IMPACT PAGE ****** //
 
 var slideIndex = 1;
@@ -218,3 +219,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
 }
+=======
+
+>>>>>>> 5cc73a20da0c58fe738a7a2d32e0cca2e09495ab
