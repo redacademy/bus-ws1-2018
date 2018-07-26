@@ -2020,10 +2020,17 @@ object {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .subscription-container form, .subscription-container input {
-  width: 330px;
+  width: 315px;
   border-bottom-width: 2px; }
 
 #email-input {
@@ -2736,7 +2743,7 @@ object {
   margin-bottom: 60px; }
 
 .image-page-donate {
-  width: 90%;
+  width: 100%;
   height: 200px;
   background-size: cover;
   background-position-x: center;
@@ -2753,12 +2760,10 @@ object {
   background-repeat: no-repeat; }
 
 .donation-image {
-  background-image: url(../../assets/images/whatwedo.jpg);
   background-size: cover;
   background-position: center; }
 
 .sponsor-image {
-  background-image: url(../../assets/images/sponsor.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -2766,14 +2771,14 @@ object {
   cursor: pointer;
   width: 65%;
   border-radius: 50px;
-  height: 55px;
+  height: 45px;
   background-color: #f6e24f;
   position: relative;
   bottom: -25px;
-  text-transform: capitalize;
-  font-family: Oswald;
-  font-weight: 400;
-  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1rem;
   color: #474747;
   -webkit-box-shadow: 0px 1px #888;
           box-shadow: 0px 1px #888;
@@ -2833,14 +2838,16 @@ object {
     max-width: 1200px;
     height: 400px; }
   .donation-image {
-    background-image: url(../../assets/images/whatwedo.jpg);
     background-position: center; }
   .sponsor-image {
-    background-image: url(../../assets/images/sponsor.jpg);
     background-position: center; }
   .donate-btn {
-    width: 35%;
-    font-size: 2rem; } }
+    width: 50%;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: "Oswald";
+    height: 55px; } }
 
 .site-main-impact h1 {
   text-transform: uppercase;
@@ -3469,8 +3476,8 @@ object {
     opacity: 0; }
     .text-area-news:nth-of-type(-n+3):hover {
       opacity: 1;
-      -webkit-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out; } }
+      -webkit-transition: 0.3s ease-out;
+      transition: 0.3s ease-out; } }
 
 @media screen and (min-width: 900px) {
   .text-area-news:nth-of-type(-n+3) span {
