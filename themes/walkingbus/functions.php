@@ -264,3 +264,5 @@ function alm_remove_image_size() {
 
 
 add_action( 'login_head', 'my_login_logo' );
+
+
