@@ -4344,12 +4344,12 @@ object {
     border-radius: 50px;
     font-size: 1.5rem; } }
 
-.products-template-default.single-products .fas {
+.products-template-default.single-products .fa-image {
   font-size: 2rem;
   text-align: center;
   width: 100%; }
   @media (min-width: 1080px) {
-    .products-template-default.single-products .fas {
+    .products-template-default.single-products .fa-image {
       margin-top: 20%; } }
 
 .products-template-default.single-products .content-area {
