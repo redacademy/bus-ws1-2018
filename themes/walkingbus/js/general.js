@@ -192,7 +192,3 @@ $j('.hide-impact-btn').click(function() {
     $j('.loadmore-impact-btn').css('display' , 'flex');
     $j('.hide-impact-btn').css('display' , 'none');
 });
-<<<<<<< HEAD
-=======
-
->>>>>>> f2a1bc0b2073a2e0ecc17e03f59e6c3ad2624b76

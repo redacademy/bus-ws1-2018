@@ -110,8 +110,7 @@
 .subscription-container {
     width: 100%;
     height: auto;
-
-    @include center-block();
+    display: flex;
 }
 
 .subscription-container form, 
