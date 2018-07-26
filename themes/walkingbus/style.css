@@ -4024,9 +4024,12 @@ object {
       border: 2px solid white; }
   .page-template-archive-expeditions .single-member .member-name {
     position: absolute;
+    bottom: 0px;
     color: white;
     width: 250%;
-    width: 300%; }
+    width: 300%;
+    text-align: center;
+    z-index: 1; }
 
 .page-template-archive-expeditions .member-info {
   background-color: white;
@@ -4151,9 +4154,8 @@ object {
           flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .page-template-archive-expeditions .current-research h1 {
-    background: #04809E; }
+          justify-content: center;
+  background: #04809E; }
   .page-template-archive-expeditions .current-research p {
     padding-top: 5%;
     text-transform: uppercase;
