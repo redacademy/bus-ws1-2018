@@ -4029,7 +4029,10 @@ object {
     width: 250%;
     width: 300%;
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 15px; }
 
 .page-template-archive-expeditions .member-info {
   background-color: white;
