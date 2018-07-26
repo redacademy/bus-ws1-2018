@@ -130,7 +130,6 @@ $j( '.main-image').html(imgMin);
 $j(function(){
     $j('.team-type-carousel').slick({
         infinite: true, 
-        // dots:true, 
         slidesToShow: 2,
         slidesToScroll: 2, 
     });
