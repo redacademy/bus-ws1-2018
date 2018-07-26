@@ -2017,7 +2017,10 @@ object {
 
 .subscription-container {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .subscription-container form, .subscription-container input {
   width: 330px;
@@ -2354,7 +2357,7 @@ object {
           left: -80px; }
         .home .page-content .home-infographic .slick-prev:before,
         .home .page-content .home-infographic .slick-next:before {
-          font-size: 20px; } }
+          font-size: 45px; } }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
       @media (min-width: 1080px) {
@@ -3852,11 +3855,7 @@ button, .alm-load-more-btn {
 .slick-slide {
   margin: 10px; }
 
-<<<<<<< HEAD
 .slick-slide img {
-=======
-.page-template-archive-expeditions .slick-slide img {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
   width: 100%;
   height: 100%; }
 
@@ -3887,7 +3886,6 @@ button, .alm-load-more-btn {
       -ms-flex-pack: center;
           justify-content: center; }
   .current-research p {
-<<<<<<< HEAD
     padding-top: 5%;
     text-transform: uppercase;
     font-weight: bold; }
@@ -3905,11 +3903,6 @@ button, .alm-load-more-btn {
       flex-wrap: wrap; }
 
 .alm-listing {
-=======
-    padding-top: 5%; }
-
-.research {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3924,11 +3917,7 @@ button, .alm-load-more-btn {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-<<<<<<< HEAD
   .alm-listing .alm-reveal {
-=======
-  .research .single-research {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3942,11 +3931,7 @@ button, .alm-load-more-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-<<<<<<< HEAD
     .alm-listing .alm-reveal .research-picture {
-=======
-    .research .single-research .research-picture {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
       width: 90%;
       height: 100%;
       -webkit-box-orient: horizontal;
@@ -3956,17 +3941,10 @@ button, .alm-load-more-btn {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-<<<<<<< HEAD
       .alm-listing .alm-reveal .research-picture img {
         width: 100%;
         height: 100%; }
     .alm-listing .alm-reveal .research-subject {
-=======
-      .research .single-research .research-picture img {
-        width: 100%;
-        height: 100%; }
-    .research .single-research .research-subject {
->>>>>>> 89f7ef94bfc3cf343a7c758d5264f263fa816479
       height: 5%;
       display: -webkit-box;
       display: -ms-flexbox;
