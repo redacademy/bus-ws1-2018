@@ -2333,7 +2333,9 @@ object {
       height: 56.25vw; }
   .home .page-content .home-infographic {
     color: #f8e71c;
-    background-color: #04809e; }
+    background-color: #04809e;
+    padding-left: 100px;
+    padding-right: 100px; }
     .home .page-content .home-infographic .infographic-contry {
       padding-bottom: 1.5rem; }
       @media (min-width: 1080px) {
