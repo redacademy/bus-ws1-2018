@@ -89,7 +89,7 @@ get_header(); ?>
                         <div class="second-graph"><?php echo do_shortcode( CFS()->get('second_graph') ); ?></div>
                     </div> 
                     <footer>
-                        <a class="learn-more-button" href="what-we-do/">Learn More</a>
+                        <a class="learn-more-button" href="impact/">Learn More</a>
                     </footer>
                 </article>
             <?php endforeach; wp_reset_postdata(); ?>
