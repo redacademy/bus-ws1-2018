@@ -4566,6 +4566,7 @@ button, .alm-load-more-btn {
 .page-template-page-application {
   font-family: "Montserrat"; }
   .page-template-page-application .app-title {
+    margin-top: 60px;
     font-family: "Oswald";
     text-align: center;
     font-size: 1.2rem; }
@@ -4581,13 +4582,16 @@ button, .alm-load-more-btn {
         margin-right: auto;
         font-size: 3rem;
         margin-top: 0; } }
+  @media (min-width: 1080px) {
+    .page-template-page-application .gform_wrapper {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative; } }
   .page-template-page-application .gform_body {
     width: 95%;
     margin-left: auto;
     margin-right: auto; }
-    @media (min-width: 1080px) {
-      .page-template-page-application .gform_body {
-        width: 90%; } }
   .page-template-page-application input:focus {
     color: gray; }
   .page-template-page-application input::-webkit-input-placeholder {
@@ -4660,3 +4664,5 @@ button, .alm-load-more-btn {
         margin-left: auto;
         margin-right: auto;
         margin-top: 10%; } }
+  .page-template-page-application .ui-datepicker-trigger {
+    margin-top: 0; }
