@@ -2547,7 +2547,9 @@ object {
   grid-auto-rows: 12rem;
   grid-gap: 1rem;
   width: 100%;
-  min-height: 20rem; }
+  height: 15rem; }
+  .page-template-archive-products .alm-reveal li {
+    padding: 1%; }
   .page-template-archive-products .alm-reveal li:nth-child(1) {
     grid-column: 1;
     grid-row: 1; }
@@ -2620,7 +2622,22 @@ object {
             justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%; } }
+    width: 90%; }
+    .page-template-archive-products .alm-reveal li {
+      list-style: none;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      padding: 1%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 25%;
+      height: 20rem; } }
 
 .site-main-donate {
   display: -webkit-box;
@@ -3722,20 +3739,14 @@ button, .alm-load-more-btn {
       color: white;
       font-family: "Montserrat";
       text-transform: capitalize; }
-      .alm-listing .alm-reveal .research-subject .ajax-load-more-wrap {
+      .alm-listing .alm-reveal .research-subject .ajax-load-more {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        width: 100%; }
+                flex-direction: row; }
 
 .single-reserach-container {
   display: -webkit-box;
@@ -3808,6 +3819,16 @@ button, .alm-load-more-btn {
     min-height: 10rem; } }
 
 @media (min-width: 1080px) {
+  .page-template-archive-expeditions .expedition-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-archive-expeditions .expedition-content-wrapper .expeditions-container {
+      width: 95%; }
   .page-template-archive-expeditions .mission-statement {
     width: 60%; } }
 

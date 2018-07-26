@@ -19,7 +19,7 @@
         flex-wrap: wrap;
         height: auto;
     }
-//banner & mission statement
+//banner & mission statement 
 
 .expeditions-banner-wrapper{
     display: flex;
@@ -442,12 +442,10 @@
                 font-family:$Mont;
                 text-transform:capitalize;
 
-                .ajax-load-more-wrap{
+                .ajax-load-more{
                     display:flex;
                     flex-direction:row;
-                    flex-wrap:wrap;
-                    justify-content:center;
-                    width:100%;
+                    
                 }
             }
         }
@@ -529,6 +527,15 @@
 /// 
 .page-template-archive-expeditions {
 @include desktop {
+    .expedition-content-wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+.expeditions-container{
+    width:95%;
+
+}
+    }
 
     .mission-statement{
         width:60%;
