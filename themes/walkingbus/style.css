@@ -4167,3 +4167,101 @@ object {
   color: black;
   padding: 0 1%;
   font-family: "Montserrat"; }
+
+.page-template-page-application {
+  font-family: "Montserrat"; }
+  .page-template-page-application .app-title {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 1.2rem; }
+    @media (min-width: 1080px) {
+      .page-template-page-application .app-title {
+        background: #F6E24F;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3rem;
+        margin-top: 0; } }
+  .page-template-page-application .gform_body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1080px) {
+      .page-template-page-application .gform_body {
+        width: 90%; } }
+  .page-template-page-application input:focus {
+    color: gray; }
+  .page-template-page-application input::-webkit-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input:-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::-ms-input-placeholder {
+    color: #03B8E2; }
+  .page-template-page-application input::placeholder {
+    color: #03B8E2; }
+  .page-template-page-application .gform_confirmation_message {
+    width: 95%;
+    text-align: center;
+    margin: 25% 0; }
+  .page-template-page-application .textarea {
+    padding: 5% !important; }
+    .page-template-page-application .textarea:focus {
+      color: gray; }
+  .page-template-page-application li {
+    position: relative; }
+  .page-template-page-application .ginput_complexm input[type="text"], .page-template-page-application .ginput_container input[type="text"] {
+    padding: 3% 5% !important; }
+  .page-template-page-application .gform_drop_instructions {
+    margin-top: 10%; }
+  .page-template-page-application input[type="button"] {
+    background: #F6E24F;
+    color: black;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px; }
+  .page-template-page-application .gform_footer {
+    width: 100%; }
+  .page-template-page-application .gform_button {
+    width: 50% !important;
+    margin: 0 25% !important;
+    background: #F6E24F;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 15px;
+    color: black; }
+  .page-template-page-application .gfield_label {
+    color: #03B8E2;
+    font-style: normal;
+    font-family: "Roboto Slab";
+    font-size: .6rem;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 10; }
+    .page-template-page-application .gfield_label span {
+      visibility: hidden;
+      position: absolute; }
+  .page-template-page-application span label {
+    visibility: hidden;
+    position: absolute; }
+  .page-template-page-application #field_1_4 label {
+    visibility: visible;
+    position: relative;
+    font-weight: 300;
+    color: black;
+    font-family: "Montserrat"; }
+  .page-template-page-application input[type="radio"]:active {
+    font-weight: 300; }
+  .page-template-page-application img {
+    display: none; }
+    @media (min-width: 1080px) {
+      .page-template-page-application img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%; } }
