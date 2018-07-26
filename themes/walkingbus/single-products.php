@@ -16,6 +16,12 @@ get_header();
 			
 			<div class = "product-info">
 
+				<div class = "product-header">
+
+				<p> product detail </p>
+				<i class="fas fa-shopping-cart"></i>
+				</div>
+
 			   <?php  $products = CFS()->get('products');?>
 
 			   <div class = "images-details-wrapper">
@@ -97,15 +103,28 @@ get_header();
 
 					<div class = "select-buttons">
 
-						<select> Color </select>
-						<select> Quantity </select>
+						<select name = "Color"> Select Color
+						<option value = "color"> Select Color </option>
+					
+						</select>
+						<select name = "Quantity"> 
+							<option value = "color"> Select Qty </option>
+							<option value = "color"> 1 </option>
+						</select>
 						
-					</div><!-- select-buttons-->	
+					</div><!-- select-buttons-->
+					
+					<div class "add-to-cart">
+
+				<button class = "add-to-cart-btn"> add to cart </button>
+							</div>
 						
 					
 				</div> <!-- product-details -->
 
 				</div><!-- images-details-wrapper-->
+
+				
                 
 				<div class = "product-description">
 
