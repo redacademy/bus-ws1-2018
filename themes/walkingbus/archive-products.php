@@ -16,7 +16,7 @@ Template Name: products
             <div class = "shop-info">
             
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                
+                <?php the_content();?>
                 <?php endwhile;?>
                 <?php endif; ?>
             </div> <!-- shop-info-->
@@ -24,6 +24,8 @@ Template Name: products
 
 
             <div class = "shop-banner">
+
+               
 
                 <!-- loop to display the banner  -->
 
@@ -37,6 +39,7 @@ Template Name: products
                                     </picture>
                                 
                     <?php }?>
+                  
 
                     <h1> <?php the_title(); ?> </h1>
 
@@ -53,7 +56,7 @@ Template Name: products
             <!-- loop to display all the products, to change the number of products displayed 
                 set the post per page number to the desired value -->
 
-	  <?php the_content();?>
+	
                     
         <?php
            $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1 );
@@ -79,8 +82,8 @@ Template Name: products
 
              <!-- call custom field suite for product name and price-->
 
-                <p> <a href = "<?php  the_permalink();?>"> <?php// the_title();?>  </a></p>
-                <p> <?php  echo CFS()->get( 'price' ); ?>  </p>
+                 <a href = "<?php  the_permalink();?>"> <?php the_title();?>  </a>
+                <p> <?php  echo CFS()->get( 'price' ); ?> CAD  </p>
                
             </div> <!-- .product-info-->
 
