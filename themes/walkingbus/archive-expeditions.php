@@ -14,6 +14,7 @@ Template Name: get involved
 
     <div class = "expeditions-container"> 
 
+
     <!-- <main id="main" class="site-main" role="main"> -->
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -32,7 +33,7 @@ Template Name: get involved
                             
             <?php }?>
             <div class = "mission-statement">  
-                <?php the_title();?> 
+             <h1>   <?php the_title();?> </h1>
                 <p>  <?php echo CFS()->get.$image['mission_statement'];?></p>
     
             </div> 
@@ -57,7 +58,7 @@ Template Name: get involved
         foreach ($nextMissions as $nextMission) {?>
 
                 <div class = "section-title">
-                    <p> <?php  echo the_title();?> </p>
+                    <h1> <?php  echo the_title();?> </h1>
                 </div>  
 
                 <div class = "upcoming-expedition-wrapper">
@@ -70,8 +71,8 @@ Template Name: get involved
                         <div class = "upcoming-expedition-info">
 
                             <div class = "expedition-details">
+                            <h3>  <?php echo CFS()->get.$nextMission['location'];?> </h3>
                                 <p>  <?php echo CFS()->get.$nextMission['date'];?></p>
-                                <p>  <?php echo CFS()->get.$nextMission['location'];?></p>
                             </div>    
 
                             <div class = "expedition-description">
@@ -81,6 +82,11 @@ Template Name: get involved
                         </div> <!-- up-comming-expedition-info -->
 
                     </div> <!-- map-wrapper -->
+
+                    <div class = "expedition-btn-wrapper">
+                        <button> Apply now </button>
+                        <button> Download itinerary  </button>
+                    </div>
 
                 </div> <!-- upcoming-expedition-wrapper -->
         <?php } ?>
@@ -101,6 +107,8 @@ Template Name: get involved
 
 </section> <!-- section upcomming expedition-->
 
+
+
 <!-- displays past expeditions  -->
 
 <section class = "past-expeditions">
@@ -108,9 +116,8 @@ Template Name: get involved
     <h1> Past Expeditions </h1>
 
            
-
     <?php
-  //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  
 		$args = array( 'post_type' => 'expedition', 'order' => 'ASC', 'posts_per_page' => 1,    'paged' => $paged  );
 		$expeditions = new WP_Query( $args ); 
 	?>
@@ -121,67 +128,13 @@ Template Name: get involved
     <?php  $missions = CFS()->get('past_expeditions'); 
     foreach ($missions as $mission) {?>
             
-        <div class = "single-expedition">
-
-            <!-- <div class = "expedition-image"> -->
-                     <!-- <picture>  -->
-
-                     <?php //the_post_thumbnail();?>
-                <?php // echo '<img src="'.$mission['image'].'"/>'; 
-                ?>
-                    <!-- </picture>     -->
-            <!-- </div> expedition-image   -->
-
-
-
-             <!-- <div class = "expedition-name" id = "expedition-name"> -->
-
-                    <!-- <div class = "name-wrapper">  -->
-
-                <!-- <div class = "expedition-title"> -->
-                    <p><h3><?php  //echo the_title();?><h3> </p>
-                    <!-- <i class="fas fa-angle-down"></i> -->
-                <!-- </div>   expedition-title -->
-
-                <!-- </div>  -->  <!--  name-wrapper -->
-
-            <!-- </div>   expedition-name  -->
-
-                <div class = "expedition-info">
-
-                    <!-- <div class = "expedition-description" id= "expedition-description"> -->
-                                    
-                        <div class= "expedition-content"> 
-
-                           
-                                <p>  <?php //the_content(); ?> </p>
-                          
-
-                            <!-- <span class = "button-wrapper">  -->
-                                <a href = "<?php //the_permalink();?>"> <button> read more</button></a>
-                            <!-- </span> -->
-
-                        </div>  <!--expedition-content-->  
-
-                    <!-- </div> expedition-description -->
-
-                            
-                </div> <!--expedition-info -->
- 
-
-
-        </div> <!--single-expedition -->    
+          
 
     <?php } ?>
  
     <?php endwhile; ?>  
 
 
-<?php // if($expeditions->post_count < 1){?>
-    <!-- <div class="load-more"><a class="btn secondary-button">no more projects</a></div>
-<?php // }else{?>
-<div id="expedition-loader" class="loading-banner"><button class = "load-more" > load more </button></div> -->
-<?php// }?>
 
     <?php wp_reset_postdata(); ?>
     <?php else : ?>
@@ -205,43 +158,45 @@ Template Name: get involved
 <!-- display all the team members (all the teams)-->
 
 
+    <div class = "section-title">
+        <h1> meet the team </h1>
+    </div>
 
 
 <section class = "wsb-team">
 
 
-            <?php
-                $args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
-                $teams = new WP_Query( $args ); 
-            ?>
+
+    <?php
+        $args = array( 'post_type' => 'team', 'order' => 'ASC', 'posts_per_page' => -1  );
+        $teams = new WP_Query( $args ); 
+    ?>
                         
-            <?php if ( $teams ->have_posts() ) : ?>
-            <?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
-            <?php// $c++ ;  ?>
+    <?php if ( $teams ->have_posts() ) : ?>
+    <?php while ( $teams ->have_posts() ) : $teams ->the_post(); ?>
+            
+        <p> <?php the_title()?> </p>
 
-            <!-- <ul> -->
 
-  <p> <?php the_title()?> </p>
- <div class = "team-type-carousel"> 
+    <div class = "team-type-carousel"> 
         
                             
                           
-            <?php $teamMembers = CFS()->get('members'); 
-
-                foreach ($teamMembers as $member) {?>
+        <?php $teamMembers = CFS()->get('members'); 
+                foreach ($teamMembers as $member) { ?>
                 
 
         <div class = "single-member" id = "image">
 
-            <!-- <div class="item <?php// echo $class; ?>" >  -->
 
-                <div class = "member-name">                  
-                    <?php  echo CFS()->get.$member['name']; ?>
-                </div>
+            <div class = "member-name">                  
+                <?php  echo CFS()->get.$member['name']; ?>
+            </div>
 
    
-                <div class = "member-picture">
-                    <?php echo '<img src="'.$member['image'].'"/>';?>
+            <div class = "member-picture">
+
+                <?php echo '<img src="'.$member['image'].'"/>';?>
                
 
                     <div class = "member-info" id = "info">
@@ -253,33 +208,37 @@ Template Name: get involved
                         <p> <?php  echo CFS()->get.$member['name']; ?> </p> 
                         <p> <?php echo CFS()->get.$member['role'];?></p> 
                         <p>  <?php echo CFS()->get.$member['bio'];?></p> 
+
                     </div>    <!--member-info-->   
 
-                 </div> <!-- member-picture-->
-            <!-- </div> item  -->
-        </div> <!--member-thumbnail-->     
+            </div> <!-- member-picture-->
 
-                <?php } ?>
-          
- </div> <!--teamtype--> 
+            
+        </div> <!--single-member-->     
+
+        <?php } ?>
                 
+        </div> <!--teamtype carousel--> 
+                        
 
-    <?php endwhile; ?> 
-    <?php wp_reset_postdata(); ?>
-    <?php else : ?>
-    
+        <?php endwhile; ?> 
+        <?php wp_reset_postdata(); ?>
+        <?php else : ?>
         <h2>Nothing found!</h2>
-    
-    <?php endif; ?>
+        <?php endif; ?>
 
-    
-       
+            <div class = "apply-button">
+                
+                <button> Join our team </button>
 
-
+            </div>
 
 </section> <!-- wsb-team--> 
 
+<?php // RESEARCH ?>
+
 <section class = "research-projects">
+  
 
     <div class = "research">
 
@@ -319,11 +278,11 @@ Template Name: get involved
 
                     <div class = "single-research">
  
-                        <div class = "research-picture">
+                        <!-- <div class = "research-picture">
                             <picture>
                                 <?php //echo '<img src="'.$research['image'].'"/>';?>
                             </picture>    
-                        </div>
+                        </div> -->
 
                         <div class = "research-description">
                             <?php //  echo CFS()->get.$research['description']; ?>
@@ -351,7 +310,11 @@ Template Name: get involved
     
             <!-- <h2>Nothing found!</h2> -->
     
-     
+
+<span class = "research-submission-wrapper">
+            <button> submit research </button>
+           
+</span>
 
 </section>
 

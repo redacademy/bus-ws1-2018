@@ -93,7 +93,8 @@ $j('.expedition-name').click(function() {
 
 
 $j('.alm-reveal').click(function() { 
-    $j(this).children(".li").children(".p").slideToggle('slow'); 
+    alert("The paragraph was clicked.");
+    // $j(this).children(".li").children(".p").slideToggle('slow'); 
 
  
 });
