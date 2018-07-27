@@ -98,6 +98,12 @@
             padding-left: 3%;
             padding-right: 1%;
             position:relative;
+
+            @include desktop {
+                padding-left: 10%;
+                padding-right: 10%;
+
+            }
             img {
                 height: auto;
                 max-width: 100%;
@@ -108,6 +114,7 @@
 
                 @include desktop {
                     width: 25%;
+                    right: 10%;
                 }
             }
             .upcoming-expedition-info {

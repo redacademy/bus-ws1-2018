@@ -3725,6 +3725,10 @@ object {
     padding-left: 3%;
     padding-right: 1%;
     position: relative; }
+    @media (min-width: 1080px) {
+      .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper {
+        padding-left: 10%;
+        padding-right: 10%; } }
     .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper img {
       height: auto;
       max-width: 100%;
@@ -3734,7 +3738,8 @@ object {
       top: 7%; }
       @media (min-width: 1080px) {
         .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper img {
-          width: 25%; } }
+          width: 25%;
+          right: 10%; } }
     .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info {
       display: -webkit-box;
       display: -ms-flexbox;
