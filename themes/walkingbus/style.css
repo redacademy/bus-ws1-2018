@@ -2575,14 +2575,17 @@ object {
 
 .page-template-archive-products .shop-banner {
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  margin-top: 15%; }
+  @media (min-width: 1080px) {
+    .page-template-archive-products .shop-banner {
+      margin-top: 10%; } }
 
 .page-template-archive-products .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  margin-top: 10%; }
+  position: relative; }
   .page-template-archive-products .banner picture {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3936,12 +3939,12 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5%; }
-  @media (min-width: 1080px) {
-    .page-template-archive-expeditions span.button-wrapper,
-    .page-template-archive-expeditions .alm-btn-wrap {
-      width: 10rem;
-      height: 3rem;
-      border-radius: 25px; } }
+
+@media (min-width: 1080px) {
+  .page-template-archive-expeditions .alm-btn-wrap {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px; } }
 
 .page-template-archive-expeditions .past-expeditions .alm-load-more-btn {
   color: white;

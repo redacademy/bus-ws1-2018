@@ -289,6 +289,10 @@
         justify-content: center;
         padding: 5%;
 
+        
+    }
+
+    .alm-btn-wrap {
         @include desktop {
             width: 10rem;
             height: 3rem;
