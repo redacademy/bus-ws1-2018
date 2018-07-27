@@ -322,6 +322,11 @@
 
         p{
             margin:0px;
+
+             @include desktop {
+                 font-size: 2rem;
+                 text-align: center;
+             }
         }
         
     }
@@ -356,6 +361,10 @@
             justify-content: center;
             font-family:$Mont;
             color: white;
+
+            @include desktop {
+                font-size: 2rem;
+            }
             
         }
     }

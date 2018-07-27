@@ -3967,6 +3967,10 @@ object {
     height: 4rem; }
   .page-template-archive-expeditions .sponsors p {
     margin: 0px; }
+    @media (min-width: 1080px) {
+      .page-template-archive-expeditions .sponsors p {
+        font-size: 2rem;
+        text-align: center; } }
 
 .page-template-archive-expeditions .section-title,
 .page-template-archive-expeditions .current-research {
@@ -4011,6 +4015,9 @@ object {
             justify-content: center;
     font-family: "Montserrat";
     color: white; }
+    @media (min-width: 1080px) {
+      .page-template-archive-expeditions .wsb-team p {
+        font-size: 2rem; } }
 
 .page-template-archive-expeditions .single-member {
   position: relative;
