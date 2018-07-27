@@ -2768,7 +2768,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-archive-products .shop-page-header .shop-info .p1 {
+    .page-template-archive-products .shop-page-header .shop-info p {
       height: 5rem;
       text-align: center;
       font-family: "Oswald";
@@ -3773,6 +3773,9 @@ object {
       color: white;
       font-family: "Montserrat";
       font-size: 1rem; }
+      @media (min-width: 1080px) {
+        .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description p {
+          font-size: 2rem; } }
 
 .page-template-archive-expeditions .expedition-btn-wrapper {
   padding: 5%;
@@ -4344,6 +4347,8 @@ object {
     font-size: 2.5rem; }
   .page-template-archive-expeditions .mission-statement {
     width: 60%; }
+    .page-template-archive-expeditions .mission-statement p {
+      font-size: 2rem; }
   .page-template-archive-expeditions .expeditions-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
