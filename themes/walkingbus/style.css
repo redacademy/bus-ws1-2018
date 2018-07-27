@@ -2581,7 +2581,8 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-top: 10%; }
   .page-template-archive-products .banner picture {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3935,6 +3936,12 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5%; }
+  @media (min-width: 1080px) {
+    .page-template-archive-expeditions span.button-wrapper,
+    .page-template-archive-expeditions .alm-btn-wrap {
+      width: 10rem;
+      height: 3rem;
+      border-radius: 25px; } }
 
 .page-template-archive-expeditions .past-expeditions .alm-load-more-btn {
   color: white;
@@ -4271,6 +4278,8 @@ object {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    .page-template-archive-expeditions .research-subject .alm-listing a {
+      color: black; }
     .page-template-archive-expeditions .research-subject .alm-listing .alm-reveal {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4372,6 +4381,10 @@ object {
   .page-template-archive-expeditions .apply-button button {
     border-radius: 50px;
     font-size: 1.5rem; } }
+  @media (min-width: 1080px) and (min-width: 1080px) {
+    .page-template-archive-expeditions .apply-button button {
+      width: 15rem;
+      height: 3rem; } }
 
 .products-template-default.single-products .fa-image {
   font-size: 2rem;

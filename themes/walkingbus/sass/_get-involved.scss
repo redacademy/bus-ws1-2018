@@ -288,6 +288,12 @@
         width: 100%;
         justify-content: center;
         padding: 5%;
+
+        @include desktop {
+            width: 10rem;
+            height: 3rem;
+            border-radius: 25px;
+        }
     }
     .past-expeditions{
     
@@ -589,6 +595,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;
+
+            a {
+                color: black;
+            }
             .alm-reveal {
                 display: flex;
                 width: 100%;
@@ -697,6 +707,11 @@
        .apply-button button{
         border-radius: 50px;
         font-size:1.5rem;
+
+            @include desktop {
+                width: 15rem;
+                height: 3rem;
+            }
        }
     }
 }
