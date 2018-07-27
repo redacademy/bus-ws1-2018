@@ -4023,11 +4023,10 @@ object {
     position: absolute;
     bottom: 0px;
     color: white;
-    width: 250%;
-    width: 300%;
     text-align: center;
     z-index: 1;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: .8rem; }
     @media (min-width: 1080px) {
       .page-template-archive-expeditions .single-member .member-name {
         font-size: 2rem; } }

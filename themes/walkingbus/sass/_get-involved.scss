@@ -364,11 +364,10 @@
             position: absolute;
             bottom: 0px;
             color: white;
-            width: 250%;
-            width:300%; 
             text-align: center;
             z-index: 1;
             text-transform: capitalize;
+            font-size: .8rem;
 
             @include desktop {
                 font-size: 2rem;
