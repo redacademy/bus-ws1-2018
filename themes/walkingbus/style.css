@@ -3756,6 +3756,9 @@ object {
         color: #F6E24F;
         text-transform: uppercase;
         font-family: "Montserrat"; }
+        @media (min-width: 1080px) {
+          .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p, .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details h3 {
+            font-size: 2rem; } }
       .page-template-archive-expeditions .upcoming-expedition-wrapper .map-wrapper .upcoming-expedition-info .expedition-details p {
         font-weight: 200; }
   .page-template-archive-expeditions .upcoming-expedition-wrapper .expedition-description {
