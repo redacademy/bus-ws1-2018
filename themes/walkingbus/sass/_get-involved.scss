@@ -288,18 +288,12 @@
         width: 100%;
         justify-content: center;
         padding: 5%;
-
-        
-    }
-
-    .alm-btn-wrap {
-        @include desktop {
-            width: 10rem;
-            height: 3rem;
-            border-radius: 25px;
-        }
     }
     .past-expeditions{
+
+        .alm-reveal li h3 a {
+            color: black;
+        }
     
         .alm-load-more-btn {
             color: white;

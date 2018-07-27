@@ -2576,7 +2576,7 @@ object {
 .page-template-archive-products .shop-banner {
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 15%; }
+  margin-top: 20%; }
   @media (min-width: 1080px) {
     .page-template-archive-products .shop-banner {
       margin-top: 10%; } }
@@ -3940,11 +3940,8 @@ object {
           justify-content: center;
   padding: 5%; }
 
-@media (min-width: 1080px) {
-  .page-template-archive-expeditions .alm-btn-wrap {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 25px; } }
+.page-template-archive-expeditions .past-expeditions .alm-reveal li h3 a {
+  color: black; }
 
 .page-template-archive-expeditions .past-expeditions .alm-load-more-btn {
   color: white;
