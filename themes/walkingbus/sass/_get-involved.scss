@@ -103,8 +103,12 @@
                 max-width: 100%;
                 position: absolute;
                 right: 3%;
-                width: 34%;
+                width: 30%;
                 top: 7%;
+
+                @include desktop {
+                    width: 25%;
+                }
             }
             .upcoming-expedition-info {
                 display: flex;
@@ -184,10 +188,9 @@
             width: 100%;
             h3 {
                 width: 100%;
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+                // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
                 margin: 0px;
                 height: 2rem;
-                margin-top: -2rem;
                 text-align: center;
                 text-decoration: none;
                 a{
@@ -317,6 +320,7 @@
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:center;
+        background: $blue-bg;
         
     }
    
@@ -336,6 +340,7 @@
             width: 100%;
             justify-content: center;
             font-family:$Mont;
+            color: white;
             
         }
     }
@@ -357,10 +362,16 @@
         }
         .member-name {
             position: absolute;
-           // bottom: 0px;
+            bottom: 0px;
             color: white;
-            width: 250%;
-            width:300%; 
+            text-align: center;
+            z-index: 1;
+            text-transform: capitalize;
+            font-size: .8rem;
+
+            @include desktop {
+                font-size: 2rem;
+            }
         }
     }
     .member-info {
@@ -468,10 +479,13 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        background: white;
+
         p {
             padding-top: 5%;
             text-transform: uppercase;
-            font-weight: bold; //font-famil
+            font-weight: bold;
+             //font-famil
         }
     }
 
@@ -638,13 +652,6 @@
 .page-template-archive-expeditions{
 
     @include desktop {
-
-        .map-wrapper {
-            img {
-                width: 30%;
-            }
-        }
-
         h1{ 
             font-size:2.5rem;
         }
