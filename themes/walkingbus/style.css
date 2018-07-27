@@ -3595,8 +3595,8 @@ object {
     opacity: 0; }
     .text-area-news:nth-of-type(-n+3):hover {
       opacity: 1;
-      -webkit-transition: 0.3s ease-out;
-      transition: 0.3s ease-out; } }
+      -webkit-transition: 0.7s ease-out;
+      transition: 0.7s ease-out; } }
 
 @media screen and (min-width: 900px) {
   .text-area-news:nth-of-type(-n+3) span {
