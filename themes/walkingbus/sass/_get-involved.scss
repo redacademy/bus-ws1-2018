@@ -188,10 +188,9 @@
             width: 100%;
             h3 {
                 width: 100%;
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
+                // background: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.25));
                 margin: 0px;
                 height: 2rem;
-                margin-top: -2rem;
                 text-align: center;
                 text-decoration: none;
                 a{
@@ -369,8 +368,11 @@
             width:300%; 
             text-align: center;
             z-index: 1;
-            font-size: 2rem;
             text-transform: capitalize;
+
+            @include desktop {
+                font-size: 2rem;
+            }
         }
     }
     .member-info {
@@ -478,7 +480,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background: $blue-bg;
+        background: white;
 
         p {
             padding-top: 5%;
